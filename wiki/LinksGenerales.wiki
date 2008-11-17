@@ -1,4 +1,4 @@
-#labels Featured
+#labels Featured,Paginasrecomendadasparaelestudiodelaprogramacionweb
 #... un posible commienzo...
 
 = Links generales, paginas imprescindibles para la programacion web =
