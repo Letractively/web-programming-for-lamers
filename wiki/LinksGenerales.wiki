@@ -1,0 +1,20 @@
+#labels Featured
+#... un posible commienzo...
+
+= Links generales, paginas imprescindibles para la programacion web =
+
+*A mi criterio la pagina principal hoy en dia con informacion a nuestra altura, como para armarnos el curso y consultarnos entre nosotros es:
+
+http://www.programacionweb.net/*
+
+_pagina muy completa con cursos gratuitos online_
+
+
+Luego hay otras mas...
+
+http://www.desarrolloweb.com/manuales/
+
+_de esta pagina he sacado informacion muy valiosa. Es un curso desde lo basico hasta lo avanzado de la programacion web. la macana es que haciendote socio solo conseguis 10 descargas de cursos gratis y el resto son pagas, asi que calculen bien que cursos quieren bajar.
+
+
+...sigan la lista de lo que encuentren, sean pilas....
