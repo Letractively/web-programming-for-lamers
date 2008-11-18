@@ -1,5 +1,5 @@
-#labels Featured,Paginas_recomendadas_para_el_estudio_de_la_programacion_web
-#... un posible commienzo...
+#labels Featured
+#sumary ... un posible commienzo en el mundo de la programacion ...
 
 = Links generales, paginas imprescindibles para la programacion web =
 
