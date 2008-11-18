@@ -1,5 +1,5 @@
+#summary ... un posible commienzo en el mundo de la programacion ...
 #labels Featured
-#sumary ... un posible commienzo en el mundo de la programacion ...
 
 = Links generales, paginas imprescindibles para la programacion web =
 
