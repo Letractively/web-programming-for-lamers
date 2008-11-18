@@ -3,9 +3,9 @@
 
 = Links generales, paginas imprescindibles para la programacion web =
 
-*A mi criterio la pagina principal hoy en dia con informacion a nuestra altura, como para armarnos el curso y consultarnos entre nosotros es:
+*A mi criterio la pagina principal hoy en dia con informacion a nuestra altura, como para armarnos el curso y consultarnos entre nosotros es:*
 
-http://www.programacionweb.net/*
+*http://www.programacionweb.net/ *
 
 _pagina muy completa con cursos gratuitos online_
 
