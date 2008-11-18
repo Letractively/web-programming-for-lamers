@@ -1,5 +1,5 @@
 #summary One-sentence summary of this page.
-#labels Featured,Comousoestapaginayparaquemesirve
+#labels Featured,Como_uso_esta_pagina_y_para_que_me_sirve
 
 = Instrucciones para usar esta web y sacarle el mayor provecho posible =
 
