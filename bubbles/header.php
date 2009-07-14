@@ -24,9 +24,11 @@ if((!strstr($_SERVER['REQUEST_URI'],"index.php"))
 	){	//Tambien puede el cliente entrar sin logueo a paginas con $_GET['entidad-visitada']
 		include("includes/seguridad.php");
 }
+$desabilitar_login = ''; //Habilitamos los input de logeo por default!
 
 // Si el cliente requiere una pagina "registrar*.php" habro una sesion de registro...
 if((strstr($_SERVER['REQUEST_URI'],"registrar"))){
+	$desabilitar_login = 'disabled="TRUE"';	//Desabilitamos los input de logueo en una sesion de registro!  
 	if(isset($_SESSION['logeado'])){
 		destruir_sesion_logeado();
 	}
@@ -37,7 +39,7 @@ if((strstr($_SERVER['REQUEST_URI'],"registrar"))){
 		if (($_SESSION['hora']+1000) < time()){
 		session_unset();
 		session_destroy();
-		if(!isset($_GET['entidad_visitada'])){		//SI la pagina actual permite VISITANTES, destruye la sesion anterior pero no va al index
+		if(!isset($_GET['entidad_visita'])){		//SI la pagina actual permite VISITANTES, destruye la sesion anterior pero no va al index
 			header("Location: index.php?error=2"); //Error2: 'timeout' de 20 minutos superado
 		}
 		return 0;
@@ -45,6 +47,7 @@ if((strstr($_SERVER['REQUEST_URI'],"registrar"))){
 	}
 // Le damos un tiempo mas a la entidad para que se quede en el sitio sin actividad:
 $_SESSION['hora']=time();
+
 }// ... si no requiere esas paginas, destruyo la sesion de registro:
 else{
 	if(isset($_SESSION['registro'])){
@@ -52,7 +55,6 @@ else{
 	}
 }
 //<--SEGURIDAD
-
 ?>
 
 
