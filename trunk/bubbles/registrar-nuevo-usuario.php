@@ -148,5 +148,8 @@ if((isset($_GET['reg'])) && (isset($_GET['id']))){
 //}
 ?>
 </div>
-	
+
+<div class="col-derecha">
+	<img src="imagenes/relleno1.jpg" />
+</div>
 <?php include('footer.php'); ?>
