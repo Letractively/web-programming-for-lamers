@@ -85,7 +85,7 @@ $(document).ready(function(){
 			fuPaisResidencia: ' ',
 			fuProfesion1: ' ',
 			fuNivelProfesion: ' ',
-			fuAceptoTerminos: ' ',//"Por favor, acepte nuestros Terminos y Condiciones",
+			fuAceptoTerminos: '!!',//"Por favor, acepte nuestros Terminos y Condiciones",
 			fuNacimiento: ' '//"Ingrese una fecha válida de naciniemto (Ej: 25/11/1991)"
 		},
 		onkeyup: false		//EVITA QUE LOS DATOS SE COTEJEN AL SOLTAR CADA LETRA!!! IMPRESCINDIBLE, evita trafico AJAX!
