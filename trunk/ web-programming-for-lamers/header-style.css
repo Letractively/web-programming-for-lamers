@@ -1,0 +1,55 @@
+.header .img{
+width: 40px;
+height: 40px;
+background-image: url(imagenes/img_header.jpg);
+margin: auto;
+width:1024px;
+height:160px;
+overflow: hidden;
+}
+.header .menu{
+width:1024px;
+height: 60px;
+background-color: #ffffff;
+overflow: hidden;
+}
+.header .menu p{
+margin-top: 20px;
+}
+.header .menu h2{
+margin-top: 20px;
+color: #42a0d2;
+}
+.header .menu .buscador p{
+margin-top: 15px;
+}
+.header .menu .buscador .b-texto{
+width: 350px;
+}
+.header .menu .buscador .b-select{
+width: 90px;
+}
+.header .menu .buscador .borde{
+border: 5px solid #42a0d2;
+height: 22px;
+}
+.header .menu .buscador .borde-boton1{
+border: 5px solid #ffffff;
+height: 22px;
+color: #ffffff;
+}
+.header .menu div{
+height: 60px;
+float: left;
+/*border: 1px solid #000000;*/
+text-align: center;
+}
+.header .menu .div-1{
+width:100px;
+}
+.header .menu .div-2{
+width:50px;
+}
+.header .menu .buscador{
+width:820px;
+}

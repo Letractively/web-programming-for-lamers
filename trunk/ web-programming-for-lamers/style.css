@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import "header-style.css";
+@import "formularios-login.css";	/*Estilo para los formularios de login*/
+@import "formularios-registro.css";	/*Estilo para los formularios de registro*/
+/* CSS Document */
+/*TEXTOS Y LINEAS GLOBALES*/
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	text-align: left;
+	margin: 0px;
+	min-width: 500px;
+}
+p{
+font-size: 10px;
+}
+p.al-medio{
+text-align: center;
+padding: 3px;
+}
+h1{
+font-size: 24px;
+}
+h2{
+font-size: 18px;
+}
+.texto-chico{
+font-size: 10px;
+padding: 0;
+margin: 0;
+font-weight: bold;
+}
+.linea-1{
+position: auto;
+height:1px;
+border-width:0;
+color: #ffffff;
+background-color: #ffffff;
+margin-top: 10px;
+margin-bottom: 0px;
+margin-left: 20px;
+margin-right: 20px;
+}
+/*estilos de debugueo*/
+.invitados{
+float: left;
+margin-right: 20px;
+background-color: #33cccc;
+margin: 10px;
+}
+.solo-logueados{
+float: left;
+margin-right: 20px;
+background-color: #ff3333;
+margin: 10px;
+}
+pre{
+background-color: #ffffff;
+}
+
+/**************************/
+.header{
+background-color: #ffffcc;
+margin: auto;
+width:1024px;
+height: auto;
+overflow: hidden;
+}
+.contenido{
+background-color: #bbbbbb;
+margin: auto;
+width:1024px;
+height: auto;
+overflow: hidden;
+}
+.col-izquierda{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 200px;
+}
+.col-central{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 600px;
+}
+.col-derecha{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 300px;
+}
+
+.footer{
+margin: auto;
+background-color: #ffffcc;
+width: 1024px;
+overflow: hidden;
+}
+/*BOTONES e INPUTs globales*/
+.boton1{
+width: 70px;
+height: 21px;
+background-image: url(imagenes/boton1.png);
+border: 0;
+color: #ffffff;
+}
