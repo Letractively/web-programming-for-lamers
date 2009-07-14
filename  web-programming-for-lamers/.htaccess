@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /bubbles/
+RewriteRule ^([a-zA-Z0-9_-]+)$ /bubbles/$1/ [R]		#Renombra un directorio "...../pepe" por "...../pepe/"
+RewriteCond %{REQUEST_URI} !.*\.(js|php|jpg|png) [NC]		#Evita que al requerir una extension ".php" o ".js" se la tome como USUARIO
+RewriteRule ^([a-zA-Z0-9_-]+)/ /bubbles/u-galeria.php?entidad_visitada=$1 [L]

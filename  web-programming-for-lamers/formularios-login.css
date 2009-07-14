@@ -1,0 +1,80 @@
+/*******************************/
+/*FORMULARIOS DE LOGIN*/
+.login-usuario{
+border: 0;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 197px;
+height: 180px;
+background-image: url('imagenes/borde-login-usuario.png');
+background-repeat: no-repeat;
+}
+.form-login-usuario{
+margin-top: 60px;
+border-left: 2px solid #42a0d2;
+border-right: 2px solid #42a0d2;
+float: left;
+overflow: hidden;
+width: 193px;
+height: 110px;
+background-color: #4bbeea;
+}
+.login-empresa{
+border: 0;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 197px;
+height: 180px;
+background-image: url('imagenes/borde-login-empresa.png');
+background-repeat: no-repeat;
+}
+.form-login-empresa{
+margin-top: 60px;
+border-left: 2px solid #42a0d2;
+border-right: 2px solid #42a0d2;
+float: left;
+overflow: hidden;
+width: 192px;
+height: 111px;
+background-color: #c4c6c3;
+}
+.tabla-login{
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 10px;
+margin-left: 20px;
+height: 100px;
+width: 160px;
+table-layout: fixed;
+}
+.tabla-login td, .tabla-login th, .tabla-login tr , .tabla-login .boton1{
+text-align: center;
+margin: 0px;
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+/*border: 1px solid black;*/
+border-width: 0px;
+margin: 0;
+/*color: #ffffff;*/
+height: 20px;
+}
+.tabla-login .boton1{
+width: 70px;
+text-align: center;
+color #ffffff;
+}
+/*.tabla-login td, .tabla-login th, .tabla-login tr{
+text-align: center;
+padding: 2px;
+border: 0;
+margin: 0;
+}*/
+
+.tabla-login-text{
+width:100px;
+height:16px;
+}

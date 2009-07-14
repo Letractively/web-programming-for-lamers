@@ -1,0 +1,247 @@
+/*******************************/
+/*FORMULARIOS DE REGISTRO*/
+.borde-reg-empresa{
+border: 0;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 545px;
+height: 540px;
+background-image: url('imagenes/borde-reg-empresa.png');
+background-repeat: no-repeat;
+}
+.interior-reg-empresa{
+border: 0;
+margin-left: 2px;
+margin-top: 165px;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 541px;
+height: 300px;
+background-image: url('imagenes/interior-reg-empresa.png');
+background-repeat: no-repeat;
+}
+.borde-reg-usuario{
+border: 0;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 545px;
+height: 540px;
+background-image: url('imagenes/borde-reg-usuario.png');
+background-repeat: no-repeat;
+}
+.superior-reg-usuario{
+border: 0;
+margin-left: 0px;
+margin-top: 0px;
+float: left;
+overflow: hidden;
+width: 541px;
+height: 164px;
+}
+.interior-reg-usuario{
+border: 0;
+margin-left: 0px;
+margin-top: 0px;
+float: left;
+overflow: hidden;
+width: 541px;
+height: 220px;
+background-color: #0081c5;
+border-left: 2px solid #0081c5;
+border-right: 2px solid #0081c5;
+background-image: url('imagenes/interior-reg-usuario.png');
+background-repeat: no-repeat;
+}
+.inferior-reg-usuario{
+border: 0;
+margin-left: 0px;
+margin-top: 0px;
+float: left;
+overflow: hidden;
+width: 541px;
+height: 146px;
+background-color: #ffffff;
+border-left: 2px solid #0081c5;
+border-right: 2px solid #0081c5;
+}
+/*FORMULARIO DE REGISTRO DE USUARIO*/
+.superior-reg-usuario .usuario{
+float: left;
+width: 149px;
+height: 35px;
+margin-top: 35px;
+position: absolute;
+margin-left: 230px;
+color: #0081c5;
+}
+.superior-reg-usuario .contrasenia{
+float: left;
+width: 149px;
+height: 35px;
+margin-top: 78px;
+position: absolute;
+margin-left: 230px;
+color: #0081c5;
+}
+.superior-reg-usuario .repetir-contrasenia{
+float: left;
+width: 149px;
+height: 35px;
+margin-top: 78px;
+position: absolute;
+margin-left: 390px;
+color: #0081c5;
+}
+.superior-reg-usuario .pregunta-secreta{
+float: left;
+width: 149px;
+height: 35px;
+margin-top: 118px;
+position: absolute;
+margin-left: 230px;
+color: #0081c5;
+}
+.superior-reg-usuario .respuesta{
+float: left;
+width: 149px;
+height: 35px;
+margin-top: 118px;
+position: absolute;
+margin-left: 390px;
+color: #0081c5;
+}
+.superior-reg-usuario input{
+/*height: 18px;*/
+width: 140px;
+/*border: 0px;*/
+padding: 0px;
+margin: 2px;
+}
+.superior-reg-usuario p{
+font-size: 12px;
+}
+.tabla-registro-2{
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 10px;
+margin-left: 20px;
+height: 25px;
+width: 490px;
+}
+.tabla-registro-2 td, .tabla-registro-2 th, .tabla-registro-2 tr,
+.tabla-registro-3 td, .tabla-registro-3 th, .tabla-registro-3 tr,
+.tabla-registro-4 td, .tabla-registro-4 th, .tabla-registro-4 tr {
+text-align: left;
+margin: 0px;
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 15px;
+padding-bottom: 0px;
+/*border: 1px solid black;*/
+border-width: 0px;
+margin: 0;
+color: #ffffff;
+}
+/*Estilos para las ultimas 3 filas de inputs --->*/
+.tabla-registro-2 input, .tabla-registro-3 input, .tabla-registro-4 input{
+/*border: 0px;*/
+/*height: 24px;*/
+}
+/*<---*/
+.tabla-registro-2 #fuNombres{
+width: 150px;
+}
+.tabla-registro-2 #fuApellidos{
+width: 180px;
+}
+.tabla-registro-2 #fuNacimiento{
+width: 80px;
+}
+.tabla-registro-2, .tabla-registro-3, .tabla-registro-4{
+font-size:12px;
+}
+.tabla-registro-3{
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 4px;
+margin-left: 20px;
+height: 25px;
+width: 490px;
+}
+.tabla-registro-3 #fuEmpresa{
+width: 100px;
+}
+.tabla-registro-3 #fuEmail{
+width: 180px;
+}
+.tabla-registro-3 #fuSexo{
+width: 80px;
+}
+.tabla-registro-3 #fuPaisResidencia{
+width: 80px;
+}
+.tabla-registro-4{
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 4px;
+margin-left: 20px;
+height: 25px;
+width: 490px;
+}
+.tabla-registro-4 #fuProfesion1{
+width: 120px;
+}
+.tabla-registro-4 #fuProfesion2{
+width: 120px;
+}
+.tabla-registro-4 #fuProfesion3{
+width: 120px;
+}
+.tabla-registro-4 #fuNivelProfesion{
+width: 100px;
+}
+/*CheckBoxes...*/
+input#fuDeseaNews{
+padding: 0px;
+margin-top: 15px;
+margin-left: 15px;
+}
+input#fuDeseaLaborales, input#fuAceptoTerminos , input#fuDeseaProfesionales, img#fuGeneraImg{
+padding: 0px;
+margin-left: 15px;
+}
+/******DINAMISMO CON VALIDACION*******/
+form.registro {
+}		/*Ancho máximo del FORM*/
+form.registro p{
+margin: 0px;
+}
+em.error {							/*Estilo dinamico para el elemento de error*/
+  /*background:url("jquery-validate/images/unchecked.gif") no-repeat 0px 0px;*/
+  padding-left: 16px;
+}
+em.success {						/*Estilo dinámico para el elemento de error cuando APRUEBA las REGLAS*/
+  /*background:url("jquery-validate/images/checked.gif") no-repeat 0px 0px;*/
+  padding-left: 16px;
+}
+
+form.registro label.error {
+	margin-left: auto;
+	width: 250px;
+}
+em.error {
+color: red;
+}
+em.success {
+color: blue;
+}
+input.error, select.error{
+background-color: #FFccbb;
+}
+#warning {
+display: none;
+}
+/*********************************/
