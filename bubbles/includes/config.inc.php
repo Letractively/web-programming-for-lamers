@@ -13,7 +13,8 @@ define('DIR_INCLUDES','includes/');
 define('DIR_CLASES','includes/clases/');
 define('DIR_CONTENT','content/');
 define('ARCH_PAG_NO_EXISTE', DIR_BUBBLES . 'no-existe.php');
-define('DIR_FUENTES', 'C:\\WINDOWS\\Fonts\\'); // "/home/sito/public_html/fonts/" para LINUX
+//define('DIR_FUENTES', 'C:\\WINDOWS\\Fonts\\'); // "/home/sito/public_html/fonts/" para LINUX
+define('DIR_FUENTES', '../fuentes/'); // Ruta RELATIVA! (solo sirve para el php que genera el captcha.)
 
 // Tiempo de Sesion por usuario en segundos...
 define('TIEMPO_SESION', 1000);
