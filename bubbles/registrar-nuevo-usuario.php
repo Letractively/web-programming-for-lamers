@@ -54,7 +54,7 @@ if(isset($_POST["paso1"])){
 	}
 	if (isset($_POST['fuDeseaProfesionales'])){
 		$_SESSION['fuDeseaProfesionales'] = 1;
-	} 
+	}
 	else{
 		$_SESSION['fuDeseaProfesionales'] = 0;
 	}
@@ -149,7 +149,8 @@ if((isset($_GET['reg'])) && (isset($_GET['id']))){
 ?>
 </div>
 
-<div class="col-derecha">
+<div class="col-derecha" >
 	<img src="imagenes/relleno1.jpg" />
 </div>
+
 <?php include('footer.php'); ?>
