@@ -159,7 +159,8 @@ $(document).ready(function(){
 			</tr>
 			</tbody>
 			</table>
-			<div class="linea-1"></div>
+			<div class="linea-1">
+			</div>
 			
 			<table class="tabla-registro-3">
 			<tbody>
@@ -178,7 +179,8 @@ $(document).ready(function(){
 			</tr>
 			</tbody>
 			</table>
-			<div class="linea-1"></div>			
+			<div class="linea-1">
+			</div>			
 			<table class="tabla-registro-4">
 			<tbody>
 			<tr>
@@ -217,11 +219,7 @@ $(document).ready(function(){
 			</tr>
 			</tbody>
 			</table>
-			
-			<!--<tr>
-				<td colspan="2"><input type="submit" class="boton1" name="submit" value="Ingresar" /></td>
-			</tr>-->
-			</div>
+		</div>
 		<div class="inferior-reg-usuario">
 				<p><input type="checkbox" name="fuDeseaNews" id="fuDeseaNews" value="Si" />Deseo suscribirme a la lista de correo de Newsletters y eventos</p>
 				<p><input type="checkbox" name="fuDeseaLaborales" id="fuDeseaLaborales" value="Si" />Deseo suscribirme a la lista de correo de Ofertas laborales</p>
@@ -229,79 +227,8 @@ $(document).ready(function(){
 				<p><input type="checkbox" name="fuAceptoTerminos" id="fuAceptoTerminos" value="Si" />Acepto los Terminos y Condiciones de Bubbles</p>
 				<p><img src="includes/genera_img.php" id="fuGeneraImg" />Ingrese el texto de la imagen:<input type="text" name="fuSeguridad" id="fuSeguridad" /></p>
 				<input type="hidden" name="fuStatus" value="" id="fuStatus" />
+				<input type="hidden" name="paso1" value="paso1" />
 				<p class="al-medio"><input type="submit" value="Enviar" name="paso1" /></p>
 		</div>
 	</form>
 </div>
-
-<!--
-<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="registro" id="registrarForm">
-<p>Usuario</p>
-<input type="text" name="fuAlias" id="fuAlias" />
-<p>Contraseña</p>
-<input type="password" name="fuContrasenia" id="fuContrasenia" />
-<p>Repetir Contraseña</p>
-<input type="password" name="fuVerificarContrasenia" id="fuVerificarContrasenia" />
-<p>Pregunta Secreta</p>
-<input type="text" name="fuPreguntaSecreta" id="fuPreguntaSecreta" />
-<p>Respuesta Secreta</p>
-<input type="text" name="fuRespuestaSecreta" id="fuRespuestaSecreta" />
-<p>Nombres</p>
-<input type="text" name="fuNombres" id="fuNombres" />
-<p>Apellidos</p>
-<input type="text" name="fuApellidos" id="fuApellidos" />
-<p>Fecha de Nacimiento</p>
-<input type="text" name="fuNacimiento" id="fuNacimiento" />
-<p>Empresa</p>
-<input type="text" name="fuEmpresa" id="fuEmpresa" />
-<p>dirección de e-mail</p>
-<input type="text" name="fuEmail" id="fuEmail" />
-<p>Sexo</p>
-<select name="fuSexo" id="fuSexo" >
-<option value=""></option>
-<option value="Masculino">Masculino</option>
-<option value="Femenino">Femenino</option>
-</select>
-<p>Pais de Residencia</p>
-<input type="text" name="fuPaisResidencia" id="fuPaisResidencia" />
-<p>Profesión</p>
-<select name="fuProfesion1" id="fuProfesion1" >
-<option value=""></option>
-<option value="Diseñador">Diseñador</option>
-<option value="Desarrollador">Desarrollador</option>
-<option value="Programador">Programador</option>
-</select>
-<p>Profesión 2</p>
-<select name="fuProfesion2" id="fuProfesion2" >
-<option value=""></option>
-<option value="Diseñador">Diseñador</option>
-<option value="Desarrollador">Desarrollador</option>
-<option value="Programador">Programador</option>
-</select>
-<p>Profesión 3</p>
-<select name="fuProfesion3" id="fuProfesion3">
-<option value=""></option>
-<option value="Diseñador">Diseñador</option>
-<option value="Desarrollador">Desarrollador</option>
-<option value="Programador">Programador</option>
-</select>
-<p>Nivel</p>
-<select name="fuNivelProfesion" id="fuNivelProfesion">
-<option value=""></option>
-<option value="Trainee">Trainee</option>
-<option value="Ssr">Ssr</option>
-<option value="Sr">Sr</option>
-</select>
-<p><input type="checkbox" name="fuDeseaNews" id="fuDeseaNews" value="Si" />Deseo suscribirme a la lista de correo de Newsletters y eventos</p>
-<p><input type="checkbox" name="fuDeseaLaborales" id="fuDeseaLaborales" value="Si" />Deseo suscribirme a la lista de correo de Ofertas laborales</p>
-<p><input type="checkbox" name="fuDeseaProfesionales" id="fuDeseaProfesionales" value="Si" />Deseo suscribirme a la lista de Capacitaciones y cursos para profesionales</p>
-<p><input type="checkbox" name="fuAceptoTerminos" id="fuAceptoTerminos" value="Si" />Acepto los Terminos y Condiciones de Bubbles</p>
-
-
-<p><img src="includes/genera_img.php" id="fuGeneraImg" /></p>
-<p>Ingrese el texto visto en la imagen superior</p>
-<input type="text" name="fuSeguridad" id="fuSeguridad" />
-<input type="hidden" name="fuStatus" value="" id="fuStatus" />
-
-<p><input type="submit" value="Enviar" name="paso1" /></p>
-</form>-->
