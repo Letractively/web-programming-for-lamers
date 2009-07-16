@@ -2,6 +2,7 @@
 @import "header-style.css";
 @import "formularios-login.css";	/*Estilo para los formularios de login*/
 @import "formularios-registro.css";	/*Estilo para los formularios de registro*/
+@import "varios.css";
 /* CSS Document */
 /*TEXTOS Y LINEAS GLOBALES*/
 body {
@@ -101,12 +102,4 @@ margin: auto;
 background-color: #ffffcc;
 width: 1024px;
 overflow: hidden;
-}
-/*BOTONES e INPUTs globales*/
-.boton1{
-width: 70px;
-height: 21px;
-background-image: url(imagenes/boton1.png);
-border: 0;
-color: #ffffff;
 }

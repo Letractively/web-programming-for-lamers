@@ -1,0 +1,31 @@
+/*BOTONES e INPUTs globales*/
+.boton1{
+width: 70px;
+height: 21px;
+background-image: url(imagenes/boton1.png);
+border: 0;
+}
+
+.solapa-lateral{
+width: 80px;
+height: 80px;
+border: 0;
+overflow: hidden;
+}
+.solapa-lateral .extremo{
+float: left;
+width: 9px;
+height: 80px;
+background-image: url(imagenes/borde-solapa-lateral.png);
+background-repeat: no-repeat;
+border: 0;
+}
+.solapa-lateral .degrade{
+border-top: 1px solid #cccccc;
+border-bottom: 1px solid #cccccc;
+float:left;
+width: 71px;
+height: 78px;
+background-image: url(imagenes/degrade-solapa-lateral.png);
+background-repeat: repeat-x;
+}
