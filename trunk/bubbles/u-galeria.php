@@ -13,6 +13,14 @@ if($id_verif == -1){							//Si verifica que el usuario no existe lo manda a una
 }
 ?>
 
+<?php include('contenido/col-profesional.php'); ?>
+
+
+
+
+
+
+<!--HASTA AQUI FUE ACTUALIZADO-->
 <div>
 <h2> Galeria de : <?php echo $visitado->alias; ?></h2>
 <p><?php echo $visitado->apellidos; ?>, <?php echo $visitado->nombres; ?>. <?php echo $visitado->edad(); ?> años.</p>

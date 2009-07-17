@@ -90,6 +90,9 @@ eregi_replace($exp_reg, "", md5(time())) .
 eregi_replace($exp_reg, "", md5(time())),0, $longitud);
 }
 
+// LOS TRES METODOS SIGUIENTES SE INCLUYERON DENTRO DE myquery.class.php,
+// NO UTILIZARLAS DESDE AQUI, BORRARLAS CUANDO SE PUEDA!!
+
 ////////////////////////////////////////////////////
 //Convierte fecha de mysql a normal
 ////////////////////////////////////////////////////
@@ -111,7 +114,15 @@ if(strlen($fecha)==10){
 	}
 else{
 	return '0000-00-00';
+	}
 }
+
+////////////////////////////////////////////////////
+//Cambia un Texto para mysql:
+////////////////////////////////////////////////////
+function cambiat_a_mysql($texto){
+	$texto = mysql_real_escape_string($texto);
+	return $texto;
 }
 
 ////////////////////////////////////////////////////
@@ -123,14 +134,6 @@ function destruir_sesion(){
 	session_destroy();
 	//$redireccion = 'Location: ' . $_SERVER['PHP_SELF'];
 	//header ($redireccion);
-}
-
-////////////////////////////////////////////////////
-//Cambia un Texto para mysql:
-////////////////////////////////////////////////////
-function cambiat_a_mysql($texto){
-	$texto = mysql_real_escape_string($texto);
-	return $texto;
 }
 
 ////////////////////////////////////////////////////

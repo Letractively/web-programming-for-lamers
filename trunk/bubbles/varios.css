@@ -29,3 +29,23 @@ height: 78px;
 background-image: url(imagenes/degrade-solapa-lateral.png);
 background-repeat: repeat-x;
 }
+
+.col-profesional .superior-col, .col-profesional .profesional-col, .col-profesional .medio-col, .col-profesional .inferior-col{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 196px;
+}
+.col-profesional .superior-col{
+height: 50px;
+}
+.col-profesional .profesional-col{
+height: 300px;
+}
+.col-profesional .medio-col{
+height: 100px;
+}
+.col-profesional .inferior-col{
+height: 50px;
+}

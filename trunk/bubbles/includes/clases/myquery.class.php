@@ -10,7 +10,9 @@ class myquery {
 	
 	function myquery(){
 	}
-	
+	////////////////////////////////////////////////////////////////////////////////////
+	//MÉTODOS INTERNOS:
+	////////////////////////////////////////////////////////////////////////////////////
 	//				|TABLAS|					|COLUMNAS|				|VALORES|
 	//INSERT INTO nombre_de_la_tabla (Columna1, columna 2, ... )VALUES (Valor1, valor2, ...);
 	function insertar($columnas = '', $tablas = '', $valores = ''){
@@ -67,5 +69,44 @@ class myquery {
 		}
 		return 0;
 	}
+	
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////
+	//MÉTODOS INTERNOS y EXTERNOS:
+	////////////////////////////////////////////////////////////////////////////////////
+	
+	////////////////////////////////////////////////////
+	//Convierte fecha de mysql a normal
+	////////////////////////////////////////////////////
+	function cambiaFaNormal($fecha){
+		ereg( "([0-9]{2,4})-([0-9]{1,2})-([0-9]{1,2})", $fecha, $mifecha);
+		$lafecha=$mifecha[3]."/".$mifecha[2]."/".$mifecha[1];
+		return $lafecha;
+	}
+	
+	////////////////////////////////////////////////////
+	//Convierte fecha de normal a mysql
+	////////////////////////////////////////////////////
+
+	function cambiaFaMysql($fecha){
+	if(strlen($fecha)==10){
+		ereg( "([0-9]{1,2})/([0-9]{1,2})/([0-9]{2,4})", $fecha, $mifecha);
+		$lafecha=$mifecha[3]."-".$mifecha[2]."-".$mifecha[1];
+		return $lafecha;
+		}
+	else{
+		return '0000-00-00';
+		}
+	}
+
+	////////////////////////////////////////////////////
+	//Cambia un Texto para mysql:
+	////////////////////////////////////////////////////
+	function cambiaTaMysql($texto){
+		$texto = mysql_real_escape_string($texto);
+		return $texto;
+	}
+
 }
 ?>
