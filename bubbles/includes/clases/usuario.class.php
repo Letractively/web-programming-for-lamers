@@ -29,6 +29,7 @@ class usuario {
 	var $desea_news;
 	var $desea_laborales;
 	var $desea_profesionales;
+	var $miembro_desde;
 	var $status;
 		
 	var $edad;			//Variables calculadas a partir de la TABLE 'usuarios'
@@ -57,6 +58,7 @@ class usuario {
 			$this->desea_news = NULL;
 			$this->desea_laborales = NULL;
 			$this->desea_profesionales = NULL;
+			$this->miembro_desde = NULL;
 			$this->status = NULL;
 
 			$this->edad = NULL;
@@ -276,6 +278,10 @@ class usuario {
 	return FALSE;
 	}
 
+////////////////////////////////////////////////////////////////////////////////////////////////
+//Metodos que calculan propiedades de esta clase, a partir de otras propiedades ya ingresadas-->
+////////////////////////////////////////////////////////////////////////////////////////////////
+
 	function edad(){	//'edad' es una cantidad calculada sobre la DB, por lo tanto no puede ser INSERTada!
 		if($this->idUsuario() > -1){
 			$sql = "SELECT nacimiento, CURRENT_DATE, (YEAR(CURRENT_DATE) - YEAR(nacimiento)) 
@@ -291,7 +297,11 @@ class usuario {
 		}
 	return FALSE;
 	}
-	
+			
+//////
+//<--
+//////
+
 	function traerEstudios(){
 		if($this->idUsuario() > -1){
 			//Leer de la DB
@@ -403,6 +413,26 @@ class usuario {
 		return 0;
 	}
 	
+	function cargarDatosPerfil(){
+		if($this->idUsuario() > -1){
+			//Leer de la DB
+			$filas = $this->sql->leer('*', 'usuarios', "id_usuario = '$this->id_usuario'");
+				if($this->sql->ultimo_error != ''){
+					$this->ultimo_error = 'Error al traer los Datos de este Profesional de la DB!: ' . $this->sql->ultimo_error;
+					return -1;
+				}
+			$this->miembro_desde = $filas[0]['miembro_desde'];
+			$this->ruta_foto = $filas[0]['ruta_foto'];
+			$this->nombres = $filas[0]['nombres'];
+			$this->apellidos = $filas[0]['apellidos'];
+			$this->edad();
+			$this->profesion_1 = $filas[0]['profesion_1'];
+			$this->nivel_profesion = $filas[0]['nivel_profesion'];
+			return 0;
+		}
+	return -1;
+	}
+	
 	function ultimoError(){
 		return $this->ultimo_error;
 	}
@@ -438,6 +468,7 @@ class usuario {
 	
 	/////////////////////////////////////////////////////////////////////
 	// METODOS PARA CLASE SOBRE USUARIOS AUN NO REGISTRADOS
+	/////////////////////////////////////////////////////////////////////
 	function nuevoUsuario($alias = '',
 							$contrasenia = '',
 							$email = '',
