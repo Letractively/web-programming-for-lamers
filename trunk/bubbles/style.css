@@ -82,14 +82,14 @@ float: left;
 overflow: hidden;
 width: 200px;
 }
-.col-central{
+.col-central, .col-profesional-centro{
 border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
 width: 595px;
 }
-.col-derecha{
+.col-derecha, .col-profesional-derecha{
 border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
