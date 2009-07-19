@@ -29,7 +29,7 @@ height: 78px;
 background-image: url(imagenes/degrade-solapa-lateral.png);
 background-repeat: repeat-x;
 }
-
+/**/
 .col-profesional .superior-col, .col-profesional .profesional-col, .col-profesional .medio-col, .col-profesional .inferior-col{
 border: 1px solid #000000;
 background-color: #dddddd;
@@ -47,5 +47,59 @@ height: 300px;
 height: 100px;
 }
 .col-profesional .inferior-col{
+height: 50px;
+}
+/**/
+.col-profesional-centro .casilla-superior, .col-profesional-centro .casilla-inferior{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 591px;
+}
+.col-profesional-centro .casilla-superior{
+height: 300px;
+}
+.casilla-superior .borde-solapas, .casilla-superior .portfolio, .casilla-superior .mensajes{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+height: 296px;
+}
+.casilla-superior .borde-solapas{
+width: 100px;
+}
+.solapa{
+border: 1px solid #000000;
+float: left;
+width: 70px;
+height: 70px;
+}
+.casilla-superior .portfolio, .casilla-superior .mensajes{
+width: 480px;
+}
+.col-profesional-centro .casilla-inferior{
+height: 200px;
+}
+/**/
+.col-profesional-derecha .superior-col, .col-profesional-derecha .clasificados-col,
+.col-profesional-derecha .publicidad-col, .col-profesional-derecha .inferior-col{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 220px;
+}
+.col-profesional-derecha .superior-col{
+height: 50px;
+}
+.clasificados-col{
+height: 200px;
+}
+.publicidad-col{
+height: 200px;
+}
+.col-profesional-derecha .inferior-col{
 height: 50px;
 }
