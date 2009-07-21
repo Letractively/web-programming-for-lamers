@@ -1,8 +1,23 @@
 <?php require_once('header.php'); ?>
 
-<div class="col-izquierda">
-	<?php include('contenido/form-login-usuario.php'); ?>
-	<?php include('contenido/form-login-empresa.php'); ?>
+<div class="col-centroizquierda">
+	<div class="col-contenido-home">
+		<p>col-contenido-home</p>
+	</div>
+	<div class="col-registrarse">
+		<p>col-registrarse</p>
+	</div>
+	<div class="col-derecha">
+		<p>col-usuarios-destacados</p>
+	</div>
+	<div class="col-derecha">
+		<?php include('contenido/form-login-usuario.php'); ?>
+		<?php include('contenido/form-login-empresa.php'); ?>
+	</div>
+</div>
+
+<div class="col-derecha">
+	<?php include('contenido/clasificados-col.php'); ?>
 </div>
 
 <!--

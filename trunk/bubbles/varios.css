@@ -103,3 +103,19 @@ height: 200px;
 .col-profesional-derecha .inferior-col{
 height: 50px;
 }
+/**/
+.col-centroizquierda .col-contenido-home{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 790px;
+height:  180px;
+}
+.col-centroizquierda .col-registrarse{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 350px;
+}

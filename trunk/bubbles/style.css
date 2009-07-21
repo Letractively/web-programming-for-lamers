@@ -82,6 +82,14 @@ float: left;
 overflow: hidden;
 width: 200px;
 }
+.col-centroizquierda{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 800px;
+height: 600px;
+}
 .col-central, .col-profesional-centro{
 border: 1px solid #000000;
 background-color: #dddddd;
