@@ -1,10 +1,5 @@
 <div class="col-profesional-derecha" >
-	<div class="superior-col">
-		<p>(poner imagen de cabecera)</p>
-	</div>
-	<div class="clasificados-col">
-		<p>agregar CLASIFICADOS segun criterio</p>
-	</div>
+	<?php include('contenido/clasificados-col.php') ?>
 	<div class="publicidad-col">
 	<p>agregar PUBLICIDAD</p>
 	</div>
