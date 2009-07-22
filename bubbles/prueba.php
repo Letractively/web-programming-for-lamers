@@ -1,9 +1,36 @@
 <?php include("header.php"); ?>
 <?php include("includes/clases/usuario.class.php"); ?>
 <?php include("includes/clases/empresa.class.php"); ?>
+<?php include("includes/tratar_imagenes.php"); ?>
 
 <?php
 ///////////////////////////////	
+echo "<h2> PRUEBA: SUBIR UNA IMAGEN MEDIANTE EL SCRIPT tratar_imagenes.php</h2>";
+?>
+
+<form action="<?php $PHP_SELF;?>" method="POST" enctype="multipart/form-data" name="editpage" id="editpage">
+<input name="img1" type="file" id="img1" size="40">
+<input type="submit" name="Submit" value="Subir imagen">
+</form>
+
+<?php
+if(isset($_POST['Submit'])){
+	//si ya se hizo clic en submit 
+$fotos=imgResample2("img1", DIR_FOTOS_PROFESIONALES, DIMENSION_FOTO_GRANDE, DIMENSION_FOTO_GRANDE, DIMENSION_FOTO_CHICA, DIMENSION_FOTO_CHICA); 
+for($i=0;$i<sizeof($fotos);$i++){ 
+	// esto imprime en pantalla el contenido del arreglo $fotos 
+	//las dos primeras posiciones contienen el url de la foto relativo a raíz 
+	//las dos últimas contienen la etiqueta <img> para mostrar la foto en pantalla 
+	echo "Arreglo fotos, posición #$i: ".$fotos[$i]."<br>"; 
+	}
+}	//end for
+
+echo '<pre>';
+print_r($_FILES);
+echo '</pre>';
+?>
+
+<?php
 echo "<h2> PRUEBA: INSTANCIA DE UN OBJETO CLASE usuario()</h2>";
 $pr = new usuario;
 
