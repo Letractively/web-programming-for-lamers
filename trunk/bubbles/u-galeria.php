@@ -15,18 +15,21 @@ if($id_verif == -1){							//Si verifica que el usuario no existe lo manda a una
 
 <?php include('contenido/col-profesional.php'); ?>
 
+<div class="col-profesional-centro">
 <?php	//SWHITCH del CONTENIDO de la pagina (columna-central). Proximanente en AJAX!
 if(isset($_GET['mensajes'])){
-	include('contenido/col-profesional-centro-mensajes.php');
+	include('contenido/casilla-superior-profesional-mensajes.php');
 }
 if(isset($_GET['portfolio'])){
-	include('contenido/col-profesional-centro-portfolio.php');
+	include('contenido/casilla-superior-profesional-portfolio.php');
 }
 //Si no nubo peticiones para NINGUNA de las páginas anteriores....
 if((!isset($_GET['mensajes'])) && (!isset($_GET['portfolio']))){
-	include('contenido/col-profesional-centro-portfolio.php');
+	include('contenido/casilla-superior-profesional-portfolio.php');
 }
 ?>
+<?php include('contenido/casilla-inferior-profesional.php') ?>
+</div>
 
 <?php include('contenido/col-profesional-derecha.php'); ?>
 

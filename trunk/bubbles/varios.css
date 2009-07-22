@@ -30,6 +30,7 @@ background-image: url(imagenes/degrade-solapa-lateral.png);
 background-repeat: repeat-x;
 }
 /**/
+/*clases para pantallas PROFESIONAL ------>*/
 .col-profesional .superior-col, .col-profesional .profesional-col, .col-profesional .medio-col, .col-profesional .inferior-col{
 border: 1px solid #000000;
 background-color: #dddddd;
@@ -79,9 +80,42 @@ height: 70px;
 .casilla-superior .portfolio, .casilla-superior .mensajes{
 width: 480px;
 }
+/*.col-profesional-centro .casilla-inferior*/
 .col-profesional-centro .casilla-inferior{
-height: 200px;
+height:260px;
 }
+.col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der,
+.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .contenido-comentarios,
+.col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos,
+.col-profesional-centro .casilla-inferior .contenido-amigos, .col-profesional-centro .casilla-inferior .inferior-amigos,
+.col-profesional-centro .casilla-inferior .borde-contenido{
+border: 1px solid #000000;
+float: left;
+overflow: hidden;
+height:250px;
+}
+.col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der{
+width: 50px;
+}
+.col-profesional-centro .casilla-inferior .borde-contenido{
+width: 480px;
+}
+.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .contenido-comentarios,
+.col-profesional-centro .casilla-inferior .inferior-comentarios{
+width: 240px;
+}
+.col-profesional-centro .casilla-inferior .contenido-comentarios, .col-profesional-centro .casilla-inferior .contenido-amigos{
+height: 140px;
+}
+.col-profesional-centro .casilla-inferior .superior-amigos, .col-profesional-centro .casilla-inferior .contenido-amigos,
+.col-profesional-centro .casilla-inferior .inferior-amigos{
+width: 230px;
+}
+.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos,
+.col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .inferior-amigos{
+height: 50px;
+}
+/*<-------*/
 /**/
 .col-profesional-derecha .superior-col, .col-profesional-derecha .clasificados-col,
 .col-profesional-derecha .publicidad-col, .col-profesional-derecha .inferior-col{
