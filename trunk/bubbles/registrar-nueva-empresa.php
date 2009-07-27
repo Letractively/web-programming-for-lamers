@@ -1,8 +1,24 @@
 <?php include('header.php'); ?>
-<?php include('includes/clases/empresa.class.php');?>
+<?php include('includes/clases/usuario.class.php');?>
 
+<div class="col-izquierda">
+	<?php include('contenido/form-login-usuario.php'); ?>
+	<?php include('contenido/form-login-empresa.php'); ?>
+</div>
 
+<div class="col-central">
 <?php
+
+// Los primeros BUCLES (IF) analizan los POST , para saber A QUE PAGINA VAMOS.
+// Los segundos BUCLES (IF) analizan los pasos en los $_SESSION[] , para saber EN QUE PAGINA ESTAMOS.
+
+////////////////////////////////////////PASO 0
+if(!(isset($_GET['reg'])) && !(isset($_POST["paso1"])) && !(isset($_POST["paso2"]))){
+	$_SESSION['id_consulta'] = genera_password(8);
+	include('contenido/registrar-empresa.php');
+}
+
+////////////////////////////////////////PASO 1
 if(isset($_POST["paso1"])){
 	//$tmp = unserialize($_POST["tmp"]);
 	// El form fue procesado por js
@@ -67,7 +83,7 @@ if(isset($_POST["paso1"])){
 											$_SESSION['feDeseaProfesionales'],
 											$_SESSION['feStatus']);
 
-echo 'El resultado del ingreso de su Empresa es: ' . $resultadoQuery;
+	echo 'El resultado del ingreso de su Empresa es: ' . $resultadoQuery;
 	if($resultadoQuery > 0){
 		$nuevoReg = new empresa($resultadoQuery);
 		include('contenido/registrar-verificar-empresa.php');	// Verificacion a Mail -->
@@ -76,8 +92,6 @@ echo 'El resultado del ingreso de su Empresa es: ' . $resultadoQuery;
 		include('contenido/registrar-error.php');
 	}
 }
-
-
 
 ////////////////////////////////////////VERIFICACION DE BIENVENIDA//Verificacion desde mail <----
 if((isset($_GET['reg'])) && (isset($_GET['id']))){
@@ -112,12 +126,7 @@ if((isset($_GET['reg'])) && (isset($_GET['id']))){
 	}
 	include('contenido/registrar-bienvenido-empresa.php');		//-->Link al perfil de la empresa.
 }
-
-
-if(!(isset($_GET['reg'])) && !(isset($_POST["paso1"])) && !(isset($_POST["paso2"]))){
-	$_SESSION['id_consulta'] = genera_password(8);
-	include('contenido/registrar-empresa.php');
-}
 ?>
+</div>
 	
 <?php include('footer.php'); ?>

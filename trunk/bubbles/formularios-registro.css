@@ -1,17 +1,196 @@
 /*******************************/
 /*FORMULARIOS DE REGISTRO*/
-.borde-reg-empresa{
+/*******************************/
+/*FORMULARIOS DE REGISTRO EN HOME*/
+form.registro{
+}		/*Ancho máximo del FORM*/
+form.registro p, .registrar-empresa p{
+margin: 0px;
+}
+.login-usuario{
 border: 0;
 background-color: #ffffff;
 float: left;
 overflow: hidden;
-width: 545px;
-height: 540px;
-background-image: url('imagenes/borde-reg-empresa.png');
+width: 197px;
+height: 180px;
+background-image: url('imagenes/borde-login-usuario.png');
 background-repeat: no-repeat;
 }
-.interior-reg-empresa{
+.form-login-usuario{
+margin-top: 60px;
+border-left: 2px solid #42a0d2;
+border-right: 2px solid #42a0d2;
+float: left;
+overflow: hidden;
+width: 193px;
+height: 110px;
+background-color: #4bbeea;
+}
+.login-empresa{
 border: 0;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 197px;
+height: 180px;
+background-image: url('imagenes/borde-login-empresa.png');
+background-repeat: no-repeat;
+}
+.form-login-empresa{
+margin-top: 60px;
+border-left: 2px solid #42a0d2;
+border-right: 2px solid #42a0d2;
+float: left;
+overflow: hidden;
+width: 192px;
+height: 111px;
+background-color: #c4c6c3;
+}
+.tabla-registrar{
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 10px;
+margin-left: 20px;
+height: 160px;
+width: 280px;
+table-layout: fixed;
+}
+.tabla-registrar td, .tabla-registrar th, .tabla-registrar tr , .tabla-registrar .boton1{
+text-align: center;
+margin: 0px;
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+/*border: 1px solid black;*/
+border-width: 0px;
+margin: 0;
+/*color: #ffffff;*/
+height: 20px;
+}
+.tabla-registrar .boton1{
+width: 70px;
+text-align: center;
+color #ffffff;
+}
+/*.tabla-login td, .tabla-login th, .tabla-login tr{
+text-align: center;
+padding: 2px;
+border: 0;
+margin: 0;
+}*/
+
+.tabla-registrar-text{
+width:130px;
+height:16px;
+}
+
+/*FORMULARIOS DE REGISTRO EN PAGINAS DE REGISTRO*/
+.registrar-empresa{
+border: 1px solid black;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 545px;
+height: auto;
+/*background-image: url('imagenes/borde-reg-empresa.png');*/
+background-repeat: no-repeat;
+}
+.registrar-empresa .superior-reg-empresa, .registrar-empresa .superior-form1,
+.registrar-empresa .form1-reg-empresa, .registrar-empresa .superior-form2,
+.registrar-empresa .form2-reg-empresa, .registrar-empresa .inferior-form2,
+.registrar-empresa .form3-reg-empresa, .registrar-empresa .contenedor-advertencias,
+.registrar-empresa .enviar-reg, .registrar-empresa .inferior-reg-empresa{
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 545px;
+}
+.registrar-empresa .superior-reg-empresa{
+height: 26px;
+}
+.superior-reg-empresa .cabeza-munieco, .registrar-empresa .solapa-empresa,
+.registrar-empresa .solapa-profesional{
+border: 0;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+height: 26px;
+}
+.superior-reg-empresa .cabeza-munieco{
+background-image: url('imagenes/cabeza-munieco.png');
+background-repeat: no-repeat;
+width: 163px;
+height: 26px;
+margin-left: 63px;
+}
+.registrar-empresa .solapa-empresa{
+background-image: url('imagenes/solapa-reg-empresa.png');
+background-repeat: no-repeat;
+width: 121px;
+margin-top: 2px;
+}
+.registrar-empresa .solapa-profesional{
+background-image: url('imagenes/solapa-reg-profesional.png');
+background-repeat: no-repeat;
+width: 123px;
+margin-top: 2px;
+}
+.registrar-empresa .superior-form1, .registrar-empresa .superior-form2,
+.registrar-empresa .inferior-form2, .registrar-empresa .inferior-reg-empresa{
+height: 7px;
+}
+.registrar-empresa .superior-form1{
+background-image: url('imagenes/superior-form1-empresa.png');
+background-repeat: no-repeat;
+}
+.registrar-empresa .superior-form2{
+background-image: url('imagenes/superior-form2-empresa.png');
+background-repeat: no-repeat;
+height: 5px;
+}
+.registrar-empresa .inferior-form2{
+background-image: url('imagenes/inferior-form2-empresa.png');
+background-repeat: no-repeat;
+height: 5px;
+}
+.registrar-empresa .inferior-reg-empresa{
+background-image: url('imagenes/inferior-reg-empresa.png');
+background-repeat: no-repeat;
+}
+.registrar-empresa .form1-reg-empresa{
+background-image: url('imagenes/form1-reg-empresa.jpg');
+background-repeat: no-repeat;
+height: 132px;
+}
+.registrar-empresa .form2-reg-empresa{
+height: 210px;
+background-color: #67686a;
+}
+.registrar-empresa .form3-reg-empresa{
+height: 120px;
+width: 541px;
+border-right: 2px solid #67686a;
+border-left: 2px solid #67686a;
+}
+.registrar-empresa .contenedor-advertencias{
+height: auto;
+width: 541px;
+border-right: 2px solid #67686a;
+border-left: 2px solid #67686a;
+}
+.registrar-empresa .enviar-reg{
+height: 30px;
+width: 541px;
+border-right: 2px solid #67686a;
+border-left: 2px solid #67686a;
+}
+
+/*******/
+/* LOS ESTILOS DE EMPRESA DEBEN DISPENSARSE DESDE AQUI ----> */
+.interior-reg-empresa{
+border: 1px solid black;
 margin-left: 2px;
 margin-top: 165px;
 background-color: #ffffff;
@@ -19,9 +198,12 @@ float: left;
 overflow: hidden;
 width: 541px;
 height: 300px;
-background-image: url('imagenes/interior-reg-empresa.png');
+/*background-image: url('imagenes/interior-reg-empresa.png');*/
 background-repeat: no-repeat;
 }
+/* <---- HASTA AQUI ---------------------------------------- */
+/*******/
+
 .borde-reg-usuario{
 border: 0;
 background-color: #ffffff;
@@ -68,59 +250,59 @@ border-left: 2px solid #0081c5;
 border-right: 2px solid #0081c5;
 }
 /*FORMULARIO DE REGISTRO DE USUARIO*/
-.superior-reg-usuario .usuario{
+.superior-reg-usuario .usuario, .form1-reg-empresa .usuario{
 float: left;
 width: 149px;
 height: 35px;
-margin-top: 35px;
+margin-top: 5px;
 position: absolute;
 margin-left: 230px;
 color: #0081c5;
 }
-.superior-reg-usuario .contrasenia{
+.superior-reg-usuario .contrasenia, .form1-reg-empresa .contrasenia{
 float: left;
 width: 149px;
 height: 35px;
-margin-top: 78px;
+margin-top: 48px;
 position: absolute;
 margin-left: 230px;
 color: #0081c5;
 }
-.superior-reg-usuario .repetir-contrasenia{
+.superior-reg-usuario .repetir-contrasenia, .form1-reg-empresa .repetir-contrasenia{
 float: left;
 width: 149px;
 height: 35px;
-margin-top: 78px;
+margin-top: 48px;
 position: absolute;
 margin-left: 390px;
 color: #0081c5;
 }
-.superior-reg-usuario .pregunta-secreta{
+.superior-reg-usuario .pregunta-secreta, .form1-reg-empresa .pregunta-secreta{
 float: left;
 width: 149px;
 height: 35px;
-margin-top: 118px;
+margin-top: 88px;
 position: absolute;
 margin-left: 230px;
 color: #0081c5;
 }
-.superior-reg-usuario .respuesta{
+.superior-reg-usuario .respuesta, .form1-reg-empresa .respuesta{
 float: left;
 width: 149px;
 height: 35px;
-margin-top: 118px;
+margin-top: 88px;
 position: absolute;
 margin-left: 390px;
 color: #0081c5;
 }
-.superior-reg-usuario input{
+.superior-reg-usuario input, .form1-reg-empresa input{
 /*height: 18px;*/
 width: 140px;
 /*border: 0px;*/
 padding: 0px;
 margin: 2px;
 }
-.superior-reg-usuario p{
+.superior-reg-usuario p, .form-reg-empresa p{
 font-size: 12px;
 }
 .tabla-registro-2{
@@ -214,11 +396,6 @@ padding: 0px;
 margin-left: 15px;
 }
 /******DINAMISMO CON VALIDACION*******/
-form.registro {
-}		/*Ancho máximo del FORM*/
-form.registro p{
-margin: 0px;
-}
 em.error {							/*Estilo dinamico para el elemento de error*/
   /*background:url("jquery-validate/images/unchecked.gif") no-repeat 0px 0px;*/
   padding-left: 16px;

@@ -5,10 +5,10 @@
 		<p>col-contenido-home</p>
 	</div>
 	<div class="col-registrarse">
-		<p>col-registrarse</p>
+		<?php include('contenido/form-registrarse-usuario.php'); ?>
 	</div>
 	<div class="col-derecha">
-		<p>col-usuarios-destacados</p>
+		<?php include('contenido/usuarios-destacados-col.php'); ?>
 	</div>
 	<div class="col-derecha">
 		<?php include('contenido/form-login-usuario.php'); ?>
