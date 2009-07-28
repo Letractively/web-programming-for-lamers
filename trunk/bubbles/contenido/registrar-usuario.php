@@ -122,6 +122,7 @@ $(document).ready(function(){
 <div class="borde-reg-usuario">
 	<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="registro" id="registrarForm">
 		<div class="superior-reg-usuario">
+		<div style="margin-top: 30px;">
 			<div class="usuario">
 				<p><strong>*Usuario</strong></p>
 				<p><input type="text" name="fuAlias" id="fuAlias" /></p>
@@ -142,6 +143,7 @@ $(document).ready(function(){
 				<p><strong>*Respuesta</strong></p>
 				<p><input type="text" name="fuRespuestaSecreta" id="fuRespuestaSecreta" /></p>
 			</div>
+		</div>
 		</div>
 		<div class="interior-reg-usuario">
 			<table class="tabla-registro-2">

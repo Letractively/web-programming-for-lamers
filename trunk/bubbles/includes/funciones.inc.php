@@ -90,6 +90,21 @@ eregi_replace($exp_reg, "", md5(time())) .
 eregi_replace($exp_reg, "", md5(time())),0, $longitud);
 }
 
+function genera_capcha($longitud,$tipo="alfanumerico")
+{
+	if ($tipo=="alfanumerico")
+	 {
+		$exp_reg="[^A-Z0-9]";
+	 } 
+	elseif ($tipo=="numerico")
+	{
+		$exp_reg="[^0-9]";
+	}
+return substr(eregi_replace($exp_reg, "", md5(time()*2)) .
+eregi_replace($exp_reg, "", md5(time())) .
+eregi_replace($exp_reg, "", md5(time()*3)),0, $longitud);
+}
+
 // LOS TRES METODOS SIGUIENTES SE INCLUYERON DENTRO DE myquery.class.php,
 // NO UTILIZARLAS DESDE AQUI, BORRARLAS CUANDO SE PUEDA!!
 
