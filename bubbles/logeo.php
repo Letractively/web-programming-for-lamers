@@ -18,7 +18,7 @@ if(isset($_POST['usuario'])){
 		header('Location:' . $uri);
 	}
 	else {
-		header("Location: index.php?error=11");
+		header("Location: error-login.php?entidad=profesional&error=ingresos_incorrectos");
 	}
 }
 if(isset($_POST['empresa'])){
@@ -35,7 +35,7 @@ if(isset($_POST['empresa'])){
 		header('Location:' . $uri);
 	} 
 	else {
-		header("Location: index.php?error=12");
+		header("Location: error-login.php?entidad=empresa&error=ingresos_incorrectos");
 	}
 }
 ?>

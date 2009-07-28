@@ -1,6 +1,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$("#registrarForm").validate({
+		errorLabelContainer: $(".registrar-empresa .contenedor-advertencias"),	//DIV Contenedor de errores de REGISTRO}
+		wrapper: 'li',										//TAG separador entre ERROR y ERROR. Aqui se utiliza como lista y retorno de carro.
 		//errorElement: "em",								//TAG que sera agregado en caso de cotejar un ERROR.
 		success: function(label) {						//En caso de SUCCESS del INPUT adhiere la class="success" a <label /> y asi
 			//label.text("ok!").addClass("success");	//obtenemos el circulito azul.
@@ -59,8 +61,6 @@ $(document).ready(function(){
 				rangelength: [1, 18],
 				number: true
 			},
-			fePiso: "required",
-			feOficina: "required",
 			fePais: "required",
 			feCiudad: "required",
 			feSeguridad: {
@@ -71,13 +71,13 @@ $(document).ready(function(){
 		},
 		messages: {
 			feAliasUsuario: {
-				required: '',
-				minlength: '',
-				remote: ''
+				required: '* Debe introducir su Usuario',
+				minlength: '* Su Usuario no puede tener menos de 2 caracteres',
+				remote: '* Su Usuario ya se encuentra registrado, por favor escoja otro'
 			},
 			feContraseniaUsuario: {
-				required: '',
-				minlength: ''
+				required: '* Debe introducir una contraseña',
+				minlength: '* Su contraseña debe tener por lo menos 6 caracteres'
 			},
 			fePreguntaSecretaUsuario: {
 				required: ''
@@ -88,18 +88,16 @@ $(document).ready(function(){
 			feVerificarContraseniaUsuario: {
 				required: '',
 				minlength: '',
-				equalTo: ''
+				equalTo: '* Sus Contraseñas introducidas no coinciden'
 			},
-			feSeguridad: '',
+			feSeguridad: '* El texto copiado de la Imagen es incorrecto',
 			feEmailUsuario: '',
-			feAceptoTerminos: '!!',
+			feAceptoTerminos: '* Debe Aceptar nuestros TERMINOS y CONDICIONES',
 			feNacimientousuario: '',
 			feRazonSocial: '',
 			feCalle: '',
 			feAltura: '',
-			fePiso: '',
-			feOficina: '',
-			feNacimientoUsuario: '',
+			feNacimientoUsuario: '* Su Fecha de Nac. tiene un formato incorrecto (un ejemplo correcto seria: 24/11/2001)',
 			feEmailUsuario: '',
 			feSexoUsuario: '',
 			fePais: '',
@@ -139,14 +137,6 @@ $(document).ready(function(){
 });
 </script>
 
-<style type="text/css">
-#registrarForm label.error {
-	margin-left: 10px;
-	width: auto;
-	display: inline;
-	color: #FF0000;
-}
-</style>
 
 <div class="registrar-empresa">
 	<div class="superior-reg-empresa">
@@ -163,23 +153,23 @@ $(document).ready(function(){
 	<div class="form1-reg-empresa">
 		<div class="usuario">
 			<p><strong>*Usuario</strong></p>
-			<p><input type="text" name="fuAlias" id="fuAlias" /></p>
+			<p><input type="text" name="feAliasUsuario" id="feAliasUsuario" /></p>
 		</div>
 		<div class="contrasenia">
 			<p><strong>*Contraseña</strong></p>
-			<p><input type="password" name="fuContrasenia" id="fuContrasenia" /></p>
+			<p><input type="password" name="feContraseniaUsuario" id="feContraseniaUsuario" /></p>
 		</div>
 		<div class="repetir-contrasenia">
 			<p><strong>*Repetir Contraseña</strong></p>
-			<p><input type="password" name="fuVerificarContrasenia" id="fuVerificarContrasenia" /></p>
+			<p><input type="password" name="feVerificarContraseniaUsuario" id="feVerificarContraseniausuario" /></p>
 		</div>
 		<div class="pregunta-secreta">
 			<p><strong>*Pregunta Secreta</strong></p>
-			<p><input type="text" name="fuPreguntaSecreta" id="fuPreguntaSecreta" /></p>
+			<p><input type="text" name="fePreguntaSecretaUsuario" id="fePreguntaSecretaUsuario" /></p>
 		</div>
 		<div class="respuesta">
 			<p><strong>*Respuesta</strong></p>
-			<p><input type="text" name="fuRespuestaSecreta" id="fuRespuestaSecreta" /></p>
+			<p><input type="text" name="feRespuestaSecretaUsuario" id="feRespuestaSecretaUsuario" /></p>
 		</div>
 	</div>
 	<div class="superior-form2">
@@ -188,15 +178,14 @@ $(document).ready(function(){
 			<table class="tabla-registro-2">
 			<tbody>
 			<tr>
-				<th>*Nombre</th><th>Apellido</th><th>*Fecha de Nac.</th>
+				<th>*Empresa</th><th>*Domicilio Legal</th><th>*Num.</th><th>Piso</th><th>Dpto.</th>
 			</tr>
 			<tr>
-				<td><input type="text" name="fuNombres" id="fuNombres" /></td>
-				<td><input type="text" name="fuApellidos" id="fuApellidos" /></td>
-				<td><input type="text" name="fuNacimiento" id="fuNacimiento" /></td>
-			</tr>
-			<tr>
-				<th></th><th></th><th>DD / MM / AAAA</th>
+				<td><input type="text" name="feRazonSocial" id="feRazonSocial" /></td>
+				<td><input type="text" name="feCalle" id="feCalle" /></td>
+				<td><input type="text" name="feAltura" id="feAltura" /></td>
+				<td><input type="text" name="fePiso" id="fePiso" /></td>
+				<td><input type="text" name="feOficina" id="feOficina" /></td>
 			</tr>
 			</tbody>
 			</table>
@@ -206,17 +195,20 @@ $(document).ready(function(){
 			<table class="tabla-registro-3">
 			<tbody>
 			<tr>
-				<th>Empresa</th><th>*E-mail</th><th>*Sexo</th><th>*Pais</th>
+				<th>*Fecha de Nac.</th><th>*E-mail</th><th>*Sexo</th><th>*Pais</th>
 			</tr>
 			<tr>
-				<td><input type="text" name="fuEmpresa" id="fuEmpresa" /></td>
-				<td><input type="text" name="fuEmail" id="fuEmail" /></td>
-				<td><select name="fuSexo" id="fuSexo" >
+				<td><input type="text" name="feNacimientoUsuario" id="feNacimientoUsuario" /></td>
+				<td><input type="text" name="feEmailUsuario" id="feEmailUsuario" /></td>
+				<td><select name="feSexoUsuario" id="feSexoUsuario">
 					<option value=""></option>
 					<option value="Masculino">Masculino</option>
 					<option value="Femenino">Femenino</option>
 					</select></td>
-				<td><input type="text" name="fuPaisResidencia" id="fuPaisResidencia" /></td>
+				<td><input type="text" name="fePais" id="fePais" /></td>
+			</tr>
+			<tr>
+				<th>DD / MM / AAAA</th><th></th><th></th><th></th>
 			</tr>
 			</tbody>
 			</table>
@@ -225,38 +217,13 @@ $(document).ready(function(){
 			<table class="tabla-registro-4">
 			<tbody>
 			<tr>
-				<th>*Profesion</th><th>Profesion 2</th><th>Profesion 3</th><th>*Nivel</th>
+				<th>*Ciudad</th><th></th><th>*Cod. Area</th><th>*Tel Particular</th>
 			</tr>
 			<tr>
-				<td><select name="fuProfesion1" id="fuProfesion1" >
-					<option value=""></option>
-					<option value="Diseñador">Diseñador</option>
-					<option value="Desarrollador">Desarrollador</option>
-					<option value="Programador">Programador</option>
-					</select>
-				</td>
-				<td><select name="fuProfesion2" id="fuProfesion2" >
-					<option value=""></option>
-					<option value="Diseñador">Diseñador</option>
-					<option value="Desarrollador">Desarrollador</option>
-					<option value="Programador">Programador</option>
-					</select>
-				</td>
-				<td><select name="fuProfesion3" id="fuProfesion3" >
-					<option value=""></option>
-					<option value="Diseñador">Diseñador</option>
-					<option value="Desarrollador">Desarrollador</option>
-					<option value="Programador">Programador</option>
-					</select>
-				</td>
-				<td>
-					<select name="fuNivelProfesion" id="fuNivelProfesion">
-					<option value=""></option>
-					<option value="Trainee">Trainee</option>
-					<option value="Ssr">Ssr</option>
-					<option value="Sr">Sr</option>
-					</select>
-				</td>
+				<td><input type="text" name="feCiudad" id="feCiudad" /></td>
+				<td><input type="hidden" name="fePuestoUsuario" id="fePuestoUsuario" value="OBSOLETO"></td>
+				<td><input type="text" name="fePrefijoUsuario" id="fePrefijoUsuario" /></td>
+				<td><input type="text" name="feTelUsuario" id="feTelUsuario" /></td>
 			</tr>
 			</tbody>
 			</table>
@@ -265,16 +232,15 @@ $(document).ready(function(){
 	<div class="inferior-form2">
 	</div>
 	<div class="form3-reg-empresa">
-		<p><input type="checkbox" name="fuDeseaNews" id="fuDeseaNews" value="Si" />Deseo suscribirme a la lista de correo de Newsletters y eventos</p>
-		<p><input type="checkbox" name="fuDeseaLaborales" id="fuDeseaLaborales" value="Si" />Deseo suscribirme a la lista de correo de Ofertas laborales</p>
-		<p><input type="checkbox" name="fuDeseaProfesionales" id="fuDeseaProfesionales" value="Si" />Deseo suscribirme a la lista de Capacitaciones y cursos para profesionales</p>
-		<p><input type="checkbox" name="fuAceptoTerminos" id="fuAceptoTerminos" value="Si" />Acepto los Terminos y Condiciones de Bubbles</p>
-		<p><img src="includes/genera_img.php" id="fuGeneraImg" />Ingrese el texto de la imagen:<input type="text" name="fuSeguridad" id="fuSeguridad" /></p>
-		<input type="hidden" name="fuStatus" value="" id="fuStatus" />
+		<p><input type="checkbox" name="feDeseaNews" id="feDeseaNews" value="Si" />Deseo suscribirme a la lista de correo de Newsletters y eventos</p>
+		<p><input type="checkbox" name="feDeseaLaborales" id="feDeseaLaborales" value="Si" />Deseo suscribirme a la lista de correo de Ofertas laborales</p>
+		<p><input type="checkbox" name="feDeseaProfesionales" id="feDeseaProfesionales" value="Si" />Deseo suscribirme a la lista de Capacitaciones y cursos para profesionales</p>
+		<p><input type="checkbox" name="feAceptoTerminos" id="feAceptoTerminos" value="Si" />Acepto los Terminos y Condiciones de Bubbles</p>
+		<p><img src="includes/genera_img.php" id="feGeneraImg" />Ingrese el texto de la imagen:<input type="text" name="feSeguridad" id="feSeguridad" /></p>
+		<input type="hidden" name="feStatus" value="" id="feStatus" />
 		<input type="hidden" name="paso1" value="paso1" />
 	</div>
 	<div class="contenedor-advertencias">
-		<p>(contenedor-advertencias)</p>
 	</div>
 	<div class="enviar-reg">
 		<p class="al-medio"><input type="submit" value="Enviar" name="paso1" /></p>
@@ -285,6 +251,7 @@ $(document).ready(function(){
 </div>
 
 
+<!--
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="registro" id="registrarForm">
 <p>*Usuario</p>
 <input type="text" name="feAliasUsuario" id="feAliasUsuario" />
@@ -321,12 +288,7 @@ $(document).ready(function(){
 <p>*Ciudad</p>
 <input type="text" name="feCiudad" id="feCiudad" />
 <p>*Cargo</p>
-<select name="fePuestoUsuario" id="fePuestoUsuario" >
-<option value=""></option>
-<option value="Trainee">Trainee</option>
-<option value="Ssr">Ssr</option>
-<option value="Sr">Sr</option>
-</select>
+<input type="hidden" name="fePuestoUsuario" id="fePuestoUsuario" value="OBSOLETO">
 <p>*Cod. Area</p>
 <input type="text" name="fePrefijoUsuario" id="fePrefijoUsuario" />
 <p>*Tel. Particular</p>
@@ -341,4 +303,4 @@ $(document).ready(function(){
 
 <input type="hidden" name="feStatus" value="" id="feStatus" />
 <input type="submit" value="Enviar" name="paso1" />
-</form>
+</form> -->

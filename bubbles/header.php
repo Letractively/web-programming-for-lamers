@@ -24,6 +24,11 @@ if((!strstr($_SERVER['REQUEST_URI'],"index.php"))
 	){	//Tambien puede el cliente entrar sin logueo a paginas con $_GET['entidad-visitada']
 		include("includes/seguridad.php");
 }
+
+//Regenero en cada refresco el id_consulta y el captcha...
+$_SESSION['id_consulta'] = genera_password(8);
+$_SESSION['capcha'] = genera_capcha(8);
+
 $desabilitar_login = ''; //Habilitamos los input de logeo por default!
 
 // Si el cliente requiere una pagina "registrar*.php" habro una sesion de registro...

@@ -5,7 +5,7 @@ session_start();
 include("config.inc.php");
 
 //recogemos el texto por el URL que enviamos a generar desde el link de imagen del HTML de nuestro formulario
-$codigo=$_SESSION['id_consulta'];
+$codigo=$_SESSION['capcha'];
 
 //nombres tipografías a usar (sin extensión .ttf)
 $tipografias = array("arial","comic","times");

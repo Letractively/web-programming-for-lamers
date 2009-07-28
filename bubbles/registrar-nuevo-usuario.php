@@ -14,7 +14,6 @@
 
 ////////////////////////////////////////PASO 0
 if(!(isset($_GET['reg'])) && !(isset($_POST["paso1"])) && !(isset($_POST["paso2"])) && !(isset($_POST["paso3"])) && !(isset($_POST["paso4"]))){
-	$_SESSION['id_consulta'] = genera_password(8);
 	include('contenido/registrar-usuario.php');
 }
 

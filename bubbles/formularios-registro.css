@@ -186,6 +186,64 @@ width: 541px;
 border-right: 2px solid #67686a;
 border-left: 2px solid #67686a;
 }
+.form2-reg-empresa #feRazonSocial{
+width: 100px;
+}
+.form2-reg-empresa #feCalle{
+width: 180px;
+}
+.form2-reg-empresa #feAltura{
+width: 50px;
+}
+.form2-reg-empresa #fePiso{
+width: 40px;
+}
+.form2-reg-empresa #feOficina{
+width: 40px;
+}
+.form1-reg-empresa, .form2-reg-empresa, .form3-reg-empresa{
+font-size:12px;
+}
+.tabla-registro-3{
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 4px;
+margin-left: 20px;
+height: 25px;
+width: 490px;
+}
+.form2-reg-empresa #feNacimientoUsuario{
+width: 80px;
+}
+.form2-reg-empresa #feEmailUsuario{
+width: 180px;
+}
+.form2-reg-empresa #feSexoUsuario{
+width: 80px;
+}
+.form2-reg-empresa #fePais{
+width: 100px;
+}
+.tabla-registro-4{
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 4px;
+margin-left: 20px;
+height: 25px;
+width: 490px;
+}
+.form2-reg-empresa #feCiudad{
+width: 120px;
+}
+.form2-reg-empresa #fePuestoUsuario{
+width: 120px;
+}
+.form2-reg-empresa #fePrefijoUsuario{
+width: 120px;
+}
+.form2-reg-empresa #feTelUsuario{
+width: 200px;
+}
 
 /*******/
 /* LOS ESTILOS DE EMPRESA DEBEN DISPENSARSE DESDE AQUI ----> */
@@ -386,16 +444,23 @@ width: 120px;
 width: 100px;
 }
 /*CheckBoxes...*/
-input#fuDeseaNews{
+input#fuDeseaNews, input#feDeseaNews{
 padding: 0px;
 margin-top: 15px;
 margin-left: 15px;
 }
-input#fuDeseaLaborales, input#fuAceptoTerminos , input#fuDeseaProfesionales, img#fuGeneraImg{
+input#fuDeseaLaborales, input#fuAceptoTerminos , input#fuDeseaProfesionales, img#fuGeneraImg,
+input#feDeseaLaborales, input#feAceptoTerminos , input#feDeseaProfesionales, img#feGeneraImg{
 padding: 0px;
 margin-left: 15px;
 }
 /******DINAMISMO CON VALIDACION*******/
+#registrarForm label.error {
+	margin-left: 10px;
+	width: auto;
+	display: inline;
+	color: #FF0000;
+}
 em.error {							/*Estilo dinamico para el elemento de error*/
   /*background:url("jquery-validate/images/unchecked.gif") no-repeat 0px 0px;*/
   padding-left: 16px;
@@ -408,7 +473,7 @@ em.success {						/*Estilo dinámico para el elemento de error cuando APRUEBA las
 form.registro label.error {
 	margin-left: auto;
 	width: 250px;
-	font-size: 16px;
+	font-size: 10px;
 	color: red;
 }
 em.error {
