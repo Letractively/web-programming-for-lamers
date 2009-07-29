@@ -140,32 +140,53 @@ height: 50px;
 /**/
 /*CLASES PARA HOME ----->*/
 .form-registrarse-usuarios{
-height: 400px;
+float: left;
+overflow: hidden;
+height: 356px;
+width: 285px;
 }
 .form-registrarse-usuarios .superior, .form-registrarse-usuarios .medio,
 .form-registrarse-usuarios .formulario, .form-registrarse-usuarios .inferior{
-border: 1px solid #000000;
-background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 340px;
+width: 285px;
 }
-.form-registrarse-usuarios .superior, .form-registrarse-usuarios .inferior{
-height: 50px;
+.form-registrarse-usuarios .superior{
+height: 39px;
 }
-.form-registrarse-usuarios .solapa-empresas, .form-registrarse-usuarios .solapa-usuarios{
-border: 1px solid #000000;
-background-color: #dddddd;
+.form-registrarse-usuarios .inferior{
+height: 20px;
+background-image: url(imagenes/inferior-reg-usuarios.png);
+background-repeat: no-repeat;
+}
+.form-registrarse-usuarios .solapa-empresas{
 float: left;
 overflow: hidden;
-width: 160px;
-height: 40px;
+width: 141px;
+height: 39px;
+background-image: url(imagenes/solapa-reg-empresas.png);
+background-repeat: no-repeat;
+}
+
+.form-registrarse-usuarios .solapa-usuarios{
+float: left;
+overflow: hidden;
+width: 144px;
+height: 39px;
+background-image: url(imagenes/solapa-reg-usuarios.png);
+background-repeat: no-repeat;
 }
 .form-registrarse-usuarios .medio{
-height: 100px;
+height: 130px;
+background-image: url(imagenes/arte-reg-profesionales.jpg);
+background-repeat: no-repeat;
 }
 .form-registrarse-usuarios .formulario{
-height: 190px;
+height: 178px;
+width: 283px;
+background-color: #6cb4e4;
+border-left: 1px solid #46a1d6;
+border-right: 1px solid #46a1d6;
 }
 .usuarios-destacados-col{
 border: 1px solid #000000;
@@ -191,12 +212,12 @@ height: 240px;
 }
 
 .col-centroizquierda .col-contenido-home{
-border: 1px solid #000000;
-background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 790px;
-height:  180px;
+width: 759px;
+height:  202px;
+background-image: url(imagenes/contenido-home-superior.jpg);
+background-repeat: no-repeat;
 }
 .col-centroizquierda .col-registrarse{
 border: 1px solid #000000;
