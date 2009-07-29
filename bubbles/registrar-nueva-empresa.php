@@ -15,6 +15,10 @@
 ////////////////////////////////////////PASO 0
 if(!(isset($_GET['reg'])) && !(isset($_POST["paso1"])) && !(isset($_POST["paso2"]))){
 //DEL INDEX llegaran los primeros datos para el form. Los siguientes pasos cotejaran, pues, los "values" iniciales correspondientes:
+	//Setear las variables conocidas a '', pues el HTML las requerirá de todas formas:
+	$fiAlias = '';
+	$fiContrasenia = '';
+	$fiEmail = '';
 	if(isset($_POST['fiAlias'])){
 		$fiAlias = $_POST['fiAlias'];
 	}

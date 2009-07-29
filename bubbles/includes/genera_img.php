@@ -45,8 +45,16 @@ for($caracter=0; $caracter<$profundidad_codigo; $caracter++){
   $espacio +=$tamano_fuente;
 }
 
+//envio los headers HTTP para indicar el NO CACHEO de la img...
+header("Expires: Sun, 1 Jan 2000 12:00:00 GMT");
+header("Last-Modified: ".gmdate("D, d M Y H:i:s")."GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+
 //cabecera HTTP la cual indica al navegador que la imagen que estamos generando es .PNG
 header('Content-type: image/png');
+
 
 //genera un png dinámico
 imagepng($im);
