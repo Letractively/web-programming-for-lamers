@@ -153,11 +153,11 @@ $(document).ready(function(){
 	<div class="form1-reg-empresa">
 		<div class="usuario">
 			<p><strong>*Usuario</strong></p>
-			<p><input type="text" name="feAliasUsuario" id="feAliasUsuario" /></p>
+			<p><input type="text" name="feAliasUsuario" id="feAliasUsuario" value="<?php echo $fiAlias; ?>" /></p>
 		</div>
 		<div class="contrasenia">
 			<p><strong>*Contraseña</strong></p>
-			<p><input type="password" name="feContraseniaUsuario" id="feContraseniaUsuario" /></p>
+			<p><input type="password" name="feContraseniaUsuario" id="feContraseniaUsuario" value="<?php echo $fiContrasenia; ?>" /></p>
 		</div>
 		<div class="repetir-contrasenia">
 			<p><strong>*Repetir Contraseña</strong></p>
@@ -199,7 +199,7 @@ $(document).ready(function(){
 			</tr>
 			<tr>
 				<td><input type="text" name="feNacimientoUsuario" id="feNacimientoUsuario" /></td>
-				<td><input type="text" name="feEmailUsuario" id="feEmailUsuario" /></td>
+				<td><input type="text" name="feEmailUsuario" id="feEmailUsuario" value="<?php echo $fiEmail; ?>" /></td>
 				<td><select name="feSexoUsuario" id="feSexoUsuario">
 					<option value=""></option>
 					<option value="Masculino">Masculino</option>

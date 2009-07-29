@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<?php include('includes/clases/usuario.class.php');?>
+<?php include('includes/clases/empresa.class.php');?>
 
 <div class="col-izquierda">
 	<?php include('contenido/form-login-usuario.php'); ?>
@@ -14,6 +14,16 @@
 
 ////////////////////////////////////////PASO 0
 if(!(isset($_GET['reg'])) && !(isset($_POST["paso1"])) && !(isset($_POST["paso2"]))){
+//DEL INDEX llegaran los primeros datos para el form. Los siguientes pasos cotejaran, pues, los "values" iniciales correspondientes:
+	if(isset($_POST['fiAlias'])){
+		$fiAlias = $_POST['fiAlias'];
+	}
+	if(isset($_POST['fiContrasenia'])){
+		$fiContrasenia = $_POST['fiContrasenia'];
+	}
+	if(isset($_POST['fiEmail'])){
+		$fiEmail = $_POST['fiEmail'];
+	}
 	include('contenido/registrar-empresa.php');
 }
 

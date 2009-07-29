@@ -10,7 +10,7 @@
 	<div class="medio">
 	</div>
 	<div class="formulario">
-		<form action="registrar-nuevo-usuario.php" method="post">
+		<form action="registrar-nueva-empresa.php" method="post">
 			<table class="tabla-registrar">
 			<tr>
 				<th>Usuario:</th><td><input class="tabla-registrar-text" type="text" name="fiAlias" id="name" /></td>

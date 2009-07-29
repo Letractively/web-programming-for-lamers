@@ -125,11 +125,11 @@ $(document).ready(function(){
 		<div style="margin-top: 30px;">
 			<div class="usuario">
 				<p><strong>*Usuario</strong></p>
-				<p><input type="text" name="fuAlias" id="fuAlias" /></p>
+				<p><input type="text" name="fuAlias" id="fuAlias" value="<?php echo $fiAlias; ?>"/></p>
 			</div>
 			<div class="contrasenia">
 				<p><strong>*Contraseña</strong></p>
-				<p><input type="password" name="fuContrasenia" id="fuContrasenia" /></p>
+				<p><input type="password" name="fuContrasenia" id="fuContrasenia" value="<?php echo $fiContrasenia; ?>"/></p>
 			</div>
 			<div class="repetir-contrasenia">
 				<p><strong>*Repetir Contraseña</strong></p>
@@ -171,7 +171,7 @@ $(document).ready(function(){
 			</tr>
 			<tr>
 				<td><input type="text" name="fuEmpresa" id="fuEmpresa" /></td>
-				<td><input type="text" name="fuEmail" id="fuEmail" /></td>
+				<td><input type="text" name="fuEmail" id="fuEmail" value="<?php echo $fiEmail; ?>"/></td>
 				<td><select name="fuSexo" id="fuSexo" >
 					<option value=""></option>
 					<option value="Masculino">Masculino</option>
