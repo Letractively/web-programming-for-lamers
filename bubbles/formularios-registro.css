@@ -51,8 +51,8 @@ background-color: #c4c6c3;
 border-collapse: collapse;
 border-spacing: 0px;
 margin-top: 10px;
-margin-left: 20px;
-height: 160px;
+margin-left: 0;
+height: 170px;
 width: 280px;
 table-layout: fixed;
 }

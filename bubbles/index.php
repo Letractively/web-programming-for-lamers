@@ -5,7 +5,19 @@
 		<p>col-contenido-home</p>
 	</div>
 	<div class="col-registrarse">
-		<?php include('contenido/form-registrarse-usuario.php'); ?>
+		<?php 
+		if(isset($_GET['solapa_reg'])){
+			if($_GET['solapa_reg'] == 'empresa'){
+				include('contenido/form-registrarse-empresa.php');
+			}
+			else{
+				include('contenido/form-registrarse-usuario.php');
+			}
+		}
+		else{
+				include('contenido/form-registrarse-usuario.php');
+			}
+		?>
 	</div>
 	<div class="col-derecha">
 		<?php include('contenido/usuarios-destacados-col.php'); ?>
