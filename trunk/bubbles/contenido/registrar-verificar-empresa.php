@@ -1,3 +1,4 @@
+<img src="imagenes/verificacion_mail.jpg" />
 <h2>Se ha enviado un mail de verificación a <?php echo $nuevoReg->email_usuario; ?> , confirme su membresia</h2>
 
 <p>El mail enviado debe redireccionar a:</p>
