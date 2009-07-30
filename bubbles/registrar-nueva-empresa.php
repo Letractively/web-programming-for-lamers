@@ -129,8 +129,8 @@ if((isset($_GET['reg'])) && (isset($_GET['id']))){
 		exit;
 	}
 	// Ya verificamos si el 'id', el 'reg' pasados por GET, y el status = NO_CONFIRMADO se condicen...
-	// Si es asi, poner status = 'CV_INCOMPLETO' e incluir el bienvenido...
-	$confirmaReg->status('CV_INCOMPLETO');
+	// Si es asi, poner status = 'NO_ESPECIFICADO' e incluir el bienvenido...
+	$confirmaReg->status('NO_ESPECIFICADO');
 	// Parseo si hay error en la operación....
 	if($confirmaReg->ultimo_error !=''){
 		echo $confirmaReg->ultimo_error;
@@ -140,6 +140,10 @@ if((isset($_GET['reg'])) && (isset($_GET['id']))){
 	include('contenido/registrar-bienvenido-empresa.php');		//-->Link al perfil de la empresa.
 }
 ?>
+</div>
+
+<div class="col-derecha" >
+	<img src="imagenes/relleno1.jpg" />
 </div>
 	
 <?php include('footer.php'); ?>

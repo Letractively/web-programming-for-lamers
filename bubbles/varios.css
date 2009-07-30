@@ -167,6 +167,21 @@ height: 50px;
 }
 /**/
 /*CLASES PARA HOME ----->*/
+.col-centroizquierda .col-contenido-home{
+float: left;
+overflow: hidden;
+width: 759px;
+height:  202px;
+background-image: url(imagenes/contenido-home-superior.jpg);
+background-repeat: no-repeat;
+}
+.col-centroizquierda .col-registrarse{
+border: 1px solid #000000;
+background-color: #dddddd;
+float: left;
+overflow: hidden;
+width: 350px;
+}
 .form-registrarse-usuarios{
 border: 1px solid #000000;
 float: left;
@@ -252,19 +267,36 @@ border-left: 1px solid #95D9E9;
 border-right: 1px solid #95D9E9;
 width: 208px;
 }
-
-.col-centroizquierda .col-contenido-home{
+.ultimo-momento-col{
+border: 1px solid #000000;
+background-color: #ffffff;
 float: left;
 overflow: hidden;
-width: 759px;
-height:  202px;
-background-image: url(imagenes/contenido-home-superior.jpg);
+width: 210px;
+height: 372px;
+}
+.ultimo-momento-col .superior, .ultimo-momento-col .contenido,
+.ultimo-momento-col .inferior{
+border: 1px solid #000000;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 200px;
+}
+.ultimo-momento-col .superior{
+height:50px;
+background-image: url(imagenes/superior-ultimo-momento-col.png);
 background-repeat: no-repeat;
 }
-.col-centroizquierda .col-registrarse{
-border: 1px solid #000000;
-background-color: #dddddd;
-float: left;
-overflow: hidden;
-width: 350px;
+.ultimo-momento-col .contenido{
+background-image: url(imagenes/contenido-ultimo-momento-col.png);
+background-repeat: no-repeat;
+height:50px;
 }
+.ultimo-momento-col .inferior{
+background-image: url(imagenes/inferior-ultimo-momento-col.png);
+background-repeat: no-repeat;
+height:50px;
+}
+
+

@@ -8,28 +8,7 @@ define('USUARIOS', 101);
 ////////////////////////////////////////////////////
 function ckeckLogeo($tipoEntidad, $aliasEntidad, $contrasenia){
 	if( $tipoEntidad == EMPRESAS){
-		$sql = "SELECT id_empresa, contrasenia_usuario FROM empresas WHERE alias_usuario = '$aliasEntidad'";
-		$result = mysql_query($sql);
-		if(!(mysql_error() == '')){
-			echo 'cago -1';
-			echo mysql_error();
-			return  -1;
-		}
-		$numFilas = mysql_num_rows($result);
-		if($numFilas != 1){	//Coteja SI y solo SI existe el usuario 'alias'
-			echo 'cago -2';
-			return -2;
-		}
-		$fila = mysql_fetch_array($result, MYSQL_ASSOC);
-		$contrasenia = md5($contrasenia);
-		if($fila['contrasenia_usuario'] != $contrasenia){	//Compara la contrasenia dada con la del "row" extraido
-			echo 'cago -3';
-			return -3;
-		}
-	return $fila['id_empresa'];
-	}
-	if($tipoEntidad == USUARIOS){
-		$sql = "SELECT id_usuario, contrasenia FROM usuarios WHERE alias = '$aliasEntidad'";
+		$sql = "SELECT id_empresa, contrasenia_usuario, status FROM empresas WHERE alias_usuario = '$aliasEntidad'";
 		$result = mysql_query($sql);
 		if(!(mysql_error() == '')){
 			//echo 'cago -1';
@@ -43,9 +22,30 @@ function ckeckLogeo($tipoEntidad, $aliasEntidad, $contrasenia){
 		}
 		$fila = mysql_fetch_array($result, MYSQL_ASSOC);
 		$contrasenia = md5($contrasenia);
-		if($fila['contrasenia'] != $contrasenia){	//Compara la contrasenia dada con la del "row" extraido
-			//echo 'cago -3';
-			return -3;
+		if(($fila['contrasenia_usuario'] != $contrasenia) || ($fila['status'] == 'NO_CONFIRMADO')){	//Compara la contrasenia dada 
+			//echo 'cago -3';																			//con la del "row" extraido y
+			return -3;																				// que el status no sea NO_CONFIRMADO
+		}
+	return $fila['id_empresa'];
+	}
+	if($tipoEntidad == USUARIOS){
+		$sql = "SELECT id_usuario, contrasenia, status FROM usuarios WHERE alias = '$aliasEntidad'";
+		$result = mysql_query($sql);
+		if(!(mysql_error() == '')){
+			//echo 'cago -1';
+			echo mysql_error();
+			return  -1;
+		}
+		$numFilas = mysql_num_rows($result);
+		if($numFilas != 1){	//Coteja SI y solo SI existe el usuario 'alias'
+			//echo 'cago -2';
+			return -2;
+		}
+		$fila = mysql_fetch_array($result, MYSQL_ASSOC);
+		$contrasenia = md5($contrasenia);
+		if(($fila['contrasenia'] != $contrasenia) || ($fila['status'] == 'NO_CONFIRMADO')){	//Compara la contrasenia dada
+			//echo 'cago -3';																//con la del "row" extraido y
+			return -3;																		// que el status no sea NO_CONFIRMADO
 		}
 	return $fila['id_usuario'];
 	}
