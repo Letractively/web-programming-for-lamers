@@ -1,6 +1,11 @@
-<div class="superior-col">
-	<p>(poner imagen de cabecera)</p>
-</div>
 <div class="clasificados-col">
-	<p>agregar CLASIFICADOS segun criterio</p>
+	<div class="cabecera">
+	</div>
+		<div class="superior">
+	</div>
+	<div class="contenido">
+		<p>agregar CLASIFICADOS segun criterio</p>
+	</div>
+	<div class="inferior">
+	</div>
 </div>

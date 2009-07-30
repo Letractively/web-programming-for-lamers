@@ -2,50 +2,8 @@
 /*FORMULARIOS DE REGISTRO*/
 /*******************************/
 /*FORMULARIOS DE REGISTRO EN HOME*/
-form.registro{
-}		/*Ancho máximo del FORM*/
 form.registro p, .registrar-empresa p{
 margin: 0px;
-}
-.login-usuario{
-border: 0;
-background-color: #ffffff;
-float: left;
-overflow: hidden;
-width: 197px;
-height: 180px;
-background-image: url('imagenes/borde-login-usuario.png');
-background-repeat: no-repeat;
-}
-.form-login-usuario{
-margin-top: 60px;
-border-left: 2px solid #42a0d2;
-border-right: 2px solid #42a0d2;
-float: left;
-overflow: hidden;
-width: 193px;
-height: 110px;
-background-color: #4bbeea;
-}
-.login-empresa{
-border: 0;
-background-color: #ffffff;
-float: left;
-overflow: hidden;
-width: 197px;
-height: 180px;
-background-image: url('imagenes/borde-login-empresa.png');
-background-repeat: no-repeat;
-}
-.form-login-empresa{
-margin-top: 60px;
-border-left: 2px solid #42a0d2;
-border-right: 2px solid #42a0d2;
-float: left;
-overflow: hidden;
-width: 192px;
-height: 111px;
-background-color: #c4c6c3;
 }
 .tabla-registrar{
 border-collapse: collapse;

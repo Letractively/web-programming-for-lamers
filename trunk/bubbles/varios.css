@@ -129,8 +129,36 @@ width: 220px;
 height: 50px;
 }
 .clasificados-col{
-height: 200px;
+border: 1px solid #000000;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+width: 210px;
+height: 590px;
 }
+.clasificados-col .cabecera, .clasificados-col .superior,
+.clasificados-col .contenido, .clasificados-col .inferior{
+float: left;
+overflow: hidden;
+width: 210px;
+}
+.clasificados-col .cabecera{
+height: 72px;
+background-image: url(imagenes/cabecera-clasificados.png);
+background-repeat: no-repeat;
+}
+.clasificados-col .superior{
+height: 0px;
+}
+.clasificados-col .contenido{
+height: 510px;
+}
+.clasificados-col .inferior{
+height: 9px;
+background-image: url(imagenes/inferior-clasificados.png);
+background-repeat: no-repeat;
+}
+
 .publicidad-col{
 height: 200px;
 }
@@ -140,6 +168,7 @@ height: 50px;
 /**/
 /*CLASES PARA HOME ----->*/
 .form-registrarse-usuarios{
+border: 1px solid #000000;
 float: left;
 overflow: hidden;
 height: 356px;
@@ -190,25 +219,38 @@ border-right: 1px solid #46a1d6;
 }
 .usuarios-destacados-col{
 border: 1px solid #000000;
-background-color: #dddddd;
+background-color: #ffffff;
 float: left;
 overflow: hidden;
 width: 210px;
-height: 400px;
+height: 372px;
 }
 .usuarios-destacados-col .cabecera, .usuarios-destacados-col .superior,
 .usuarios-destacados-col .contenido, .usuarios-destacados-col .inferior{
-border: 1px solid #000000;
-background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 200px;
+width: 210px;
 }
-.usuarios-destacados-col .cabecera, .usuarios-destacados-col .superior, .usuarios-destacados-col .inferior{
-height: 50px;
+.usuarios-destacados-col .cabecera{
+height: 16px;
+background-image: url(imagenes/cabecera-usuarios-destacados.png);
+background-repeat: no-repeat;
+}
+.usuarios-destacados-col .superior{
+height: 52px;
+background-image: url(imagenes/superior-usuarios-destacados.png);
+background-repeat: no-repeat;
+}
+.usuarios-destacados-col .inferior{
+height: 7px;
+background-image: url(imagenes/inferior-usuarios-destacados.png);
+background-repeat: no-repeat;
 }
 .usuarios-destacados-col .contenido{
-height: 240px;
+height: 297px;
+border-left: 1px solid #95D9E9;
+border-right: 1px solid #95D9E9;
+width: 208px;
 }
 
 .col-centroizquierda .col-contenido-home{
