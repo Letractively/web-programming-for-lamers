@@ -412,6 +412,21 @@ class usuario {
 		//	}
 		return 0;
 	}
+
+	function cargarRutaFoto($ruta_foto = 'default'){
+		if($this->idUsuario() > -1){
+			//Leer de la DB
+			$filas = $this->sql->cambiar("ruta_foto = '$ruta_foto'", 'usuarios', "id_usuario = '$this->id_usuario'");
+				if($this->sql->ultimo_error != ''){
+					$this->ultimo_error = 'Error al caargar la FOto de este Profesional de la DB!: ' . $this->sql->ultimo_error;
+					return -1;
+				}
+			$this->ruta_foto = $filas[0]['ruta_foto'];
+			return 0;
+		}
+	return -1;
+	}
+
 	
 	function cargarDatosPerfil(){
 		if($this->idUsuario() > -1){
