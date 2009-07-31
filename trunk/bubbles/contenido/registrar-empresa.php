@@ -191,7 +191,7 @@ $(document).ready(function(){
 			</table>
 			<div class="linea-1">
 			</div>
-			
+						
 			<table class="tabla-registro-3">
 			<tbody>
 			<tr>

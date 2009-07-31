@@ -31,24 +31,34 @@ background-repeat: repeat-x;
 }
 /**/
 /*clases para pantallas PROFESIONAL ------>*/
-.col-profesional .superior-col, .col-profesional .profesional-col, .col-profesional .medio-col, .col-profesional .inferior-col{
-border: 1px solid #000000;
-background-color: #dddddd;
+.col-profesional .superior-col, .col-profesional .profesional-col, 
+.col-profesional .medio-col, .col-profesional .inferior-col{
 float: left;
 overflow: hidden;
-width: 196px;
+width: 212px;
 }
 .col-profesional .superior-col{
-height: 50px;
+height: 12px;
+background-image: url(imagenes/superior-col-profesional.png);
+background-repeat: no-repeat;
 }
 .col-profesional .profesional-col{
-height: 300px;
+height: 354px;
+background-image: url(imagenes/degrade1-col-profesional.png);
+background-repeat: repeat-x;
+}
+.profesional-col img{
+margin: 18px;
 }
 .col-profesional .medio-col{
-height: 100px;
+height: 264px;
+background-image: url(imagenes/degrade2-col-profesional.png);
+background-repeat: repeat-x;
 }
 .col-profesional .inferior-col{
-height: 50px;
+height: 10px;
+background-image: url(imagenes/inferior-col-profesional.png);
+background-repeat: no-repeat;
 }
 /**/
 .col-profesional-centro .casilla-superior, .col-profesional-centro .casilla-inferior{
@@ -56,7 +66,7 @@ border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 591px;
+width: 581px;
 }
 .col-profesional-centro .casilla-superior{
 height: 300px;
@@ -78,7 +88,7 @@ width: 70px;
 height: 70px;
 }
 .casilla-superior .portfolio, .casilla-superior .mensajes{
-width: 480px;
+width: 460px;
 }
 /*.col-profesional-centro .casilla-inferior*/
 .col-profesional-centro .casilla-inferior{
@@ -95,7 +105,7 @@ overflow: hidden;
 height:250px;
 }
 .col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der{
-width: 50px;
+width: 30px;
 }
 .col-profesional-centro .casilla-inferior .borde-contenido{
 width: 480px;

@@ -13,18 +13,29 @@ if($id_verif == -1){							//Si verifica que el usuario no existe lo manda a una
 }
 ?>
 
+<div class="col-izquierda">
 <?php include('contenido/col-profesional.php'); ?>
+</div>
 
 <div class="col-profesional-centro">
 <?php	//SWHITCH del CONTENIDO de la pagina (columna-central). Proximanente en AJAX!
-if(isset($_GET['mensajes'])){
+// Defino las variables de peticion que si solo si se que existen:
+$casilla_superior = '';
+
+// Las guardo con las variables llegadas por GET si es que existen
+if(isset($_GET['casilla_superior'])){
+$casilla_superior = $_GET['casilla_superior'];
+}
+
+//las switcheo para ver que pantalla tengo que incluir...
+if($casilla_superior == 'mensajes'){
 	include('contenido/casilla-superior-profesional-mensajes.php');
 }
-if(isset($_GET['portfolio'])){
+if($casilla_superior == 'portfolio'){
 	include('contenido/casilla-superior-profesional-portfolio.php');
 }
 //Si no nubo peticiones para NINGUNA de las páginas anteriores....
-if((!isset($_GET['mensajes'])) && (!isset($_GET['portfolio']))){
+else{
 	include('contenido/casilla-superior-profesional-portfolio.php');
 }
 ?>

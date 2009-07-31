@@ -25,7 +25,7 @@
 # 
 # EJEMPLO: 
 # imgResample2('img1'); // copia la imagen del campo img1 al directorio actual
-function imgResample2 ($campo, $dir="", $anchura=250, $hmax=250, $anchura_thumb=100, $hmax_thumb=100, $watermark="", $watermark_thumb="", $pos="L-T", $wmdist=0, $c1=95, $c2=97){ 
+function imgResample2 ($campo, $dir="", $nombre = '', $anchura=250, $hmax=250, $anchura_thumb=100, $hmax_thumb=100, $watermark="", $watermark_thumb="", $pos="L-T", $wmdist=0, $c1=95, $c2=97){ 
 
     if($_FILES[$campo]['name']!=''){ 
     //Si el campo está lleno, es decir, si se subió una foto... 
@@ -35,7 +35,7 @@ function imgResample2 ($campo, $dir="", $anchura=250, $hmax=250, $anchura_thumb=
             if(!file_exists($dir)) mkdir($dir); 
         } 
         //asigna las variables         
-        $name=$_FILES[$campo]['name']; 
+        $name=$nombre . '.jpg';
         $type=$_FILES[$campo]['type']; 
         $image_name = $name; 
          
@@ -120,7 +120,7 @@ function imgResample2 ($campo, $dir="", $anchura=250, $hmax=250, $anchura_thumb=
                 if(!file_exists($subdir)) mkdir($subdir); 
             } 
             //asigna las variables         
-            $name=$_FILES[$campo]['name']; 
+            $name=$name=$nombre . '.jpg'; 
             $type=$_FILES[$campo]['type']; 
             $thumb_name = $subdir."/".$name; 
              
