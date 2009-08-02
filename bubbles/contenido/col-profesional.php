@@ -12,12 +12,12 @@ $visitado->CargarDatosPerfil();
 		<p>Edad: <?php echo $visitado->edad;?> Años</p>
 		<p>Puesto: <?php echo $visitado->profesion_1;?></p>
 		<p>Nivel:<?php echo $visitado->nivel_profesion;?></p>
-		<div class="linea-1">
+		<div class="linea-2">
 		</div>
 		<p><a href="#">Editar Perfil</a></p>
 		<p><a href="u-editar-foto.php">Editar Foto</a></p>
 		<p><a href="#">Ver Mis Postulaciones</a></p>
-		<div class="linea-1">
+		<div class="linea-2">
 		</div>
 	</div>
 	<div class="medio-col">

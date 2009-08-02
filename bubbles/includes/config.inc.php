@@ -4,7 +4,7 @@ define( 'USUARIO_SQL', 'bubbles');
 define( 'PASS_SQL', '45511385');
 define('SQL_DB', 'bubbles');
 
-// Configuración de directorios...
+// Configuración de directorios y archivos...
 define('HOST','http://127.0.0.1/');
 define('DIR_BUBBLES','bubbles/');
 define('URL_BASE',HOST . DIR_BUBBLES );
@@ -15,8 +15,8 @@ define('DIR_CONTENT','content/');
 define('ARCH_PAG_NO_EXISTE', DIR_BUBBLES . 'no-existe.php');
 //define('DIR_FUENTES', 'C:\\WINDOWS\\Fonts\\'); // "/home/sito/public_html/fonts/" para LINUX
 define('DIR_FUENTES', '../fuentes/'); // Ruta RELATIVA! (solo sirve para el php que genera el captcha.)
-define('DIR_FOTOS_PROFESIONALES', 'contenido/profesionales/fotos/');
-define('DIR_FOTOS_PROFESIONALES_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');
+define('DIR_FOTOS_PROFESIONALES', 'contenido/profesionales/fotos/');	//160*160
+define('DIR_FOTOS_PROFESIONALES_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//60*60
 define('DIMENSION_FOTO_GRANDE','160');
 define('DIMENSION_FOTO_CHICA','60');
 

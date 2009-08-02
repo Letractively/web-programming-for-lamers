@@ -26,17 +26,17 @@ $casilla_superior = '';
 if(isset($_GET['casilla_superior'])){
 $casilla_superior = $_GET['casilla_superior'];
 }
-
 //las switcheo para ver que pantalla tengo que incluir...
-if($casilla_superior == 'mensajes'){
-	include('contenido/casilla-superior-profesional-mensajes.php');
-}
-if($casilla_superior == 'portfolio'){
-	include('contenido/casilla-superior-profesional-portfolio.php');
-}
-//Si no nubo peticiones para NINGUNA de las páginas anteriores....
-else{
-	include('contenido/casilla-superior-profesional-portfolio.php');
+switch ($casilla_superior) {
+    case 'mensajes':
+        include('contenido/casilla-superior-profesional-mensajes.php');
+        break;
+    case 'portfolio':
+        include('contenido/casilla-superior-profesional-portfolio.php');
+        break;
+    default:
+        include('contenido/casilla-superior-profesional-portfolio.php');
+        break;
 }
 ?>
 <?php include('contenido/casilla-inferior-profesional.php') ?>

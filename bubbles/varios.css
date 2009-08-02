@@ -46,6 +46,9 @@ background-repeat: no-repeat;
 height: 354px;
 background-image: url(imagenes/degrade1-col-profesional.png);
 background-repeat: repeat-x;
+border-left: 1px solid #6cb4e4;
+border-right: 1px solid #6cb4e4;
+width: 210px;
 }
 .profesional-col img{
 margin: 18px;
@@ -54,6 +57,9 @@ margin: 18px;
 height: 264px;
 background-image: url(imagenes/degrade2-col-profesional.png);
 background-repeat: repeat-x;
+border-left: 1px solid #6cb4e4;
+border-right: 1px solid #6cb4e4;
+width: 210px;
 }
 .col-profesional .inferior-col{
 height: 10px;
@@ -69,26 +75,83 @@ overflow: hidden;
 width: 581px;
 }
 .col-profesional-centro .casilla-superior{
-height: 300px;
+height: 335px;
 }
-.casilla-superior .borde-solapas, .casilla-superior .portfolio, .casilla-superior .mensajes{
-border: 1px solid #000000;
-background-color: #dddddd;
+.casilla-superior .borde-solapas, .casilla-superior .portfolio,
+.casilla-superior .borde-botones-mensajes, .casilla-superior .contenido-mensajes,
+.casilla-superior .borde-derecho{
 float: left;
 overflow: hidden;
-height: 296px;
+height: 321px;
 }
 .casilla-superior .borde-solapas{
-width: 100px;
+width: 94px;
 }
 .solapa{
-border: 1px solid #000000;
 float: left;
-width: 70px;
-height: 70px;
+width: 94px;
+height: 80px;
+background-image: url(imagenes/solapa-lateral.png);
+background-repeat: no-repeat;
 }
-.casilla-superior .portfolio, .casilla-superior .mensajes{
+.casilla-superior .portfolio{
 width: 460px;
+}
+.casilla-superior .borde-botones-mensajes{
+width: 73px;
+height: 319px;
+background-color: #ffffff;
+border-left: 1px solid #6db3e4;
+border-right: 1px solid #6db3e4;
+border-top: 1px solid #6db3e4;
+border-bottom: 1px solid #6db3e4;
+}
+.casilla-superior .contenido-mensajes{
+width: 360px;
+height: 319px;
+border-top: 1px solid #6db3e4;
+border-bottom: 1px solid #6db3e4;
+}
+.contenido-mensajes .cabecera-escribir, .contenido-mensajes .datos-escribir,
+.contenido-mensajes .mce-escribir, .contenido-mensajes .contenido-escribir,
+.contenido-mensajes .enviar-escribir{
+float: left;
+overflow: hidden;
+width: 359px;
+}
+.contenido-mensajes .cabecera-escribir{
+height: 30px;
+background-color: #ffffff;
+}
+.contenido-mensajes .datos-escribir{
+background-image: url(imagenes/degrade-datos-escribir.png);
+background-repeat: repeat-x;
+height: 50px;
+border-top: 1px solid #d2d2d2;
+border-bottom: 1px solid #d2d2d2;
+border-right: 1px solid #d2d2d2;
+}
+.contenido-mensajes .mce-escribir{
+height: 25px;
+background-color: #f4f4f4;
+border-right: 1px solid #d2d2d2;
+}
+.contenido-mensajes .contenido-escribir{
+height: 186px;
+background-color: #ffffff;
+border-right: 1px solid #d2d2d2;
+}
+.contenido-mensajes .enviar-escribir{
+height: 25px;
+background-image: url(imagenes/degrade-enviar-escribir.png);
+background-repeat: repeat-x;
+border-top: 1px solid #d2d2d2;
+border-right: 1px solid #d2d2d2;
+}
+.casilla-superior .borde-derecho{
+width: 12px;
+background-image: url(imagenes/borde-derecho-casilla-superior.png);
+background-repeat: no-repeat;
 }
 /*.col-profesional-centro .casilla-inferior*/
 .col-profesional-centro .casilla-inferior{
