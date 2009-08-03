@@ -371,5 +371,15 @@ background-image: url(imagenes/inferior-ultimo-momento-col.png);
 background-repeat: no-repeat;
 height:50px;
 }
-
-
+/*CLASS para DEBE LOGUEARSE ---->*/
+.debe-loguearse{
+border: 1px solid #000000;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+background-image: url(imagenes/debe-loguearse.jpg);
+background-repeat: no-repeat;
+height:223px;
+width: 547px;
+}
+/*<----*/

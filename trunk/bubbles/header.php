@@ -19,7 +19,7 @@ if((!strstr($_SERVER['REQUEST_URI'],"logeo-form.php"))
 
 // Luego; Si el cliente requiere alguna de las paginas que no estan en esta lista;
 // debera estar logueado para acceder:
-if((!strstr($_SERVER['PHP_SELF'],"index.php"))	//uso $_SERVER['PHP_SELF'] porque el $_SERVER['REQUEST_URI'] SOLO aparece la RAIZ (/) debido al ModRewrite
+if((!strstr($_SERVER['PHP_SELF'],"index.php"))	//uso $_SERVER['PHP_SELF']; porque el $_SERVER['REQUEST_URI'] SOLO aparece la RAIZ (/) debido al ModRewrite, y no hace mencion al "index.php"
 	//&& (strcmp($_SERVER['REQUEST_URI'],('/' . DIR_BUBBLES)))	//Si la URI pedida es EXACTAMENTE la RAIZ del sitio, no pide logueo.
 	&& (!strstr($_SERVER['REQUEST_URI'],"no-existe.php")) 
 	&& (!strstr($_SERVER['REQUEST_URI'],"registrar"))

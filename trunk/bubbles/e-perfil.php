@@ -3,14 +3,28 @@
 <?php include('includes/clases/comentario.class.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
 
-<?php 
+<?php
 $visitado = new empresa(empresa::aliasUsuario2id($_GET['entidad_visitada']));
 $id_verif = $visitado->idEmpresa();
 if($id_verif == -1){							//Si verifica que el usuario no existe lo manda a una pagina expecífica
-	echo "<p>La pÃ¡gina " . $_SERVER['PHP_SELF'] . " no existe</p>";
+	header("Location: " . URL_BASE . ARCH_PAG_NO_EXISTE);
+	include('footer.php');
 	exit -1;
-//	header("Location: " . ARCH_PAG_NO_EXISTE);
 }
+//Preparacion de la variable "indicadora" de los permisos del visitante....
+$visitante_es = '';
+if(isset($_SESSION['id_empresa'])){
+	if($visitado->id_empresa == $_SESSION['id_empresa']){
+		$visitante_es = 'empresa_administrador';
+	}
+	else{
+		$visitante_es = 'empresa_visitante';
+	}
+}
+if(isset($_SESSION['id_usuario'])){
+	$visitante_es = 'usuario_visitante';
+}
+echo 'VISITANTE_ES: ' . $visitante_es;
 ?>
 
 <div>
