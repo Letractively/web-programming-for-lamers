@@ -5,49 +5,53 @@ session_start();
 include("includes/includes.php");
 
 //SEGURIDAD--->
-//Primero rescatamos la página donde nos encontramos, para poder redireccionarnos luego del tramite de logueo o deslogueo:
+//Primero rescatamos la página donde nos encontramos, para poder redireccionarnos luego del logueo o deslogueo,
+//las páginas listadas aqui NO UPDATEan la URI rescatada:
 if((!strstr($_SERVER['REQUEST_URI'],"logeo-form.php")) 
 	&& (!strstr($_SERVER['REQUEST_URI'],"logeo.php"))
 	&& (!strstr($_SERVER['REQUEST_URI'],"logout.php"))
+	&& (!strstr($_SERVER['REQUEST_URI'],"error-login.php"))
 	&& (!strstr($_SERVER['REQUEST_URI'],"logout-form.php"))){
-	$_SESSION['php_rescatado'] = $_SERVER['PHP_SELF'];
-	$_SESSION['query_rescatado'] = $_SERVER['QUERY_STRING'];
-	$_SESSION['uri_rescatada'] = $_SERVER['REQUEST_URI'];
+		$_SESSION['php_rescatado'] = $_SERVER['PHP_SELF'];
+		$_SESSION['query_rescatado'] = $_SERVER['QUERY_STRING'];
+		$_SESSION['uri_rescatada'] = $_SERVER['REQUEST_URI'];
 }
 
-// Si el cliente requiere alguna de las paginas que no estan en esta lista; debera estar logueado para acceder:
-if((!strstr($_SERVER['REQUEST_URI'],"index.php"))
+// Luego; Si el cliente requiere alguna de las paginas que no estan en esta lista;
+// debera estar logueado para acceder:
+if((!strstr($_SERVER['PHP_SELF'],"index.php"))	//uso $_SERVER['PHP_SELF'] porque el $_SERVER['REQUEST_URI'] SOLO aparece la RAIZ (/) debido al ModRewrite
+	//&& (strcmp($_SERVER['REQUEST_URI'],('/' . DIR_BUBBLES)))	//Si la URI pedida es EXACTAMENTE la RAIZ del sitio, no pide logueo.
 	&& (!strstr($_SERVER['REQUEST_URI'],"no-existe.php")) 
 	&& (!strstr($_SERVER['REQUEST_URI'],"registrar"))
 	&& (!strstr($_SERVER['REQUEST_URI'],"logeo-form.php"))
-	&& ((isset($_SESSION['logeado']))&& (isset($_GET['entidad_visitada'])))
-	){	//Tambien puede el cliente entrar sin logueo a paginas con $_GET['entidad-visitada']
+	&& (!strstr($_SERVER['REQUEST_URI'],"error-login.php"))
+	//&& ((isset($_SESSION['logeado']))&& (isset($_GET['entidad_visitada'])))	//Habilita visitantes en perfiles.
+	){	//En este ultimo, tambien puede el cliente entrar sin logueo a paginas con $_GET['entidad-visitada']
 		include("includes/seguridad.php");
 }
 
-//Regenero en cada refresco el id_consulta y el captcha...
+//Regenero en cada refresco el id_consulta y el captcha, SIEMPRE...
 $_SESSION['id_consulta'] = genera_password(8);
 $_SESSION['capcha'] = genera_capcha(8);
 
-$desabilitar_login = ''; //Habilitamos los input de logeo por default!
-
 // Si el cliente requiere una pagina "registrar*.php" habro una sesion de registro...
+$desabilitar_login = ''; //Habilitamos los input de logeo por default! ((PROXIMAMENTE OBSOLETO))
 if((strstr($_SERVER['REQUEST_URI'],"registrar"))){
 	$desabilitar_login = 'disabled="TRUE"';	//Desabilitamos los input de logueo en una sesion de registro!  
 	if(isset($_SESSION['logeado'])){
 		destruir_sesion_logeado();
 	}
 	if(!isset($_SESSION['registro'])){
-	$_SESSION['registro'] = 1;
+		$_SESSION['registro'] = 1;
 	}
 	else{
 		if (($_SESSION['hora']+1000) < time()){
-		session_unset();
-		session_destroy();
-		if(!isset($_GET['entidad_visita'])){		//SI la pagina actual permite VISITANTES, destruye la sesion anterior pero no va al index
-			header("Location: index.php?error=2"); //Error2: 'timeout' de 20 minutos superado
-		}
-		return 0;
+			session_unset();
+			session_destroy();
+			if(!isset($_GET['entidad_visita'])){		//SI la pagina actual permite VISITANTES, destruye la sesion anterior pero no va al index
+				header("Location: index.php?error=2"); //Error2: 'timeout' de 20 minutos superado
+			}
+			return 0;
 		}
 	}
 // Le damos un tiempo mas a la entidad para que se quede en el sitio sin actividad:

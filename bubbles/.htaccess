@@ -1,6 +1,10 @@
-Options +FollowSymLinks
 RewriteEngine On
+Options +FollowSymLinks
+Options -Indexes
+DirectoryIndex index.php
 RewriteBase /bubbles/
-RewriteRule ^profesional/([a-zA-Z0-9_-]+)$ /bubbles/profesional/$1/ [R]		#Renombra un directorio "...../pepe" por "...../pepe/"
+RewriteRule ^/(.)$ /bubbles/index.php [R]
+#RewriteRule ^/(.*)$ /bubbles/index.php [R]
+RewriteRule ^profesional/([a-zA-Z0-9_-]+)$ /bubbles/profesional/$1/	[R]	#Renombra un directorio "...../pepe" por "...../pepe/"
 RewriteCond %{REQUEST_URI} !.*\.(js|php|jpg|png) [NC]		#Evita que al requerir una extension ".php" o ".js" se la tome como USUARIO
 RewriteRule ^profesional/([a-zA-Z0-9_-]+)/ /bubbles/u-galeria.php?entidad_visitada=$1 [L]
