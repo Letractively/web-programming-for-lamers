@@ -1,5 +1,11 @@
 <?php include('header.php')?>
 
+<div class="col-izquierda">
+	<?php include('contenido/form-login-usuario.php'); ?>
+	<?php include('contenido/form-login-empresa.php'); ?>
+</div>
+
+<div class="col-central">
 <?php
 //Variables que guardaran las llegadas de GET...
 $error = '';
@@ -34,5 +40,10 @@ if($error == 'desconocido'){
 	include('contenido/error-desconocido.php');
 }
 ?>
+</div>
+
+<div class="col-derecha" >
+	<img src="imagenes/relleno1.jpg" />
+</div>
 
 <?php include('footer.php')?>

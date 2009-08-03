@@ -4,13 +4,28 @@
 <?php include('includes/clases/comentario.class.php'); ?>
 
 
-<?php 
+<?php
 $visitado = new usuario(usuario::alias2id($_GET['entidad_visitada']));
 $id_verif = $visitado->idUsuario();
 if($id_verif == -1){							//Si verifica que el usuario no existe lo manda a una pagina expecífica
-	echo "<p>La página " . $_SERVER['PHP_SELF'] . " no existe</p>";
-//	header("Location: " . ARCH_PAG_NO_EXISTE);
+	header("Location: " . URL_BASE . ARCH_PAG_NO_EXISTE);
+	include('footer.php');
+	exit -1;
 }
+//Preparacion de la variable "indicadora" de los permisos del visitante....
+$visitante_es = '';
+if(isset($_SESSION['id_usuario'])){
+	if($visitado->id_usuario == $_SESSION['id_usuario']){
+		$visitante_es = 'usuario_administrador';
+	}
+	else{
+		$visitante_es = 'usuario_visitante';
+	}
+}
+if(isset($_SESSION['id_empresa'])){
+	$visitante_es = 'empresa_visitante';
+}
+echo 'VISITANTE_ES: ' . $visitante_es;
 ?>
 
 <div class="col-izquierda">
@@ -80,6 +95,7 @@ if((isset($_SESSION['logeado'])) && (isset($_GET['postear_comentario']))){
 	}
 }
 ?>
+
 <?php
 //$visitado->comentario
 ?>

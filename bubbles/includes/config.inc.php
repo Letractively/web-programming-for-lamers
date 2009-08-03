@@ -12,7 +12,7 @@ define('DIR_JS','js/');
 define('DIR_INCLUDES','includes/');
 define('DIR_CLASES','includes/clases/');
 define('DIR_CONTENT','content/');
-define('ARCH_PAG_NO_EXISTE', DIR_BUBBLES . 'no-existe.php');
+define('ARCH_PAG_NO_EXISTE', 'no-existe.php');
 //define('DIR_FUENTES', 'C:\\WINDOWS\\Fonts\\'); // "/home/sito/public_html/fonts/" para LINUX
 define('DIR_FUENTES', '../fuentes/'); // Ruta RELATIVA! (solo sirve para el php que genera el captcha.)
 define('DIR_FOTOS_PROFESIONALES', 'contenido/profesionales/fotos/');	//160*160
