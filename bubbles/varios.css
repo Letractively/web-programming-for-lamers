@@ -131,15 +131,37 @@ border-top: 1px solid #d2d2d2;
 border-bottom: 1px solid #d2d2d2;
 border-right: 1px solid #d2d2d2;
 }
+.contenido-mensajes .datos-escribir table{
+border-collapse:collapse;
+border-spacing:0;
+height: 50px;
+width: 340px;
+margin-left: 10px;
+}
+.contenido-mensajes .datos-escribir table th, .contenido-mensajes .datos-escribir table td,
+.contenido-mensajes .datos-escribir table tr{
+border-width:0;
+height:20px;
+margin:0;
+padding:0;
+text-align: right;
+}
+.contenido-mensajes .datos-escribir table input{
+width: 280px;
+}
 .contenido-mensajes .mce-escribir{
 height: 25px;
 background-color: #f4f4f4;
 border-right: 1px solid #d2d2d2;
 }
 .contenido-mensajes .contenido-escribir{
-height: 186px;
+height: 211px;
 background-color: #ffffff;
 border-right: 1px solid #d2d2d2;
+}
+.contenido-mensajes .contenido-escribir textarea{
+height: 199px;
+width: 354px;
 }
 .contenido-mensajes .enviar-escribir{
 height: 25px;
@@ -147,6 +169,29 @@ background-image: url(imagenes/degrade-enviar-escribir.png);
 background-repeat: repeat-x;
 border-top: 1px solid #d2d2d2;
 border-right: 1px solid #d2d2d2;
+}
+.contenido-mensajes .enviar-escribir table{
+border-collapse:collapse;
+border-spacing:0;
+height: 25px;
+width: 340px;
+margin-left: 10px;
+}
+.contenido-mensajes .enviar-escribir table th, .contenido-mensajes .enviar-escribir table td,
+.contenido-mensajes .enviar-escribir table tr{
+border-width:0;
+height:20px;
+margin:0;
+padding:0;
+text-align: right;
+}
+.contenido-mensajes .enviar-escribir table .boton3{
+width: 54px;
+height: 18px;
+background-image: url(imagenes/boton3.png);
+background-repeat: no-repeat;
+border: 0px;
+background-color: transparent;
 }
 .casilla-superior .borde-derecho{
 width: 12px;
