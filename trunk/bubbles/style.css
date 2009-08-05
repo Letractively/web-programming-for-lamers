@@ -70,7 +70,7 @@ background-color: #ff3333;
 margin: 10px;
 }
 pre{
-background-color: #ffffff;
+background-color: #ff0000;
 }
 
 /**************************/
@@ -92,22 +92,25 @@ border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 213px;
+width: 212px;
+margin-left: 15px;
 }
 .col-centroizquierda{
 border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 800px;
+width: 761px;
 height: 600px;
+margin-left: 15px;
 }
 .col-central, .col-profesional-centro{
 border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 593px;
+width: 550px;
+margin-left: 10px;
 }
 .col-derecha, .col-profesional-derecha{
 border: 1px solid #000000;
@@ -115,6 +118,7 @@ background-color: #dddddd;
 float: left;
 overflow: hidden;
 width: 212px;
+margin-left: 10px;
 }
 
 .footer{

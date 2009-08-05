@@ -3,10 +3,10 @@
 	</div>
 	<div class="borde-contenido">
 		<div class="superior-comentarios">
-			<p>superior comentarios</p>
+			<p><strong>Comentarios</strong></p>
 		</div>
 		<div class="superior-amigos">
-			<p>superior amigos</p>
+			<p><strong>Amigos</strong></p>
 		</div>
 		<div class="contenido-comentarios">
 			<p>contenido comentarios</p>
@@ -15,8 +15,14 @@
 			<p>contenido amigos</p>
 		</div>
 		<div class="inferior-comentarios">
-			<p>inferior comentarios</p>
-			<p>TERMINOS DE BOSQUEDA INDEFINIDOS!</p>
+			<div class="buscar-amigos">
+				<div class="buscar-amigos-izq">
+				</div>
+				<div class="buscar-amigos-cont">
+				</div>
+				<div class="buscar-amigos-der">
+				</div>
+			</div>
 		</div>
 		<div class="inferior-amigos">
 			<p>inferior amigos</p>
@@ -25,6 +31,6 @@
 	
 	
 	</div>
-	<div class="extremo-izq">
+	<div class="extremo-der">
 	</div>
 </div>
