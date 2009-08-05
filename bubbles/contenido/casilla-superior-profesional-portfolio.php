@@ -13,7 +13,8 @@
 		
 		</div>
 	</div>
-	<div class="portfolio">
-		<p>portfolio</p>
+	<?php include('casilla-superior-profesional-botones.php'); ?>
+	<?php include('casilla-superior-profesional-contenido-portfolio.php'); ?>
+	<div class="borde-derecho">
 	</div>
 </div>

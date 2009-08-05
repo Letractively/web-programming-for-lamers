@@ -28,9 +28,7 @@ if(isset($_SESSION['id_empresa'])){
 echo 'VISITANTE_ES: ' . $visitante_es;
 ?>
 
-<div class="col-izquierda">
 <?php include('contenido/col-profesional.php'); ?>
-</div>
 
 <div class="col-profesional-centro">
 <?php	//SWHITCH del CONTENIDO de la pagina (columna-central). Proximanente en AJAX!

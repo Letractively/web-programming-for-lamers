@@ -41,6 +41,7 @@ width: 212px;
 height: 12px;
 background-image: url(imagenes/superior-col-profesional.png);
 background-repeat: no-repeat;
+margin-top: 15px;
 }
 .col-profesional .profesional-col{
 height: 354px;
@@ -72,14 +73,15 @@ border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 581px;
+width: 548px;
 }
 .col-profesional-centro .casilla-superior{
-height: 335px;
+height: 321px;
+margin-top: 15px;
 }
 .casilla-superior .borde-solapas, .casilla-superior .portfolio,
 .casilla-superior .borde-botones-mensajes, .casilla-superior .contenido-mensajes,
-.casilla-superior .borde-derecho{
+.casilla-superior .borde-derecho, .casilla-superior .contenido-portfolio{
 float: left;
 overflow: hidden;
 height: 321px;
@@ -98,7 +100,7 @@ background-repeat: no-repeat;
 width: 460px;
 }
 .casilla-superior .borde-botones-mensajes{
-width: 73px;
+width: 80px;
 height: 319px;
 background-color: #ffffff;
 border-left: 1px solid #6db3e4;
@@ -106,7 +108,7 @@ border-right: 1px solid #6db3e4;
 border-top: 1px solid #6db3e4;
 border-bottom: 1px solid #6db3e4;
 }
-.casilla-superior .contenido-mensajes{
+.casilla-superior .contenido-mensajes, .casilla-superior .contenido-portfolio{
 width: 360px;
 height: 319px;
 border-top: 1px solid #6db3e4;
@@ -119,7 +121,13 @@ float: left;
 overflow: hidden;
 width: 359px;
 }
-.contenido-mensajes .cabecera-escribir{
+.contenido-portfolio .cabecera-portfolio, .contenido-portfolio .imagenes-portfolio,
+.contenido-portfolio .recorrer-portfolio{
+float: left;
+overflow: hidden;
+width: 359px;
+}
+.contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio{
 height: 30px;
 background-color: #ffffff;
 }
@@ -163,7 +171,7 @@ border-right: 1px solid #d2d2d2;
 height: 199px;
 width: 354px;
 }
-.contenido-mensajes .enviar-escribir{
+.contenido-mensajes .enviar-escribir, .contenido-portfolio .recorrer-portfolio{
 height: 25px;
 background-image: url(imagenes/degrade-enviar-escribir.png);
 background-repeat: repeat-x;
@@ -193,6 +201,15 @@ background-repeat: no-repeat;
 border: 0px;
 background-color: transparent;
 }
+.contenido-portfolio .imagenes-portfolio{
+height: 262px;
+background-color: #ffffff;
+border-top: 1px solid #d2d2d2;
+}
+.contenido-portfolio .recorrer-portfolio{
+
+}
+
 .casilla-superior .borde-derecho{
 width: 12px;
 background-image: url(imagenes/borde-derecho-casilla-superior.png);
@@ -200,38 +217,101 @@ background-repeat: no-repeat;
 }
 /*.col-profesional-centro .casilla-inferior*/
 .col-profesional-centro .casilla-inferior{
-height:260px;
+height:308px;
+margin-top: 10px;
 }
 .col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der,
 .col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .contenido-comentarios,
 .col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos,
 .col-profesional-centro .casilla-inferior .contenido-amigos, .col-profesional-centro .casilla-inferior .inferior-amigos,
 .col-profesional-centro .casilla-inferior .borde-contenido{
-border: 1px solid #000000;
 float: left;
 overflow: hidden;
-height:250px;
+height:308px;
 }
 .col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der{
-width: 30px;
+width: 12px;
+}
+.col-profesional-centro .casilla-inferior .extremo-izq{
+background-image: url(imagenes/borde-izquierdo-casilla-inferior.png);
+background-repeat: no-repeat;
+}
+.col-profesional-centro .casilla-inferior .extremo-der{
+background-image: url(imagenes/borde-derecho-casilla-inferior.png);
+background-repeat: no-repeat;
 }
 .col-profesional-centro .casilla-inferior .borde-contenido{
-width: 480px;
+width: 524px;
+background-color: #f7eedd;
+height:306px;
+border-top: 1px solid #6DB3E4;
+border-bottom: 1px solid #6DB3E4;
 }
 .col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .contenido-comentarios,
 .col-profesional-centro .casilla-inferior .inferior-comentarios{
-width: 240px;
+border-right: 1px solid #0089d1;
+width: 293px;
 }
+.col-profesional-centro .casilla-inferior .superior-comentarios p, .col-profesional-centro .casilla-inferior .superior-amigos p{
+width: 235px;
+height: 30px;
+background-color: #0089d1;
+font-size: 22px;
+color: #ffffff;
+margin-top: 10px;
+padding-left: 50px;
+padding-top: 2px;
+}
+.col-profesional-centro .casilla-inferior .superior-amigos p{
+width: 180px;
+margin-left: 10px;
+}
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos{
+float: left;
+overflow: hidden;
+height: 78px;
+}
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-izq,
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der,
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont{
+float: left;
+overflow: hidden;
+height: 78px;
+}
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-izq{
+width: 8px;
+background-image: url(imagenes/borde-izquierdo-buscar-amigos-inferior.png);
+background-repeat: no-repeat;
+}
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont{
+height: 76px;
+width: 270px;
+background-image: url(imagenes/degrade-buscar-amigos-inferior.png);
+background-repeat: repeat-x;
+border-top: 1px solid #d2d2d2;
+border-bottom: 1px solid #d2d2d2;
+}
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der{
+width: 8px;
+background-image: url(imagenes/borde-derecho-buscar-amigos-inferior.png);
+background-repeat: no-repeat;
+}
+
+
 .col-profesional-centro .casilla-inferior .contenido-comentarios, .col-profesional-centro .casilla-inferior .contenido-amigos{
-height: 140px;
+float: left;
+overflow: hidden;
+height: 160px;
 }
 .col-profesional-centro .casilla-inferior .superior-amigos, .col-profesional-centro .casilla-inferior .contenido-amigos,
 .col-profesional-centro .casilla-inferior .inferior-amigos{
 width: 230px;
 }
-.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos,
-.col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .inferior-amigos{
+.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos{
 height: 50px;
+}
+.col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .inferior-amigos{
+height: 96px;
 }
 /*<-------*/
 /**/
@@ -286,6 +366,7 @@ height: 50px;
 /**/
 /*CLASES PARA HOME ----->*/
 .col-centroizquierda .col-contenido-home{
+border: 1px solid #000000;
 float: left;
 overflow: hidden;
 width: 759px;
@@ -298,7 +379,7 @@ border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 350px;
+width: 287px;
 }
 .form-registrarse-usuarios{
 border: 1px solid #000000;

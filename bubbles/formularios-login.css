@@ -44,9 +44,9 @@ background-color: #c4c6c3;
 border-collapse: collapse;
 border-spacing: 0px;
 margin-top: 10px;
-margin-left: 20px;
+margin-left: 10px;
 height: 100px;
-width: 160px;
+width: 180px;
 table-layout: fixed;
 }
 .tabla-login td, .tabla-login th, .tabla-login tr , .tabla-login .boton1{
@@ -75,6 +75,6 @@ margin: 0;
 }*/
 
 .tabla-login-text{
-width:100px;
+width:80px;
 height:16px;
 }
