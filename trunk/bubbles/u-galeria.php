@@ -28,32 +28,89 @@ if(isset($_SESSION['id_empresa'])){
 echo 'VISITANTE_ES: ' . $visitante_es;
 ?>
 
+
+
 <?php include('contenido/col-profesional.php'); ?>
 
-<div class="col-profesional-centro">
+
 <?php	//SWHITCH del CONTENIDO de la pagina (columna-central). Proximanente en AJAX!
 // Defino las variables de peticion que si solo si se que existen:
 $casilla_superior = '';
-
+$solapa_superior = '';
+$botonera_superior = '';
+$contenido_superior = '';
 // Las guardo con las variables llegadas por GET si es que existen
-if(isset($_GET['casilla_superior'])){
-$casilla_superior = $_GET['casilla_superior'];
+if(isset($_GET['solapa_superior'])){
+	$solapa_superior = $_GET['solapa_superior'];
 }
-//las switcheo para ver que pantalla tengo que incluir...
-switch ($casilla_superior) {
+if(isset($_GET['botonera_superior'])){
+	$botonera_superior = $_GET['botonera_superior'];
+}
+if(isset($_GET['contenido_superior'])){
+	$contenido_superior = $_GET['contenido_superior'];
+}
+?>
+
+
+<div class="col-profesional-centro">
+	<div class="casilla-superior">
+<?php
+//include('contenido/casilla-superior-profesional-portfolio.php');
+//las switcheo para ver que solapas tengo que incluir...
+switch ($solapa_superior) {
     case 'mensajes':
-        include('contenido/casilla-superior-profesional-mensajes.php');
+        include('contenido/casilla/superior/profesional/solapas/mensajes.php');
         break;
     case 'portfolio':
-        include('contenido/casilla-superior-profesional-portfolio.php');
+        include('contenido/casilla/superior/profesional/solapas/portfolio.php');
         break;
     default:
-        include('contenido/casilla-superior-profesional-portfolio.php');
+        include('contenido/casilla/superior/profesional/solapas/portfolio.php');
         break;
 }
 ?>
-<?php include('contenido/casilla-inferior-profesional.php') ?>
+	<?php //include('contenido/casilla-superior-profesional-botones.php'); ?>
+	<?php //include('contenido/casilla-superior-profesional-contenido-mensajes.php'); ?>
+<?php
+//las switcheo para ver que botonera tengo que incluir...
+switch ($botonera_superior) {
+    case 'nuevo_mensaje':
+        include('contenido/casilla/superior/profesional/botones/nuevo-mensaje.php');
+        break;
+    case 'ver_portfolio':
+        include('contenido/casilla/superior/profesional/botones/ver-portfolio.php');
+        break;
+    default:
+        include('contenido/casilla/superior/profesional/botones/ver-portfolio.php');
+        break;
+}
+?>
+
+<?php
+//las switcheo para ver que contenido tengo que incluir...
+switch ($contenido_superior) {
+    case 'nuevo_mensaje':
+        include('contenido/casilla/superior/profesional/contenido/nuevo-mensaje.php');
+        break;
+    case 'casilla_entrada':
+        include('contenido/casilla/superior/profesional/contenido/casilla-entrada.php');
+        break;
+	case 'ver_portfolio':
+        include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
+        break;
+    default:
+        include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
+        break;
+}
+?>
+		<div class="borde-derecho">
+		</div>
+	</div>
+
+
+<?php include('contenido/casilla/inferior/profesional.php') ?>
 </div>
+
 
 <?php include('contenido/col-profesional-derecha.php'); ?>
 

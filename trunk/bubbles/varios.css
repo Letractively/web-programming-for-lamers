@@ -108,6 +108,21 @@ border-right: 1px solid #6db3e4;
 border-top: 1px solid #6db3e4;
 border-bottom: 1px solid #6db3e4;
 }
+.casilla-superior .borde-botones-mensajes table{
+margin-left: 5px;
+margin-top: 0px;
+}
+.casilla-superior .borde-botones-mensajes .boton2{
+width: 63px;
+height: 22px;
+background-image: url(imagenes/boton2.png);
+background-repeat: no-repeat;
+border: 0px;
+background-color: transparent;
+font-size: 10px;
+font-weight: bold;
+color: #0089D1;
+}
 .casilla-superior .contenido-mensajes, .casilla-superior .contenido-portfolio{
 width: 360px;
 height: 319px;
@@ -122,7 +137,8 @@ overflow: hidden;
 width: 359px;
 }
 .contenido-portfolio .cabecera-portfolio, .contenido-portfolio .imagenes-portfolio,
-.contenido-portfolio .recorrer-portfolio{
+.contenido-portfolio .recorrer-portfolio, .contenido-mensajes .lista-mensajes,
+.contenido-mensajes .recorrer-mensajes{
 float: left;
 overflow: hidden;
 width: 359px;
@@ -130,6 +146,11 @@ width: 359px;
 .contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio{
 height: 30px;
 background-color: #ffffff;
+}
+.contenido-mensajes .cabecera-escribir table{
+width: 350px;
+height: 30px;
+margin-left: 20px;
 }
 .contenido-mensajes .datos-escribir{
 background-image: url(imagenes/degrade-datos-escribir.png);
@@ -171,7 +192,8 @@ border-right: 1px solid #d2d2d2;
 height: 199px;
 width: 354px;
 }
-.contenido-mensajes .enviar-escribir, .contenido-portfolio .recorrer-portfolio{
+.contenido-mensajes .enviar-escribir, .contenido-portfolio .recorrer-portfolio,
+.contenido-mensajes .recorrer-mensajes{
 height: 25px;
 background-image: url(imagenes/degrade-enviar-escribir.png);
 background-repeat: repeat-x;
@@ -200,8 +222,11 @@ background-image: url(imagenes/boton3.png);
 background-repeat: no-repeat;
 border: 0px;
 background-color: transparent;
+font-size: 10px;
+font-weight: bold;
+color: #0089D1;
 }
-.contenido-portfolio .imagenes-portfolio{
+.contenido-portfolio .imagenes-portfolio, .contenido-mensajes .lista-mensajes{
 height: 262px;
 background-color: #ffffff;
 border-top: 1px solid #d2d2d2;

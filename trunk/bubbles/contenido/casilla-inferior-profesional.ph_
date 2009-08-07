@@ -3,9 +3,11 @@
 	</div>
 	<div class="borde-contenido">
 		<div class="superior-comentarios">
+			<img src="imagenes/icono-comentarios.png" style="position: absolute; margin-top: 15px; margin-left: 10px;" />
 			<p><strong>Comentarios</strong></p>
 		</div>
 		<div class="superior-amigos">
+			<img src="imagenes/uritorco-mis-amigos.png" style="position: absolute; margin-top: 0px; margin-left: 15px;" />
 			<p><strong>Amigos</strong></p>
 		</div>
 		<div class="contenido-comentarios">

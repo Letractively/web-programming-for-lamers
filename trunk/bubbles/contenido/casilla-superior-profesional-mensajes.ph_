@@ -1,0 +1,25 @@
+<div class="casilla-superior">
+	<div class="borde-solapas">
+		<div class="solapa">
+			<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&casilla_superior=portfolio">
+				<img src="imagenes/icono-portfolio.png" style="position: absolute; margin-top: 15px; margin-left: 20px; border: 0;" />
+			</a>
+			<p class="parrafo3" style="position: absolute; margin-top: 60px; margin-left: 20px; border: 0;">Portfolio</p>
+		</div>
+		<div class="solapa">
+			<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&casilla_superior=mensajes">
+				<img src="imagenes/icono-mensajes.png" style="position: absolute; margin-top: 15px; margin-left: 20px; border: 0;" />
+			</a>
+			<p class="parrafo3" style="position: absolute; margin-top: 60px; margin-left: 20px; border: 0;">Mensajes</p>
+		</div>		<div class="solapa">
+		
+		</div>
+		<div class="solapa">
+		
+		</div>
+	</div>
+	<?php include('casilla-superior-profesional-botones.php'); ?>
+	<?php include('casilla-superior-profesional-contenido-mensajes.php'); ?>
+	<div class="borde-derecho">
+	</div>
+</div>
