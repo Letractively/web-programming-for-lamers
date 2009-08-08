@@ -38,28 +38,33 @@ $mensajes_propietario->traerMensajes($id_para, $para_entidad);
 	</div>
 	<div class="lista-mensajes">
 		<table>
+			<tr>
+				<td class="usuario">
+					<p class="parrafo4"><strong> De </strong></p>
+				</td>
+				<td class="asunto">
+					<p class="parrafo4"><strong> Asunto </strong></p>
+				</td>
+				<td class="fecha">
+				<p class="parrafo4"><strong> Fecha </strong></p>
+				</td>
+			</tr>
 		<?php
 		////////////////////////////////////////////////////////////////////////////
 		// BUCLE que presenta mensaje por renglón en "bandeja de entrada"
 		////////////////////////////////////////////////////////////////////////////
 		$i=0;
 		while ($i < $mensajes_propietario->ult_filas_afectadas) {
-				//Preparo los textos....
-				if(($mensajes_propietario->men_desde_entidad[$i] == 'PROFESIONAL') &&
-					(usuario::id2alias($mensajes_propietario->men_id_desde[$i]) != -1)){
-					$de = usuario::id2alias($mensajes_propietario->men_id_desde[$i]);
-				}
-				elseif(($mensajes_propietario->men_desde_entidad[$i] == 'EMPRESA') &&
-					(empresa::id2aliasUsuario($mensajes_propietario->men_id_desde[$i]) != -1)){
-					$de = empresa::id2aliasUsuario($mensajes_propietario->men_id_desde[$i]);
-				}
-				else{
-					echo 'error al levantar los mensajes!';
-				}
+			//Preparo los textos....
+			$de = mensaje::traerRemitente($mensajes_propietario->men_desde_entidad[$i], $mensajes_propietario->men_id_desde[$i]);
 				$fecha = myquery::cambiaFaNormal($mensajes_propietario->men_fecha[$i]);
 				
 				//Imprimo cada buble con formato HTML:
-				echo '<tr><td class="usuario"><p class="parrafo4">' . $de . '</p></td><td class="asunto"><p class="parrafo4">' . $mensajes_propietario->men_titulo[$i] . '</p></td><td class="fecha"><p class="parrafo4">' . $fecha . '</p></td></tr>';
+				$url_dinamica = "u-galeria.php?entidad_visitada=" . $_GET['entidad_visitada'] . 
+					"&solapa_superior=mensajes&botonera_superior=abrir_mensaje&contenido_superior=abrir_mensaje&id_mensaje=" . 
+					$mensajes_propietario->men_id_mensaje[$i];
+				
+				echo '<tr><td class="usuario"><p class="parrafo4">' . $de . '</p></td><td class="asunto"><p class="parrafo4"><a href="' . $url_dinamica .'">' . $mensajes_propietario->men_titulo[$i] . '</a></p></td><td class="fecha"><p class="parrafo4">' . $fecha . '</p></td></tr>';
 				$i ++;
 				}
 		/////////////////////////////////////////////////////////////////////////////

@@ -71,8 +71,7 @@ switch ($solapa_superior) {
         break;
 }
 ?>
-	<?php //include('contenido/casilla-superior-profesional-botones.php'); ?>
-	<?php //include('contenido/casilla-superior-profesional-contenido-mensajes.php'); ?>
+
 <?php
 //las switcheo para ver que botonera tengo que incluir...
 switch ($botonera_superior) {
@@ -100,6 +99,9 @@ switch ($contenido_superior) {
 	case 'ver_portfolio':
         include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
         break;
+	case 'abrir_mensaje':
+		include('contenido/casilla/superior/profesional/contenido/abrir-mensaje.php');
+		break;
     default:
         include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
         break;
