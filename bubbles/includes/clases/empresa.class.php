@@ -386,7 +386,7 @@ class empresa {
 			$fila = mysql_fetch_array($result, MYSQL_ASSOC);
 			return $fila['alias_usuario'];
 		}
-	return FALSE;
+	return -1;
 	}
 	
 	function aliasUsuario2id($alias_usuario = ''){								//Retorna ID_EMPRESA del ALIAS_USUARIO dado. Solo lectura. el ID_EMPRESA Se inserta SOLO mediante el metodo this->nuevaEmpresa.
@@ -400,7 +400,7 @@ class empresa {
 			$fila = mysql_fetch_array($result, MYSQL_ASSOC);
 			return $fila['id_empresa'];
 		}
-	return FALSE;
+	return -1;
 	}
 	
 	

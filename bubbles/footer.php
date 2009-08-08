@@ -11,5 +11,17 @@
 	<h2>footer incluido</h2>
 	<p>----------------</p>
 </div>
+
+<?php
+echo "<pre>";
+print_r($mensaje_post);
+echo "</pre>";
+?>
+<?php
+echo "<pre>";
+print_r($mensajes_propietario);
+echo "</pre>";
+?>
+
 </body>
 </html>
