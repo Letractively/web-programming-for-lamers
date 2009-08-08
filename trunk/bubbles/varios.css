@@ -175,7 +175,10 @@ margin:0;
 padding:0;
 text-align: right;
 }
-.contenido-mensajes .datos-escribir table input{
+.contenido-mensajes .datos-escribir table .umPara .umEntidad{
+width: 140px;
+}
+.contenido-mensajes .datos-escribir .umAsunto{
 width: 280px;
 }
 .contenido-mensajes .mce-escribir{
@@ -193,7 +196,7 @@ height: 199px;
 width: 354px;
 }
 .contenido-mensajes .enviar-escribir, .contenido-portfolio .recorrer-portfolio,
-.contenido-mensajes .recorrer-mensajes{
+.contenido-mensajes .recorrer-mensajes, .contenido-mensajes .titulos-mensajes{
 height: 25px;
 background-image: url(imagenes/degrade-enviar-escribir.png);
 background-repeat: repeat-x;
@@ -230,6 +233,18 @@ color: #0089D1;
 height: 262px;
 background-color: #ffffff;
 border-top: 1px solid #d2d2d2;
+}
+.contenido-mensajes .lista-mensajes table{
+width: 359px;
+}
+.contenido-mensajes .lista-mensajes table td.usuario{
+width: 100px;
+}
+.contenido-mensajes .lista-mensajes table td.asunto{
+width: 200px;
+}
+.contenido-mensajes .lista-mensajes table td.fecha{
+width: 59px;
 }
 .contenido-portfolio .recorrer-portfolio{
 
@@ -529,6 +544,18 @@ background-color: #ffffff;
 float: left;
 overflow: hidden;
 background-image: url(imagenes/debe-loguearse.jpg);
+background-repeat: no-repeat;
+height:223px;
+width: 547px;
+}
+/*<----*/
+/*CLASS para DATOS DE LOGIN INCORRECTOS ---->*/
+.datos-login-incorrectos{
+border: 1px solid #000000;
+background-color: #ffffff;
+float: left;
+overflow: hidden;
+background-image: url(imagenes/datos-incorrectos.jpg);
 background-repeat: no-repeat;
 height:223px;
 width: 547px;

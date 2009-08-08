@@ -463,7 +463,7 @@ class usuario {
 			$fila = mysql_fetch_array($result, MYSQL_ASSOC);
 			return $fila['alias'];
 		}
-	return FALSE;
+	return -1;
 	}
 	
 	function alias2id($alias = ''){								//Retorna IDUSUARIO del ALIAS dado. Solo lectura. el IDUSUARIO Se inserta SOLO mediante el metodo this->nuevoUsuario.
@@ -477,7 +477,7 @@ class usuario {
 			$fila = mysql_fetch_array($result, MYSQL_ASSOC);
 			return $fila['id_usuario'];
 		}
-	return FALSE;
+	return -1;
 	}
 	
 	
