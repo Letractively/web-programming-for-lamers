@@ -25,13 +25,13 @@ class empresa {
 	var $pais;
 	var $ciudad;
 	var $puesto_usuario;
-	var $prefijo_usuario;
 	var $tel_usuario;
 	var $ruta_foto;
 	var $desea_news;
 	var $desea_laborales;
 	var $desea_profesionales;
 	var $status;
+	var $miembro_desde_usuario;
 	
 	var $edad_contacto;			//Variables calculadas a partir de la TABLE 'empresas'
 	var $ultimo_error;			//Contiene el "string" que define el ultimo error provocado en esta clase.
@@ -55,13 +55,13 @@ class empresa {
 			$this->pais = NULL;
 			$this->ciudad = NULL;
 			$this->puesto_usuario = NULL;
-			$this->prefijo_usuario = NULL;
 			$this->tel_usuario = NULL;
 			$this->ruta_foto = NULL;
 			$this->desea_news = NULL;
 			$this->desea_laborales = NULL;
 			$this->desea_profesionales = NULL;
 			$this->status = NULL;
+			$this->miembro_desde_usuario = NULL;
 	
 			$this->edad_contacto = NULL;
 			$this->ultimo_error = NULL;
@@ -99,13 +99,13 @@ class empresa {
 				$this->pais = $fila['pais'];
 				$this->ciudad = $fila['ciudad'];
 				$this->puesto_usuario = $fila['puesto_usuario'];
-				$this->prefijo_usuario = $fila['prefijo_usuario'];
 				$this->tel_usuario = $fila['tel_usuario'];
 				$this->ruta_foto = $fila['ruta_foto'];
 				$this->desea_news = $fila['desea_news'];
 				$this->desea_laborales = $fila['desea_laborales'];
 				$this->desea_profesionales = $fila['desea_profesionales'];
 				$this->status = $fila['status'];
+				$this->miembro_desde_usuario = $fila['miembro_desde_usuario'];
 				
 				return 0;		// => ID encontrado y escrito en el Objeto
 			}
@@ -348,8 +348,7 @@ class empresa {
 		return 0;
 	}	
 
-	function cargarBasicosEmpresa($id_empresa){
-		$this->id_empresa = $id_empresa;
+	function cargarBasicosEmpresa(){
 		if($this->id_empresa > -1){
 			// Traer empresa de la DB;
 			$filas = $this->sql->leer('*','empresas',"id_empresa = '$this->id_empresa'");
@@ -358,11 +357,11 @@ class empresa {
 				return -1;
 			}
 			$this->id_empresa = $filas[0]['id_empresa'];
+			$this->miembro_desde_usuario = $filas[0]['miembro_desde_usuario'];
 			$this->alias_usuario = $filas[0]['alias_usuario'];
-			$this->nombre = $filas[0]['nombre'];
-			$this->ramo = $filas[0]['ramo'];
+			$this->razon_social = $filas[0]['razon_social'];
 			$this->pais = $filas[0]['pais'];
-			$this->provincia = $filas[0]['provincia'];
+			$this->ruta_foto = $filas[0]['ruta_foto'];
 			$this->ciudad = $filas[0]['ciudad'];
 			
 			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;

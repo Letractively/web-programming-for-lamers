@@ -3,8 +3,14 @@ Options +FollowSymLinks
 Options -Indexes
 DirectoryIndex index.php
 RewriteBase /bubbles/
+#INDEX:
 RewriteRule ^/(.)$ /bubbles/index.php [R]
 #RewriteRule ^/(.*)$ /bubbles/index.php [R]
+#PROFESIONAL:
 RewriteRule ^profesional/([a-zA-Z0-9_-]+)$ /bubbles/profesional/$1/	[R]	#Renombra un directorio "...../pepe" por "...../pepe/"
-RewriteCond %{REQUEST_URI} !.*\.(js|php|jpg|png) [NC]		#Evita que al requerir una extension ".php" o ".js" se la tome como USUARIO
-RewriteRule ^profesional/([a-zA-Z0-9_-]+)/ /bubbles/u-galeria.php?entidad_visitada=$1 [L]
+RewriteCond %{REQUEST_URI} !.*\.(js|php|jpg|png) [NC]		#Evita que al requerir una extension ".php" o ".js" se la tome como PRORESIONAL
+RewriteRule ^profesional/([a-zA-Z0-9_-]+)/ /bubbles/u-galeria.php?entidad_visitada=$1
+#EMPRESA:
+RewriteRule ^empresa/([a-zA-Z0-9_-]+)$ /bubbles/empresa/$1/	[R]	#Renombra un directorio "...../pepe" por "...../pepe/"
+RewriteCond %{REQUEST_URI} !.*\.(js|php|jpg|png) [NC]		#Evita que al requerir una extension ".php" o ".js" se la tome como EMPRESA
+RewriteRule ^empresa/([a-zA-Z0-9_-]+)/ /bubbles/e-galeria.php?entidad_visitada=$1 [L]

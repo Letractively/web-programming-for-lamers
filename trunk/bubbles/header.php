@@ -81,12 +81,12 @@ else{
 <body>
 <div class="header">
 	<div class="img">
-
+	<pre>
 	<?php
 	if(isset($_SESSION['logeado'])){
-		echo "<pre>Ud. es la Entidad Logueada.</pre>";
+		echo "Ud. es la Entidad Logueada.";
 		if(isset($_SESSION['id_usuario'])){
-			echo "<pre>El id de la entidad logueada es " . $_SESSION['id_usuario'] . ' -- ';
+			echo "El id de la entidad logueada es " . $_SESSION['id_usuario'] . ' -- ';
 		}
 		if(isset($_SESSION['id_empresa'])){
 			echo "El id de la entidad logueada es " . $_SESSION['id_empresa'] . ' -- ';
@@ -101,15 +101,16 @@ else{
 		}
 	}
 	else{
-		echo "<pre>Entidad Visitante NO Logueada.</pre>";
+		echo "Entidad Visitante NO Logueada.";
 	}
 	if(isset($_SESSION['registro'])){
-		echo "<pre>Ud es una entidad en tramite de registro</pre>";
+		echo "Ud es una entidad en tramite de registro";
 	}
 	else
-		echo "<pre>Ud no esta en tramite de registro</pre>";
+		echo "Ud no esta en tramite de registro";
 	?>
-
+	</pre>
+	
 <?php
 //echo "<pre>";
 //print_r($_SERVER);
