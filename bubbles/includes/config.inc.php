@@ -17,6 +17,9 @@ define('ARCH_PAG_NO_EXISTE', 'no-existe.php');
 define('DIR_FUENTES', '../fuentes/'); // Ruta RELATIVA! (solo sirve para el php que genera el captcha.)
 define('DIR_FOTOS_PROFESIONALES', 'contenido/profesionales/fotos/');	//160*160
 define('DIR_FOTOS_PROFESIONALES_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//60*60
+define('DIR_FOTOS_EMPRESAS', 'contenido/empresas/fotos/');	//160*160
+define('DIR_FOTOS_EMPRESAS_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//60*60
+
 define('DIMENSION_FOTO_GRANDE','160');
 define('DIMENSION_FOTO_CHICA','60');
 

@@ -97,7 +97,7 @@ width:1024px;
 height: auto;
 overflow: hidden;
 }
-.col-izquierda, .col-profesional{
+.col-izquierda, .col-profesional, .col-empresa{
 border: 1px solid #000000;
 background-color: #dddddd;
 float: left;

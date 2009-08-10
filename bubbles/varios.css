@@ -32,41 +32,71 @@ background-repeat: repeat-x;
 /**/
 /*clases para pantallas PROFESIONAL ------>*/
 .col-profesional .superior-col, .col-profesional .profesional-col, 
-.col-profesional .medio-col, .col-profesional .inferior-col{
+.col-profesional .medio-col, .col-profesional .inferior-col,
+.col-empresa .superior-col, .col-empresa .empresa-col, 
+.col-empresa .medio-col, .col-empresa .inferior-col{
 float: left;
 overflow: hidden;
 width: 212px;
 }
-.col-profesional .superior-col{
+.col-profesional .superior-col, .col-empresa .superior-col{
 height: 12px;
-background-image: url(imagenes/superior-col-profesional.png);
 background-repeat: no-repeat;
 margin-top: 15px;
 }
-.col-profesional .profesional-col{
+.col-profesional .superior-col{
+background-image: url(imagenes/superior-col-profesional.png);
+}
+.col-empresa .superior-col{
+background-image: url(imagenes/superior-col-empresa.png);
+}
+.col-profesional .profesional-col, .col-empresa .empresa-col{
 height: 354px;
-background-image: url(imagenes/degrade1-col-profesional.png);
-background-repeat: repeat-x;
-border-left: 1px solid #6cb4e4;
-border-right: 1px solid #6cb4e4;
 width: 210px;
 }
-.profesional-col img{
+.col-profesional .profesional-col{
+border-left: 1px solid #6cb4e4;
+border-right: 1px solid #6cb4e4;
+background-image: url(imagenes/degrade1-col-profesional.png);
+background-repeat: repeat-x;
+}
+.col-empresa .empresa-col{
+border-left: 1px solid #000000;
+border-right: 1px solid #000000;
+background-image: url(imagenes/degrade1-col-empresa.png);
+background-repeat: repeat-x;
+}
+.profesional-col img, .empresa-col img{
 margin: 18px;
 }
-.col-profesional .medio-col{
+.col-profesional .medio-col, .col-empresa .medio-col{
 height: 264px;
+width: 210px;
+}
+.col-profesional .medio-col{
 background-image: url(imagenes/degrade2-col-profesional.png);
 background-repeat: repeat-x;
 border-left: 1px solid #6cb4e4;
 border-right: 1px solid #6cb4e4;
-width: 210px;
+}
+.col-empresa .medio-col{
+background-image: url(imagenes/degrade2-col-empresa.png);
+background-repeat: repeat-x;
+border-left: 1px solid #000000;
+border-right: 1px solid #000000;
+}
+.col-profesional .inferior-col, .col-empresa .inferior-col{
+height: 10px;
 }
 .col-profesional .inferior-col{
-height: 10px;
 background-image: url(imagenes/inferior-col-profesional.png);
 background-repeat: no-repeat;
 }
+.col-empresa .inferior-col{
+background-image: url(imagenes/inferior-col-empresa.png);
+background-repeat: no-repeat;
+}
+
 /**/
 .col-profesional-centro .casilla-superior, .col-profesional-centro .casilla-inferior{
 border: 1px solid #000000;
