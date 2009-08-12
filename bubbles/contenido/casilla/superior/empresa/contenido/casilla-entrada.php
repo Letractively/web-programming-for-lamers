@@ -4,14 +4,13 @@
 ////////////////////////////////////////////////////////////////////////////
 $mensajes_propietario = new mensaje();
 if(isset($_SESSION['id_usuario'])){
-	$para_entidad = 'PROFESIONAL';
-	$id_para = $visitado->id_usuario;
-	$mensajes_propietario->traerMensajes($id_para, $para_entidad);
-}
-elseif(isset($_SESSION['id_empresa'])){
 	echo 'Esta casilla NO le pertenece a Ud!';
 }
-
+elseif(isset($_SESSION['id_empresa'])){
+	$para_entidad = 'EMPRESA';
+	$id_para = $visitado->id_empresa;
+	$mensajes_propietario->traerMensajes($id_para, $para_entidad);
+}
 ////////////////////////////////////////////////////////////////////////////
 ?>
 
@@ -60,7 +59,7 @@ elseif(isset($_SESSION['id_empresa'])){
 				$fecha = myquery::cambiaFaNormal($mensajes_propietario->men_fecha[$i]);
 				
 				//Imprimo cada buble con formato HTML:
-				$url_dinamica = "u-galeria.php?entidad_visitada=" . $_GET['entidad_visitada'] . 
+				$url_dinamica = "e-galeria.php?entidad_visitada=" . $_GET['entidad_visitada'] . 
 					"&solapa_superior=mensajes&botonera_superior=abrir_mensaje&contenido_superior=abrir_mensaje&id_mensaje=" . 
 					$mensajes_propietario->men_id_mensaje[$i];
 				

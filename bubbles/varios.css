@@ -39,6 +39,20 @@ float: left;
 overflow: hidden;
 width: 212px;
 }
+.col-profesional table, .col-empresa table{
+border-collapse:collapse;
+border-spacing:0;
+}
+.col-profesional table th, .col-profesional table td,
+.col-profesional table tr,
+.col-empresa table th, .col-empresa table td,
+.col-empresa table tr{
+border-width:0;
+height:20px;
+margin:0;
+padding:0;
+text-align: right;
+}
 .col-profesional .superior-col, .col-empresa .superior-col{
 height: 12px;
 background-repeat: no-repeat;
@@ -98,20 +112,23 @@ background-repeat: no-repeat;
 }
 
 /**/
-.col-profesional-centro .casilla-superior, .col-profesional-centro .casilla-inferior{
+.col-profesional-centro .casilla-superior, .col-profesional-centro .casilla-inferior,
+.col-empresa-centro .casilla-superior, .col-empresa-centro .casilla-inferior{
 border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
 width: 548px;
 }
-.col-profesional-centro .casilla-superior{
+.col-profesional-centro .casilla-superior,
+.col-empresa-centro .casilla-superior{
 height: 321px;
 margin-top: 15px;
 }
 .casilla-superior .borde-solapas, .casilla-superior .portfolio,
 .casilla-superior .borde-botones-mensajes, .casilla-superior .contenido-mensajes,
-.casilla-superior .borde-derecho, .casilla-superior .contenido-portfolio{
+.casilla-superior .borde-derecho, .casilla-superior .contenido-portfolio,
+.casilla-superior .contenido-laborales, .casilla-superior .contenido-editar-perfil{
 float: left;
 overflow: hidden;
 height: 321px;
@@ -124,6 +141,13 @@ float: left;
 width: 94px;
 height: 80px;
 background-image: url(imagenes/solapa-lateral.png);
+background-repeat: no-repeat;
+}
+.solapa-empresa{
+float: left;
+width: 94px;
+height: 80px;
+background-image: url(imagenes/solapa-lateral-empresa.png);
 background-repeat: no-repeat;
 }
 .casilla-superior .portfolio{
@@ -153,18 +177,29 @@ font-size: 10px;
 font-weight: bold;
 color: #0089D1;
 }
-.casilla-superior .contenido-mensajes, .casilla-superior .contenido-portfolio{
+.casilla-superior .contenido-mensajes, .casilla-superior .contenido-portfolio,
+.casilla-superior .contenido-laborales, .casilla-superior .contenido-editar-perfil{
 width: 360px;
 height: 319px;
 border-top: 1px solid #6db3e4;
 border-bottom: 1px solid #6db3e4;
 }
+.casilla-superior .contenido-editar-perfil{
+width: 442px;
+}
 .contenido-mensajes .cabecera-escribir, .contenido-mensajes .datos-escribir,
 .contenido-mensajes .mce-escribir, .contenido-mensajes .contenido-escribir,
-.contenido-mensajes .enviar-escribir{
+.contenido-mensajes .enviar-escribir,
+.contenido-laborales .cabecera-oferta, .contenido-laborales .form-oferta,
+.contenido-laborales .enviar-oferta{
 float: left;
 overflow: hidden;
 width: 359px;
+}
+.contenido-editar-perfil .salvar-perfil,.contenido-editar-perfil .form-editar-perfil{
+float: left;
+overflow: hidden;
+width: 441px;
 }
 .contenido-portfolio .cabecera-portfolio, .contenido-portfolio .imagenes-portfolio,
 .contenido-portfolio .recorrer-portfolio, .contenido-mensajes .lista-mensajes,
@@ -173,9 +208,73 @@ float: left;
 overflow: hidden;
 width: 359px;
 }
-.contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio{
+.contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio,
+.contenido-editar-perfil .salvar-perfil{
 height: 30px;
+}
+.contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio,
+.contenido-editar-perfil .salvar-perfil{
 background-color: #ffffff;
+}
+.contenido-editar-perfil .salvar-perfil{
+background-color: #edf8fe;
+}
+.contenido-editar-perfil .salvar-perfil h2{
+float: left;
+width: 100px;
+}
+.contenido-editar-perfil .salvar-perfil .boton3{
+float: left;
+margin-left: 270px;
+margin-top: 5px;
+}
+.contenido-editar-perfil .form-editar-perfil{
+height: 289px;
+background-color: #ffffff;
+}
+.contenido-editar-perfil .form-editar-perfil tr, .contenido-editar-perfil .form-editar-perfil td{
+height: 10px;
+margin: 0px;
+}
+.contenido-editar-perfil .form-editar-perfil p{
+margin: 0px;
+}
+.contenido-editar-perfil .form-editar-perfil .tabla1{
+height: 60px;
+width: 440px;
+}
+.contenido-editar-perfil .euNombres, .contenido-editar-perfil .euApellidos{
+width:130px;
+}
+.contenido-editar-perfil .euNacimiento{
+width:80px;
+}
+.contenido-editar-perfil .euEmail{
+width:180px;
+}
+.contenido-editar-perfil .euSexo{
+width:100px;
+}
+.contenido-editar-perfil .euPaisResidencia{
+width:80px;
+}
+.contenido-editar-perfil .euEmpresa{
+width:120px;
+}
+.contenido-editar-perfil .euProfesion{
+width:120px;
+}
+.contenido-editar-perfil .euNivelProfesion{
+width:80px;
+}
+
+.contenido-editar-perfil .form-editar-perfil .tabla2{
+height: 110px;
+width: 440px;
+}
+.contenido-editar-perfil .form-editar-perfil .tabla3{
+height: 110px;
+width: 440px;
 }
 .contenido-mensajes .cabecera-escribir table{
 width: 350px;
@@ -205,10 +304,12 @@ margin:0;
 padding:0;
 text-align: right;
 }
-.contenido-mensajes .datos-escribir table .umPara .umEntidad{
+.contenido-mensajes .datos-escribir table .umPara .umEntidad,
+.contenido-mensajes .datos-escribir table .umPara .emEntidad{
 width: 140px;
 }
-.contenido-mensajes .datos-escribir .umAsunto{
+.contenido-mensajes .datos-escribir .umAsunto,
+.contenido-mensajes .datos-escribir .emAsunto{
 width: 280px;
 }
 .contenido-mensajes .mce-escribir{
@@ -248,7 +349,7 @@ margin:0;
 padding:0;
 text-align: right;
 }
-.contenido-mensajes .enviar-escribir table .boton3{
+.boton3{
 width: 54px;
 height: 18px;
 background-image: url(imagenes/boton3.png);
@@ -286,7 +387,7 @@ background-image: url(imagenes/borde-derecho-casilla-superior.png);
 background-repeat: no-repeat;
 }
 /*.col-profesional-centro .casilla-inferior*/
-.col-profesional-centro .casilla-inferior{
+.col-profesional-centro .casilla-inferior, .col-empresa-centro .casilla-inferior{
 height:308px;
 margin-top: 10px;
 }
@@ -294,23 +395,32 @@ margin-top: 10px;
 .col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .contenido-comentarios,
 .col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos,
 .col-profesional-centro .casilla-inferior .contenido-amigos, .col-profesional-centro .casilla-inferior .inferior-amigos,
-.col-profesional-centro .casilla-inferior .borde-contenido{
+.col-profesional-centro .casilla-inferior .borde-contenido,
+.col-empresa-centro .casilla-inferior .extremo-izq, .col-empresa-centro .casilla-inferior .extremo-der,
+.col-empresa-centro .casilla-inferior .superior-comentarios, .col-empresa-centro .casilla-inferior .contenido-comentarios,
+.col-empresa-centro .casilla-inferior .inferior-comentarios, .col-empresa-centro .casilla-inferior .superior-amigos,
+.col-empresa-centro .casilla-inferior .contenido-amigos, .col-empresa-centro .casilla-inferior .inferior-amigos,
+.col-empresa-centro .casilla-inferior .borde-contenido{
 float: left;
 overflow: hidden;
 height:308px;
 }
-.col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der{
+.col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der,
+.col-empresa-centro .casilla-inferior .extremo-izq, .col-empresa-centro .casilla-inferior .extremo-der{
 width: 12px;
 }
-.col-profesional-centro .casilla-inferior .extremo-izq{
+.col-profesional-centro .casilla-inferior .extremo-izq,
+.col-empresa-centro .casilla-inferior .extremo-izq{
 background-image: url(imagenes/borde-izquierdo-casilla-inferior.png);
 background-repeat: no-repeat;
 }
-.col-profesional-centro .casilla-inferior .extremo-der{
+.col-profesional-centro .casilla-inferior .extremo-der,
+.col-empresa-centro .casilla-inferior .extremo-der{
 background-image: url(imagenes/borde-derecho-casilla-inferior.png);
 background-repeat: no-repeat;
 }
-.col-profesional-centro .casilla-inferior .borde-contenido{
+.col-profesional-centro .casilla-inferior .borde-contenido,
+.col-empresa-centro .casilla-inferior .borde-contenido{
 width: 524px;
 background-color: #f7eedd;
 height:306px;
@@ -318,11 +428,14 @@ border-top: 1px solid #6DB3E4;
 border-bottom: 1px solid #6DB3E4;
 }
 .col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .contenido-comentarios,
-.col-profesional-centro .casilla-inferior .inferior-comentarios{
+.col-profesional-centro .casilla-inferior .inferior-comentarios,
+.col-empresa-centro .casilla-inferior .superior-comentarios, .col-empresa-centro .casilla-inferior .contenido-comentarios,
+.col-empresa-centro .casilla-inferior .inferior-comentarios{
 border-right: 1px solid #0089d1;
 width: 293px;
 }
-.col-profesional-centro .casilla-inferior .superior-comentarios p, .col-profesional-centro .casilla-inferior .superior-amigos p{
+.col-profesional-centro .casilla-inferior .superior-comentarios p, .col-profesional-centro .casilla-inferior .superior-amigos p,
+.col-empresa-centro .casilla-inferior .superior-comentarios p, .col-empresa-centro .casilla-inferior .superior-amigos p{
 width: 235px;
 height: 30px;
 background-color: #0089d1;
@@ -332,28 +445,35 @@ margin-top: 10px;
 padding-left: 50px;
 padding-top: 2px;
 }
-.col-profesional-centro .casilla-inferior .superior-amigos p{
+.col-profesional-centro .casilla-inferior .superior-amigos p,
+.col-empresa-centro .casilla-inferior .superior-amigos p{
 width: 180px;
 margin-left: 10px;
 }
-.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos{
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos,
+.col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos{
 float: left;
 overflow: hidden;
 height: 78px;
 }
 .col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-izq,
 .col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der,
-.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont{
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont,
+.col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos-izq,
+.col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der,
+.col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont{
 float: left;
 overflow: hidden;
 height: 78px;
 }
-.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-izq{
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-izq,
+.col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos-izq{
 width: 8px;
 background-image: url(imagenes/borde-izquierdo-buscar-amigos-inferior.png);
 background-repeat: no-repeat;
 }
-.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont{
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont,
+.col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont{
 height: 76px;
 width: 270px;
 background-image: url(imagenes/degrade-buscar-amigos-inferior.png);
@@ -361,26 +481,30 @@ background-repeat: repeat-x;
 border-top: 1px solid #d2d2d2;
 border-bottom: 1px solid #d2d2d2;
 }
-.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der{
+.col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der,
+.col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der{
 width: 8px;
 background-image: url(imagenes/borde-derecho-buscar-amigos-inferior.png);
 background-repeat: no-repeat;
 }
-
-
-.col-profesional-centro .casilla-inferior .contenido-comentarios, .col-profesional-centro .casilla-inferior .contenido-amigos{
+.col-profesional-centro .casilla-inferior .contenido-comentarios, .col-profesional-centro .casilla-inferior .contenido-amigos,
+.col-empresa-centro .casilla-inferior .contenido-comentarios, .col-empresa-centro .casilla-inferior .contenido-amigos{
 float: left;
 overflow: hidden;
 height: 160px;
 }
 .col-profesional-centro .casilla-inferior .superior-amigos, .col-profesional-centro .casilla-inferior .contenido-amigos,
-.col-profesional-centro .casilla-inferior .inferior-amigos{
+.col-profesional-centro .casilla-inferior .inferior-amigos,
+.col-empresa-centro .casilla-inferior .superior-amigos, .col-empresa-centro .casilla-inferior .contenido-amigos,
+.col-empresa-centro .casilla-inferior .inferior-amigos{
 width: 230px;
 }
-.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos{
+.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos,
+.col-empresa-centro .casilla-inferior .superior-comentarios, .col-empresa-centro .casilla-inferior .superior-amigos{
 height: 50px;
 }
-.col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .inferior-amigos{
+.col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .inferior-amigos,
+.col-empresa-centro .casilla-inferior .inferior-comentarios, .col-empresa-centro .casilla-inferior .inferior-amigos{
 height: 96px;
 }
 /*<-------*/

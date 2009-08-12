@@ -173,9 +173,7 @@ $(document).ready(function(){
 				<td><input type="text" name="fuEmpresa" id="fuEmpresa" /></td>
 				<td><input type="text" name="fuEmail" id="fuEmail" value="<?php echo $fiEmail; ?>"/></td>
 				<td><select name="fuSexo" id="fuSexo" >
-					<option value=""></option>
-					<option value="Masculino">Masculino</option>
-					<option value="Femenino">Femenino</option>
+					<?php listar_options($OPCIONES_SEXO);?>
 					</select></td>
 				<td><input type="text" name="fuPaisResidencia" id="fuPaisResidencia" /></td>
 			</tr>
@@ -190,32 +188,20 @@ $(document).ready(function(){
 			</tr>
 			<tr>
 				<td><select name="fuProfesion1" id="fuProfesion1" >
-					<option value=""></option>
-					<option value="Diseñador">Diseñador</option>
-					<option value="Desarrollador">Desarrollador</option>
-					<option value="Programador">Programador</option>
+					<?php listar_options($OPCIONES_PROFESIONES);?>
 					</select>
 				</td>
 				<td><select name="fuProfesion2" id="fuProfesion2" >
-					<option value=""></option>
-					<option value="Diseñador">Diseñador</option>
-					<option value="Desarrollador">Desarrollador</option>
-					<option value="Programador">Programador</option>
+					<?php listar_options($OPCIONES_PROFESIONES);?>
 					</select>
 				</td>
 				<td><select name="fuProfesion3" id="fuProfesion3" >
-					<option value=""></option>
-					<option value="Diseñador">Diseñador</option>
-					<option value="Desarrollador">Desarrollador</option>
-					<option value="Programador">Programador</option>
+					<?php listar_options($OPCIONES_PROFESIONES);?>
 					</select>
 				</td>
 				<td>
 					<select name="fuNivelProfesion" id="fuNivelProfesion">
-					<option value=""></option>
-					<option value="Trainee">Trainee</option>
-					<option value="Ssr">Ssr</option>
-					<option value="Sr">Sr</option>
+					<?php listar_options($OPCIONES_NIVEL_PROFESION);?>
 					</select>
 				</td>
 			</tr>

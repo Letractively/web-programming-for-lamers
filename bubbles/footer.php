@@ -14,6 +14,12 @@
 
 <?php
 echo "<pre>";
+print_r($_SERVER);
+echo "</pre>";
+?>
+
+<?php
+echo "<pre>";
 print_r($mensaje_post);
 echo "</pre>";
 ?>
@@ -22,6 +28,20 @@ echo "<pre>";
 print_r($mensajes_propietario);
 echo "</pre>";
 ?>
+
+<?php
+echo "<pre>";
+print_r($visitado);
+echo "</pre>";
+?>
+
+<select>
+<?php
+listar_options($OPCIONES_PROFESIONES);
+listar_options($OPCIONES_NIVEL_PROFESION);
+listar_options($OPCIONES_SEXO);
+?>
+</select>
 
 </body>
 </html>

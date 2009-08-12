@@ -29,6 +29,8 @@ if(!(isset($_GET['reg'])) && !(isset($_POST["paso1"])) && !(isset($_POST["paso2"
 		$fiEmail = $_POST['fiEmail'];
 	}
 	include('contenido/registrar-usuario.php');
+	// Guardo el capcha para cotejarlo antes de inscribir, por si el Cliente no me tomo el JavaScript:
+	$_SESSION['captcha_guardado'] = $_SESSION['capcha'];
 }
 
 ////////////////////////////////////////PASO 1
@@ -38,17 +40,23 @@ if(isset($_POST["paso1"])){
 	}
 	//$tmp = unserialize($_POST["tmp"]);
 	// El form fue procesado por js
-	$_SESSION['fuAlias'] = $_POST['fuAlias'];
+	// De todas formas cotejamos tres variable esceciales de registro...
+	if($_POST['fuSeguridad'] != $_SESSION['captcha_guardado']){
+		echo 'Sus datos estan incorrectos!; realice otra vez su trámite de registro!';
+		include('footer.php');
+		exit;
+	}
+	$_SESSION['fuAlias'] = myquery::cambiaTaMysql($_POST['fuAlias']);
 	$_SESSION['fuContrasenia'] = $_POST['fuContrasenia'];
-	$_SESSION['fuEmail'] = $_POST['fuEmail'];
-	$_SESSION['fuNacimiento'] = cambiaf_a_mysql($_POST['fuNacimiento']);
-	$_SESSION['fuPreguntaSecreta'] = $_POST['fuPreguntaSecreta'];
-	$_SESSION['fuRespuestaSecreta'] = $_POST['fuRespuestaSecreta'];
-	$_SESSION['fuNombres'] = $_POST['fuNombres'];
-	$_SESSION['fuApellidos'] = $_POST['fuApellidos'];
-	$_SESSION['fuEmpresa'] = $_POST['fuEmpresa'];
+	$_SESSION['fuEmail'] = myquery::cambiaTaMysql($_POST['fuEmail']);
+	$_SESSION['fuNacimiento'] = myquery::cambiaFaMysql($_POST['fuNacimiento']);
+	$_SESSION['fuPreguntaSecreta'] = myquery::cambiaTaMysql($_POST['fuPreguntaSecreta']);
+	$_SESSION['fuRespuestaSecreta'] = myquery::cambiaTaMysql($_POST['fuRespuestaSecreta']);
+	$_SESSION['fuNombres'] = myquery::cambiaTaMysql($_POST['fuNombres']);
+	$_SESSION['fuApellidos'] = myquery::cambiaTaMysql($_POST['fuApellidos']);
+	$_SESSION['fuEmpresa'] = myquery::cambiaTaMysql($_POST['fuEmpresa']);
 	$_SESSION['fuSexo'] = $_POST['fuSexo'];
-	$_SESSION['fuPaisResidencia'] = $_POST['fuPaisResidencia'];
+	$_SESSION['fuPaisResidencia'] = myquery::cambiaTaMysql($_POST['fuPaisResidencia']);
 	$_SESSION['fuProfesion1'] = $_POST['fuProfesion1'];
 	$_SESSION['fuProfesion2'] = $_POST['fuProfesion2'];
 	$_SESSION['fuProfesion3'] = $_POST['fuProfesion3'];

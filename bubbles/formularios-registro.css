@@ -414,7 +414,7 @@ margin-left: 15px;
 }
 /******DINAMISMO CON VALIDACION*******/
 #registrarForm label.error {
-	margin-left: 10px;
+	margin-left: 0; /*10px; - Ha sido quitado porque corria las CASILLAS de lugar */
 	width: auto;
 	display: inline;
 	color: #FF0000;

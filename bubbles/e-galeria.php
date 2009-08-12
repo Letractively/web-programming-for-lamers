@@ -1,7 +1,9 @@
 <?php include('header.php'); ?>
 <?php include('includes/clases/empresa.class.php'); ?>
+<?php include('includes/clases/usuario.class.php'); ?>
 <?php include('includes/clases/comentario.class.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
+<?php include('includes/clases/mensaje.class.php'); ?>
 
 <?php
 $visitado = new empresa(empresa::aliasUsuario2id($_GET['entidad_visitada']));
@@ -28,6 +30,89 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 ?>
 
 <?php include('contenido/col-empresa.php'); ?>
+
+<?php	//SWHITCH del CONTENIDO de la pagina (columna-central). Proximanente en AJAX!
+// Defino las variables de peticion que si solo si se que existen:
+$casilla_superior = '';
+$solapa_superior = '';
+$botonera_superior = '';
+$contenido_superior = '';
+// Las guardo con las variables llegadas por GET si es que existen
+if(isset($_GET['solapa_superior'])){
+	$solapa_superior = $_GET['solapa_superior'];
+}
+if(isset($_GET['botonera_superior'])){
+	$botonera_superior = $_GET['botonera_superior'];
+}
+if(isset($_GET['contenido_superior'])){
+	$contenido_superior = $_GET['contenido_superior'];
+}
+?>
+
+<div class="col-empresa-centro">
+	<div class="casilla-superior">
+<?php
+//include('contenido/casilla-superior-profesional-portfolio.php');
+//las switcheo para ver que solapas tengo que incluir...
+switch ($solapa_superior) {
+    case 'mensajes':
+        include('contenido/casilla/superior/empresa/solapas/mensajes.php');
+        break;
+    case 'laborales':
+        include('contenido/casilla/superior/empresa/solapas/laborales.php');
+        break;
+    default:
+        include('contenido/casilla/superior/empresa/solapas/laborales.php');
+        break;
+}
+?>
+
+<?php
+//las switcheo para ver que botonera tengo que incluir...
+switch ($botonera_superior) {
+    case 'nuevo_mensaje':
+        include('contenido/casilla/superior/empresa/botones/nuevo-mensaje.php');
+        break;
+    case 'ver_laborales':
+        include('contenido/casilla/superior/empresa/botones/ver-laborales.php');
+        break;
+    case 'abrir_mensaje':
+        include('contenido/casilla/superior/empresa/botones/abrir-mensaje.php');
+        break;
+    default:
+        include('contenido/casilla/superior/empresa/botones/ver-laborales.php');
+        break;
+}
+?>
+
+<?php
+//las switcheo para ver que contenido tengo que incluir...
+switch ($contenido_superior) {
+    case 'nuevo_mensaje':
+        include('contenido/casilla/superior/empresa/contenido/nuevo-mensaje.php');
+        break;
+    case 'casilla_entrada':
+        include('contenido/casilla/superior/empresa/contenido/casilla-entrada.php');
+        break;
+	case 'ver_laborales':
+        include('contenido/casilla/superior/empresa/contenido/ver-laborales.php');
+        break;
+	case 'abrir_mensaje':
+		include('contenido/casilla/superior/empresa/contenido/abrir-mensaje.php');
+		break;
+    default:
+        include('contenido/casilla/superior/empresa/contenido/subir-oferta.php');
+        break;
+}
+?>
+		<div class="borde-derecho">
+		</div>
+	</div>
+
+
+<?php include('contenido/casilla/inferior/profesional.php') ?>
+</div>
+
 
 <?php //ACTUALIZADO HASA AQUI!!!!! ?>
 

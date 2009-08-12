@@ -29,27 +29,33 @@ if(!(isset($_GET['reg'])) && !(isset($_POST["paso1"])) && !(isset($_POST["paso2"
 		$fiEmail = $_POST['fiEmail'];
 	}
 	include('contenido/registrar-empresa.php');
+	$_SESSION['captcha_guardado'] = $_SESSION['capcha'];
 }
 
 ////////////////////////////////////////PASO 1
 if(isset($_POST["paso1"])){
 	//$tmp = unserialize($_POST["tmp"]);
-	// El form fue procesado por js
-	$_SESSION['feRazonSocial'] = $_POST['feRazonSocial'];
-	$_SESSION['feContraseniaUsuario'] = $_POST['feContraseniaUsuario'];
-	$_SESSION['fePreguntaSecretaUsuario'] = $_POST['fePreguntaSecretaUsuario'];
-	$_SESSION['feRespuestaSecretaUsuario'] = $_POST['feRespuestaSecretaUsuario'];
-	$_SESSION['feEmailUsuario'] = $_POST['feEmailUsuario'];
-	$_SESSION['feAliasUsuario'] = $_POST['feAliasUsuario'];
-	$_SESSION['feCalle'] = $_POST['feCalle'];
+	// El form fue procesado por js... pero me aseguro por PHP:
+	if($_POST['feSeguridad'] != $_SESSION['captcha_guardado']){
+		echo 'Sus datos estan incorrectos!; realice otra vez su trámite de registro!';
+		include('footer.php');
+		exit;
+	}
+	$_SESSION['feRazonSocial'] = myquery::cambiaTaMysql($_POST['feRazonSocial']);
+	$_SESSION['feContraseniaUsuario'] = myquery::cambiaTaMysql($_POST['feContraseniaUsuario']);
+	$_SESSION['fePreguntaSecretaUsuario'] = myquery::cambiaTaMysql($_POST['fePreguntaSecretaUsuario']);
+	$_SESSION['feRespuestaSecretaUsuario'] = myquery::cambiaTaMysql($_POST['feRespuestaSecretaUsuario']);
+	$_SESSION['feEmailUsuario'] = myquery::cambiaTaMysql($_POST['feEmailUsuario']);
+	$_SESSION['feAliasUsuario'] = myquery::cambiaTaMysql($_POST['feAliasUsuario']);
+	$_SESSION['feCalle'] = myquery::cambiaTaMysql($_POST['feCalle']);
 	$_SESSION['feAltura'] = $_POST['feAltura'];
 	$_SESSION['fePiso'] = $_POST['fePiso'];								//POST opcional!
 	$_SESSION['feOficina'] = $_POST['feOficina'];						//POST opcional!
 	$_SESSION['feNacimientoUsuario'] = cambiaf_a_mysql($_POST['feNacimientoUsuario']);
 	$_SESSION['feSexoUsuario'] = $_POST['feSexoUsuario'];
-	$_SESSION['fePais'] = $_POST['fePais'];
-	$_SESSION['feCiudad'] = $_POST['feCiudad'];
-	$_SESSION['fePuestoUsuario'] = $_POST['fePuestoUsuario'];
+	$_SESSION['fePais'] = myquery::cambiaTaMysql($_POST['fePais']);
+	$_SESSION['feCiudad'] = myquery::cambiaTaMysql($_POST['feCiudad']);
+	$_SESSION['fePuestoUsuario'] = myquery::cambiaTaMysql($_POST['fePuestoUsuario']);
 	$_SESSION['fePrefijoUsuario'] = $_POST['fePrefijoUsuario'];
 	$_SESSION['feTelUsuario'] = $_POST['feTelUsuario'];
 	$_SESSION['feRutaLogo'] = '';//$_POST['feRutaLogo'];

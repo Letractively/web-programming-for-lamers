@@ -1,6 +1,3 @@
-<?php //include('u_experiencia.class.php'); ?>
-<?php //include('comentario.class.php'); ?>
-
 <?php
 // Clase padre "usuario".
 
@@ -436,13 +433,44 @@ class usuario {
 					$this->ultimo_error = 'Error al traer los Datos de este Profesional de la DB!: ' . $this->sql->ultimo_error;
 					return -1;
 				}
+			$this->nombres = $filas[0]['nombres'];
+			$this->apellidos = $filas[0]['apellidos'];
+			$this->nacimiento = $filas[0]['nacimiento'];
 			$this->miembro_desde = $filas[0]['miembro_desde'];
 			$this->ruta_foto = $filas[0]['ruta_foto'];
 			$this->nombres = $filas[0]['nombres'];
 			$this->apellidos = $filas[0]['apellidos'];
+			$this->sexo = $filas[0]['sexo'];
+			$this->pais_residencia = $filas[0]['pais_residencia'];
+			$this->empresa = $filas[0]['empresa'];
 			$this->edad();
 			$this->profesion_1 = $filas[0]['profesion_1'];
+			$this->profesion_2 = $filas[0]['profesion_2'];
 			$this->nivel_profesion = $filas[0]['nivel_profesion'];
+			return 0;
+		}
+	return -1;
+	}
+
+	function guardarDatosPerfil(){
+		if($this->idUsuario() > -1){
+			//Insertar en la DB
+			$filas = $this->sql->cambiar("email = '$this->email',
+										nacimiento = '$this->nacimiento',
+										nombres = '$this->nombres',
+										apellidos = '$this->apellidos',
+										empresa = '$this->empresa',
+										sexo = '$this->sexo',
+										pais_residencia = '$this->pais_residencia',
+										profesion_1 = '$this->profesion_1',
+										profesion_2 = '$this->profesion_2',
+										profesion_3 = '$this->profesion_3',
+										nivel_profesion = '$this->nivel_profesion'"
+										, 'usuarios', "id_usuario = '$this->id_usuario'");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al UPDATEar el PERFIL!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
 			return 0;
 		}
 	return -1;
