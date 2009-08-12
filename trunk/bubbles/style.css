@@ -22,7 +22,7 @@ p.al-medio{
 text-align: center;
 padding: 3px;
 }
-p.parrafo3{
+p.parrafo3, p.parrafo5{
 font-size: 12px;
 font-weight: bold;
 color: #0089D1;
@@ -32,11 +32,16 @@ font-size: 10px;
 font-weight: bold;
 color: #0089D1;
 }
+p.parrafo5{
+border-bottom: 2px solid #0089D1;
+}
 h1{
 font-size: 24px;
 }
 h2{
 font-size: 18px;
+color: #42A0D2;
+margin: 3px;
 }
 .texto-chico{
 font-size: 10px;
@@ -114,7 +119,7 @@ width: 761px;
 height: 600px;
 margin-left: 15px;
 }
-.col-central, .col-profesional-centro{
+.col-central, .col-profesional-centro, .col-empresa-centro{
 border: 1px solid #000000;
 background-color: #dddddd;
 float: left;

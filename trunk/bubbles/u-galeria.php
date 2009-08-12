@@ -66,6 +66,9 @@ switch ($solapa_superior) {
     case 'portfolio':
         include('contenido/casilla/superior/profesional/solapas/portfolio.php');
         break;
+	case 'editar_perfil':
+		include('contenido/casilla/superior/profesional/solapas/ninguna-activa.php');
+        break;
     default:
         include('contenido/casilla/superior/profesional/solapas/portfolio.php');
         break;
@@ -81,6 +84,9 @@ switch ($botonera_superior) {
     case 'ver_portfolio':
         include('contenido/casilla/superior/profesional/botones/ver-portfolio.php');
         break;
+	case 'editar_perfil':
+		include('contenido/casilla/superior/profesional/botones/sin-botonera.php');
+		break;
     default:
         include('contenido/casilla/superior/profesional/botones/ver-portfolio.php');
         break;
@@ -101,6 +107,9 @@ switch ($contenido_superior) {
         break;
 	case 'abrir_mensaje':
 		include('contenido/casilla/superior/profesional/contenido/abrir-mensaje.php');
+		break;
+	case 'editar_perfil':
+		include('contenido/casilla/superior/profesional/contenido/editar-perfil.php');
 		break;
     default:
         include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');

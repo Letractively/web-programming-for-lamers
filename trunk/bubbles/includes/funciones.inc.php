@@ -280,4 +280,21 @@ function postear_postulacion($aviso){
 	echo $aviso->ultimo_error;
 }
 
+////////////////////////////////////////////////////
+//Arma un Array de <options> con la posibilidad
+// de pasar la "preelegida" como segundo param.:
+////////////////////////////////////////////////////
+function listar_options( $opciones = array(), $seleccionada = ''){
+	echo '<option value=""></option>';
+	foreach($opciones as $opcion){
+		echo '<option value="' . $opcion . '"';
+		if($opcion == $seleccionada){
+			echo ' selected="true">';
+		}
+		else{
+			echo '>';
+		}
+		echo $opcion . '</option>';
+	}
+}
 ?>

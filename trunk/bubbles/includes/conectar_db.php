@@ -11,4 +11,5 @@ if(!$db){
 	echo 'No se puede conectar a la DB '. USUARIO_SQL;
 	die('No se puede conectar a la Base de Datos: ' . mysql_error());
 }
+mysql_query ("SET NAMES " . SQL_NAMES);	//Setea el IDIOMA POR DEFECTO entre el server y el cliente, por mas que este TODO en UTF8 hay que especificar la conexión
 ?>

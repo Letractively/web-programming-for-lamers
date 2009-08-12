@@ -3,6 +3,7 @@
 define( 'USUARIO_SQL', 'bubbles');
 define( 'PASS_SQL', '45511385');
 define('SQL_DB', 'bubbles');
+define('SQL_NAMES', 'utf8'); //Setea el IDIOMA POR DEFECTO entre el server y el cliente, por mas que este TODO en UTF8 hay que especificar la conexión
 
 // Configuración de directorios y archivos...
 define('HOST','http://127.0.0.1/');
@@ -25,6 +26,13 @@ define('DIMENSION_FOTO_CHICA','60');
 
 // Tiempo de Sesion por usuario en segundos...
 define('TIEMPO_SESION', 1000);
+
+// Configuración de opciones listadas...
+$OPCIONES_PROFESIONES = array('Dis. web', 'Dis. grafico', 'Dis. multimedial', 'Dis. de indumentaria', 'Dis. de interiores',
+							'Dir. de arte', 'Ilustrador', 'Retocador', 'Animador 3d', 'Animador 2d', 'Editor de videos',
+							'Dibujante', 'Redactor', 'Organizador de eventos');
+$OPCIONES_NIVEL_PROFESION = array('Trainee', 'Ssr', 'Sr');
+$OPCIONES_SEXO = array('Masculino', 'Femenino');
 
 // Constantes predefinidas...
 // define('PARA_USUARIO', 1);
