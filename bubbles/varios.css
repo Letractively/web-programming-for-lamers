@@ -128,7 +128,7 @@ margin-top: 15px;
 .casilla-superior .borde-solapas, .casilla-superior .portfolio,
 .casilla-superior .borde-botones-mensajes, .casilla-superior .contenido-mensajes,
 .casilla-superior .borde-derecho, .casilla-superior .contenido-portfolio,
-.casilla-superior .contenido-laborales, .casilla-superior .contenido-editar-perfil{
+.casilla-superior .contenido-editar-perfil{
 float: left;
 overflow: hidden;
 height: 321px;
@@ -178,25 +178,33 @@ font-weight: bold;
 color: #0089D1;
 }
 .casilla-superior .contenido-mensajes, .casilla-superior .contenido-portfolio,
-.casilla-superior .contenido-laborales, .casilla-superior .contenido-editar-perfil{
+.casilla-superior .contenido-editar-perfil{
 width: 360px;
 height: 319px;
 border-top: 1px solid #6db3e4;
 border-bottom: 1px solid #6db3e4;
 }
-.casilla-superior .contenido-editar-perfil{
+.casilla-superior .contenido-editar-perfil,
+.casilla-superior .contenido-laborales{
 width: 442px;
+border-top: 1px solid #6db3e4;
+border-bottom: 1px solid #6db3e4;
+}
+.casilla-superior .contenido-laborales{
+height: 319px;
+float: left;
+overflow: hidden;
 }
 .contenido-mensajes .cabecera-escribir, .contenido-mensajes .datos-escribir,
 .contenido-mensajes .mce-escribir, .contenido-mensajes .contenido-escribir,
-.contenido-mensajes .enviar-escribir,
-.contenido-laborales .cabecera-oferta, .contenido-laborales .form-oferta,
-.contenido-laborales .enviar-oferta{
+.contenido-mensajes .enviar-escribir{
 float: left;
 overflow: hidden;
 width: 359px;
 }
-.contenido-editar-perfil .salvar-perfil,.contenido-editar-perfil .form-editar-perfil{
+.contenido-editar-perfil .salvar-perfil,.contenido-editar-perfil .form-editar-perfil,
+.contenido-laborales .cabecera-oferta, .contenido-laborales .form-oferta,
+.contenido-laborales .enviar-oferta{
 float: left;
 overflow: hidden;
 width: 441px;
@@ -209,12 +217,83 @@ overflow: hidden;
 width: 359px;
 }
 .contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio,
-.contenido-editar-perfil .salvar-perfil{
+.contenido-editar-perfil .salvar-perfil, .contenido-laborales .cabecera-oferta,
+.contenido-laborales .enviar-oferta{
 height: 30px;
 }
+.contenido-laborales .cabecera-oferta{
+background-image: url(imagenes/degrade1-subir-oferta.png);
+background-repeat: repeat-x;
+}
+.contenido-laborales .cabecera-oferta h2{
+color: #ffffff;
+}
+.contenido-laborales .form-oferta{
+height: 259px;
+}
+.contenido-laborales .form-oferta .table1{
+height: 50px;
+width: 440px;
+}
+.contenido-laborales .form-oferta .table1 .oeProfesionRequerida{
+width: 150px;
+}
+.contenido-laborales .form-oferta .table1 .oeNivel{
+width: 100px;
+}
+.contenido-laborales .form-oferta .table2{
+height: 50px;
+width: 440px;
+}
+.contenido-laborales .form-oferta .table2 .oeModalidad{
+width: 100px;
+}
+.contenido-laborales .form-oferta .table2 .oePago{
+width: 70px;
+}
+.contenido-laborales .form-oferta .table3{
+height: 150px;
+width: 440px;
+}
+.contenido-laborales .form-oferta .table3 .oeDetalle{
+height: 50px;
+width: 300px;
+}
+.contenido-laborales .form-oferta .table3 .oeCapacidad{
+height: 50px;
+width: 300px;
+}
+.contenido-laborales .enviar-oferta{
+background-image: url(imagenes/degrade1-subir-oferta.png);
+background-repeat: repeat-x;
+}
+.contenido-laborales .enviar-oferta .table4{
+height: 30px;
+width: 440px;
+margin-top:-5px;
+}
+.contenido-laborales .enviar-oferta .table4 td{
+width: 100px;
+}
+.contenido-laborales .enviar-oferta .table4 .oeFechaEntrega{
+width: 70px;
+}
+.contenido-laborales .enviar-oferta .table4 .oePublicar{
+width: 70px;
+margin-left: 0px;
+background: transparent;
+width: 200px;
+color: #ffffff;
+font-size: 18px;
+border: 0px;
+}
+
+
 .contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio,
 .contenido-editar-perfil .salvar-perfil{
 background-color: #ffffff;
+float: left;
+overflow: hidden;
 }
 .contenido-editar-perfil .salvar-perfil{
 background-color: #edf8fe;
@@ -231,6 +310,7 @@ margin-top: 5px;
 .contenido-editar-perfil .form-editar-perfil{
 height: 289px;
 background-color: #ffffff;
+float:left;
 }
 .contenido-editar-perfil .form-editar-perfil tr, .contenido-editar-perfil .form-editar-perfil td{
 height: 10px;

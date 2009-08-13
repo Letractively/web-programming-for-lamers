@@ -33,6 +33,8 @@ $OPCIONES_PROFESIONES = array('Dis. web', 'Dis. grafico', 'Dis. multimedial', 'D
 							'Dibujante', 'Redactor', 'Organizador de eventos');
 $OPCIONES_NIVEL_PROFESION = array('Trainee', 'Ssr', 'Sr');
 $OPCIONES_SEXO = array('Masculino', 'Femenino');
+$OPCIONES_MODALIDAD_TRABAJO = array('A convenir', 'Horario estricto', 'Free-Lance');
+$OPCIONES_PLAZO_ENTREGA = array('A convenir', '1 mes', '3 meses', '6 meses', '1 año');
 
 // Constantes predefinidas...
 // define('PARA_USUARIO', 1);

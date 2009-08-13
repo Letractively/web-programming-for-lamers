@@ -446,6 +446,7 @@ class usuario {
 			$this->edad();
 			$this->profesion_1 = $filas[0]['profesion_1'];
 			$this->profesion_2 = $filas[0]['profesion_2'];
+			$this->profesion_3 = $filas[0]['profesion_3'];
 			$this->nivel_profesion = $filas[0]['nivel_profesion'];
 			return 0;
 		}
