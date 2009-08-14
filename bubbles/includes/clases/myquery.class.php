@@ -35,9 +35,6 @@ class myquery {
 			$this->ultimo_error = mysql_error();
 			return  -1;
 		}
-		$this->filas = mysql_fetch_array($result, MYSQL_ASSOC);
-		mysql_free_result($result);
-		return $this->filas;
 	}
 
 	//				|COLUMNAS|					|TABLAS|				|CONDICIONES|

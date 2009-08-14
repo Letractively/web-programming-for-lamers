@@ -204,7 +204,8 @@ width: 359px;
 }
 .contenido-editar-perfil .salvar-perfil,.contenido-editar-perfil .form-editar-perfil,
 .contenido-laborales .cabecera-oferta, .contenido-laborales .form-oferta,
-.contenido-laborales .enviar-oferta{
+.contenido-laborales .enviar-oferta, .contenido-laborales .ver-mis-ofertas,
+.contenido-laborales .titulo-mi-oferta, .contenido-laborales .descripcion-mi-oferta{
 float: left;
 overflow: hidden;
 width: 441px;
@@ -228,7 +229,8 @@ background-repeat: repeat-x;
 .contenido-laborales .cabecera-oferta h2{
 color: #ffffff;
 }
-.contenido-laborales .form-oferta{
+.contenido-laborales .form-oferta,
+.contenido-laborales .ver-mis-ofertas{
 height: 259px;
 }
 .contenido-laborales .form-oferta .table1{
@@ -286,6 +288,21 @@ width: 200px;
 color: #ffffff;
 font-size: 18px;
 border: 0px;
+}
+.contenido-laborales .ver-mis-ofertas{
+overflow-y: scroll;
+overflow-x: hidden;
+}
+.contenido-laborales .titulo-mi-oferta{
+height: 20px;
+background-color: #aaaaaa;
+width: 425px;
+}
+.contenido-laborales .descripcion-mi-oferta{
+height: auto;
+background-color: #ffffff;
+border-bottom:1px solid #aaaaaa;
+width: 425px;
 }
 
 

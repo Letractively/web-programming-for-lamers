@@ -8,22 +8,26 @@ class aviso {
 	var $id_aviso;	//variables en TABLE 'avisos'
 	var $id_empresa;
 	var $fecha;
-	var $titulo;
-	var $horarios;
+	var $profesion_requerida;
+	var $modalidad;
 	var $pago;
 	var $detalle;
-	var $puesto;
+	var $nivel;
+	var $capacidad;
+	var $fecha_entrega;
 	var $status;
 	var $id_usuario_asignado;
-	
+		
 	var $av_id_aviso = array();	//ARRAYs para SELECTs multiples rows;
 	var $av_id_empresa = array();
 	var $av_fecha = array();
-	var $av_titulo = array();
-	var $av_horarios = array();
+	var $av_profesion_requerida = array();
+	var $av_modalidad = array();
 	var $av_pago = array();
 	var $av_detalle = array();
-	var $av_puesto = array();
+	var $av_nivel = array();
+	var $av_capacidad = array();
+	var $av_fecha_entrega = array();
 	var $av_status = array();
 	var $av_id_usuario_asignado = array();
 	
@@ -36,14 +40,16 @@ class aviso {
 			$this->id_aviso = -1;
 			$this->id_empresa = -1;
 			$this->fecha = NULL;
-			$this->titulo = NULL;
-			$this->horarios = NULL;
+			$this->profesion_requerida = NULL;
+			$this->modalidad = NULL;
 			$this->pago = NULL;
 			$this->detalle = NULL;
-			$this->puesto = NULL;
+			$this->nivel = NULL;
+			$this->capacidad = NULL;
+			$this->fecha_entrega = NULL;
 			$this->status = NULL;
 			$this->id_usuario_asignado = -1;
-			
+	
 			$this->ult_filas_afectadas = NULL;
 			$this->ultimo_error = NULL;
 		}
@@ -52,11 +58,13 @@ class aviso {
 				$this->id_aviso = -1;
 				$this->id_empresa = -1;
 				$this->fecha = NULL;
-				$this->titulo = NULL;
-				$this->horarios = NULL;
+				$this->profesion_requerida = NULL;
+				$this->modalidad = NULL;
 				$this->pago = NULL;
 				$this->detalle = NULL;
-				$this->puesto = NULL;
+				$this->nivel = NULL;
+				$this->capacidad = NULL;
+				$this->fecha_entrega = NULL;
 				$this->status = NULL;
 				$this->id_usuario_asignado = -1;
 			
@@ -107,13 +115,15 @@ class aviso {
 				$this->av_id_aviso[$i] = $fila['id_aviso'];
 				$this->av_id_empresa[$i] = $fila['id_empresa'];
 				$this->av_fecha[$i] = $fila['fecha'];
-				$this->av_titulo[$i] = $fila['titulo'];
-				$this->av_horarios[$i] = $fila['horarios'];
+				$this->av_profesion_requerida[$i] = $fila['profesion_requerida'];
+				$this->av_modalidad[$i] = $fila['modalidad'];
 				$this->av_pago[$i] = $fila['pago'];
 				$this->av_detalle[$i] = $fila['detalle'];
-				$this->av_puesto[$i] = $fila['puesto'];
+				$this->av_nivel[$i] = $fila['nivel'];
+				$this->av_capacidad[$i] = $fila['capacidad'];
+				$this->av_fecha_entrega[$i] = $fila['fecha_entrega'];
 				$this->av_status[$i] = $fila['status'];
-				$this->av_id_usuario_asignado[$i] = $fila['id_usuario_asignado'];
+				$this->av_id_usuario_asignado[$i] = $fila['id_usuario_asignado'];				
 				$i ++;
 				}
 			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
@@ -121,26 +131,29 @@ class aviso {
 		}
 	return -1;
 	}
-		
-	function guardarAviso($id_empresa){
-		$this->id_empresa = $id_empresa;
+	
+	function guardarAviso(){
 		if($this->id_empresa > -1){
 			// Guardar aviso de la DB;
 			$this->sql->insertar("id_empresa,
-								titulo,
-								horarios,
-								pago,
-								detalle,
-								puesto,
-								status,
-								id_usuario_asignado", 'avisos', "'$this->id_empresa',
-														'$this->titulo',
-														'$this->horarios',
-														'$this->pago',
-														'$this->detalle',
-														'$this->puesto',
-														'NO_ASIGNADO',
-														'$this->id_usuario_asignado'");		// (-1) por constructor-default
+									profesion_requerida,
+									modalidad,
+									pago,
+									detalle,
+									nivel,
+									capacidad,
+									fecha_entrega,
+									status,
+									id_usuario_asignado", 'avisos', "'$this->id_empresa',
+																	'$this->profesion_requerida',
+																	'$this->modalidad',
+																	'$this->pago',
+																	'$this->detalle',
+																	'$this->nivel',
+																	'$this->capacidad',
+																	'$this->fecha_entrega',
+																	'$this->status',
+																	'$this->id_usuario_asignado'");		// (-1) por constructor-default
 			if($this->sql->ultimo_error != ''){
 				$this->ultimo_error = 'Error al INSERTar el Aviso!: ' . $this->sql->ultimo_error;
 				return -1;
@@ -150,6 +163,21 @@ class aviso {
 	return -1;
 	}
 
+	function borrarAviso($id_aviso = -1){
+	$this->id_aviso = $id_aviso;
+		if($this->id_aviso > -1){
+			// Borrar aviso de la DB;
+			$filas = $this->sql->borrar('avisos',"id_aviso = '$this->id_aviso'");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar un UNICO Aviso!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
+	
 	function guardarPostulacion(){
 		$this->postulacion->guardarPostulacion($this->id_aviso);
 		if($this->postulacion->ultimo_error != ''){
