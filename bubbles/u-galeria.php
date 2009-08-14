@@ -5,6 +5,7 @@
 <?php include('includes/clases/comentario.class.php'); ?>
 <?php include('includes/clases/mensaje.class.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
+<?php include("includes/tratar_imagenes.php"); ?>
 
 
 <?php
@@ -70,6 +71,9 @@ switch ($solapa_superior) {
 	case 'editar_perfil':
 		include('contenido/casilla/superior/profesional/solapas/ninguna-activa.php');
         break;
+	case 'ninguna_activa':
+		include('contenido/casilla/superior/profesional/solapas/ninguna-activa.php');
+        break;
     default:
         include('contenido/casilla/superior/profesional/solapas/portfolio.php');
         break;
@@ -88,7 +92,10 @@ switch ($botonera_superior) {
 	case 'editar_perfil':
 		include('contenido/casilla/superior/profesional/botones/sin-botonera.php');
 		break;
-    default:
+	case 'editar_mi_foto':
+		include('contenido/casilla/superior/profesional/botones/editar-mi-foto.php');
+		break;
+	default:
         include('contenido/casilla/superior/profesional/botones/ver-portfolio.php');
         break;
 }
@@ -111,6 +118,9 @@ switch ($contenido_superior) {
 		break;
 	case 'editar_perfil':
 		include('contenido/casilla/superior/profesional/contenido/editar-perfil.php');
+		break;
+	case 'editar_mi_foto':
+		include('contenido/casilla/superior/profesional/contenido/editar-mi-foto.php');
 		break;
     default:
         include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
