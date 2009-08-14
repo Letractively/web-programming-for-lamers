@@ -1,0 +1,1 @@
+<p class="parrafo3" style="color: #ff0000;">Para publicar debe completar los campos obligatorios!<p>

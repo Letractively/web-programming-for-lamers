@@ -100,6 +100,9 @@ switch ($contenido_superior) {
 	case 'abrir_mensaje':
 		include('contenido/casilla/superior/empresa/contenido/abrir-mensaje.php');
 		break;
+	case 'ver_mis_ofertas':
+		include('contenido/casilla/superior/empresa/contenido/ver-ofertas.php');
+		break;
     default:
         include('contenido/casilla/superior/empresa/contenido/subir-oferta.php');
         break;
