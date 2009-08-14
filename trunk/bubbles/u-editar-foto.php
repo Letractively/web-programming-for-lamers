@@ -14,7 +14,7 @@ $visitado->CargarDatosPerfil();
 ?>
 <!-- hasta aqui -->
 
-<form action="<?php $PHP_SELF;?>" method="POST" enctype="multipart/form-data" name="editpage" id="editpage">
+<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data" name="editpage" id="editpage">
 <input name="img1" type="file" id="img1" size="40">
 <input type="submit" name="Submit" value="Subir imagen">
 </form>
