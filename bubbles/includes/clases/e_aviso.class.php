@@ -105,7 +105,7 @@ class aviso {
 		$this->id_empresa = $id_empresa;
 		if($this->id_empresa > -1){
 			// Traer avisos de la DB;
-			$filas = $this->sql->leer('*','avisos',"id_empresa = '$this->id_empresa'");
+			$filas = $this->sql->leer('*','avisos',"id_empresa = '$this->id_empresa' ORDER BY id_aviso DESC");
 			if($this->sql->ultimo_error != ''){
 				$this->ultimo_error = 'Error al SELECTionar el/lo(s) Aviso(s)!: ' . $this->sql->ultimo_error;
 				return -1;
@@ -172,6 +172,36 @@ class aviso {
 				$this->ultimo_error = 'Error al SELECTionar un UNICO Aviso!: ' . $this->sql->ultimo_error;
 				return -1;
 			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
+	
+	function traerAvisosCriterio($comienzo, $cantidad){
+		if(($comienzo >= 0) && ($cantidad>=0)){
+			// Traer avisos de la DB;
+			$filas = $this->sql->leer('*','avisos',"1 ORDER BY id_aviso DESC LIMIT $comienzo, $cantidad");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar el/lo(s) Aviso(s)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->av_id_aviso[$i] = $fila['id_aviso'];
+				$this->av_id_empresa[$i] = $fila['id_empresa'];
+				$this->av_fecha[$i] = $fila['fecha'];
+				$this->av_profesion_requerida[$i] = $fila['profesion_requerida'];
+				$this->av_modalidad[$i] = $fila['modalidad'];
+				$this->av_pago[$i] = $fila['pago'];
+				$this->av_detalle[$i] = $fila['detalle'];
+				$this->av_nivel[$i] = $fila['nivel'];
+				$this->av_capacidad[$i] = $fila['capacidad'];
+				$this->av_fecha_entrega[$i] = $fila['fecha_entrega'];
+				$this->av_status[$i] = $fila['status'];
+				$this->av_id_usuario_asignado[$i] = $fila['id_usuario_asignado'];				
+				$i ++;
+				}
 			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
 			return 0;
 		}

@@ -1,4 +1,5 @@
-<?php require_once('header.php'); ?>
+<?php include('header.php'); ?>
+<?php include('includes/clases/e_aviso.class.php'); ?>
 
 <div class="col-centroizquierda">
 	<div class="col-contenido-home">
