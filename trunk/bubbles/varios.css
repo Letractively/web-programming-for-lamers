@@ -304,8 +304,46 @@ background-color: #ffffff;
 border-bottom:1px solid #aaaaaa;
 width: 425px;
 }
-
-
+.titulo-oferta-col, .descripcion-oferta-col, .pie-oferta-col{
+width: 208px;
+overflow: hidden;
+border-left: 1px solid #42A0D2;
+border-right: 1px solid #42A0D2;
+}
+.titulo-oferta-col{
+height: 20px;
+background-color: #0089D1;
+}
+.descripcion-oferta-col{
+height: 55px;
+background-color: #ffffff;
+border-bottom:1px solid #aaaaaa;
+}
+.pie-oferta-col{
+height: 20px;
+background-color: #ffffff;
+}
+.contenido-portfolio .un-portfolio-mio,
+.contenido-portfolio .un-portfolio-mio .imagen-portfolio,
+.contenido-portfolio .un-portfolio-mio .pie-portfolio{
+float: left;
+overflow: hidden;
+width: 100px;
+}
+.contenido-portfolio .un-portfolio-mio{
+height: 120px;
+width: 100px;
+margin-top: 10px;
+margin-left: 15px;
+}
+.contenido-portfolio .un-portfolio-mio .imagen-portfolio{
+height: 98px;
+width: 98px;
+border: 1px solid #999999;
+}
+.contenido-portfolio .un-portfolio-mio .pie-portfolio{
+height: 20px;
+}
 .contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio,
 .contenido-editar-perfil .salvar-perfil{
 background-color: #ffffff;
