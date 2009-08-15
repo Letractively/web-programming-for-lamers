@@ -4,7 +4,7 @@
 $error_renovando_foto = '';
 if(isset($_POST['renovar_foto'])){
 	if(isset($_POST['nueva'])){
-		if(0 < $_FILES['img1']['size']){
+		if(0 < $_FILES['img1']['size'] && $_FILES['img1']['size'] < PESO_MAXIMO_AVATAR){
 		//si ya se hizo clic en submit
 			$fotos=imgResample2("img1", DIR_FOTOS_PROFESIONALES, $_SESSION['id_usuario'], DIMENSION_FOTO_GRANDE, DIMENSION_FOTO_GRANDE, DIMENSION_FOTO_CHICA, DIMENSION_FOTO_CHICA); 
 			//echo '<p>' . $fotos[0] . '</p>';
@@ -15,15 +15,17 @@ if(isset($_POST['renovar_foto'])){
 			//echo '<p>' .$fotos[3]. '<br>';
 			$visitado->cargarRutaFoto($_SESSION['id_usuario'] . '.jpg');
 		}
-		else{
+		elseif(0 == $_FILES['img1']['size']){
 		$error_renovando_foto = 'RUTA_INCORRECTA';
+		}
+		else{
+		$error_renovando_foto = 'PESO_INCORRECTO';
 		}
 	}
 	if(isset($_POST['eliminar'])){
 		$visitado->cargarRutaFoto('default.jpg');
 	}
 }
-echo $visitado->ruta_foto;
 ?>
 
 <div class="contenido-portfolio">
@@ -33,6 +35,7 @@ echo $visitado->ruta_foto;
 	<div class="imagenes-portfolio">
 		<p class="parrafo8" style="color: #ff0000;">
 			<?php if($error_renovando_foto == 'RUTA_INCORRECTA'){echo 'La ruta del archivo a subir es incorrecta!';} ?>
+			<?php if($error_renovando_foto == 'PESO_INCORRECTO'){echo 'La foto a subir es demasido pesada!';} ?>
 		</p>
 		<input name="img1" type="file" id="img1" size="40">
 		<input type="submit" name="nueva" class="boton2" value="Subir" />

@@ -21,8 +21,10 @@ define('DIR_FOTOS_PROFESIONALES_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//
 define('DIR_FOTOS_EMPRESAS', 'contenido/empresas/fotos/');	//160*160
 define('DIR_FOTOS_EMPRESAS_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//60*60
 
+define('PESO_MAXIMO_AVATAR', 200000);	//en bytes
 define('DIMENSION_FOTO_GRANDE','160');
 define('DIMENSION_FOTO_CHICA','60');
+
 
 // Tiempo de Sesion por usuario en segundos...
 define('TIEMPO_SESION', 1000);
