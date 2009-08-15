@@ -1,3 +1,5 @@
+
+
 <?php
 $error_renovando_foto = '';
 if(isset($_POST['renovar_foto'])){
@@ -21,6 +23,7 @@ if(isset($_POST['renovar_foto'])){
 		$visitado->cargarRutaFoto('default.jpg');
 	}
 }
+echo $visitado->ruta_foto;
 ?>
 
 <div class="contenido-portfolio">
@@ -34,7 +37,7 @@ if(isset($_POST['renovar_foto'])){
 		<input name="img1" type="file" id="img1" size="40">
 		<input type="submit" name="nueva" class="boton2" value="Subir" />
 		<p class="parrafo8">Vista Previa:</p>
-		<img src="<?php echo DIR_FOTOS_PROFESIONALES . $_SESSION['id_usuario'] . '.jpg' ?>" />
+		<img src="<?php echo DIR_FOTOS_PROFESIONALES . $visitado->ruta_foto . '?' . rand(); ?>" />
 		<a href="profesional/<?php echo $_GET['entidad_visitada'] ?>">
 			<input type="button" name="aceptar" class="boton2" value="Aceptar" />
 		</a>

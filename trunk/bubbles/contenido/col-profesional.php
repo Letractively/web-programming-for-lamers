@@ -7,7 +7,7 @@ $visitado->CargarDatosPerfil();
 	</div>
 	<div class="profesional-col">
 		<p>Miembro desde: <?php echo myquery::cambiaFaNormal($visitado->miembro_desde);?></p>
-		<p><img src="<?php echo DIR_FOTOS_PROFESIONALES . $visitado->ruta_foto;?>" /></p>
+		<p><img src="<?php echo DIR_FOTOS_PROFESIONALES . $visitado->ruta_foto . '?' . rand();?>" /></p>
 		<p><?php echo $visitado->nombres;?> <?php echo $visitado->apellidos;?></p>
 		<p>Edad: <?php echo $visitado->edad;?> Años</p>
 		<p>Puesto: <?php echo $visitado->profesion_1;?></p>

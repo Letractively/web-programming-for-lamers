@@ -418,7 +418,7 @@ class usuario {
 					$this->ultimo_error = 'Error al caargar la FOto de este Profesional de la DB!: ' . $this->sql->ultimo_error;
 					return -1;
 				}
-			$this->ruta_foto = $filas[0]['ruta_foto'];
+			$this->ruta_foto = $ruta_foto;
 			return 0;
 		}
 	return -1;
