@@ -4,24 +4,36 @@
 <?php include('includes/clases/postulacion.class.php'); ?>
 
 <?php
-if(!isset($_GET['id_aviso'])){
-	echo 'La página no existe';
-	exit;
-}
-// Requerir datos de la OFERTA:
-$aviso = new aviso();
-$aviso->id_aviso = $_GET['id_aviso'];
-$aviso->cargarUnAviso($_GET['id_aviso']);
-echo $aviso->ultimo_error;
-// Requerir datos de la EMPRESA:
-$aviso->empresa = new empresa();
-$aviso->empresa->cargarBasicosEmpresa($aviso->id_empresa);
+$aviso_visitado = new aviso();
+$id_verif = $aviso_visitado->cargarUnAviso($_GET['mostrar_aviso_id']);
+echo $aviso_visitado->ultimo_error;
+$empresa_propietaria = new empresa($aviso_visitado->id_empresa);
+echo $empresa_propietaria->ultimo_error;
 
+if($id_verif == -1){							//Si verifica que el usuario no existe lo manda a una pagina expecífica
+	header("Location: " . URL_BASE . ARCH_PAG_NO_EXISTE);
+	include('footer.php');
+	exit -1;
+}
+//Preparacion de la variable "indicadora" de los permisos del visitante....
+$visitante_es = '';
+if(isset($_SESSION['id_empresa'])){
+	if($aviso_visitado->id_empresa == $_SESSION['id_empresa']){
+		$visitante_es = 'empresa_administrador';
+	}
+	else{
+		$visitante_es = 'empresa_visitante';
+	}
+}
+if(isset($_SESSION['id_usuario'])){
+	$visitante_es = 'usuario_visitante';
+}
+echo 'VISITANTE_ES: ' . $visitante_es;
 ?>
 
 <div class="invitados">
-<h2> Oferta laboral: <?php echo $aviso->titulo;?>, de: <?php echo $aviso->empresa->nombre; ?>, 
-	posteado por: <?php echo $aviso->empresa->alias_usuario; ?> </h2>
+<h2> Profesional Requerido: <?php echo $aviso_visitado->profesion_requerida;?>, por: <?php echo $empresa_propietaria->razon_social; ?>, 
+	posteado por: <?php echo $empresa_propietaria->alias_usuario; ?> </h2>
 <p> Ubicada en: <?php echo $aviso->empresa->pais; ?>, <?php echo $aviso->empresa->provincia; ?>, <?php echo $aviso->empresa->ciudad; ?> </p>
 <h2> Puesto a Cubrir: <?php echo $aviso->puesto;?> - Carga Horaria: <?php echo $aviso->horarios;?> 
 	- Paga: <?php echo $aviso->pago;?> - Fecha de Publicación: <?php echo $aviso->fecha;?> </h2>
