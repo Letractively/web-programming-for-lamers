@@ -485,8 +485,8 @@ padding:0;
 text-align: right;
 }
 .boton3{
-width: 54px;
-height: 18px;
+width: 53px;
+height: 17px;
 background-image: url(imagenes/boton3.png);
 background-repeat: no-repeat;
 border: 0px;
@@ -512,8 +512,8 @@ width: 200px;
 .contenido-mensajes .lista-mensajes table td.fecha{
 width: 59px;
 }
-.contenido-portfolio .recorrer-portfolio{
-
+.contenido-portfolio .recorrer-portfolio a{
+text-decoration:none;
 }
 
 .casilla-superior .borde-derecho{
@@ -848,5 +848,23 @@ background-image: url(imagenes/datos-incorrectos.jpg);
 background-repeat: no-repeat;
 height:223px;
 width: 547px;
+}
+/*<----*/
+/*CLASS para JQUERY.FANCYZOOM ---->*/
+.imagenes-portfolio html, .imagenes-portfolio body {
+	font: normal 11px Tahoma;
+	color: #333;
+}
+.imagenes-portfolio a {
+	outline: none;	
+}
+.imagenes-portfolio div#wrap {
+	width: 500px;
+	margin: 50px auto;	
+}
+.imagenes-portfolio img{
+	border: 1px solid #CCC;
+	padding: 2px;	
+	margin: 10px 5px 10px 0;
 }
 /*<----*/

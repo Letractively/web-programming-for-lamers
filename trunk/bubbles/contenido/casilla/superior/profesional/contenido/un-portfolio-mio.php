@@ -1,12 +1,18 @@
+<?php
+
+?>
+
 <div class="un-portfolio-mio">
 	<div class="imagen-portfolio">
-	
+		<a class="muestra" rel="group" title="<?php echo $mi_portfolio->mu_comentario[$i] ?>" href="<?php echo DIR_PORTFOLIOS_PROFESIONALES . $mi_portfolio->mu_ruta_imagen[$i] . '?' . rand();?>">
+			<img src="<?php echo DIR_PORTFOLIOS_PROFESIONALES_CHICOS . $mi_portfolio->mu_ruta_imagen[$i] . '?' . rand();?>" />
+		</a>
 	</div>
 	<div class="pie-portfolio">
-	<p style="font-size:7px; margin-bottom:0; margin-top:0;">título del trabajo</p>
-	<p style="float:left; font-size:7px; margin-bottom:0; margin-top:0;">11/11/1111</p>
-	<a href="#">
-		<p style="float:right; font-size:7px; margin-bottom:0; margin-top:0;">Editar</p>
-	</a>
+		<p style="font-size:7px; margin-bottom:0; margin-top:0;"><?php echo $mi_portfolio->mu_titulo[$i] ?></p>
+		<p style="float:left; font-size:7px; margin-bottom:0; margin-top:0;"><?php echo myquery::cambiaFaNormal($mi_portfolio->mu_fecha[$i]); ?></p>
+		<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada']; ?>&solapa_superior=portfolio&botonera_superior=ver_portfolio&contenido_superior=ver_portfolio&eliminar_muestra_id=<?php echo $mi_portfolio->mu_id_muestra[$i] ?>">
+			<p style="float:right; font-size:7px; margin-bottom:0; margin-top:0;">Eliminar</p>
+		</a>
 	</div>
 </div>

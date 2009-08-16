@@ -18,13 +18,20 @@ define('ARCH_PAG_NO_EXISTE', 'no-existe.php');
 define('DIR_FUENTES', '../fuentes/'); // Ruta RELATIVA! (solo sirve para el php que genera el captcha.)
 define('DIR_FOTOS_PROFESIONALES', 'contenido/profesionales/fotos/');	//160*160
 define('DIR_FOTOS_PROFESIONALES_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//60*60
+
 define('DIR_FOTOS_EMPRESAS', 'contenido/empresas/fotos/');	//160*160
 define('DIR_FOTOS_EMPRESAS_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//60*60
+
+define('DIR_PORTFOLIOS_PROFESIONALES', 'contenido/profesionales/portfolios/');
+define('DIR_PORTFOLIOS_PROFESIONALES_CHICOS', DIR_PORTFOLIOS_PROFESIONALES . 'small/');
 
 define('PESO_MAXIMO_AVATAR', 200000);	//en bytes
 define('DIMENSION_FOTO_GRANDE','160');
 define('DIMENSION_FOTO_CHICA','60');
 
+define('PESO_MAXIMO_PORTFOLIO', 500000);
+define('DIMENSION_PORTFOLIO_GRANDE','900');
+define('DIMENSION_PORTFOLIO_CHICO','98');
 
 // Tiempo de Sesion por usuario en segundos...
 define('TIEMPO_SESION', 1000);
@@ -32,7 +39,7 @@ define('TIEMPO_SESION', 1000);
 // Configuración de opciones listadas...
 $OPCIONES_PROFESIONES = array('Dis. web', 'Dis. grafico', 'Dis. multimedial', 'Dis. de indumentaria', 'Dis. de interiores',
 							'Dir. de arte', 'Ilustrador', 'Retocador', 'Animador 3d', 'Animador 2d', 'Editor de videos',
-							'Dibujante', 'Redactor', 'Organizador de eventos');
+							'Dibujante', 'Redactor', 'Organiz. de eventos');
 $OPCIONES_NIVEL_PROFESION = array('Trainee', 'Ssr', 'Sr');
 $OPCIONES_SEXO = array('Masculino', 'Femenino');
 $OPCIONES_MODALIDAD_TRABAJO = array('A convenir', 'Horario estricto', 'Free-Lance');

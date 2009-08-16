@@ -5,6 +5,7 @@
 <?php include('includes/clases/comentario.class.php'); ?>
 <?php include('includes/clases/mensaje.class.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
+<?php include('includes/clases/muestra.class.php'); ?>
 <?php include("includes/tratar_imagenes.php"); ?>
 
 
@@ -121,6 +122,9 @@ switch ($contenido_superior) {
 		break;
 	case 'editar_mi_foto':
 		include('contenido/casilla/superior/profesional/contenido/editar-mi-foto.php');
+		break;
+	case 'subir_un_portfolio':
+		include('contenido/casilla/superior/profesional/contenido/subir-un-portfolio.php');
 		break;
     default:
         include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
