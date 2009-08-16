@@ -86,14 +86,16 @@ class aviso {
 			$this->id_aviso = $filas[0]['id_aviso'];
 			$this->id_empresa = $filas[0]['id_empresa'];
 			$this->fecha = $filas[0]['fecha'];
-			$this->titulo = $filas[0]['titulo'];
-			$this->horarios = $filas[0]['horarios'];
+			$this->profesion_requerida = $filas[0]['profesion_requerida'];
+			$this->modalidad = $filas[0]['modalidad'];
 			$this->pago = $filas[0]['pago'];
 			$this->detalle = $filas[0]['detalle'];
-			$this->puesto = $filas[0]['puesto'];
+			$this->nivel = $filas[0]['nivel'];
+			$this->capacidad = $filas[0]['capacidad'];
+			$this->fecha_entrega = $filas[0]['fecha_entrega'];
 			$this->status = $filas[0]['status'];
 			$this->id_usuario_asignado = $filas[0]['id_usuario_asignado'];
-			
+	
 			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
 			return 0;
 		}

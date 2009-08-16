@@ -21,7 +21,7 @@
 	</div>
 	</div>
 	<div class="pie-oferta-col">
-	<a href="#">
+	<a href="e-aviso.php?mostrar_aviso_id=<?php echo $oferta_laboral->av_id_aviso[$i] ?>">
 		<p class="parrafo8" style="color: #999999; float: right; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;">Ver mas</p>
 	</a>
 	</div>
