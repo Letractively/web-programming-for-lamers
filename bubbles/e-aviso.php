@@ -31,18 +31,24 @@ if(isset($_SESSION['id_usuario'])){
 echo 'VISITANTE_ES: ' . $visitante_es;
 ?>
 
-<div class="invitados">
-<h2> Profesional Requerido: <?php echo $aviso_visitado->profesion_requerida;?>, por: <?php echo $empresa_propietaria->razon_social; ?>, 
-	posteado por: <?php echo $empresa_propietaria->alias_usuario; ?> </h2>
-<p> Ubicada en: <?php echo $aviso->empresa->pais; ?>, <?php echo $aviso->empresa->provincia; ?>, <?php echo $aviso->empresa->ciudad; ?> </p>
-<h2> Puesto a Cubrir: <?php echo $aviso->puesto;?> - Carga Horaria: <?php echo $aviso->horarios;?> 
-	- Paga: <?php echo $aviso->pago;?> - Fecha de Publicación: <?php echo $aviso->fecha;?> </h2>
+<div class="col-central">
+	<h2> Profesional Requerido: <?php echo $aviso_visitado->profesion_requerida;?></h2>
+	<div style="clear: both"></div>
+	<p>Ofrecido por la empresa: <strong><?php echo $empresa_propietaria->razon_social; ?></strong></p>
+	<p>Posteado por: <strong><?php echo $empresa_propietaria->alias_usuario; ?></strong></p>
+	<p>Ubicada en: <?php echo $empresa_propietaria->pais; ?>, <?php echo $empresa_propietaria->ciudad; ?>, <?php echo $empresa_propietaria->calle; ?>,
+		<?php echo $empresa_propietaria->altura;?>, <?php echo $empresa_propietaria->piso;?>, <?php echo $empresa_propietaria->oficina;?>
+	</p>
+<h2>Puesto a Cubrir: <p><?php echo $aviso_visitado->detalle; ?></p></h2>
+<div style="clear: both"></div>
+<p>Fecha de Entrega: <?php echo $aviso_visitado->fecha_entrega ;?></p>
+<p>Paga: <?php echo $aviso_visitado->pago;?></p>
+<p>Fecha de Publicación: <?php echo myquery::cambiaFaNormal($aviso_visitado->fecha); ?></p>
 </div>
 
-<div class="invitados">
-<h2> Descripción Completa:<h2>
-<p><?php echo $aviso->detalle;?></p>
-</div>
+
+<!-- ACTUALIZADO HASTA AQUI! -->
+
 
 <?php
 // Esta el visitante logueado? como EMPRESA o como USUARIO?
@@ -74,7 +80,7 @@ if(isset($_POST['fPostulacionEnviada'])){
 
 <div class="invitados">
 	<h2>Postulaciones para este aviso:</h2>
-	<?php mostrar_postulaciones($aviso) ?>
+	<?php //mostrar_postulaciones($aviso) ?>
 </div>
 
 

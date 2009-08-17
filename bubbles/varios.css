@@ -868,3 +868,9 @@ width: 547px;
 	margin: 10px 5px 10px 0;
 }
 /*<----*/
+.col-busqueda-izquierda, .col-busqueda-centro,
+.col-busqueda-derecha{
+float: left;
+overflow: hidden;
+border: 1px solid #000000;
+}
