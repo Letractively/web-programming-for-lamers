@@ -136,7 +136,7 @@ height: 321px;
 .casilla-superior .borde-solapas{
 width: 94px;
 }
-.solapa{
+.casilla-superior .borde-solapas .solapa{
 float: left;
 width: 94px;
 height: 80px;
@@ -869,8 +869,71 @@ width: 547px;
 }
 /*<----*/
 .col-busqueda-izquierda, .col-busqueda-centro,
-.col-busqueda-derecha{
+.col-busqueda-derecha, .col-busqueda-cabecera,
+.col-busqueda-contenido, .col-busqueda-pie,
+.col-busqueda-solapas, .col-busqueda-form{
 float: left;
 overflow: hidden;
 border: 1px solid #000000;
+}
+
+.col-busqueda-centro, .col-busqueda-cabecera,
+.col-busqueda-contenido, .col-busqueda-pie,
+.col-busqueda-solapas, .col-busqueda-form{
+width: 545px;
+}
+.col-busqueda-centro .col-busqueda-cabecera{
+background-image: url(imagenes/cabecera-buscar.png);
+background-repeat: no-repeat;
+height: 45px;
+border-bottom: 1px solid #6CB4E4;
+background-position: left bottom;
+}
+.col-busqueda-centro .col-busqueda-cabecera .icono{
+position: absolute;
+margin-left: 20px;
+}
+.col-busqueda-centro .col-busqueda-solapas{
+border-right: 1px solid #6CB4E4;
+border-left: 1px solid #6CB4E4;
+width:543px;
+}
+.col-busqueda-centro .col-busqueda-solapas .solapa1,
+.col-busqueda-centro .col-busqueda-solapas .solapa2,
+.col-busqueda-centro .col-busqueda-solapas .solapa3{
+float: right;
+overflow: hidden;
+width: 124px;
+height: 22px;
+background-repeat: no-repeat;
+}
+.col-busqueda-centro .col-busqueda-solapas .solapa1{
+background-image: url(imagenes/solapa1-busqueda.png);
+}
+.col-busqueda-centro .col-busqueda-solapas .solapa1 h2{
+margin-left:15px;
+color: #000000;
+}
+.col-busqueda-centro .col-busqueda-solapas .solapa2{
+background-image: url(imagenes/solapa2-busqueda.png);
+}
+.col-busqueda-centro .col-busqueda-solapas .solapa2 h2{
+margin-left:5px;
+color: #000000;
+}
+.col-busqueda-centro .col-busqueda-solapas .solapa3{
+background-image: url(imagenes/solapa3-busqueda.png);
+}
+.col-busqueda-centro .col-busqueda-solapas .solapa3 h2{
+margin-left:20px;
+color: #000000;
+}
+.col-busqueda-centro .col-busqueda-contenido{
+height: 550px;
+}
+.col-busqueda-centro .col-busqueda-pie{
+background-image: url(imagenes/pie-buscar.png);
+background-repeat: no-repeat;
+height: 19px;
+border-top: 1px solid #6CB4E4;
 }
