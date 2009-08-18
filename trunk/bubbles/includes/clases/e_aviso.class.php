@@ -74,7 +74,7 @@ class aviso {
 		}
 	}
 
-	function cargarUnAviso($id_aviso){
+	function cargarUnAviso($id_aviso = -1){
 		$this->id_aviso = $id_aviso;
 		if($this->id_aviso > -1){
 			// Traer avisos de la DB;

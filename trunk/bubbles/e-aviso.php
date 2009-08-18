@@ -10,7 +10,7 @@ echo $aviso_visitado->ultimo_error;
 $empresa_propietaria = new empresa($aviso_visitado->id_empresa);
 echo $empresa_propietaria->ultimo_error;
 
-if($id_verif == -1){							//Si verifica que el usuario no existe lo manda a una pagina expecífica
+if($id_verif <= 0){							//Si verifica que el usuario no existe lo manda a una pagina expecífica
 	header("Location: " . URL_BASE . ARCH_PAG_NO_EXISTE);
 	include('footer.php');
 	exit -1;

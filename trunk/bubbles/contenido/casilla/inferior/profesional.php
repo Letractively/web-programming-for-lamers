@@ -12,6 +12,14 @@
 		</div>
 		<div class="contenido-comentarios">
 			<p>contenido comentarios</p>
+			<div class="listar-comentarios">
+				<p>listar comentarios</p>
+			</div>
+			<div class="agregar-comentario">
+				<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&casilla_central=todos_comentarios&contenido_central=todos_comentarios">
+					<p class="parrafo3 boton1">Comentar</p>
+				</a>
+			</div>
 		</div>
 		<div class="contenido-amigos">
 			<p>contenido amigos</p>
