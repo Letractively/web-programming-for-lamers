@@ -1,13 +1,3 @@
-<?php include('header.php'); ?>
-<?php include('includes/clases/e_aviso.class.php'); ?>
-
-<div class="col-izquierda">
-	<div class="col-busqueda-izquierda">
-		<p>col-busqueda-izquierda</p>
-	</div>
-</div>
-
-<div class="col-central">
 	<div class="col-busqueda-centro">
 		<div class="col-busqueda-cabecera">
 			<img class="icono" src="imagenes/icono-busqueda-laboral.png"/>
@@ -33,12 +23,3 @@
 		</div>		
 		
 	</div>
-</div>
-
-<div class="col-derecha">
-	<div class="col-busqueda-derecha">
-		<p>col-busqueda-derecha</p>
-	</div>
-</div>
-
-<?php include('footer.php'); ?>

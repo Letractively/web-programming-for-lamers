@@ -4,6 +4,7 @@ width: 95px;
 height: 22px;
 background-image: url(imagenes/boton1.png);
 border: 0;
+text-align: center;
 }
 
 .solapa-lateral{
@@ -304,6 +305,23 @@ background-color: #ffffff;
 border-bottom:1px solid #aaaaaa;
 width: 425px;
 }
+.titulo-oferta-busqueda, .descripcion-oferta-busqueda, .pie-oferta-busqueda{
+width: 532px;
+overflow: hidden;
+}
+.titulo-oferta-busqueda{
+height: 20px;
+background-color: #0089D1;
+}
+.descripcion-oferta-busqueda{
+height: auto;
+background-color: #ffffff;
+border-bottom:1px solid #aaaaaa;
+}
+.pie-oferta-busqueda{
+height: 20px;
+background-color: #ffffff;
+}
 .titulo-oferta-col, .descripcion-oferta-col, .pie-oferta-col{
 width: 208px;
 overflow: hidden;
@@ -563,7 +581,8 @@ border-top: 1px solid #6DB3E4;
 border-bottom: 1px solid #6DB3E4;
 }
 .col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .contenido-comentarios,
-.col-profesional-centro .casilla-inferior .inferior-comentarios,
+.col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .listar-comentarios,
+.col-profesional-centro .casilla-inferior .agregar-comentario,
 .col-empresa-centro .casilla-inferior .superior-comentarios, .col-empresa-centro .casilla-inferior .contenido-comentarios,
 .col-empresa-centro .casilla-inferior .inferior-comentarios{
 border-right: 1px solid #0089d1;
@@ -579,6 +598,19 @@ color: #ffffff;
 margin-top: 10px;
 padding-left: 50px;
 padding-top: 2px;
+}
+.col-profesional-centro .casilla-inferior .listar-comentarios{
+height: 115px;
+}
+.col-profesional-centro .casilla-inferior .agregar-comentario{
+float: left;
+overflow: hidden;
+height: 23px;
+}
+.col-profesional-centro .casilla-inferior .agregar-comentario p{
+float: right;
+overflow: hidden;
+margin-right: 10px;
 }
 .col-profesional-centro .casilla-inferior .superior-amigos p,
 .col-empresa-centro .casilla-inferior .superior-amigos p{
@@ -876,10 +908,12 @@ float: left;
 overflow: hidden;
 border: 1px solid #000000;
 }
-
-.col-busqueda-centro, .col-busqueda-cabecera,
-.col-busqueda-contenido, .col-busqueda-pie,
-.col-busqueda-solapas, .col-busqueda-form{
+.col-busqueda-centro{
+width: 547px;
+}
+.col-busqueda-centro .col-busqueda-cabecera,
+.col-busqueda-centro .col-busqueda-pie,
+.col-busqueda-centro .col-busqueda-form{
 width: 545px;
 }
 .col-busqueda-centro .col-busqueda-cabecera{
@@ -896,7 +930,7 @@ margin-left: 20px;
 .col-busqueda-centro .col-busqueda-solapas{
 border-right: 1px solid #6CB4E4;
 border-left: 1px solid #6CB4E4;
-width:543px;
+width:544px;
 }
 .col-busqueda-centro .col-busqueda-solapas .solapa1,
 .col-busqueda-centro .col-busqueda-solapas .solapa2,
@@ -929,7 +963,12 @@ margin-left:20px;
 color: #000000;
 }
 .col-busqueda-centro .col-busqueda-contenido{
-height: 550px;
+height: 545px;
+width: 544px;
+border-left: 1px solid #42A0D2;
+border-right: 1px solid #42A0D2;
+overflow-x: hidden;
+overflow-y: scroll;
 }
 .col-busqueda-centro .col-busqueda-pie{
 background-image: url(imagenes/pie-buscar.png);
