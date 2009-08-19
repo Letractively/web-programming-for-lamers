@@ -44,7 +44,7 @@ function imgResample2 ($campo, $dir="", $nombre = '', $anchura=250, $hmax=250, $
 
         //Objeto con el que trabajará el programa
 		$img = '';
-        if($type=="image/jpeg"){ 
+        if($type=="image/jpeg" || $type=="image/pjpeg"){ 
             $img = imagecreatefromjpeg($temp) or die("No se encuentra la imagen $image_name<br>\n");  
         } 
         if($_FILES[$campo]['type']=="image/gif"){ 
@@ -56,7 +56,7 @@ function imgResample2 ($campo, $dir="", $nombre = '', $anchura=250, $hmax=250, $
             $image_name = str_replace(".png", ".jpg", $image_name); 
         }
 		if($img == '')
-			die("La imagen $image_name es de un formato NO soportado<br>\n"); 
+			die("La imagen $image_name es de un formato NO soportado: " . $_FILES[$campo]['type'] . "<br>\n" ); 
 			
         //Para que acepte la transparencia del PNG 
         imagealphablending($img, true); 
@@ -128,7 +128,7 @@ function imgResample2 ($campo, $dir="", $nombre = '', $anchura=250, $hmax=250, $
             $temp=$_FILES[$campo]['tmp_name'];  
              
             //Objeto con el que trabajará el programa 
-            if($type=="image/jpeg"){ 
+            if($type=="image/jpeg" || $type=="image/pjpeg"){ 
                 $img = @imagecreatefromjpeg($temp) or die("No se encuentra la imagen $image_name<br>\n");  
             } 
             if($_FILES[$campo]['type']=="image/gif"){ 

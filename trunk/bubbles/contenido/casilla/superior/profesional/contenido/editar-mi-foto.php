@@ -1,5 +1,3 @@
-
-
 <?php
 $error_renovando_foto = '';
 if(isset($_POST['renovar_foto'])){
@@ -41,11 +39,13 @@ if(isset($_POST['renovar_foto'])){
 		<input type="submit" name="nueva" class="boton2" value="Subir" />
 		<p class="parrafo8">Vista Previa:</p>
 		<img src="<?php echo DIR_FOTOS_PROFESIONALES . $visitado->ruta_foto . '?' . rand(); ?>" />
-		<a href="profesional/<?php echo $_GET['entidad_visitada'] ?>">
-			<input type="button" name="aceptar" class="boton2" value="Aceptar" />
-		</a>
 		</form>
 	</div>
 	<div class="recorrer-portfolio">
+		<p class="parrafo3 al-medio boton2">
+			<a href="profesional/<?php echo $_GET['entidad_visitada'] ?>">
+			Aceptar
+			</a>
+		</p>
 	</div>
 </div>

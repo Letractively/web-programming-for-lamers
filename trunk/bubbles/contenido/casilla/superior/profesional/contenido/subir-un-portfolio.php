@@ -44,18 +44,20 @@ if(isset($_POST['subir_portfolio'])){
 			<?php if($error_subiendo_portfolio == 'PESO_INCORRECTO'){echo 'La foto a subir es demasido pesada!';} ?>
 			<?php if($error_subiendo_portfolio == 'FALTA_TITULO'){echo 'Debe poner un titulo al trabajo!';} ?>
 		</p>
-		<p class="parrafo8">Título:<input type="text" name="titulo_portfolio" class="boton2" /></p>
-				<p class="parrafo8">Breve Descripción:<input type="text" name="comentario_portfolio" class="boton2" /></p>
+		<p class="parrafo8">Título:<input type="text" name="titulo_portfolio" /></p>
+				<p class="parrafo8">Breve Descripción:<input type="text" name="comentario_portfolio" /></p>
 		<input name="img1" type="file" id="img1" size="40">
 		<input type="hidden" name="subir_portfolio" value="subir_portfolio" />
 		<input type="submit" name="nuevo" class="boton2" value="Subir" />
 		<p class="parrafo8">Vista Previa:</p>
 		<img src="<?php echo DIR_PORTFOLIOS_PROFESIONALES_CHICOS . $nueva_muestra->ruta_imagen . '?' . rand(); ?>" />
-		<a href="profesional/<?php echo $_GET['entidad_visitada'] ?>">
-			<input type="button" name="aceptar" class="boton2" value="Aceptar" />
-		</a>
 	</form>
 	</div>
 	<div class="recorrer-portfolio">
+		<p class="parrafo3 al-medio boton2">
+			<a href="profesional/<?php echo $_GET['entidad_visitada'] ?>">
+			Aceptar
+			</a>
+		</p>
 	</div>
 </div>

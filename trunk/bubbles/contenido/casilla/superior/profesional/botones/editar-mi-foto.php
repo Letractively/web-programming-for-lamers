@@ -3,7 +3,7 @@
 <form action="<?php echo $_SERVER['REQUEST_URI'];?>" method="POST" enctype="multipart/form-data" name="editpage" id="editpage">
 	<table>
 	<tr>
-		<td><input type="submit" name="nueva" class="boton2" value="Nueva" /></td>
+		<!--<td><input type="submit" name="nueva" class="boton2" value="Nueva" /></td>-->
 		<input type="hidden" name="renovar_foto" value="renovar_foto" />
 	</tr>
 <!--	<tr>

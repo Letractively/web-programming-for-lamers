@@ -4,11 +4,13 @@ $error_eliminando_portfolio = '';
 $mi_portfolio_offset = 0;
 $mi_portfolio_boton_siguiente = 'DESABILITADO';
 $mi_portfolio_boton_anterior = 'DESABILITADO';
-if(isset($_GET['eliminar_muestra_id']) && ((file_exists(DIR_PORTFOLIOS_PROFESIONALES_CHICOS . $_GET['eliminar_muestra_id'] . '.jpg')))
-	&& (file_exists(DIR_PORTFOLIOS_PROFESIONALES . $_GET['eliminar_muestra_id'] . '.jpg'))){
-	if ((!unlink(DIR_PORTFOLIOS_PROFESIONALES_CHICOS . $_GET['eliminar_muestra_id'] . '.jpg'))
-		|| (!unlink(DIR_PORTFOLIOS_PROFESIONALES . $_GET['eliminar_muestra_id'] . '.jpg'))){
-		$error_eliminando_portfolio = 'NO_SE_BORRARON_ARCHIVOS';
+if(isset($_GET['eliminar_muestra_id'])){
+	if((file_exists(DIR_PORTFOLIOS_PROFESIONALES_CHICOS . $_GET['eliminar_muestra_id'] . '.jpg'))
+		&& (file_exists(DIR_PORTFOLIOS_PROFESIONALES . $_GET['eliminar_muestra_id'] . '.jpg'))){
+		if ((!unlink(DIR_PORTFOLIOS_PROFESIONALES_CHICOS . $_GET['eliminar_muestra_id'] . '.jpg'))
+			|| (!unlink(DIR_PORTFOLIOS_PROFESIONALES . $_GET['eliminar_muestra_id'] . '.jpg'))){
+			$error_eliminando_portfolio = 'NO_SE_BORRARON_ARCHIVOS';
+		}
 	}
 	$mi_portfolio->borrarMuestra($_GET['eliminar_muestra_id']); //BORRAR el ROW correspondiente!!
 	echo $mi_portfolio->ultimo_error;
