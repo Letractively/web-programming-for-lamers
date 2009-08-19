@@ -7,11 +7,11 @@
 			</a>
 		</td>
 	</tr>
-	<tr>
+	<!--<tr>
 		<td><input type="button" class="boton2" value="Respond." /></td>
 	</tr>
 	<tr>
 		<td><input type="button" class="boton2" value="Eliminar" /></td>
-	</tr>
+	</tr>-->
 	</table>
 </div>

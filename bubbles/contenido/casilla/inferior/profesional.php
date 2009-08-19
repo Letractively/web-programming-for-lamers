@@ -21,16 +21,18 @@ echo $este_comentario->ultimo_error;
 			<div class="listar-comentarios">
 				<?php
 				$i=0;
-				for($i==0; $i<2; $i++){
+				for($i==0; $i<2 || $i<$este_comentario->ult_filas_afectadas; $i++){
 					include('contenido/casilla/inferior/profesional/contenido/un-comentario-mio-chico.php');
 				}
 				?>
 			</div>
 			<div style="clear: both"></div>
 			<div class="agregar-comentario">
-				<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&casilla_central=todos_comentarios&contenido_central=todos_comentarios">
-					<p class="parrafo3 boton1">Comentar</p>
-				</a>
+				<p class="parrafo3 boton1">
+					<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&casilla_central=todos_comentarios&contenido_central=todos_comentarios">
+					Comentar
+					</a>
+				</p>
 			</div>
 		</div>
 		<div class="contenido-amigos">
