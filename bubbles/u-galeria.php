@@ -56,6 +56,7 @@ if(isset($_GET['botonera_superior'])){
 if(isset($_GET['contenido_superior'])){
 	$contenido_superior = $_GET['contenido_superior'];
 }
+//
 if(isset($_GET['casilla_central'])){
 	$casilla_central = $_GET['casilla_central'];
 }

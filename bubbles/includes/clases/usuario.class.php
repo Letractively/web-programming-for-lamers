@@ -424,6 +424,19 @@ class usuario {
 	return -1;
 	}
 
+	function traerRutaFoto($id_usuario = -1){
+		if($id_usuario > -1){
+			//Leer de la DB
+			$filas = $this->sql->leer('ruta_foto', 'usuarios', "id_usuario = '$id_usuario'");
+				if($this->sql->ultimo_error != ''){
+					$this->ultimo_error = 'Error al traer los Datos de este Profesional de la DB!: ' . $this->sql->ultimo_error;
+					return -1;
+				}
+			$this->ruta_foto = $filas[0]['ruta_foto'];
+			return 0;
+		}
+	return -1;
+	}
 	
 	function cargarDatosPerfil(){
 		if($this->idUsuario() > -1){

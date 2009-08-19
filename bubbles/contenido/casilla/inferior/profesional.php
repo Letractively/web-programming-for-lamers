@@ -1,3 +1,10 @@
+<?php
+$error_insertando_comentario = '';
+$este_comentario = new comentario();
+$este_comentario->traerComentarios($visitado->id_usuario, 'PROFESIONAL', 'LIMIT 0, 2');
+echo $este_comentario->ultimo_error;
+?>
+
 <div class="casilla-inferior">
 	<div class="extremo-izq">
 	</div>
@@ -11,10 +18,15 @@
 			<p><strong>Amigos</strong></p>
 		</div>
 		<div class="contenido-comentarios">
-			<p>contenido comentarios</p>
 			<div class="listar-comentarios">
-				<p>listar comentarios</p>
+				<?php
+				$i=0;
+				for($i==0; $i<2; $i++){
+					include('contenido/casilla/inferior/profesional/contenido/un-comentario-mio-chico.php');
+				}
+				?>
 			</div>
+			<div style="clear: both"></div>
 			<div class="agregar-comentario">
 				<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&casilla_central=todos_comentarios&contenido_central=todos_comentarios">
 					<p class="parrafo3 boton1">Comentar</p>
