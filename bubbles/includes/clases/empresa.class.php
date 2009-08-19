@@ -93,7 +93,7 @@ class empresa {
 				$this->calle = $fila['calle'];
 				$this->altura = $fila['altura'];
 				$this->piso = $fila['piso'];
-				$this->oficina = $fila['piso'];
+				$this->oficina = $fila['oficina'];
 				$this->nacimiento_usuario = $fila['piso'];
 				$this->sexo_usuario = $fila['piso'];
 				$this->pais = $fila['pais'];
