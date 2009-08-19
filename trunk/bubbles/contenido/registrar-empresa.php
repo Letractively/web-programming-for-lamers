@@ -15,7 +15,7 @@ $(document).ready(function(){
 				remote: {
 					url: "includes/consulta_segura.php",
 					type: "GET",
-					data: {id : "<?php echo $_SESSION['id_consulta'] ?>"},
+					data: {id : "<?php echo $_SESSION['id_consulta'] ?>"}
 					}
 			},
 			feContraseniaUsuario: {

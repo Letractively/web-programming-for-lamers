@@ -1004,7 +1004,7 @@ float: left;
 overflow: hidden;
 margin-top: 25px;
 }
-.borde-comentario .foto-comentario{
+.borde-comentario .foto-comentario, .borde-empresa-oferta-completa .foto-oferta-laboral{
 float: left;
 overflow: hidden;
 width: 60px;
@@ -1014,7 +1014,7 @@ margin-left: 10px;
 margin-bottom: 10px;
 }
 .borde-comentario .titulo-comentario, .borde-comentario .descripcion-comentario,
-.borde-comentario .pie-comentario{
+.borde-comentario .pie-comentario, .borde-empresa-oferta-completa .descripcion-empresa{
 float: left;
 overflow:hidden;
 width: 440px;
@@ -1055,7 +1055,7 @@ overflow:hidden;
 width: 210px;
 margin-left: 2px;
 }
-.borde-comentario-chico .titulo-comentario{
+.borde-comentario-chico .titulo-comentario, .titulo-oferta-completa{
 margin-top: 0px;
 background-color:#0089D1;
 height:20px;
@@ -1068,4 +1068,20 @@ height:40px;
 width: 268px;
 height: 2px;
 border-top: 1px solid #0089D1;
+}
+.contenido-oferta-completa, .pie-oferta-completa, .titulo-oferta-completa{
+float: left;
+overflow: hidden;
+background-color: #ffffff;
+width:545px;
+height:auto;
+}
+.titulo-oferta-completa{
+background-color: #aaaaaa;
+}
+.borde-empresa-oferta-completa{
+border: 1px solid #999999;
+float:left;
+overflow:hidden;
+width:543px;
 }

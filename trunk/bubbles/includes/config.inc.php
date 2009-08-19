@@ -20,7 +20,7 @@ define('DIR_FOTOS_PROFESIONALES', 'contenido/profesionales/fotos/');	//160*160
 define('DIR_FOTOS_PROFESIONALES_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//60*60
 
 define('DIR_FOTOS_EMPRESAS', 'contenido/empresas/fotos/');	//160*160
-define('DIR_FOTOS_EMPRESAS_CHICAS', DIR_FOTOS_PROFESIONALES . 'small/');	//60*60
+define('DIR_FOTOS_EMPRESAS_CHICAS', DIR_FOTOS_EMPRESAS . 'small/');	//60*60
 
 define('DIR_PORTFOLIOS_PROFESIONALES', 'contenido/profesionales/portfolios/');
 define('DIR_PORTFOLIOS_PROFESIONALES_CHICOS', DIR_PORTFOLIOS_PROFESIONALES . 'small/');
