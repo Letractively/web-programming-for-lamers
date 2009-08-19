@@ -52,11 +52,19 @@ echo $mi_portfolio->ultimo_error;
 	?>
 	</div>
 	<div class="recorrer-portfolio">
-		<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada']; ?>&solapa_superior=portfolio&botonera_superior=ver_portfolio&contenido_superior=ver_portfolio&mi_portfolio_offset=<?php echo ($mi_portfolio_offset - 6); ?>">
-			<input type="button" <?php if($mi_portfolio_boton_anterior != 'HABILITADO'){ echo 'disabled = "TRUE"';}?> class="boton3" name="upSiguiente" value="Atras" />
-		</a>
-		<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada']; ?>&solapa_superior=portfolio&botonera_superior=ver_portfolio&contenido_superior=ver_portfolio&mi_portfolio_offset=<?php echo ($mi_portfolio_offset + 6); ?>">
-			<input type="button" <?php if($mi_portfolio_boton_siguiente != 'HABILITADO'){ echo 'disabled = "TRUE"';}?> class="boton3" name="upSiguiente" value="Seguir" />
-		</a>
+	<table>
+	<tr>
+		<td>
+		<form method="post" action="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada']; ?>&solapa_superior=portfolio&botonera_superior=ver_portfolio&contenido_superior=ver_portfolio&mi_portfolio_offset=<?php echo ($mi_portfolio_offset - 6); ?>">
+			<input type="submit" <?php if($mi_portfolio_boton_anterior != 'HABILITADO'){ echo 'disabled = "disabled"';}?> class="boton3" name="upAnterior" value="Atras" />
+		</form>
+		</td>
+		<td>
+		<form method="post" action="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada']; ?>&solapa_superior=portfolio&botonera_superior=ver_portfolio&contenido_superior=ver_portfolio&mi_portfolio_offset=<?php echo ($mi_portfolio_offset + 6); ?>">
+			<input type="submit" <?php if($mi_portfolio_boton_siguiente != 'HABILITADO'){ echo 'disabled = "disabled"';}?> class="boton3" name="upSiguiente" value="Seguir" />
+		</form>
+		</td>
+	</tr>
+	</table>
 	</div>
 </div>

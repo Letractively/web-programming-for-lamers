@@ -600,7 +600,9 @@ padding-left: 50px;
 padding-top: 2px;
 }
 .col-profesional-centro .casilla-inferior .listar-comentarios{
-height: 115px;
+height: 135px;
+float: left;
+overflow: hidden;
 }
 .col-profesional-centro .casilla-inferior .agregar-comentario{
 float: left;
@@ -611,6 +613,7 @@ height: 23px;
 float: right;
 overflow: hidden;
 margin-right: 10px;
+margin-top: 0px;
 }
 .col-profesional-centro .casilla-inferior .superior-amigos p,
 .col-empresa-centro .casilla-inferior .superior-amigos p{
@@ -975,4 +978,94 @@ background-image: url(imagenes/pie-buscar.png);
 background-repeat: no-repeat;
 height: 19px;
 border-top: 1px solid #6CB4E4;
+}
+.borde-comentario{
+float: left;
+overflow: hidden;
+width: 545px;
+}
+.borde-comentario .dejar-comentario{
+float: left;
+overflow: hidden;
+width: 505px;
+height: 70px;
+margin: 10px;
+margin-bottom: 10px;
+border: 2px solid #aaaaaa;
+}
+.dejar-comentario textarea{
+float: left;
+margin: 2px;
+width: 400px;
+height: 40px;
+}
+.dejar-comentario .boton1{
+float: left;
+overflow: hidden;
+margin-top: 25px;
+}
+.borde-comentario .foto-comentario{
+float: left;
+overflow: hidden;
+width: 60px;
+height: 60px;
+margin-top: 10px;
+margin-left: 10px;
+margin-bottom: 10px;
+}
+.borde-comentario .titulo-comentario, .borde-comentario .descripcion-comentario,
+.borde-comentario .pie-comentario{
+float: left;
+overflow:hidden;
+width: 440px;
+margin-left: 10px;
+}
+.borde-comentario .titulo-comentario{
+margin-top: 10px;
+background-color:#aaaaaa;
+height:20px;
+}
+.borde-comentario .descripcion-comentario{
+margin-bottom: 10px;
+height:auto;
+}
+.borde-comentario .pie-comentario{
+width: 510px;
+height: 10px;
+border-top: 1px solid #aaaaaa;
+}
+.borde-comentario-chico{
+float: left;
+overflow: hidden;
+width: 285px;
+}
+.borde-comentario-chico .foto-comentario{
+float: left;
+overflow: hidden;
+width: 60px;
+height: 60px;
+margin-top: 0px;
+margin-left: 0px;
+margin-bottom: 0px;
+}
+.borde-comentario-chico .titulo-comentario, .borde-comentario-chico .descripcion-comentario,
+.borde-comentario-chico .pie-comentario{
+float: left;
+overflow:hidden;
+width: 210px;
+margin-left: 2px;
+}
+.borde-comentario-chico .titulo-comentario{
+margin-top: 0px;
+background-color:#0089D1;
+height:20px;
+}
+.borde-comentario-chico .descripcion-comentario{
+margin-bottom: 2px;
+height:40px;
+}
+.borde-comentario-chico .pie-comentario{
+width: 268px;
+height: 2px;
+border-top: 1px solid #0089D1;
 }
