@@ -86,6 +86,11 @@ class usuario {
 				$this->empresa = $fila['empresa'];
 				$this->nacimiento = $fila['nacimiento'];
 				$this->status = $fila['status'];
+				$this->miembro_desde = $fila['miembro_desde'];
+				$this->ruta_foto = $fila['ruta_foto'];
+				$this->profesion_1 = $fila['profesion_1'];
+				$this->nivel_profesion = $fila['nivel_profesion'];
+				$this->pais_residencia = $fila['pais_residencia'];
 				return 0;		// => ID encontrado y datos básicos cargados en el Objeto
 			}
 			if($alias != ''){

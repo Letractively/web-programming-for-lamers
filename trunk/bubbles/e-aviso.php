@@ -76,6 +76,7 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
 				Perfil del profesional requerido: <?php echo $aviso_visitado->detalle;?>
 			</p>
+			<div style="clear: both;"></div>
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
 				Cualidades excuyentes: <?php echo $aviso_visitado->capacidad;?>
 			</p>

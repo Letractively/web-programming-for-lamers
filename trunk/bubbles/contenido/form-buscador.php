@@ -1,11 +1,12 @@
-<form action="logeo.php" method="post">
 	<div class="borde">
-		<input type="text" class="b-texto" />
-		<select class="b-select">
+	<form method="get" action="busqueda.php" >
+		<input type="text" name="buCriterio" class="b-texto" />
+		<select class="b-select" name="buDe" >
 		<?php listar_options($OPCIONES_BUSQUEDA) ?>
 		</select>
 	</div>
 	<div class="borde-boton1">
-		<input type="submit" value="Buscar" class="boton1" />
+		<input type="hidden" name="buClase" value="buSimple" />
+		<input type="submit" class="boton1" name="buscar" value="Buscar" />
+		</form>
 	</div>
-</form>
