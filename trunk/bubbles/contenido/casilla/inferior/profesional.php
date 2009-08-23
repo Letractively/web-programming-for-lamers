@@ -21,7 +21,7 @@ echo $este_comentario->ultimo_error;
 			<div class="listar-comentarios">
 				<?php
 				$i=0;
-				for($i==0; $i<2 || $i<$este_comentario->ult_filas_afectadas; $i++){
+				for($i==0; $i<2 && $i<$este_comentario->ult_filas_afectadas; $i++){
 					include('contenido/casilla/inferior/profesional/contenido/un-comentario-mio-chico.php');
 				}
 				?>

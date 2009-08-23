@@ -4,14 +4,14 @@ if(isset($_POST['renovar_foto'])){
 	if(isset($_POST['nueva'])){
 		if(0 < $_FILES['img1']['size'] && $_FILES['img1']['size'] < PESO_MAXIMO_AVATAR){
 		//si ya se hizo clic en submit
-			$fotos=imgResample2("img1", DIR_FOTOS_PROFESIONALES, $_SESSION['id_usuario'], DIMENSION_FOTO_GRANDE, DIMENSION_FOTO_GRANDE, DIMENSION_FOTO_CHICA, DIMENSION_FOTO_CHICA); 
+			$fotos=imgResample2("img1", DIR_FOTOS_PROFESIONALES, $visitado->id_usuario, DIMENSION_FOTO_GRANDE, DIMENSION_FOTO_GRANDE, DIMENSION_FOTO_CHICA, DIMENSION_FOTO_CHICA); 
 			//echo '<p>' . $fotos[0] . '</p>';
 			//echo '<p>' . $fotos[1] . '</p>';
 			//echo '<p> Vista preeliminar, foto completa: </p>';
 			//echo '<p>' . $fotos[2] . '</p>';
 			//echo '<p> Vista preeliminar, foto en miniatura:';
 			//echo '<p>' .$fotos[3]. '<br>';
-			$visitado->cargarRutaFoto($_SESSION['id_usuario'] . '.jpg');
+			$visitado->cargarRutaFoto($visitado->id_usuario . '.jpg');
 		}
 		elseif(0 == $_FILES['img1']['size']){
 		$error_renovando_foto = 'RUTA_INCORRECTA';
