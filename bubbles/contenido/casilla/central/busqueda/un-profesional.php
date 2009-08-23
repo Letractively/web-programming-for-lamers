@@ -2,6 +2,23 @@
 $este_usuario = new usuario($esta_busqueda->bu_id_usuario[$i]);
 echo $este_usuario->ultimo_error;
 ?>
+
+<?php
+//Preparacion de la variable "indicadora" de los permisos del visitante....
+$visitante_es = '';
+if(isset($_SESSION['id_usuario'])){
+	if($este_usuario->id_usuario == $_SESSION['id_usuario']){
+		$visitante_es = 'usuario_administrador';
+	}
+	else{
+		$visitante_es = 'usuario_visitante';
+	}
+}
+if(isset($_SESSION['id_empresa'])){
+	$visitante_es = 'empresa_visitante';
+}
+echo 'VISITANTE_ES: ' . $visitante_es;
+?>
 	
 	<div class="titulo-oferta-busqueda">
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
@@ -28,6 +45,12 @@ echo $este_usuario->ultimo_error;
 		</div>
 	</div>
 	<div class="pie-oferta-busqueda">
+	<?php
+	$alias_visitante = usuario::id2alias($_SESSION['id_usuario']);
+	?>
+	<a href="u-galeria.php?entidad_visitada=<?php echo $alias_visitante; ?>&casilla_central=todos_amigos&contenido_central=todos_amigos&id_amigo_agregar=<?php echo $este_usuario->id_usuario; ?>">
+		<p class="parrafo8" style="color: #ff0000; float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">AGREGAR COMO AMIGO</p>
+	</a>
 	<a href="profesional/<?php echo $este_usuario->alias; ?>">
 		<p class="parrafo8" style="color: #ff0000; float: right; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;">VER PORTFOLIO</p>
 	</a>
