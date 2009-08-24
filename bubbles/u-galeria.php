@@ -7,6 +7,7 @@
 <?php include('includes/clases/e_aviso.class.php'); ?>
 <?php include('includes/clases/muestra.class.php'); ?>
 <?php include('includes/clases/amistad.class.php'); ?>
+<?php include('includes/clases/postulacion.class.php'); ?>
 <?php include("includes/tratar_imagenes.php"); ?>
 
 
