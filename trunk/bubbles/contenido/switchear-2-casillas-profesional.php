@@ -36,6 +36,8 @@ switch ($botonera_superior) {
 	case 'editar_mi_foto':
 		include('contenido/casilla/superior/profesional/botones/editar-mi-foto.php');
 		break;
+	case 'sin_botonera':
+		break;
 	default:
         include('contenido/casilla/superior/profesional/botones/ver-portfolio.php');
         break;
@@ -66,7 +68,10 @@ switch ($contenido_superior) {
 	case 'subir_un_portfolio':
 		include('contenido/casilla/superior/profesional/contenido/subir-un-portfolio.php');
 		break;
-    default:
+	case 'mis_postulaciones':
+		include('contenido/casilla/superior/profesional/contenido/ver-postulaciones.php');
+		break;
+	default:
         include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
         break;
 }

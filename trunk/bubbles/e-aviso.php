@@ -2,6 +2,7 @@
 <?php include('includes/clases/e_aviso.class.php'); ?>
 <?php include('includes/clases/empresa.class.php'); ?>
 <?php include('includes/clases/postulacion.class.php'); ?>
+<?php include('includes/clases/usuario.class.php'); ?>
 
 <?php
 $aviso_visitado = new aviso();
@@ -10,7 +11,11 @@ echo $aviso_visitado->ultimo_error;
 $empresa_propietaria = new empresa($aviso_visitado->id_empresa);
 echo $empresa_propietaria->ultimo_error;
 
-if($id_verif != 0){							//Si verifica que el aviso no existe lo manda a una pagina expecífica
+$postulados = new postulacion();
+$postulados->traerPostulacionesAviso($_GET['mostrar_aviso_id']);
+echo $postulados->ultimo_error;
+
+if($id_verif != 0){						//Si verifica que el aviso no existe lo manda a una pagina expecífica
 	header("Location: " . URL_BASE . ARCH_PAG_NO_EXISTE);
 	include('footer.php');
 	exit -1;
@@ -99,10 +104,19 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 		</div>
 		<div class="pie-oferta-completa">
 			<p style="color: #ff0000; float: right; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;" class="parrafo8">
-				<a href="#">
+				<a href="u-galeria.php?entidad_visitada=<?php echo usuario::id2alias($_SESSION['id_usuario']); ?>&solapa_superior=ninguna_activa&botonera_superior=sin_botonera&contenido_superior=mis_postulaciones&id_postularme_aviso=<?php echo $aviso_visitado->id_aviso;?>">
 				POSTULARME
 				</a>
 			</p>
+		</div>
+		<div class="contenido-oferta-completa">
+		<?php
+		$i=0;
+		while($i<$postulados->ult_filas_afectadas){
+			include('contenido/casilla/central/oferta/una-postulacion.php');
+		$i++;
+		}
+		?>
 		</div>
 	</div>
 </div>

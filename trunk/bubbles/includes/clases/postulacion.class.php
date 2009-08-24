@@ -48,7 +48,7 @@ class postulacion {
 
 	
 	
-	function traerPostulaciones($id_aviso){
+	function traerPostulacionesAviso($id_aviso){
 		$this->id_aviso = $id_aviso;
 		if($this->id_aviso > -1){
 			// Traer postulacion de la DB;
@@ -71,9 +71,32 @@ class postulacion {
 		}
 	return -1;
 	}
-		
-	function guardarPostulacion($id_aviso){
-		$this->id_aviso = $id_aviso;
+
+	function traerPostulacionesUsuario($id_usuario){
+		$this->id_usuario = $id_usuario;
+		if($this->id_usuario > -1){
+			// Traer postulacion de la DB;
+			$filas = $this->sql->leer('*','postulaciones',"id_usuario = '$this->id_usuario'");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar la/la(s) Postulacion(es)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->pos_id_postulacion[$i] = $fila['id_postulacion'];
+				$this->pos_id_usuario[$i] = $fila['id_usuario'];
+				$this->pos_id_aviso[$i] = $fila['id_aviso'];
+				$this->pos_fecha[$i] = $fila['fecha'];
+				$this->pos_objetivo_laboral[$i] = $fila['objetivo_laboral'];
+				$i ++;
+				}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
+	
+	function guardarPostulacion(){
 		if($this->id_aviso > -1){
 			// Guardar aviso de la DB;
 			$this->sql->insertar("id_usuario,
@@ -89,6 +112,33 @@ class postulacion {
 		}
 	return -1;
 	}
-
+	
+	function borrarPostulacion($id_postulacion = -1){
+		if($id_postulacion > -1){
+			// Borrar aviso de la DB;
+			$filas = $this->sql->borrar('postulaciones',"id_postulacion = '$id_postulacion'");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar una UNICA Postulación!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
+	
+	function verificarPostulacionExistente($id_usuario = -1, $id_aviso = -1){
+		if(($id_aviso > -1) && ($id_usuario > -1)){
+			// Traer amistad de la DB;
+			$filas = $this->sql->leer('*','postulaciones',"id_usuario = '$id_usuario' AND id_aviso = '$id_aviso' LIMIT 0, 1");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar la Amistad!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
 	
 }
