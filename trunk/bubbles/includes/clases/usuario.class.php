@@ -28,7 +28,23 @@ class usuario {
 	var $desea_profesionales;
 	var $miembro_desde;
 	var $status;
-		
+
+	var $us_id_usuario = array();	//ARRAYs para la seleccion de muchos usuarios
+	var $us_alias = array();
+	var $us_nombres = array();
+	var $us_apellidos = array();
+	var $us_nacimiento = array();
+	var $us_miembro_desde = array();
+	var $us_ruta_foto = array();
+	var $us_sexo = array();
+	var $us_pais_residencia = array();
+	var $us_empresa = array();
+	var $us_edad = array();
+	var $us_profesion_1 = array();
+	var $us_profesion_2 = array();
+	var $us_profesion_3 = array();
+	var $us_nivel_profesion = array();
+	
 	var $edad;			//Variables calculadas a partir de la TABLE 'usuarios'
 	var $ultimo_error;			//Contiene el "string" que define el ultimo error provocado en esta clase.
 	
@@ -285,9 +301,9 @@ class usuario {
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 	function edad(){	//'edad' es una cantidad calculada sobre la DB, por lo tanto no puede ser INSERTada!
-		if($this->idUsuario() > -1){
+		if($this->id_usuario > -1 ){
 			$sql = "SELECT nacimiento, CURRENT_DATE, (YEAR(CURRENT_DATE) - YEAR(nacimiento)) 
-			- (RIGHT(CURRENT_DATE,5) < RIGHT(nacimiento,5)) AS edad FROM usuarios WHERE id_usuario = " . $this->idUsuario();
+			- (RIGHT(CURRENT_DATE,5) < RIGHT(nacimiento,5)) AS edad FROM usuarios WHERE id_usuario = " . $this->id_usuario;
 			$result = mysql_query($sql);
 			if(!(mysql_error() == '')){
 				echo mysql_error();
@@ -297,7 +313,7 @@ class usuario {
 		$this->edad = $fila['edad'];
 		return $this->edad;
 		}
-	return FALSE;
+	return -1;
 	}
 			
 //////
@@ -456,8 +472,6 @@ class usuario {
 			$this->nacimiento = $filas[0]['nacimiento'];
 			$this->miembro_desde = $filas[0]['miembro_desde'];
 			$this->ruta_foto = $filas[0]['ruta_foto'];
-			$this->nombres = $filas[0]['nombres'];
-			$this->apellidos = $filas[0]['apellidos'];
 			$this->sexo = $filas[0]['sexo'];
 			$this->pais_residencia = $filas[0]['pais_residencia'];
 			$this->empresa = $filas[0]['empresa'];
@@ -490,6 +504,35 @@ class usuario {
 				$this->ultimo_error = 'Error al UPDATEar el PERFIL!: ' . $this->sql->ultimo_error;
 				return -1;
 			}
+			return 0;
+		}
+	return -1;
+	}
+	
+	function traerColUsuariosDestacados($comienzo, $cantidad){
+		if(($comienzo >= 0) && ($cantidad>=0)){
+			// Traer usuarios de la DB;
+			$filas = $this->sql->leer('*','usuarios',"1 ORDER BY id_usuario ASC LIMIT $comienzo, $cantidad");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar lo(s) Usuarios(s)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->us_id_usuario[$i] = $fila['id_usuario'];
+				$this->us_alias[$i] = $fila['alias'];
+				$this->us_nombres[$i] = $fila['nombres'];
+				$this->us_apellidos[$i] = $fila['apellidos'];
+				$this->us_miembro_desde[$i] = $fila['miembro_desde'];
+				$this->us_ruta_foto[$i] = $fila['ruta_foto'];
+				$this->us_pais_residencia[$i] = $fila['pais_residencia'];
+				$this->id_usuario = $fila['id_usuario'];	//Variable preparada para calcular la edad a continuacion..
+				$this->us_edad[$i] = $this->edad();
+				$this->us_profesion_1[$i] = $fila['profesion_1'];
+				$this->us_nivel_profesion[$i] = $fila['nivel_profesion'];
+				$i ++;
+				}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
 			return 0;
 		}
 	return -1;

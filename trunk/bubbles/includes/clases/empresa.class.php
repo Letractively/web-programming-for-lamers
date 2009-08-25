@@ -208,6 +208,20 @@ class empresa {
 	return FALSE;
 	}
 
+	function cargarRutaFoto($ruta_foto = 'default'){
+		if($this->idEmpresa() > -1){
+			//Leer de la DB
+			$filas = $this->sql->cambiar("ruta_foto = '$ruta_foto'", 'empresas', "id_empresa = '$this->id_empresa'");
+				if($this->sql->ultimo_error != ''){
+					$this->ultimo_error = 'Error al caargar la Foto de esta Empresa de la DB!: ' . $this->sql->ultimo_error;
+					return -1;
+				}
+			$this->ruta_foto = $ruta_foto;
+			return 0;
+		}
+	return -1;
+	}
+
 	function emailUsuario($email_usuario = NULL){
 		if($this->idEmpresa() > -1){
 			if($email_usuario != NULL){

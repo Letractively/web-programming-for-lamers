@@ -30,7 +30,7 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 	</div>
 	<div class="borde-empresa-oferta-completa">
 		<div class="foto-oferta-laboral">
-		<img src="<?php echo DIR_FOTOS_PROFESIONALES_CHICAS . $este_usuario->ruta_foto; ?>"
+		<img src="<?php echo DIR_FOTOS_PROFESIONALES_CHICAS . $este_usuario->ruta_foto; ?>">
 		</div>
 		<div class="descripcion-empresa">
 		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo $este_usuario->profesion_1; ?></p>

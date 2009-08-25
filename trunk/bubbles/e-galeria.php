@@ -4,6 +4,7 @@
 <?php include('includes/clases/comentario.class.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
 <?php include('includes/clases/mensaje.class.php'); ?>
+<?php include("includes/tratar_imagenes.php"); ?>
 
 <?php
 $visitado = new empresa(empresa::aliasUsuario2id($_GET['entidad_visitada']));
@@ -61,6 +62,9 @@ switch ($solapa_superior) {
     case 'laborales':
         include('contenido/casilla/superior/empresa/solapas/laborales.php');
         break;
+    case 'ninguna_activa':
+		include('contenido/casilla/superior/empresa/solapas/laborales.php');
+        break;
     default:
         include('contenido/casilla/superior/empresa/solapas/laborales.php');
         break;
@@ -78,6 +82,9 @@ switch ($botonera_superior) {
         break;
     case 'abrir_mensaje':
         include('contenido/casilla/superior/empresa/botones/abrir-mensaje.php');
+        break;
+	case 'editar_mi_foto':
+        include('contenido/casilla/superior/empresa/botones/editar-mi-foto.php');
         break;
     default:
         include('contenido/casilla/superior/empresa/botones/ver-laborales.php');
@@ -103,8 +110,11 @@ switch ($contenido_superior) {
 	case 'ver_mis_ofertas':
 		include('contenido/casilla/superior/empresa/contenido/ver-ofertas.php');
 		break;
+		case 'editar_mi_foto':
+		include('contenido/casilla/superior/empresa/contenido/editar-mi-foto.php');
+		break;
     default:
-        include('contenido/casilla/superior/empresa/contenido/subir-oferta.php');
+        include('contenido/casilla/superior/empresa/contenido/ver-ofertas.php');
         break;
 }
 ?>
@@ -113,8 +123,10 @@ switch ($contenido_superior) {
 	</div>
 
 
-<?php include('contenido/casilla/inferior/profesional.php') ?>
+<?php include('contenido/casilla/inferior/empresa.php') ?>
 </div>
+
+<?php include('contenido/col-profesional-derecha.php'); ?>
 
 
 <?php //ACTUALIZADO HASA AQUI!!!!! ?>
