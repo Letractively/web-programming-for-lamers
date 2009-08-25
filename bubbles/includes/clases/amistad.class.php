@@ -45,11 +45,10 @@ class amistad {
 		}
 	}
 
-	function traerAmistades($id_usuario){
-		$this->id_usuario = $id_usuario;
-		if($this->id_usuario > -1){
+	function traerAmistades($id_usuario = -1, $limite = 'LIMIT 0, 30'){
+		if($id_usuario > -1){
 			// Traer avisos de la DB;
-			$filas = $this->sql->leer('*','amistades',"id_usuario = '$this->id_usuario' ORDER BY id_amistad DESC");
+			$filas = $this->sql->leer('*','amistades',"id_usuario = '$id_usuario' ORDER BY id_amistad DESC $limite");
 			if($this->sql->ultimo_error != ''){
 				$this->ultimo_error = 'Error al SELECTionar la(s) Amistad(es)!: ' . $this->sql->ultimo_error;
 				return -1;

@@ -1,5 +1,6 @@
 <?php include('header.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
+<?php include('includes/clases/usuario.class.php'); ?>
 
 <div class="col-centroizquierda">
 	<div class="col-contenido-home">

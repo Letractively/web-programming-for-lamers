@@ -343,10 +343,17 @@ background-color: #ffffff;
 }
 .contenido-portfolio .un-portfolio-mio,
 .contenido-portfolio .un-portfolio-mio .imagen-portfolio,
-.contenido-portfolio .un-portfolio-mio .pie-portfolio{
+.contenido-portfolio .un-portfolio-mio .pie-portfolio,
+.contenido-amigos .borde-amigo-chico, .inferior-amigos .borde-amigo-chico{
 float: left;
 overflow: hidden;
 width: 100px;
+}
+.contenido-amigos .borde-amigo-chico, .inferior-amigos .borde-amigo-chico{
+height:80px;
+margin-left:15px;
+margin-top:5px;
+width:60px;
 }
 .contenido-portfolio .un-portfolio-mio{
 height: 120px;
@@ -558,35 +565,61 @@ float: left;
 overflow: hidden;
 height:308px;
 }
-.col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der,
-.col-empresa-centro .casilla-inferior .extremo-izq, .col-empresa-centro .casilla-inferior .extremo-der{
+.col-profesional-centro .casilla-inferior .extremo-izq, .col-profesional-centro .casilla-inferior .extremo-der{
 width: 12px;
 }
-.col-profesional-centro .casilla-inferior .extremo-izq,
-.col-empresa-centro .casilla-inferior .extremo-izq{
+.col-empresa-centro .casilla-inferior .extremo-izq, .col-empresa-centro .casilla-inferior .extremo-der{
+width: 9px;
+}
+.col-profesional-centro .casilla-inferior .extremo-izq{
 background-image: url(imagenes/borde-izquierdo-casilla-inferior.png);
 background-repeat: no-repeat;
 }
-.col-profesional-centro .casilla-inferior .extremo-der,
-.col-empresa-centro .casilla-inferior .extremo-der{
+.col-empresa-centro .casilla-inferior .extremo-izq{
+background-image: url(imagenes/borde-izquierdo-casilla-inferior-empresa.png);
+background-repeat: no-repeat;
+}
+.col-profesional-centro .casilla-inferior .extremo-der{
 background-image: url(imagenes/borde-derecho-casilla-inferior.png);
 background-repeat: no-repeat;
 }
-.col-profesional-centro .casilla-inferior .borde-contenido,
-.col-empresa-centro .casilla-inferior .borde-contenido{
+.col-empresa-centro .casilla-inferior .extremo-der{
+background-image: url(imagenes/borde-derecho-casilla-inferior-empresa.png);
+background-repeat: no-repeat;
+}
+.col-profesional-centro .casilla-inferior .borde-contenido{
 width: 524px;
 background-color: #f7eedd;
 height:306px;
 border-top: 1px solid #6DB3E4;
 border-bottom: 1px solid #6DB3E4;
 }
+.col-empresa-centro .casilla-inferior .borde-contenido{
+width: 530px;
+height:306px;
+}
 .col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .contenido-comentarios,
 .col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .listar-comentarios,
-.col-profesional-centro .casilla-inferior .agregar-comentario,
-.col-empresa-centro .casilla-inferior .superior-comentarios, .col-empresa-centro .casilla-inferior .contenido-comentarios,
-.col-empresa-centro .casilla-inferior .inferior-comentarios{
+.col-profesional-centro .casilla-inferior .agregar-comentario{
 border-right: 1px solid #0089d1;
 width: 293px;
+}
+.col-empresa-centro .casilla-inferior .superior-comentarios, .col-empresa-centro .casilla-inferior .contenido-comentarios,
+.col-empresa-centro .casilla-inferior .inferior-comentarios{
+width: 530px;
+}
+.col-empresa-centro .casilla-inferior .superior-comentarios{
+background-image: url(imagenes/degrade1-casilla-inferior-empresa.png);
+background-repeat: repeat-x;
+height: 52px;
+}
+.col-empresa-centro .casilla-inferior .contenido-comentarios{
+background-image: url(imagenes/degrade2-inferior-empresa.png);
+background-repeat: repeat-x;
+}
+.col-empresa-centro .casilla-inferior .inferior-comentarios{
+background-image: url(imagenes/degrade3-inferior-empresa.png);
+background-repeat: repeat-x;
 }
 .col-profesional-centro .casilla-inferior .superior-comentarios p, .col-profesional-centro .casilla-inferior .superior-amigos p,
 .col-empresa-centro .casilla-inferior .superior-comentarios p, .col-empresa-centro .casilla-inferior .superior-amigos p{
@@ -599,6 +632,10 @@ margin-top: 10px;
 padding-left: 50px;
 padding-top: 2px;
 }
+.col-empresa-centro .casilla-inferior .superior-comentarios p{
+background-color: transparent;
+width:474px;
+}
 .col-profesional-centro .casilla-inferior .listar-comentarios{
 height: 135px;
 float: left;
@@ -608,6 +645,13 @@ overflow: hidden;
 float: left;
 overflow: hidden;
 height: 23px;
+}
+.col-empresa-centro .casilla-inferior .agregar-comentario{
+float: left;
+overflow: hidden;
+height: 23px;
+padding-top: 55px;
+padding-left: 5px;
 }
 .col-profesional-centro .casilla-inferior .agregar-comentario p{
 float: right;
@@ -619,6 +663,32 @@ margin-top: 0px;
 .col-empresa-centro .casilla-inferior .superior-amigos p{
 width: 180px;
 margin-left: 10px;
+}
+.casilla-inferior .superior-amigos a{
+float: left;
+font-size: 10px;
+margin-left:30px;
+padding-top:10px;
+position:absolute;
+color: #ffffff;
+}
+.contenido-amigos .foto-comentario,
+.inferior-amigos .foto-comentario{
+float:left;
+height:60px;
+margin-bottom:0;
+margin-left:0;
+margin-top:0;
+overflow:hidden;
+width:60px;
+}
+.casilla-inferior .superior-comentarios a{
+float: left;
+font-size: 10px;
+margin-left:30px;
+padding-top:10px;
+position:absolute;
+color: #ffffff;
 }
 .col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos,
 .col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos{
@@ -651,6 +721,14 @@ background-repeat: repeat-x;
 border-top: 1px solid #d2d2d2;
 border-bottom: 1px solid #d2d2d2;
 }
+.col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos-cont{
+width: 400px;
+}
+.col-empresa-centro .casilla-inferior .inferior-comentarios textarea{
+height: 66px;
+width: 393px;
+background-color: transparent;
+}
 .col-profesional-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der,
 .col-empresa-centro .casilla-inferior .inferior-comentarios .buscar-amigos-der{
 width: 8px;
@@ -661,7 +739,7 @@ background-repeat: no-repeat;
 .col-empresa-centro .casilla-inferior .contenido-comentarios, .col-empresa-centro .casilla-inferior .contenido-amigos{
 float: left;
 overflow: hidden;
-height: 160px;
+height: 170px;
 }
 .col-profesional-centro .casilla-inferior .superior-amigos, .col-profesional-centro .casilla-inferior .contenido-amigos,
 .col-profesional-centro .casilla-inferior .inferior-amigos,
@@ -669,13 +747,15 @@ height: 160px;
 .col-empresa-centro .casilla-inferior .inferior-amigos{
 width: 230px;
 }
-.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos,
-.col-empresa-centro .casilla-inferior .superior-comentarios, .col-empresa-centro .casilla-inferior .superior-amigos{
+.col-profesional-centro .casilla-inferior .superior-comentarios, .col-profesional-centro .casilla-inferior .superior-amigos{
 height: 50px;
+}
+.col-empresa-centro .casilla-inferior .superior-comentarios{
+height: 52px;
 }
 .col-profesional-centro .casilla-inferior .inferior-comentarios, .col-profesional-centro .casilla-inferior .inferior-amigos,
 .col-empresa-centro .casilla-inferior .inferior-comentarios, .col-empresa-centro .casilla-inferior .inferior-amigos{
-height: 96px;
+height: 86px;
 }
 /*<-------*/
 /**/
@@ -1039,6 +1119,12 @@ float: left;
 overflow: hidden;
 width: 285px;
 }
+.col-empresa-centro .borde-comentario-chico{
+float: left;
+overflow: hidden;
+width: 522px;
+margin-top:5px;
+}
 .borde-comentario-chico .foto-comentario{
 float: left;
 overflow: hidden;
@@ -1049,11 +1135,19 @@ margin-left: 0px;
 margin-bottom: 0px;
 }
 .borde-comentario-chico .titulo-comentario, .borde-comentario-chico .descripcion-comentario,
-.borde-comentario-chico .pie-comentario{
+.borde-comentario-chico .pie-comentario, .usuarios-destacados-col .descripcion-usuario,
+.usuarios-destacados-col .pie-usuario{
 float: left;
 overflow:hidden;
 width: 210px;
 margin-left: 2px;
+}
+.col-empresa-centro .borde-comentario-chico .titulo-comentario,
+.col-empresa-centro .borde-comentario-chico .descripcion-comentario{
+width: 450px;
+}
+.col-empresa-centro .borde-comentario-chico .pie-comentario{
+width: 500px;
 }
 .borde-comentario-chico .titulo-comentario, .titulo-oferta-completa{
 margin-top: 0px;
@@ -1063,6 +1157,20 @@ height:20px;
 .borde-comentario-chico .descripcion-comentario{
 margin-bottom: 2px;
 height:40px;
+}
+.usuarios-destacados-col .descripcion-usuario{
+margin-bottom: 2px;
+height:60px;
+width: 140px;
+}
+.usuarios-destacados-col .pie-usuario{
+border-top:1px solid #0089D1;
+height:2px;
+width:200px;
+}
+.col-empresa-centro .borde-comentario-chico .descripcion-comentario{
+margin-bottom: 2px;
+height:55px;
 }
 .borde-comentario-chico .pie-comentario{
 width: 268px;
