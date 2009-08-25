@@ -1,6 +1,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$("#registrarForm").validate({
+		errorLabelContainer: $(".borde-reg-usuario .contenedor-advertencias"),	//DIV Contenedor de errores de REGISTRO}
+		wrapper: 'p',										//TAG separador entre ERROR y ERROR. Aqui se utiliza como lista y retorno de carro.
 		//errorElement: "em",								//TAG que sera agregado en caso de cotejar un ERROR.
 		success: function(label) {						//En caso de SUCCESS del INPUT adhiere la class="success" a <label /> y asi
 			//label.text("ok!").addClass("success");	//obtenemos el circulito azul.
@@ -64,29 +66,29 @@ $(document).ready(function(){
 			fuNombres: ' ',//"Introduzca un Nombre",
 			fuApellidos: ' ',//"Intrudosca un Apellido",
 			fuAlias: {
-				required: ' ',//"Introduzca un Alias (Usuario)",
-				minlength: ' ',//"Su Alias debe tener al menos dos letras",
-				remote: ' '//"Este Alias ya esta en uso, escoja otro"
+				required: '* Debe introducir su Usuario',
+				minlength: '* Su Usuario no puede tener menos de 2 caracteres',
+				remote: '* Su Usuario ya se encuentra registrado, por favor escoja otro'
 			},
 			fuContrasenia: {
-				required: ' ',//"Introduzca una Contraseña",
-				minlength: ' '//"Su contraseña debe tener por lo menos 5 caracteres"
+				required: '* Debe introducir una contraseña',
+				minlength: '* Su contraseña debe tener por lo menos 6 caracteres'
 			},
 			fuVerificarContrasenia: {
-				required: ' ',//"Introduzca una Contraseña",
-				minlength: ' ',//"Su contraseña debe tener por lo menos 5 caracteres",
-				equalTo: ' '//"Su contraseña no coincide con la anterior"
+				required: '',
+				minlength: '',
+				equalTo: '* Sus Contraseñas introducidas no coinciden'
 			},
 			fuPreguntaSecreta: ' ',
 			fuRespuestaSecreta: ' ',
-			fuSeguridad: ' ',//"El texto introducido es invalido",
+			fuSeguridad: '* El texto copiado de la Imagen es incorrecto',
 			fuEmail: ' ',//"Introduzca una dirección de correo válida",
 			fuSexo: ' ',
 			fuPaisResidencia: ' ',
 			fuProfesion1: ' ',
 			fuNivelProfesion: ' ',
-			fuAceptoTerminos: '!!',//"Por favor, acepte nuestros Terminos y Condiciones",
-			fuNacimiento: ' '//"Ingrese una fecha válida de naciniemto (Ej: 25/11/1991)"
+			fuAceptoTerminos: '* Debe Aceptar nuestros TERMINOS y CONDICIONES',
+			fuNacimiento: '* Su Fecha de Nac. tiene un formato incorrecto (un ejemplo correcto seria: 24/11/2001)',
 		},
 		onkeyup: false		//EVITA QUE LOS DATOS SE COTEJEN AL SOLTAR CADA LETRA!!! IMPRESCINDIBLE, evita trafico AJAX!
 	});
@@ -216,7 +218,15 @@ $(document).ready(function(){
 				<p><img src="includes/genera_img.php" id="fuGeneraImg" />Ingrese el texto de la imagen:<input type="text" name="fuSeguridad" id="fuSeguridad" /></p>
 				<input type="hidden" name="fuStatus" value="" id="fuStatus" />
 				<input type="hidden" name="paso1" value="paso1" />
-				<p class="al-medio"><input type="submit" value="Enviar" name="paso1" /></p>
 		</div>
-	</form>
+		<div style="clear: both;"></div>
+		<div class="contenedor-advertencias">
+		</div>
+		<div class="enviar-reg">
+			<p class="al-medio"><input type="submit" class="boton1" value="Enviar" name="paso1" /></p>
+		</form>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="pie-reg-usuario">
+		</div>
 </div>

@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	$("#registrarForm").validate({
 		errorLabelContainer: $(".registrar-empresa .contenedor-advertencias"),	//DIV Contenedor de errores de REGISTRO}
-		wrapper: 'li',										//TAG separador entre ERROR y ERROR. Aqui se utiliza como lista y retorno de carro.
+		wrapper: 'p',										//TAG separador entre ERROR y ERROR. Aqui se utiliza como lista y retorno de carro.
 		//errorElement: "em",								//TAG que sera agregado en caso de cotejar un ERROR.
 		success: function(label) {						//En caso de SUCCESS del INPUT adhiere la class="success" a <label /> y asi
 			//label.text("ok!").addClass("success");	//obtenemos el circulito azul.
@@ -243,7 +243,7 @@ $(document).ready(function(){
 	<div class="contenedor-advertencias">
 	</div>
 	<div class="enviar-reg">
-		<p class="al-medio"><input type="submit" value="Enviar" name="paso1" /></p>
+		<p class="al-medio"><input type="submit" class="boton1" value="Enviar" name="paso1" /></p>
 	</div>
 	</form>
 	<div class="inferior-reg-empresa">
