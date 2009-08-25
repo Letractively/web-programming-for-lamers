@@ -117,6 +117,12 @@ height: 5px;
 background-image: url('imagenes/inferior-reg-empresa.png');
 background-repeat: no-repeat;
 }
+.borde-reg-usuario .pie-reg-usuario{
+background-image: url('imagenes/inferior-reg-usuario.png');
+background-repeat: no-repeat;
+height: 8px;
+border: 0px;
+}
 .registrar-empresa .form1-reg-empresa{
 background-image: url('imagenes/form1-reg-empresa.jpg');
 background-repeat: no-repeat;
@@ -138,11 +144,23 @@ width: 541px;
 border-right: 2px solid #67686a;
 border-left: 2px solid #67686a;
 }
+.borde-reg-usuario .contenedor-advertencias{
+border-left:2px solid #67686A;
+border-right:2px solid #67686A;
+height:auto;
+width:541px;
+}
 .registrar-empresa .enviar-reg{
 height: 30px;
 width: 541px;
 border-right: 2px solid #67686a;
 border-left: 2px solid #67686a;
+}
+.borde-reg-usuario .enviar-reg{
+border-left:2px solid #67686A;
+border-right:2px solid #67686A;
+height:30px;
+width:541px;
 }
 .form2-reg-empresa #feRazonSocial{
 width: 100px;
@@ -226,7 +244,7 @@ background-color: #ffffff;
 float: left;
 overflow: hidden;
 width: 545px;
-height: 540px;
+height: auto;
 background-image: url('imagenes/borde-reg-usuario.png');
 background-repeat: no-repeat;
 }
@@ -260,7 +278,7 @@ margin-top: 0px;
 float: left;
 overflow: hidden;
 width: 541px;
-height: 146px;
+height: 116px;
 background-color: #ffffff;
 border-left: 2px solid #0081c5;
 border-right: 2px solid #0081c5;

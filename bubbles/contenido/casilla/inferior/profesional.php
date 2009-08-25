@@ -1,6 +1,6 @@
 <?php
 $este_comentario = new comentario();
-$este_comentario->traerComentarios($visitado->id_usuario, 'USUARIO', 'LIMIT 0, 2');
+$este_comentario->traerComentarios($visitado->id_usuario, 'PROFESIONAL', 'LIMIT 0, 2');
 echo $este_comentario->ultimo_error;
 
 $este_amigo = new amistad();
