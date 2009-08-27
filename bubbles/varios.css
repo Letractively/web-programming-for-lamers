@@ -144,7 +144,7 @@ height: 80px;
 background-image: url(imagenes/solapa-lateral.png);
 background-repeat: no-repeat;
 }
-.solapa-empresa{
+.casilla-superior .solapa-empresa{
 float: left;
 width: 94px;
 height: 80px;
@@ -825,7 +825,13 @@ float: left;
 overflow: hidden;
 width: 287px;
 }
-.form-registrarse-usuarios{
+.col-registrarse h2{
+color: #ffffff;
+text-align: center;
+float: none;
+padding-top: 5px;
+}
+.form-registrarse-usuarios, .form-registrarse-empresas{
 border: 1px solid #000000;
 float: left;
 overflow: hidden;
@@ -833,12 +839,14 @@ height: 356px;
 width: 285px;
 }
 .form-registrarse-usuarios .superior, .form-registrarse-usuarios .medio,
-.form-registrarse-usuarios .formulario, .form-registrarse-usuarios .inferior{
+.form-registrarse-usuarios .formulario, .form-registrarse-usuarios .inferior,
+.form-registrarse-empresas .superior, .form-registrarse-empresas .medio,
+.form-registrarse-empresas .formulario, .form-registrarse-empresas .inferior{
 float: left;
 overflow: hidden;
 width: 285px;
 }
-.form-registrarse-usuarios .superior{
+.form-registrarse-usuarios .superior, .form-registrarse-empresas .superior{
 height: 39px;
 }
 .form-registrarse-usuarios .inferior{
@@ -846,7 +854,12 @@ height: 20px;
 background-image: url(imagenes/inferior-reg-usuarios.png);
 background-repeat: no-repeat;
 }
-.form-registrarse-usuarios .solapa-empresas{
+.form-registrarse-empresas .inferior{
+height: 20px;
+background-image: url(imagenes/inferior-reg-empresas.png);
+background-repeat: no-repeat;
+}
+.form-registrarse-usuarios .solapa-empresas, .form-registrarse-empresas .solapa-empresas{
 float: left;
 overflow: hidden;
 width: 141px;
@@ -855,7 +868,7 @@ background-image: url(imagenes/solapa-reg-empresas.png);
 background-repeat: no-repeat;
 }
 
-.form-registrarse-usuarios .solapa-usuarios{
+.form-registrarse-usuarios .solapa-usuarios, .form-registrarse-empresas .solapa-usuarios{
 float: left;
 overflow: hidden;
 width: 144px;
@@ -868,10 +881,22 @@ height: 130px;
 background-image: url(imagenes/arte-reg-profesionales.jpg);
 background-repeat: no-repeat;
 }
+.form-registrarse-empresas .medio{
+height: 130px;
+background-image: url(imagenes/arte-reg-empresas.png);
+background-repeat: no-repeat;
+}
 .form-registrarse-usuarios .formulario{
 height: 178px;
 width: 283px;
 background-color: #6cb4e4;
+border-left: 1px solid #46a1d6;
+border-right: 1px solid #46a1d6;
+}
+.form-registrarse-empresas .formulario{
+height: 178px;
+width: 283px;
+background-color: #c4c5c9;
 border-left: 1px solid #46a1d6;
 border-right: 1px solid #46a1d6;
 }
