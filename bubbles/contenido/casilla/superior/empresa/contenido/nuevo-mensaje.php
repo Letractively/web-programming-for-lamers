@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// Verifico y preparo el PORT de un mensaje privado, luego lo meto en la DB....
+// Verifico y preparo el POST de un mensaje privado, luego lo meto en la DB....
 ///////////////////////////////////////////////////////////////////////////////
 $mensaje_enviado = NULL;	//Inicializo el flag de mensaje enviado
 if (isset($_POST['emMensajeEnviado'])){

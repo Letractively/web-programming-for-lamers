@@ -36,6 +36,9 @@ if($error == 'tiempo_agotado'){
 if($error == 'debe_loguearse'){
 	include('contenido/debe-loguearse.php');
 	}
+if($error == 'no_administrador'){
+	include('contenido/debe-loguearse.php');
+}
 if($error == 'desconocido'){
 	include('contenido/error-desconocido.php');
 }

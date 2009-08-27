@@ -1,4 +1,5 @@
 <?php
+if($visitante_es != 'usuario_administrador'){rebotar('no_administrador');}
 $error_postulando = '';
 $postulacion = new postulacion();
 
