@@ -28,7 +28,7 @@ margin: 0;
 height: 20px;
 }
 .tabla-registrar .boton1{
-width: 70px;
+/*width: 70px;*/
 text-align: center;
 color #ffffff;
 }
@@ -84,14 +84,14 @@ height: 26px;
 margin-left: 63px;
 }
 .registrar-empresa .solapa-empresa{
-background-image: url('imagenes/solapa-reg-empresa.png');
-background-repeat: no-repeat;
+/*background-image: url('imagenes/solapa-reg-empresa.png');
+background-repeat: no-repeat;*/
 width: 121px;
 margin-top: 2px;
 }
 .registrar-empresa .solapa-profesional{
-background-image: url('imagenes/solapa-reg-profesional.png');
-background-repeat: no-repeat;
+/*background-image: url('imagenes/solapa-reg-profesional.png');
+background-repeat: no-repeat;*/
 width: 123px;
 margin-top: 2px;
 }

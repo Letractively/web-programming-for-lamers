@@ -1,10 +1,10 @@
-<div class="form-registrarse-usuarios">
+<div class="form-registrarse-empresas">
 	<div class="superior">
 		<div class="solapa-usuarios">
-		<a href="<?php echo $_SERVER['PHP_SELF'] . '?solapa_reg=usuario'?>" ><p>Profesionales</p></a>
+		<a href="<?php echo $_SERVER['PHP_SELF'] . '?solapa_reg=usuario'?>" ><h2>Profesionales</h2></a>
 		</div>
 		<div class="solapa-empresas">
-		<a href="<?php echo $_SERVER['PHP_SELF'] . '?solapa_reg=empresa'?>" ><p>Empresas</p></a>
+		<a href="<?php echo $_SERVER['PHP_SELF'] . '?solapa_reg=empresa'?>" ><h2>Empresas</h2></a>
 		</div>
 	</div>
 	<div class="medio">
