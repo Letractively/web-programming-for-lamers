@@ -61,6 +61,7 @@ if(isset($_POST["paso1"])){
 	$_SESSION['fuProfesion2'] = $_POST['fuProfesion2'];
 	$_SESSION['fuProfesion3'] = $_POST['fuProfesion3'];
 	$_SESSION['fuNivelProfesion'] = $_POST['fuNivelProfesion'];
+	$_SESSION['fuRutaFoto'] = 'default.jpg';
 	if (isset($_POST['fuDeseaNews'])){
 		$_SESSION['fuDeseaNews'] = 1;
 	} 
@@ -84,7 +85,7 @@ if(isset($_POST["paso1"])){
 												$_SESSION['fuContrasenia'],
 												$_SESSION['fuEmail'],
 												$_SESSION['fuNacimiento'],
-												'',
+												$_SESSION['fuRutaFoto'],
 												$_SESSION['fuPreguntaSecreta'],
 												$_SESSION['fuRespuestaSecreta'],
 												$_SESSION['fuNombres'],

@@ -1,3 +1,4 @@
+<?php if($visitante_es != 'empresa_administrador'){rebotar('no_administrador');} ?>
 <div class="contenido-laborales">
 	<div class="cabecera-oferta">
 	<h2>Subir Oferta Laboral</h2>

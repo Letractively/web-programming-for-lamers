@@ -5,6 +5,7 @@ $mi_portfolio_offset = 0;
 $mi_portfolio_boton_siguiente = 'DESABILITADO';
 $mi_portfolio_boton_anterior = 'DESABILITADO';
 if(isset($_GET['eliminar_muestra_id'])){
+	if($visitante_es != 'usuario_administrador'){rebotar('no_administrador');}
 	if((file_exists(DIR_PORTFOLIOS_PROFESIONALES_CHICOS . $_GET['eliminar_muestra_id'] . '.jpg'))
 		&& (file_exists(DIR_PORTFOLIOS_PROFESIONALES . $_GET['eliminar_muestra_id'] . '.jpg'))){
 		if ((!unlink(DIR_PORTFOLIOS_PROFESIONALES_CHICOS . $_GET['eliminar_muestra_id'] . '.jpg'))

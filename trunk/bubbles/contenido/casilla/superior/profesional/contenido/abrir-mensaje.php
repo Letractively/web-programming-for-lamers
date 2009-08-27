@@ -1,4 +1,5 @@
 <?php
+if($visitante_es != 'usuario_administrador'){rebotar('no_administrador');}
 $mensaje = new mensaje();
 if(isset($_GET['id_mensaje'])){
 	$mensaje->traerMensaje($_GET['id_mensaje']);

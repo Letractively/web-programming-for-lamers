@@ -1,4 +1,5 @@
 <?php
+if($visitante_es != 'empresa_administrador'){rebotar('no_administrador');}
 $error_renovando_foto = '';
 if(isset($_POST['epRenovarFoto'])){
 	if(isset($_POST['nueva'])){

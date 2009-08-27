@@ -58,7 +58,7 @@ if(isset($_POST["paso1"])){
 	$_SESSION['fePuestoUsuario'] = myquery::cambiaTaMysql($_POST['fePuestoUsuario']);
 	$_SESSION['fePrefijoUsuario'] = $_POST['fePrefijoUsuario'];
 	$_SESSION['feTelUsuario'] = $_POST['feTelUsuario'];
-	$_SESSION['feRutaLogo'] = '';//$_POST['feRutaLogo'];
+	$_SESSION['feRutaFoto'] = 'default.jpg';//$_POST['feRutaFoto'];
 	if (isset($_POST['feDeseaNews'])){
 		$_SESSION['feDeseaNews'] = 1;
 	} 
@@ -96,7 +96,7 @@ if(isset($_POST["paso1"])){
 											$_SESSION['fePuestoUsuario'],
 											$_SESSION['fePrefijoUsuario'],
 											$_SESSION['feTelUsuario'],
-											'',
+											$_SESSION['feRutaFoto'],
 											$_SESSION['feDeseaNews'],
 											$_SESSION['feDeseaLaborales'],
 											$_SESSION['feDeseaProfesionales'],

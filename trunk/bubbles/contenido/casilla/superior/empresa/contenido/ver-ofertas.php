@@ -1,4 +1,5 @@
 <?php
+if($visitante_es != 'empresa_administrador'){rebotar('no_administrador');}
 $error_publicar_aviso = '';
 $oferta_laboral = new aviso();
 

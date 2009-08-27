@@ -285,7 +285,7 @@ function postear_postulacion($aviso){
 // de pasar la "preelegida" como segundo param.:
 ////////////////////////////////////////////////////
 function listar_options( $opciones = array(), $seleccionada = ''){
-	echo '<option value=""></option>';
+	echo '<option value=""></option>';	//la primera <option> la mandamos "en blanco".
 	foreach($opciones as $opcion){
 		echo '<option value="' . $opcion . '"';
 		if($opcion == $seleccionada){
@@ -297,4 +297,19 @@ function listar_options( $opciones = array(), $seleccionada = ''){
 		echo $opcion . '</option>';
 	}
 }
+
+/////////////////////////////////////////METODOS DE SEGURIDAD EN EL FILTRADO DE LOGUEADOS////////////////////////////////////////
+////////////////////////////////////////////////////
+//Retira de una página en particular a una entidad
+// a la cual no le corresponde esa funcionalidad:
+////////////////////////////////////////////////////
+function rebotar($error = ''){
+	echo 'UD. NO TIENE PERMISOS PARA VER ESTE CONTENIDO!, RETROCEDA!!';
+	exit;
+}
+//function rebotar($error = ''){
+//	$uri = $_SESSION['uri_rescatada'];
+//	header('Location: ' . URL_BASE . 'error-login.php?error=' . $error . '&uri_rescatada=' . urlencode($uri));
+//	exit;
+//}
 ?>

@@ -1,4 +1,5 @@
 <?php
+if($visitante_es != 'usuario_administrador'){rebotar('no_administrador');}
 $error_subiendo_portfolio = '';
 $nueva_muestra = new muestra();
 if(isset($_POST['subir_portfolio'])){

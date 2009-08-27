@@ -1,4 +1,5 @@
 <?php
+if($visitante_es != 'usuario_administrador'){rebotar('no_administrador');}
 $error_renovando_foto = '';
 if(isset($_POST['renovar_foto'])){
 	if(isset($_POST['nueva'])){

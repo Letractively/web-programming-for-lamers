@@ -1,4 +1,5 @@
 <?php
+if($visitante_es != 'usuario_administrador'){rebotar('no_administrador');}
 ////////////////////////////////////////PASO 1
 if(isset($_POST['euSalvar'])){
 	//$tmp = unserialize($_POST["tmp"]);
