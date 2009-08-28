@@ -45,3 +45,5 @@ listar_options($OPCIONES_SEXO);
 
 </body>
 </html>
+
+<?php ob_end_flush(); ?>
