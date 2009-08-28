@@ -25,6 +25,8 @@ if((!strstr($_SERVER['PHP_SELF'],"index.php"))	//uso $_SERVER['PHP_SELF']; porqu
 	&& (!strstr($_SERVER['REQUEST_URI'],"registrar"))
 	&& (!strstr($_SERVER['REQUEST_URI'],"logeo-form.php"))
 	&& (!strstr($_SERVER['REQUEST_URI'],"error-login.php"))
+	&& (!strstr($_SERVER['PHP_SELF'],"u-galeria.php"))
+	&& (!strstr($_SERVER['PHP_SELF'],"e-galeria.php"))
 	//&& ((isset($_SESSION['logeado']))&& (isset($_GET['entidad_visitada'])))	//Habilita visitantes en perfiles.
 	){	//En este ultimo, tambien puede el cliente entrar sin logueo a paginas con $_GET['entidad-visitada']
 		include("includes/seguridad.php");
@@ -34,6 +36,17 @@ if((!strstr($_SERVER['PHP_SELF'],"index.php"))	//uso $_SERVER['PHP_SELF']; porqu
 $_SESSION['id_consulta'] = genera_password(8);
 $_SESSION['capcha'] = genera_capcha(8);
 
+//MATO cualquier variable $_SESSION[] siempre y en cualquier página,
+//el TIMEOUT es INDEPENDIENTE del tipo de ENTIDAD que este (o no)
+//logueada. De otra forma acumularia BASURA en memoria:
+if(isset($_SESSION['hora'])){
+	if (($_SESSION['hora']+1000) < time()){
+		session_unset();
+		session_destroy();
+	}
+	// Le damos un tiempo al CLIENTE para que CONSERVE su posible SESSION en el sitio sin actividad:
+	$_SESSION['hora']=time();
+}
 // Si el cliente requiere una pagina "registrar*.php" habro una sesion de registro...
 $desabilitar_login = ''; //Habilitamos los input de logeo por default! ((PROXIMAMENTE OBSOLETO))
 if((strstr($_SERVER['REQUEST_URI'],"registrar"))){

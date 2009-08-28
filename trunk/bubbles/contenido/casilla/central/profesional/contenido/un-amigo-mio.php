@@ -1,6 +1,7 @@
-<?php 
+<?php if($visitante_es == 'no_identificado'){rebotar('no_identificado');} ?>
+
+<?php
 $amigo = new usuario($esta_amistad->am_id_amigo[$i]);
-echo $amigo->ultimo_error;
 ?>
 
 <div class="borde-comentario">

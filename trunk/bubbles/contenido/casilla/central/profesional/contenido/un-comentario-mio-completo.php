@@ -1,3 +1,5 @@
+<?php if($visitante_es == 'no_identificado'){rebotar('no_identificado');} ?>
+
 <?php 
 $comentador = new usuario();
 $comentador->traerRutaFoto($este_comentario->com_id_desde[$i]);

@@ -1,3 +1,5 @@
+<?php if($visitante_es == 'no_identificado'){rebotar('no_identificado');} ?>
+
 <?php
 $error_insertando_amistad = '';
 $esta_amistad = new amistad();

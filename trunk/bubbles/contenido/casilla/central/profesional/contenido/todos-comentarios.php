@@ -1,3 +1,5 @@
+<?php if($visitante_es == 'no_identificado'){rebotar('no_identificado');} ?>
+
 <?php
 $error_insertando_comentario = '';
 $este_comentario = new comentario();
