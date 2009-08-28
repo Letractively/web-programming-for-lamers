@@ -15,7 +15,7 @@ if($id_verif == -1){							//Si verifica que el usuario no existe lo manda a una
 	exit -1;
 }
 //Preparacion de la variable "indicadora" de los permisos del visitante....
-$visitante_es = '';
+$visitante_es = 'no_identificado';
 if(isset($_SESSION['id_empresa'])){
 	if($visitado->id_empresa == $_SESSION['id_empresa']){
 		$visitante_es = 'empresa_administrador';

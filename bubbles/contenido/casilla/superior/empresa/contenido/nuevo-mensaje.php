@@ -1,3 +1,5 @@
+<?php if($visitante_es == 'no_identificado'){rebotar('no_identificado');} ?>
+
 <?php
 ///////////////////////////////////////////////////////////////////////////////
 // Verifico y preparo el POST de un mensaje privado, luego lo meto en la DB....

@@ -144,6 +144,13 @@ height: 80px;
 background-image: url(imagenes/solapa-lateral.png);
 background-repeat: no-repeat;
 }
+.casilla-superior .borde-solapas .solapa[disabled="true"]{
+float: left;
+width: 94px;
+height: 80px;
+background-image: url(imagenes/solapa-lateral-disabled.png);
+background-repeat: no-repeat;
+}
 .casilla-superior .solapa-empresa{
 float: left;
 width: 94px;
