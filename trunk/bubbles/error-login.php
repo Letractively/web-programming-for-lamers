@@ -39,6 +39,9 @@ if($error == 'debe_loguearse'){
 if($error == 'no_administrador'){
 	include('contenido/debe-loguearse.php');
 }
+if($error == 'no_identificado'){
+	include('contenido/debe-loguearse.php');
+}
 if($error == 'desconocido'){
 	include('contenido/error-desconocido.php');
 }
