@@ -1,7 +1,19 @@
 <?php
-if($visitante_es == 'no_identificado'){rebotar('no_identificado');}
 ///////////////////////////////////////////////////////////////////////////////
-// Verifico y preparo el PORT de un mensaje privado, luego lo meto en la DB....
+// Control y seguridad del visitante....
+///////////////////////////////////////////////////////////////////////////////
+if($visitante_es == 'no_identificado'){rebotar('no_identificado');}
+
+$value_umPara = '';
+$selected_umEntidad = '';
+
+if(strstr($visitante_es,'_visitante')){
+$value_umPara = 'value="' . $visitado->alias . '"';
+$selected_umEntidad = 'selected="selected"';
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Verifico y preparo el POST de un mensaje privado, luego lo meto en la DB....
 ///////////////////////////////////////////////////////////////////////////////
 $mensaje_enviado = NULL;	//Inicializo el flag de mensaje enviado
 if (isset($_POST['umMensajeEnviado'])){
@@ -98,11 +110,11 @@ if (isset($_POST['umMensajeEnviado'])){
 		<table>
 			<tr>
 				<th><p>Para:</p></th>
-				<td><input type="text" class="umPara" name="umPara" id="umPara" /></td>
+				<td><input type="text" class="umPara" name="umPara" id="umPara" <?php echo $value_umPara ?>/></td>
 				<th><p>que es:</p></th>
 				<td><select class="umEntidad" name="umEntidad" id="umEntidad" />
 					<option value=""></option>
-					<option value="profesional">profesional</option>
+					<option value="profesional" <?php echo $selected_umEntidad ?>>profesional</option>
 					<option value="empresa">empresa</option>
 					</select></td>
 			</tr>

@@ -42,8 +42,11 @@ $_SESSION['capcha'] = genera_capcha(8);
 //logueada. De otra forma acumularia BASURA en memoria:
 if(isset($_SESSION['hora'])){
 	if (($_SESSION['hora']+1000) < time()){
+		$uri = $_SESSION['uri_rescatada'];
 		session_unset();
 		session_destroy();
+		header('Location: ' . URL_BASE . 'error-login.php?error=tiempo_agotado&uri_rescatada=' . urlencode($uri));
+		exit;
 	}
 	// Le damos un tiempo al CLIENTE para que CONSERVE su posible SESSION en el sitio sin actividad:
 	$_SESSION['hora']=time();
@@ -99,9 +102,8 @@ else{
 	<pre>
 	<?php
 	if(isset($_SESSION['logeado'])){
-		echo "Ud. es la Entidad Logueada.";
 		if(isset($_SESSION['id_usuario'])){
-			echo "El id de la entidad logueada es " . $_SESSION['id_usuario'] . ' -- ';
+			echo "El id de la entidad logueada es " . $_SESSION['id_usuario'] . '<br />';
 		}
 		if(isset($_SESSION['id_empresa'])){
 			echo "El id de la entidad logueada es " . $_SESSION['id_empresa'] . ' -- ';
@@ -109,10 +111,10 @@ else{
 		echo "Su tiempo de Logueo se renovo a " . $_SESSION['hora'] . " -- ";
 		echo "El tipo de entidad logueada es : ";
 		if(isset($_SESSION['usuario'])){
-			echo 'USUARIO' . " -- ";
+			echo 'USUARIO' . '<br />';
 		}
 		if(isset($_SESSION['empresa'])){
-			echo 'EMPRESA' . " -- ";
+			echo 'EMPRESA' . '<br />';
 		}
 	}
 	else{
