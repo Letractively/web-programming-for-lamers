@@ -87,6 +87,7 @@ else{
 	<base href="<?php echo URL_BASE; ?>"></base>
 	<!--<script src="js/funciones.js" language="javascript" type="text/javascript"></script>-->
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui-1.7.2.custom.min.js"></script>
 	<script type="text/javascript" src="js/jquery-plugins/jquery.validate.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 	<title>Comunidad Bubbles</title>

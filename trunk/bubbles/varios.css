@@ -161,6 +161,10 @@ background-repeat: no-repeat;
 .casilla-superior .portfolio{
 width: 460px;
 }
+.casilla-superior .contenedor-botones-mensajes{
+width: 80px;
+height: 319px;
+}
 .casilla-superior .borde-botones-mensajes{
 width: 80px;
 height: 319px;
