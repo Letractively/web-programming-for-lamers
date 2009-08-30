@@ -46,6 +46,9 @@ if($error == 'desconocido'){
 	include('contenido/error-desconocido.php');
 }
 ?>
+
+<h2>Error Identificado como: <?php echo $error?></h2>
+
 </div>
 
 <div class="col-derecha" >

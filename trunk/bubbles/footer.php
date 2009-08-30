@@ -4,13 +4,16 @@
 
 <div class="footer">
 	<p>----------------</p>
-	<p>variables de sesion:</p>
+	<?php echo "<pre>"; ?>
+	<p><?php echo 'variables de sesion:'; ?></p>
 	<p><?php print_r($_SESSION); ?></p>
+	<p><?php echo 'GETs:'; ?></p>
 	<p><?php print_r($_GET); ?></p>
+	<p><?php echo 'POSTs:'; ?></p>
 	<p><?php print_r($_POST); ?></p>
+	<?php echo "</pre>"; ?>
 	<h2>footer incluido</h2>
 	<p>----------------</p>
-</div>
 
 <?php
 echo "<pre>";
@@ -42,6 +45,8 @@ listar_options($OPCIONES_NIVEL_PROFESION);
 listar_options($OPCIONES_SEXO);
 ?>
 </select>
+
+</div>
 
 </body>
 </html>
