@@ -1,5 +1,20 @@
+<script language="javascript" type="text/javascript">
+//$(document).ready(function() {
+//	$("#usPortfolio").click(function (){
+//		$("#usPortfolio").load("index.php");
+//	});
+//});
+
+//function cargarPortfolio(){
+//		$(".contenedor-botones-mensajes").load('contenido/casilla/superior/profesional/botones/ver-portfolio.php');
+//		$(".contenido-portfolio").load('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
+//	};
+
+</script>
+
 	<div class="borde-solapas">
 		<div class="solapa">
+				<!-- onclick="cargarPortfolio(); return(false);" -->
 			<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=portfolio&botonera_superior=ver_portfolio&contenido_superior=ver_portfolio">
 				<img src="imagenes/icono-portfolio.png" style="position: absolute; margin-top: 15px; margin-left: 20px; border: 0;" />
 			</a>

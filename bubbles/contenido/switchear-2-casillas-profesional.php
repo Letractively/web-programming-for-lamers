@@ -3,18 +3,18 @@
 //include('contenido/casilla-superior-profesional-portfolio.php');
 //las switcheo para ver que solapas tengo que incluir...
 switch ($solapa_superior) {
-	case 'mensajes':
-		include('contenido/casilla/superior/profesional/solapas/mensajes.php');
-		break;
-	case 'portfolio':
-		include('contenido/casilla/superior/profesional/solapas/portfolio.php');
-		break;
-	case 'editar_perfil':
-		include('contenido/casilla/superior/profesional/solapas/ninguna-activa.php');
-		break;
-	case 'ninguna_activa':
-		include('contenido/casilla/superior/profesional/solapas/ninguna-activa.php');
-		break;
+//	case 'mensajes':
+//		include('contenido/casilla/superior/profesional/solapas/mensajes.php');
+//		break;
+//	case 'portfolio':
+//		include('contenido/casilla/superior/profesional/solapas/portfolio.php');
+//		break;
+//	case 'editar_perfil':
+//		include('contenido/casilla/superior/profesional/solapas/ninguna-activa.php');
+//		break;
+//	case 'ninguna_activa':
+//		include('contenido/casilla/superior/profesional/solapas/ninguna-activa.php');
+//		break;
 	default:
 		include('contenido/casilla/superior/profesional/solapas/portfolio.php');
 		break;
