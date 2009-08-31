@@ -213,10 +213,24 @@ class empresa {
 			//Leer de la DB
 			$filas = $this->sql->cambiar("ruta_foto = '$ruta_foto'", 'empresas', "id_empresa = '$this->id_empresa'");
 				if($this->sql->ultimo_error != ''){
-					$this->ultimo_error = 'Error al caargar la Foto de esta Empresa de la DB!: ' . $this->sql->ultimo_error;
+					$this->ultimo_error = 'Error al cargar la Foto de esta Empresa de la DB!: ' . $this->sql->ultimo_error;
 					return -1;
 				}
 			$this->ruta_foto = $ruta_foto;
+			return 0;
+		}
+	return -1;
+	}
+
+	function traerRutaFoto($id_empresa = -1){
+		if($id_empresa > -1){
+			//Leer de la DB
+			$filas = $this->sql->leer('ruta_foto', 'empresas', "id_empresa = '$id_empresa'");
+				if($this->sql->ultimo_error != ''){
+					$this->ultimo_error = 'Error al traer la  Foto de esta Empresa!: ' . $this->sql->ultimo_error;
+					return -1;
+				}
+			$this->ruta_foto = $filas[0]['ruta_foto'];
 			return 0;
 		}
 	return -1;

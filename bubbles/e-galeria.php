@@ -56,15 +56,15 @@ if(isset($_GET['contenido_superior'])){
 //include('contenido/casilla-superior-profesional-portfolio.php');
 //las switcheo para ver que solapas tengo que incluir...
 switch ($solapa_superior) {
-    case 'mensajes':
-        include('contenido/casilla/superior/empresa/solapas/mensajes.php');
-        break;
-    case 'laborales':
-        include('contenido/casilla/superior/empresa/solapas/laborales.php');
-        break;
-    case 'ninguna_activa':
-		include('contenido/casilla/superior/empresa/solapas/laborales.php');
-        break;
+//    case 'mensajes':
+//        include('contenido/casilla/superior/empresa/solapas/mensajes.php');
+//        break;
+//    case 'laborales':
+//        include('contenido/casilla/superior/empresa/solapas/laborales.php');
+//        break;
+//    case 'ninguna_activa':
+//		include('contenido/casilla/superior/empresa/solapas/laborales.php');
+//        break;
     default:
         include('contenido/casilla/superior/empresa/solapas/laborales.php');
         break;
@@ -86,15 +86,20 @@ switch ($botonera_superior) {
 	case 'editar_mi_foto':
         include('contenido/casilla/superior/empresa/botones/editar-mi-foto.php');
         break;
-    default:
+	case 'subir_oferta':
         include('contenido/casilla/superior/empresa/botones/ver-laborales.php');
+        break;
+	case 'ver_mis_ofertas':
+		break;
+    default:
+        include('contenido/casilla/superior/empresa/botones/nuevo-mensaje.php');
         break;
 }
 ?>
 
 <?php
 //las switcheo para ver que contenido tengo que incluir...
-switch ($contenido_superior) {
+switch ($contenido_superior){
     case 'nuevo_mensaje':
         include('contenido/casilla/superior/empresa/contenido/nuevo-mensaje.php');
         break;
@@ -110,11 +115,14 @@ switch ($contenido_superior) {
 	case 'ver_mis_ofertas':
 		include('contenido/casilla/superior/empresa/contenido/ver-ofertas.php');
 		break;
-		case 'editar_mi_foto':
+	case 'editar_mi_foto':
 		include('contenido/casilla/superior/empresa/contenido/editar-mi-foto.php');
 		break;
+  case 'subir_oferta':
+        include('contenido/casilla/superior/empresa/contenido/subir-oferta.php');
+        break;
     default:
-        include('contenido/casilla/superior/empresa/contenido/ver-ofertas.php');
+        include('contenido/casilla/superior/empresa/contenido/nuevo-mensaje.php');
         break;
 }
 ?>
