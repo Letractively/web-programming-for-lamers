@@ -106,5 +106,13 @@ class myquery {
 		return $texto;
 	}
 
+	////////////////////////////////////////////////////
+	//Cambia un mysql para Texto:
+	////////////////////////////////////////////////////
+	function cambiaTaNormal($texto){
+		$texto = stripslashes($texto);
+		return $texto;
+	}
+	
 }
 ?>
