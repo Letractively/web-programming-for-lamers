@@ -30,7 +30,7 @@ echo $este_comentario->ultimo_error;
 	<div class="borde-contenido">
 		<div class="superior-comentarios">
 			<img src="imagenes/icono-comentarios.png" style="position: absolute; margin-top: 15px; margin-left: 10px;" />
-			<p><strong>Comentarios para <?php echo $visitado->razon_social ?><a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&casilla_central=todos_comentarios&contenido_central=todos_comentarios">
+			<p><strong>Comentarios para <?php echo $visitado->razon_social ?><a href="e-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&casilla_central=todos_comentarios&contenido_central=todos_comentarios">
 									Ver todos...</a>
 			</strong></p>
 		</div>

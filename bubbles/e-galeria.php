@@ -38,6 +38,8 @@ $casilla_superior = '';
 $solapa_superior = '';
 $botonera_superior = '';
 $contenido_superior = '';
+$casilla_central = '';
+$contenido_central = '';
 // Las guardo con las variables llegadas por GET si es que existen
 if(isset($_GET['solapa_superior'])){
 	$solapa_superior = $_GET['solapa_superior'];
@@ -48,89 +50,23 @@ if(isset($_GET['botonera_superior'])){
 if(isset($_GET['contenido_superior'])){
 	$contenido_superior = $_GET['contenido_superior'];
 }
+//
+if(isset($_GET['casilla_central'])){
+	$casilla_central = $_GET['casilla_central'];
+}
+if(isset($_GET['contenido_central'])){
+	$contenido_central = $_GET['contenido_central'];
+}
 ?>
 
 <div class="col-empresa-centro">
-	<div class="casilla-superior">
-<?php
-//include('contenido/casilla-superior-profesional-portfolio.php');
-//las switcheo para ver que solapas tengo que incluir...
-switch ($solapa_superior) {
-//    case 'mensajes':
-//        include('contenido/casilla/superior/empresa/solapas/mensajes.php');
-//        break;
-//    case 'laborales':
-//        include('contenido/casilla/superior/empresa/solapas/laborales.php');
-//        break;
-//    case 'ninguna_activa':
-//		include('contenido/casilla/superior/empresa/solapas/laborales.php');
-//        break;
-    default:
-        include('contenido/casilla/superior/empresa/solapas/laborales.php');
-        break;
+<?php if($casilla_central == ''){
+	include('contenido/switchear-2-casillas-empresa.php');
+}
+else{
+	include('contenido/switchear-1-casilla-empresa.php');
 }
 ?>
-
-<?php
-//las switcheo para ver que botonera tengo que incluir...
-switch ($botonera_superior) {
-    case 'nuevo_mensaje':
-        include('contenido/casilla/superior/empresa/botones/nuevo-mensaje.php');
-        break;
-    case 'ver_laborales':
-        include('contenido/casilla/superior/empresa/botones/ver-laborales.php');
-        break;
-    case 'abrir_mensaje':
-        include('contenido/casilla/superior/empresa/botones/abrir-mensaje.php');
-        break;
-	case 'editar_mi_foto':
-        include('contenido/casilla/superior/empresa/botones/editar-mi-foto.php');
-        break;
-	case 'subir_oferta':
-        include('contenido/casilla/superior/empresa/botones/ver-laborales.php');
-        break;
-	case 'ver_mis_ofertas':
-		break;
-    default:
-        include('contenido/casilla/superior/empresa/botones/nuevo-mensaje.php');
-        break;
-}
-?>
-
-<?php
-//las switcheo para ver que contenido tengo que incluir...
-switch ($contenido_superior){
-    case 'nuevo_mensaje':
-        include('contenido/casilla/superior/empresa/contenido/nuevo-mensaje.php');
-        break;
-    case 'casilla_entrada':
-        include('contenido/casilla/superior/empresa/contenido/casilla-entrada.php');
-        break;
-	case 'ver_laborales':
-        include('contenido/casilla/superior/empresa/contenido/ver-laborales.php');
-        break;
-	case 'abrir_mensaje':
-		include('contenido/casilla/superior/empresa/contenido/abrir-mensaje.php');
-		break;
-	case 'ver_mis_ofertas':
-		include('contenido/casilla/superior/empresa/contenido/ver-ofertas.php');
-		break;
-	case 'editar_mi_foto':
-		include('contenido/casilla/superior/empresa/contenido/editar-mi-foto.php');
-		break;
-  case 'subir_oferta':
-        include('contenido/casilla/superior/empresa/contenido/subir-oferta.php');
-        break;
-    default:
-        include('contenido/casilla/superior/empresa/contenido/nuevo-mensaje.php');
-        break;
-}
-?>
-		<div class="borde-derecho">
-		</div>
-	</div>
-
-<?php include('contenido/casilla/inferior/empresa.php') ?>
 </div>
 
 <?php include('contenido/col-profesional-derecha.php'); ?>
