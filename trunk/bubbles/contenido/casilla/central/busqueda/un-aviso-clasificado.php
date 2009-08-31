@@ -16,7 +16,7 @@ echo $empresa_propietaria->ultimo_error;
 		</div>
 		<div class="descripcion-empresa">
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Descripción de la actividad:</p>
-			<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo $este_aviso->detalle; ?></p>
+			<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo myquery::cambiaTaNormal($este_aviso->detalle); ?></p>
 		<div style="clear: both">
 		</div>
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Inversión máxima:</p>
@@ -24,7 +24,7 @@ echo $empresa_propietaria->ultimo_error;
 		<div style="clear: both">
 		</div>
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Cualidades requeridas:</p>
-			<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo $este_aviso->capacidad; ?></p>
+			<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo myquery::cambiaTaNormal($este_aviso->capacidad); ?></p>
 		<div style="clear: both">
 		</div>
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Tipo de trabajo:</p>

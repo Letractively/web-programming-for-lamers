@@ -8,7 +8,7 @@
 	</p>
 	<div style="clear: both;"></div>
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-		<?php echo $usuario_destacado->us_nombres[$i]; ?>
+		<?php echo myquery::cambiaTaNormal($usuario_destacado->us_nombres[$i]); ?>
 	</p>
 	<div style="clear: both;"></div>
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">

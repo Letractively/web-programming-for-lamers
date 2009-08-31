@@ -64,7 +64,7 @@ elseif(isset($_SESSION['id_empresa'])){
 					"&solapa_superior=mensajes&botonera_superior=abrir_mensaje&contenido_superior=abrir_mensaje&id_mensaje=" . 
 					$mensajes_propietario->men_id_mensaje[$i];
 				
-				echo '<tr><td class="usuario"><p class="parrafo4">' . $de . '</p></td><td class="asunto"><p class="parrafo4"><a href="' . $url_dinamica .'">' . $mensajes_propietario->men_titulo[$i] . '</a></p></td><td class="fecha"><p class="parrafo4">' . $fecha . '</p></td></tr>';
+				echo '<tr><td class="usuario"><p class="parrafo4">' . $de . '</p></td><td class="asunto"><p class="parrafo4"><a href="' . $url_dinamica .'">' . myquery::cambiaTaNormal($mensajes_propietario->men_titulo[$i]) . '</a></p></td><td class="fecha"><p class="parrafo4">' . $fecha . '</p></td></tr>';
 				$i ++;
 				}
 		/////////////////////////////////////////////////////////////////////////////
