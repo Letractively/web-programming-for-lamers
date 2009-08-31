@@ -50,8 +50,8 @@ $visitado->cargarDatosPerfil();
 			<td style="width: 60px;"></td>
 		</tr>
 		<tr>
-			<td><input type="text" name="euNombres" id="euNombres" class="euNombres" value="<?php echo $visitado->nombres;?>"/></td>
-			<td><input type="text" name="euApellidos" id="euApellidos" class="euApellidos" value="<?php echo $visitado->apellidos;?>"/></td>
+			<td><input type="text" name="euNombres" id="euNombres" class="euNombres" value="<?php echo myquery::cambiaTaNormal($visitado->nombres);?>"/></td>
+			<td><input type="text" name="euApellidos" id="euApellidos" class="euApellidos" value="<?php echo myquery::cambiaTaNormal($visitado->apellidos);?>"/></td>
 			<td><input type="text" name="euNacimiento" id="euNacimiento" class="euNacimiento" value="<?php echo myquery::cambiaFaNormal($visitado->nacimiento);?>"/></td>
 			<td style="width: 60px;"></td>
 		</tr>
@@ -71,11 +71,11 @@ $visitado->cargarDatosPerfil();
 			<td><select name="euSexo" id="euSexo" >
 						<?php listar_options($OPCIONES_SEXO, $visitado->sexo);?>
 						</select></td>
-			<td><input type="text" name="euPaisResidencia" id="euPaisResidencia" class="euPaisResidencia" value="<?php echo $visitado->pais_residencia;?>"/></td>
+			<td><input type="text" name="euPaisResidencia" id="euPaisResidencia" class="euPaisResidencia" value="<?php echo myquery::cambiaTaNormal($visitado->pais_residencia);?>"/></td>
 			<td style="width: 60px;"></td>
 		</tr>
 		<tr>
-			<td><p>Empresa: <input type="text" name="euEmpresa" id="euEmpresa" class="euEmpresa" value="<?php echo $visitado->empresa;?>"/></p></td>
+			<td><p>Empresa: <input type="text" name="euEmpresa" id="euEmpresa" class="euEmpresa" value="<?php echo myquery::cambiaTaNormal($visitado->empresa);?>"/></p></td>
 			<td><p></p></td>
 			<td><p></p></td>
 			<td style="width: 60px;"></td>

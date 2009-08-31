@@ -4,7 +4,7 @@
 	</div>
 	<div class="descripcion-oferta-col">
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Descripción de la actividad:</p>
-		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo $oferta_laboral->av_detalle[$i] ?></p>
+		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo myquery::cambiaTaNormal($oferta_laboral->av_detalle[$i]); ?></p>
 	<div style="clear: both">
 	</div>
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Inversión máxima:</p>
@@ -12,7 +12,7 @@
 	<div style="clear: both">
 	</div>
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Cualidades requeridas:</p>
-		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo $oferta_laboral->av_capacidad[$i] ?></p>
+		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo myquery::cambiaTaNormal($oferta_laboral->av_capacidad[$i]); ?></p>
 	<div style="clear: both">
 	</div>
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Tipo de trabajo:</p>

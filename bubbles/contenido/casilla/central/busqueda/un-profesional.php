@@ -22,7 +22,7 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 	
 	<div class="titulo-oferta-busqueda">
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-			<?php echo $este_usuario->alias; ?> (<?php echo $este_usuario->nombres; ?> <?php echo $este_usuario->apellidos; ?>)
+			<?php echo $este_usuario->alias; ?> (<?php myquery::cambiaTaNormal(echo $este_usuario->nombres); ?> <?php echo myquery::cambiaTaNormal($este_usuario->apellidos); ?>)
 		</p>
 		<p class="parrafo8" style="float: right; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;">
 			Miembro desde: <?php echo myquery::cambiaFaNormal($este_usuario->miembro_desde); ?>
@@ -39,7 +39,7 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;">Nivel: <?php echo $este_usuario->nivel_profesion; ?></p>
 		<div style="clear: both">
 		</div>
-		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo $este_usuario->pais_residencia; ?></p>
+		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo myquery::cambiaTaNormal($este_usuario->pais_residencia); ?></p>
 		<div style="clear: both">
 		</div>
 		</div>

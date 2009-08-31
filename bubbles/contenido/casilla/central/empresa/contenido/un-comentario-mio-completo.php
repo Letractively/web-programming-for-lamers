@@ -29,7 +29,7 @@ echo $comentador->ultimo_error;
 	</div>
 	<div class="descripcion-comentario">
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-		<?php echo $este_comentario->com_detalle[$i]; ?>
+		<?php echo myquery::cambiaTaNormal($este_comentario->com_detalle[$i]); ?>
 	</p>
 	</div>
 	<div class="pie-comentario">

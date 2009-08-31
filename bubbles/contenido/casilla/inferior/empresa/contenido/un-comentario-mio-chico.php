@@ -15,7 +15,7 @@ echo $comentador->ultimo_error;
 
 <div class="borde-comentario-chico">
 	<div class="foto-comentario">
-		<img src="<?php echo $dir_foto_comentador . $comentador->ruta_foto; ?>" />
+		<img src="<?php echo myquery::cambiaTaNormal($dir_foto_comentador) . myquery::cambiaTaNormal($comentador->ruta_foto); ?>" />
 	</div>
 	<div class="titulo-comentario">
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
@@ -27,7 +27,7 @@ echo $comentador->ultimo_error;
 	</div>
 	<div class="descripcion-comentario">
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-		<?php echo $este_comentario->com_detalle[$i]; ?>
+		<?php echo myquery::cambiaTaNormal($este_comentario->com_detalle[$i]); ?>
 	</p>
 	</div>
 	<div class="pie-comentario">

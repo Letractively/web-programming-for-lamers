@@ -12,9 +12,9 @@ if(isset($_GET['id_mensaje'])){
 	<div class="imagenes-portfolio">
 		<p><strong>De: <?php echo mensaje::traerRemitente($mensaje->desde_entidad, $mensaje->id_desde); ?></strong></p>
 		<p><strong>Fecha: <?php echo myquery::cambiaFaNormal($mensaje->fecha); ?></strong></p>
-		<p><strong>Asunto: <?php echo $mensaje->titulo ?></strong></p>
+		<p><strong>Asunto: <?php echo myquery::cambiaTaNormal($mensaje->titulo); ?></strong></p>
 		<br />
-		<?php echo $mensaje->detalle; ?>
+		<?php echo myquery::cambiaTaNormal($mensaje->detalle); ?>
 	</div>
 	<div class="recorrer-portfolio">
 	</div>
