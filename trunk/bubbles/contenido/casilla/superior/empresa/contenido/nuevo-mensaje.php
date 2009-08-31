@@ -1,6 +1,17 @@
-<?php if($visitante_es == 'no_identificado'){rebotar('no_identificado');} ?>
-
 <?php
+///////////////////////////////////////////////////////////////////////////////
+// Control y seguridad del visitante....
+///////////////////////////////////////////////////////////////////////////////
+if($visitante_es == 'no_identificado'){rebotar('no_identificado');}
+
+$value_emPara = '';
+$selected_emEntidad = '';
+
+if(strstr($visitante_es,'_visitante')){
+$value_emPara = 'value="' . $visitado->alias_usuario . '"';
+$selected_emEntidad = 'selected="selected"';
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 // Verifico y preparo el POST de un mensaje privado, luego lo meto en la DB....
 ///////////////////////////////////////////////////////////////////////////////
@@ -66,7 +77,8 @@ if (isset($_POST['emMensajeEnviado'])){
 <script type="text/javascript" src="js/tiny_mce/tiny_mce.js"></script>
 <script language="javascript" type="text/javascript">
 	tinyMCE.init({
-		mode : "textareas",
+		mode : "exact",
+		elements : "emContenido",
 		theme : "advanced",
 		theme_advanced_buttons1 : "bold, italic, underline, forecolor, backcolor, justifyleft, justifycenter, justifyright, link, unlink, bullist, numlist, undo, redo",
 		theme_advanced_buttons2 : "",
@@ -99,12 +111,12 @@ if (isset($_POST['emMensajeEnviado'])){
 		<table>
 			<tr>
 				<th><p>Para:</p></th>
-				<td><input type="text" class="emPara" name="emPara" id="emPara" /></td>
+				<td><input type="text" class="emPara" name="emPara" id="emPara" <?php echo $value_emPara ?>/></td>
 				<th><p>que es:</p></th>
 				<td><select class="emEntidad" name="emEntidad" id="emEntidad" />
 					<option value=""></option>
 					<option value="profesional">profesional</option>
-					<option value="empresa">empresa</option>
+					<option value="empresa" <?php echo $selected_emEntidad ?>>empresa</option>
 					</select></td>
 			</tr>
 			<tr>
