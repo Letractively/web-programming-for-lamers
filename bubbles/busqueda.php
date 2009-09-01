@@ -55,9 +55,7 @@ echo $error_busqueda;
 ?>
 
 <div class="col-izquierda">
-	<div class="col-busqueda-izquierda">
-		<p>col-busqueda-izquierda</p>
-	</div>
+<?php include('contenido/usuarios-destacados-col.php'); ?>
 </div>
 
 <div class="col-central">
@@ -111,9 +109,7 @@ echo $error_busqueda;
 </div>
 
 <div class="col-derecha">
-	<div class="col-busqueda-derecha">
-		<p>col-busqueda-derecha</p>
-	</div>
+	<?php include('contenido/casilla/general/contenido/empresas-destacadas-col.php'); ?>
 </div>
 
 <?php include('footer.php'); ?>
