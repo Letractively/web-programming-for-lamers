@@ -911,7 +911,7 @@ background-color: #c4c5c9;
 border-left: 1px solid #46a1d6;
 border-right: 1px solid #46a1d6;
 }
-.usuarios-destacados-col{
+.usuarios-destacados-col, .empresas-destacadas-col{
 border: 1px solid #000000;
 background-color: #ffffff;
 float: left;
@@ -920,7 +920,9 @@ width: 210px;
 height: 372px;
 }
 .usuarios-destacados-col .cabecera, .usuarios-destacados-col .superior,
-.usuarios-destacados-col .contenido, .usuarios-destacados-col .inferior{
+.usuarios-destacados-col .contenido, .usuarios-destacados-col .inferior,
+.empresas-destacadas-col .cabecera, .empresas-destacadas-col .superior,
+.empresas-destacadas-col .contenido, .empresas-destacadas-col .inferior{
 float: left;
 overflow: hidden;
 width: 210px;
@@ -946,6 +948,30 @@ border-left: 1px solid #95D9E9;
 border-right: 1px solid #95D9E9;
 width: 208px;
 }
+.empresas-destacadas-col .cabecera{
+height: 16px;
+background-image: url(imagenes/cabecera-usuarios-destacados.png);
+background-repeat: no-repeat;
+}
+.empresas-destacadas-col .superior{
+height: 52px;
+background-image: url(imagenes/superior-empresas-destacadas-col.png);
+background-repeat: no-repeat;
+}
+.empresas-destacadas-col .contenido{
+height: 297px;
+border-left: 1px solid #95D9E9;
+border-right: 1px solid #95D9E9;
+background-image: url(imagenes/degrade-empresas-destacadas-col.png);
+background-repeat: repeat-x;
+width: 208px;
+}
+.empresas-destacadas-col .inferior{
+height: 7px;
+background-image: url(imagenes/inferior-empresas-destacadas-col.png);
+background-repeat: no-repeat;
+}
+
 .ultimo-momento-col{
 border: 1px solid #000000;
 background-color: #ffffff;
@@ -1172,7 +1198,8 @@ margin-bottom: 0px;
 }
 .borde-comentario-chico .titulo-comentario, .borde-comentario-chico .descripcion-comentario,
 .borde-comentario-chico .pie-comentario, .usuarios-destacados-col .descripcion-usuario,
-.usuarios-destacados-col .pie-usuario{
+.usuarios-destacados-col .pie-usuario,
+.empresas-destacadas-col .descripcion-empresa, .empresas-destacadas-col .pie-empresa{
 float: left;
 overflow:hidden;
 width: 210px;
@@ -1194,12 +1221,13 @@ height:20px;
 margin-bottom: 2px;
 height:40px;
 }
-.usuarios-destacados-col .descripcion-usuario{
+.usuarios-destacados-col .descripcion-usuario,
+.empresas-destacadas-col .descripcion-empresa{
 margin-bottom: 2px;
 height:60px;
 width: 140px;
 }
-.usuarios-destacados-col .pie-usuario{
+.usuarios-destacados-col .pie-usuario, .empresas-destacadas-col .pie-empresa{
 border-top:1px solid #0089D1;
 height:2px;
 width:200px;

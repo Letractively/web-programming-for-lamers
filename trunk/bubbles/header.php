@@ -28,6 +28,7 @@ if((!strstr($_SERVER['PHP_SELF'],"index.php"))	//uso $_SERVER['PHP_SELF']; porqu
 	&& (!strstr($_SERVER['REQUEST_URI'],"error-login.php"))
 	&& (!strstr($_SERVER['PHP_SELF'],"u-galeria.php"))
 	&& (!strstr($_SERVER['PHP_SELF'],"e-galeria.php"))
+	&& (!strstr($_SERVER['PHP_SELF'],"busqueda.php"))
 	//&& ((isset($_SESSION['logeado']))&& (isset($_GET['entidad_visitada'])))	//Habilita visitantes en perfiles.
 	){	//En este ultimo, tambien puede el cliente entrar sin logueo a paginas con $_GET['entidad-visitada']
 		include("includes/seguridad.php");

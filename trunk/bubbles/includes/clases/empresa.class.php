@@ -32,6 +32,30 @@ class empresa {
 	var $desea_profesionales;
 	var $status;
 	var $miembro_desde_usuario;
+
+	var $em_id_empresa = array();	//ARRAYs para selecciones multiples
+	var $em_razon_social = array();
+	var $em_contrasenia_usuario = array();
+	var $em_pregunta_secreta_usuario = array();
+	var $em_respuesta_secreta_usuario = array();
+	var $em_email_usuario = array();
+	var $em_alias_usuario = array();
+	var $em_calle = array();
+	var $em_altura = array();
+	var $em_piso = array();
+	var $em_oficina = array();
+	var $em_nacimiento_usuario = array();
+	var $em_sexo_usuario = array();
+	var $em_pais = array();
+	var $em_ciudad = array();
+	var $em_puesto_usuario = array();
+	var $em_tel_usuario = array();
+	var $em_ruta_foto = array();
+	var $em_desea_news = array();
+	var $em_desea_laborales = array();
+	var $em_desea_profesionales = array();
+	var $em_status = array();
+	var $em_miembro_desde_usuario = array();
 	
 	var $edad_contacto;			//Variables calculadas a partir de la TABLE 'empresas'
 	var $ultimo_error;			//Contiene el "string" que define el ultimo error provocado en esta clase.
@@ -375,6 +399,31 @@ class empresa {
 		}
 		return 0;
 	}	
+
+	function traerColEmpresasDestacadas($comienzo, $cantidad){
+		if(($comienzo >= 0) && ($cantidad>=0)){
+			// Traer empresas de la DB;
+			$filas = $this->sql->leer('*','empresas',"1 ORDER BY id_empresa ASC LIMIT $comienzo, $cantidad");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar la(s) Empresas(s)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->em_id_empresa[$i] = $fila['id_empresa'];
+				$this->em_miembro_desde_usuario[$i] = $fila['miembro_desde_usuario'];
+				$this->em_alias_usuario[$i] = $fila['alias_usuario'];
+				$this->em_razon_social[$i] = $fila['razon_social'];
+				$this->em_pais[$i] = $fila['pais'];
+				$this->em_ruta_foto[$i] = $fila['ruta_foto'];
+				$this->em_ciudad[$i] = $fila['ciudad'];
+				$i ++;
+				}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
 
 	function cargarBasicosEmpresa(){
 		if($this->id_empresa > -1){
