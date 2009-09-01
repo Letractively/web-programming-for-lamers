@@ -69,6 +69,6 @@ else{
 ?>
 </div>
 
-<?php include('contenido/col-profesional-derecha.php'); ?>
+<?php include('contenido/col-empresa-derecha.php'); ?>
 
 <?php include('footer.php'); ?>
