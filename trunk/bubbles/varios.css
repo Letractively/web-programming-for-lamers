@@ -75,14 +75,25 @@ border-right: 1px solid #6cb4e4;
 background-image: url(imagenes/degrade1-col-profesional.png);
 background-repeat: repeat-x;
 }
+.col-profesional .profesional-col p, .col-empresa .empresa-col p{
+margin-left: 10px;
+}
 .col-empresa .empresa-col{
 border-left: 1px solid #000000;
 border-right: 1px solid #000000;
 background-image: url(imagenes/degrade1-col-empresa.png);
 background-repeat: repeat-x;
 }
+.profesional-col .foto, .empresa-col .foto{
+float: left;
+display: inline;
+overflow: hidden;
+text-align: center;
+height: 180px;
+width: 210px;
+}
 .profesional-col img, .empresa-col img{
-margin: 18px;
+margin: 10px;
 }
 .col-profesional .medio-col, .col-empresa .medio-col{
 height: 264px;
@@ -369,13 +380,14 @@ width:60px;
 .contenido-portfolio .un-portfolio-mio{
 height: 120px;
 width: 100px;
-margin-top: 10px;
+margin-top: 7px;
 margin-left: 15px;
 }
 .contenido-portfolio .un-portfolio-mio .imagen-portfolio{
-height: 98px;
-width: 98px;
-border: 1px solid #999999;
+display: inline;
+height: 100px;
+width: 100px;
+text-align: center;
 }
 .contenido-portfolio .un-portfolio-mio .pie-portfolio{
 height: 20px;
@@ -771,7 +783,10 @@ height: 86px;
 /*<-------*/
 /**/
 .col-profesional-derecha .superior-col,
-.col-profesional-derecha .publicidad-col, .col-profesional-derecha .inferior-col{
+.col-profesional-derecha .publicidad-col, .col-profesional-derecha .inferior-col,
+.col-empresa-derecha .superior-col,
+.col-empresa-derecha .publicidad-col, .col-empresa-derecha .inferior-col
+{
 border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
@@ -919,7 +934,10 @@ float: left;
 overflow: hidden;
 width: 210px;
 height: 372px;
-margin-top: 13px;
+}
+.col-centroizquierda .usuarios-destacados-col,
+.col-centroizquierda .empresas-destacadas-col{
+margin-top:13px;
 }
 .usuarios-destacados-col .cabecera, .usuarios-destacados-col .superior,
 .usuarios-destacados-col .contenido, .usuarios-destacados-col .inferior,
@@ -1045,8 +1063,7 @@ width: 547px;
 }
 .imagenes-portfolio img{
 	border: 1px solid #CCC;
-	padding: 2px;	
-	margin: 10px 5px 10px 0;
+	margin: 0px;
 }
 /*<----*/
 .col-busqueda-izquierda, .col-busqueda-centro,
@@ -1059,6 +1076,7 @@ border: 1px solid #000000;
 }
 .col-busqueda-centro{
 width: 547px;
+margin-top: 7px;
 }
 .col-busqueda-centro .col-busqueda-cabecera,
 .col-busqueda-centro .col-busqueda-pie,
