@@ -1,6 +1,6 @@
 <?php
 $empresa_destacada = new empresa();
-$empresa_destacada->traerColEmpresasDestacadas(0, 5);
+$empresa_destacada->traerColEmpresasDestacadas(0, 4);
 echo $empresa_destacada->ultimo_error;
 ?>
 
@@ -12,7 +12,7 @@ echo $empresa_destacada->ultimo_error;
 	<div class="contenido">
 	<?php
 		$i=0;
-		for($i==0; $i<5 && $i<$usuario_destacado->ult_filas_afectadas; $i++){
+		for($i==0; $i<4 && $i<$usuario_destacado->ult_filas_afectadas; $i++){
 			include('contenido/casilla/general/contenido/una-empresa-destacada-col.php');
 		}
 	?>

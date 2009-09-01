@@ -127,11 +127,10 @@ margin-left: 15px;
 }
 .col-centroizquierda{
 border: 1px solid #000000;
-background-color: #dddddd;
 float: left;
 overflow: hidden;
 width: 761px;
-height: 600px;
+height: 592px;
 margin-left: 15px;
 }
 .col-central, .col-profesional-centro, .col-empresa-centro{
@@ -144,11 +143,13 @@ margin-left: 10px;
 }
 .col-derecha, .col-profesional-derecha{
 border: 1px solid #000000;
-background-color: #dddddd;
 float: left;
 overflow: hidden;
 width: 212px;
 margin-left: 10px;
+}
+.col-centroizquierda .col-derecha{
+margin-left: 22px;
 }
 
 .footer{
