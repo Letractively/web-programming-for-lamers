@@ -20,7 +20,7 @@ $value_emAsunto = '';
 //Para dejar un mensaje privado...
 if(strstr($visitante_es,'_visitante')){
 	$value_emPara = 'value="' . $visitado->alias_usuario . '"';
-	$selected_emEntidad = 'selected="selected"';
+	$selected_emEntidad_empresa = 'selected="selected"';
 }
 
 ///////////////////////////////////
