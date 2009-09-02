@@ -37,6 +37,7 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 ?>
 
 <div class="col-izquierda">
+<?php include('contenido/usuarios-destacados-col.php'); ?>
 </div>
 
 <div class="col-central">
@@ -75,31 +76,31 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 		</div>
 		<div class="contenido-oferta-completa">
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-				Trabajo solicitado: <?php echo $aviso_visitado->profesion_requerida;?>
+				Trabajo solicitado: <p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><?php echo $aviso_visitado->profesion_requerida;?></p>
 			</p>
 			<div style="clear: both;"></div>
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-				Perfil del profesional requerido: <?php echo $aviso_visitado->detalle;?>
+				Perfil del profesional requerido: <p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><?php echo $aviso_visitado->detalle;?></p>
 			</p>
 			<div style="clear: both;"></div>
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-				Cualidades excuyentes: <?php echo $aviso_visitado->capacidad;?>
+				Cualidades excuyentes: <p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><?php echo $aviso_visitado->capacidad;?></p>
 			</p>
 			<div style="clear: both;"></div>
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-				Nivel de experiencia: <?php echo $aviso_visitado->nivel;?>
+				Nivel de experiencia: <p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><?php echo $aviso_visitado->nivel;?></p>
 			</p>
 			<div style="clear: both;"></div>
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-				Modalidad del Trabajo: <?php echo $aviso_visitado->modalidad;?>
+				Modalidad del Trabajo: <p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><?php echo $aviso_visitado->modalidad;?></p>
 			</p>
 			<div style="clear: both;"></div>
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-				Monto máximo a invertir: $<?php echo $aviso_visitado->pago;?> (pesos argentinos)
+				Monto máximo a invertir: <p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">$<?php echo $aviso_visitado->pago;?> (pesos argentinos)</p>
 			</p>
 			<div style="clear: both;"></div>
 			<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-				Fecha de entrega: <?php echo $aviso_visitado->fecha_entrega;?>
+				Fecha de entrega: <p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><?php echo $aviso_visitado->fecha_entrega;?></p>
 			</p>
 		</div>
 		<div class="pie-oferta-completa">
@@ -122,43 +123,7 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 </div>
 
 <div class="col-derecha">
+<?php include('contenido/casilla/general/contenido/empresas-destacadas-col.php'); ?>
 </div>
-
-<!-- ACTUALIZADO HASTA AQUI! -->
-
-
-<?php
-// Esta el visitante logueado? como EMPRESA o como USUARIO?
-// Si esta loguedo como usuario ofrecele una POSTULACION:
-if((isset($_SESSION['logeado'])) && (!isset($_GET['postularme'])) && (isset($_SESSION['usuario']))){
-	include('contenido/agregar-postulacion.php');
-}
-if((isset($_SESSION['logeado'])) && (isset($_GET['postularme'])) && (isset($_SESSION['usuario']))){
-	include('contenido/mostrar-form-postulacion.php');
-}
-?>
-
-<?php
-//////////////////////////////////////////
-// A PARTIR DE AQUI NO HAY NADA COTEJADO; ES UNA COPIA SIN CORREGIR DE AGREGAR COMENTARIOS......
-// Requerir y mostrar postulaciones anteriores:
-//Si se envio el FORM con LA postulacion, procede...
-if(isset($_POST['fPostulacionEnviada'])){
-	//INSTANCIA a un objeto postulacion desde el objeto aviso creado:
-	$aviso->postulacion = new postulacion();
-	//LLENA las propiedades del objeto comentario conforme a que la entidad visitada es USUARIO:
-	$aviso->postulacion->id_usuario = $_SESSION['id_usuario'];
-	$aviso->postulacion->id_aviso = $_GET['id_aviso'];
-	$aviso->postulacion->objetivo_laboral = cambiat_a_mysql($_POST['fObjetivoLaboral']);
-	//Procede a INSERTar LA postulacion...
-	postear_postulacion($aviso);
-	}
-?>
-
-<div class="invitados">
-	<h2>Postulaciones para este aviso:</h2>
-	<?php //mostrar_postulaciones($aviso) ?>
-</div>
-
 
 <?php include('footer.php'); ?>
