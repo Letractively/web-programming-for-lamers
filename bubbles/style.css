@@ -13,39 +13,39 @@ body {
 	margin: 0px;
 	min-width: 500px;
 }
-p, p.parrafo6, .parrafo12{
+p, .parrafo6, .parrafo12{
 font-size: 10px;
 margin-top: 1px;
 margin-bottom:1px;
 }
-p.parrafo6, p.parrafo9{
+.parrafo6, .parrafo9{
 color: #0089D1;
 }
-p.al-medio{
+.al-medio{
 text-align: center;
 padding: 3px;
 }
-p.parrafo3, p.parrafo11, p.parrafo5, p.parrafo7{
+.parrafo3, .parrafo11, .parrafo5, .parrafo7{
 font-size: 12px;
 font-weight: bold;
 color: #0089D1;
 }
-p.parrafo8{
+.parrafo8{
 font-size: 12px;
 font-weight: bold;
 }
-p.parrafo4{
+.parrafo4{
 font-size: 10px;
 font-weight: bold;
 color: #0089D1;
 }
-p.parrafo5{
+.parrafo5{
 border-bottom: 2px solid #0089D1;
 }
-p.parrafo7, p.parrafo10, p.parrafo11, .parrafo12{
+.parrafo7, .parrafo10, .parrafo11, .parrafo12{
 color: #ffffff;
 }
-p.parrafo9, p.parrafo10{
+.parrafo9, .parrafo10{
 font-size: 14px;
 font-weight: bold;
 }
