@@ -548,6 +548,10 @@ height: 262px;
 background-color: #ffffff;
 border-top: 1px solid #d2d2d2;
 }
+.contenido-mensajes .lista-mensajes{
+overflow-y: scroll;
+overflow-x: hidden;
+}
 .contenido-mensajes .lista-mensajes table{
 width: 359px;
 }
@@ -1276,9 +1280,10 @@ width:545px;
 height:auto;
 }
 .titulo-oferta-completa{
-background-color: #aaaaaa;
+background-color: #0089D1;
 }
 .borde-empresa-oferta-completa{
+background-color:#DDDDDD;
 border: 1px solid #999999;
 float:left;
 overflow:hidden;

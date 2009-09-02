@@ -7,11 +7,12 @@
 			</a>
 		</td>
 	</tr>
-	<!--<tr>
-		<td><input type="button" class="boton2" value="Respond." /></td>
+	<form method="post" action="e-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=mensajes&botonera_superior=nuevo_mensaje&contenido_superior=nuevo_mensaje">
+	<tr>
+		<td><input type="submit" class="boton2" name="emResponder" value="Respond." /></td>
 	</tr>
 	<tr>
-		<td><input type="button" class="boton2" value="Eliminar" /></td>
-	</tr>-->
+		<td><input type="submit" class="boton2" name="emEliminar" value="Eliminar" /></td>
+	</tr>
 	</table>
 </div>

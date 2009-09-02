@@ -5,14 +5,51 @@
 if($visitante_es == 'no_identificado'){rebotar('no_identificado');}
 
 $value_emPara = '';
-$selected_emEntidad = '';
+$selected_emEntidad_profesional = '';
+$selected_emEntidad_empresa = '';
+$value_emAsunto = '';
+//$value_emContenido = '';
 
+///////////////////////////////////////////////////////////////////////////////
+// PRIMERA VUELTA DE POSTs:
+// Preparo los contenidos de los inputs, dependiendo si el mensaje es RE:
+// de _visitante logueado, etc.... En caso de mensaje nuevo se dejan en
+// blanco.
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////
+//Para dejar un mensaje privado...
 if(strstr($visitante_es,'_visitante')){
-$value_emPara = 'value="' . $visitado->alias_usuario . '"';
-$selected_emEntidad = 'selected="selected"';
+	$value_emPara = 'value="' . $visitado->alias_usuario . '"';
+	$selected_emEntidad = 'selected="selected"';
+}
+
+///////////////////////////////////
+//Para responder un mensaje visto en mi casilla...
+if(isset($_POST['emResponder']) && (isset($_POST['id_mensaje_anterior']))){
+	$mensaje_responder = new mensaje();
+	$mensaje_responder->traerMensaje($_POST['id_mensaje_anterior']);
+	echo $mensaje_responder->ultimo_error;
+	$value_emPara = 'value="' . (mensaje::traerRemitente($mensaje_responder->desde_entidad, $mensaje_responder->id_desde)) . '"';
+	//Elijo a la entidad que le voy a responder:
+	if($mensaje_responder->desde_entidad == 'PROFESIONAL'){
+		$selected_emEntidad_profesional = 'selected="selected"';
+	}elseif($mensaje_responder->desde_entidad == 'EMPRESA'){
+		$selected_emEntidad_empresa = 'selected="selected"';
+	}
+	$value_emAsunto = 'value="Re: ' . $mensaje_responder->titulo . '"';
+	//$value_umContenido = 'value="respuesta"'; Hay que meterlo en una casilla creada por la inicializacion del MCE que NO esta presente en el script.
+}
+
+///////////////////////////////////
+//Para ELIMINAR un mensaje visto en mi casilla...
+if(isset($_POST['emEliminar']) && (isset($_POST['id_mensaje_anterior']))){
+	$mensaje_eliminar = new mensaje();
+	$mensaje_eliminar->borrarMensaje($_POST['id_mensaje_anterior']);
+	echo $mensaje_eliminar->ultimo_error;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
+// SEGUNDA VUELTA DE POSTs:
 // Verifico y preparo el POST de un mensaje privado, luego lo meto en la DB....
 ///////////////////////////////////////////////////////////////////////////////
 $mensaje_enviado = NULL;	//Inicializo el flag de mensaje enviado
@@ -115,13 +152,13 @@ if (isset($_POST['emMensajeEnviado'])){
 				<th><p>que es:</p></th>
 				<td><select class="emEntidad" name="emEntidad" id="emEntidad" />
 					<option value=""></option>
-					<option value="profesional">profesional</option>
-					<option value="empresa" <?php echo $selected_emEntidad ?>>empresa</option>
+					<option value="profesional" <?php echo $selected_emEntidad_profesional ?>>profesional</option>
+					<option value="empresa" <?php echo $selected_emEntidad_empresa ?>>empresa</option>
 					</select></td>
 			</tr>
 			<tr>
 				<th><p>Asunto:</p></th>
-				<td colspan="4"><input type="text" class="emAsunto" name="emAsunto" id="emAsunto" /></td>
+				<td colspan="4"><input type="text" class="emAsunto" name="emAsunto" id="emAsunto" <?php echo $value_emAsunto ?>/></td>
 			</tr>
 		</table>
 	</div>

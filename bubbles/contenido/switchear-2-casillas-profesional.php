@@ -36,6 +36,9 @@ switch ($botonera_superior) {
 	case 'editar_mi_foto':
 		include('contenido/casilla/superior/profesional/botones/editar-mi-foto.php');
 		break;
+	case 'abrir_mensaje':
+		include('contenido/casilla/superior/profesional/botones/abrir-mensaje.php');
+		break;
 	case 'sin_botonera':
 		break;
 	default:

@@ -97,6 +97,20 @@ class mensaje {
 	return -1;
 	}
 
+	function borrarMensaje($id_mensaje = -1){
+		if($id_mensaje > -1){
+			// Borrar mensaje de la DB;
+			$filas = $this->sql->borrar('mensajes',"id_mensaje = '$id_mensaje'");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al borrar un UNICO mensaje!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
+
 	function traerMensaje($id_mensaje = -1){
 		$this->id_mensaje = $id_mensaje;
 		if($this->id_mensaje > -1){

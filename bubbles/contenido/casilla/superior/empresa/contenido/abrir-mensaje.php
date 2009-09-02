@@ -16,6 +16,8 @@ if(isset($_GET['id_mensaje'])){
 		<br />
 		<?php echo myquery::cambiaTaNormal($mensaje->detalle); ?>
 	</div>
+	<input type="hidden" name="id_mensaje_anterior" value="<?php echo $mensaje->id_mensaje; ?>" />
+	</form>
 	<div class="recorrer-portfolio">
 	</div>
 </div>
