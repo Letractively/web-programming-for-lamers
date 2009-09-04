@@ -34,7 +34,6 @@ if(isset($_SESSION['id_usuario'])){
 	$visitante_es = 'usuario_visitante';
 }
 echo 'VISITANTE_ES: ' . $visitante_es;
-
 //////////////////////////////////////////////////////////////////////////////
 //ASIGNACIÓN DEL AVISO A UN USUARIO PASADO POR GET
 //////////////////////////////////////////////////////////////////////////////
@@ -45,18 +44,19 @@ if(isset($_GET['id_usuario_contratar'])){
 	$postulado_aceptado = new usuario($_GET['id_usuario_contratar']);
 	echo $postulado_aceptado->ultimo_error;
 	//Preparo y envio el mail de aceptación al profesional...
-	$codigohtml = "<html><head><title>Ha sido aceptada tu postulación en el siguiente trabajo:</title></head><body><a href=\"" . $_SERVER['REQUEST_URI'] . "\">Ir a WebTaller</a></body>";
+	$codigohtml = "<html><head><title>Ha sido aceptada tu postulación en el siguiente trabajo:</title></head><body><a href=\"" . URL_BASE . "e-aviso.php?mostrar_aviso_id=" . $aviso_visitado->id_aviso . "\">Ver detalles del trabajo</a></body>";
 	$email = $postulado_aceptado->email;
 	$asunto = 'Postulacion Aceptada!';
 	$cabeceras = "From: bubblescomunidad@bubblescomunidad.com\r\nContent-type: text/html\r\n";
 	mail($email,$asunto,$codigohtml,$cabeceras);
 	//Preparo y envio el mail de aceptación a la Empresa...
-	$codigohtml = "<html><head><title>Has aceptado postulación en el siguiente trabajo:</title></head><body><a href=\"" . $_SERVER['REQUEST_URI'] . "\">Ir a WebTaller</a></body>";
+	$codigohtml = "<html><head><title>Has aceptado postulación en el siguiente trabajo:</title></head><body><a href=\"" . URL_BASE . "e-aviso.php?mostrar_aviso_id=" . $aviso_visitado->id_aviso . "\">Ver detalles del trabajo</a></body>";
 	$email = $empresa_propietaria->email_usuario;
 	$asunto = 'Trabajo Asignado!';
 	$cabeceras = "From: bubblescomunidad@bubblescomunidad.com\r\nContent-type: text/html\r\n";
 	mail($email,$asunto,$codigohtml,$cabeceras);
-	
+	echo ' ' . $postulado_aceptado->email;
+	echo ' ' . $empresa_propietaria->email_usuario;
 }
 echo $aviso_visitado->status;
 ?>
