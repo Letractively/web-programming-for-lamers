@@ -86,7 +86,6 @@ class myquery {
 	////////////////////////////////////////////////////
 	//Convierte fecha de normal a mysql
 	////////////////////////////////////////////////////
-
 	function cambiaFaMysql($fecha){
 	if(strlen($fecha)==10){
 		ereg( "([0-9]{1,2})/([0-9]{1,2})/([0-9]{2,4})", $fecha, $mifecha);

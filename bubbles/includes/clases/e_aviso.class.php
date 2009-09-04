@@ -201,7 +201,7 @@ class aviso {
 				$this->av_capacidad[$i] = $fila['capacidad'];
 				$this->av_fecha_entrega[$i] = $fila['fecha_entrega'];
 				$this->av_status[$i] = $fila['status'];
-				$this->av_id_usuario_asignado[$i] = $fila['id_usuario_asignado'];				
+				$this->av_id_usuario_asignado[$i] = $fila['id_usuario_asignado'];
 				$i ++;
 				}
 			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
@@ -243,7 +243,21 @@ class aviso {
 		return 0;
 	}
 	
-	function asignarAviso($id_usuario_asignado){
+	function asignarAviso($id_usuario_asignado = -1){
+		if($id_usuario_asignado > -1){
+			// Guardar Datos en la DB;
+			$this->sql->cambiar("status = 'TRABAJO_ASIGNADO', id_usuario_asignado = '$id_usuario_asignado'",
+								'avisos',
+								"id_aviso = '$this->id_aviso'");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al ASIGNAR el Aviso!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$this->status = 'TRABAJO_ASIGNADO';
+			$this->id_usuario_asignado = $id_usuario_asignado;
+			return 0;
+		}
+	return -1;
 	
 	}
 
