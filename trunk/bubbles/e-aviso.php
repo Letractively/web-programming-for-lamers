@@ -34,6 +34,31 @@ if(isset($_SESSION['id_usuario'])){
 	$visitante_es = 'usuario_visitante';
 }
 echo 'VISITANTE_ES: ' . $visitante_es;
+
+//////////////////////////////////////////////////////////////////////////////
+//ASIGNACIÓN DEL AVISO A UN USUARIO PASADO POR GET
+//////////////////////////////////////////////////////////////////////////////
+if(isset($_GET['id_usuario_contratar'])){
+	if($visitante_es != 'empresa_administrador'){rebotar('no_administrador');}
+	$aviso_visitado->asignarAviso($_GET['id_usuario_contratar']);
+	echo $aviso_visitado->ultimo_error;
+	$postulado_aceptado = new usuario($_GET['id_usuario_contratar']);
+	echo $postulado_aceptado->ultimo_error;
+	//Preparo y envio el mail de aceptación al profesional...
+	$codigohtml = "<html><head><title>Ha sido aceptada tu postulación en el siguiente trabajo:</title></head><body><a href=\"" . $_SERVER['REQUEST_URI'] . "\">Ir a WebTaller</a></body>";
+	$email = $postulado_aceptado->email;
+	$asunto = 'Postulacion Aceptada!';
+	$cabeceras = "From: bubblescomunidad@bubblescomunidad.com\r\nContent-type: text/html\r\n";
+	mail($email,$asunto,$codigohtml,$cabeceras);
+	//Preparo y envio el mail de aceptación a la Empresa...
+	$codigohtml = "<html><head><title>Has aceptado postulación en el siguiente trabajo:</title></head><body><a href=\"" . $_SERVER['REQUEST_URI'] . "\">Ir a WebTaller</a></body>";
+	$email = $empresa_propietaria->email_usuario;
+	$asunto = 'Trabajo Asignado!';
+	$cabeceras = "From: bubblescomunidad@bubblescomunidad.com\r\nContent-type: text/html\r\n";
+	mail($email,$asunto,$codigohtml,$cabeceras);
+	
+}
+echo $aviso_visitado->status;
 ?>
 
 <div class="col-izquierda">
@@ -50,6 +75,17 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 			</p>
 		</div>
 		<div class="borde-empresa-oferta-completa">
+			<p style="color: #ff0000; float: right; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;" class="parrafo8">
+				<?php
+				if($aviso_visitado->status == 'TRABAJO_ASIGNADO'){
+					echo 'TRABAJO YA ASIGNADO A UN PROFESIONAL';
+				}elseif($aviso_visitado->status == 'CONTRATO_CERRADO'){
+					echo'CONTRATO CERRADO';
+				}elseif($aviso_visitado->status == 'TRABAJO_REALIZADO'){
+					echo 'TRABAJO YA REALIZADO';
+				}
+				?>
+			</p>
 			<div class="foto-oferta-laboral">
 				<img src="<?php echo DIR_FOTOS_EMPRESAS_CHICAS . $empresa_propietaria->ruta_foto; ?>" />
 			</div>
@@ -105,8 +141,24 @@ echo 'VISITANTE_ES: ' . $visitante_es;
 		</div>
 		<div class="pie-oferta-completa">
 			<p style="color: #ff0000; float: right; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;" class="parrafo8">
-				<a href="u-galeria.php?entidad_visitada=<?php echo usuario::id2alias($_SESSION['id_usuario']); ?>&solapa_superior=ninguna_activa&botonera_superior=sin_botonera&contenido_superior=mis_postulaciones&id_postularme_aviso=<?php echo $aviso_visitado->id_aviso;?>">
-				POSTULARME
+				<a href="
+				<?php
+				if($visitante_es == 'usuario_visitante' && $aviso_visitado->status == 'NO_ASIGNADO'){
+					echo 'u-galeria.php?entidad_visitada=' . usuario::id2alias($_SESSION['id_usuario']) . '&solapa_superior=ninguna_activa&botonera_superior=sin_botonera&contenido_superior=mis_postulaciones&id_postularme_aviso=' . $aviso_visitado->id_aviso;
+				}
+				elseif($visitante_es == 'empresa_administrador'){
+					echo 'e-galeria.php?entidad_visitada=' . empresa::id2aliasUsuario($_SESSION['id_empresa']) . '&solapa_superior=ver_mis_ofertas&botonera_superior=ver_mis_ofertas&contenido_superior=ver_mis_ofertas';
+				}
+				?>
+				">
+				<?php
+				if($visitante_es == 'usuario_visitante' && $aviso_visitado->status == 'NO_ASIGNADO'){
+					echo 'POSTULARME';
+				}
+				elseif($visitante_es == 'empresa_administrador'){
+					echo 'ADMINISTRAR MIS OFERTAS LABORALES';
+				}
+				?>
 				</a>
 			</p>
 		</div>

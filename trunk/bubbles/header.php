@@ -46,8 +46,16 @@ if(isset($_SESSION['hora'])){
 		$uri = $_SESSION['uri_rescatada'];
 		session_unset();
 		session_destroy();
-		header('Location: ' . URL_BASE . 'error-login.php?error=tiempo_agotado&uri_rescatada=' . urlencode($uri));
-		exit;
+		//Las páginas a continuación listadas NO SON REDIRECCIONADAS a la pantalla de logueo
+		//luego del timeout:
+		if((!strstr($_SERVER['PHP_SELF'],"index.php"))
+			&& (!strstr($_SERVER['REQUEST_URI'],"registrar"))
+			&& (!strstr($_SERVER['REQUEST_URI'],"logeo-form.php"))
+			&& (!strstr($_SERVER['REQUEST_URI'],"error-login.php"))
+			){
+			header('Location: ' . URL_BASE . 'error-login.php?error=tiempo_agotado&uri_rescatada=' . urlencode($uri));
+			exit;
+		}
 	}
 	// Le damos un tiempo al CLIENTE para que CONSERVE su posible SESSION en el sitio sin actividad:
 	$_SESSION['hora']=time();
