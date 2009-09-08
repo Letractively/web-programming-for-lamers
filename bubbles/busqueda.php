@@ -23,7 +23,7 @@ else{
 if(isset($_GET['buClase'])){
 	$buClase = $_GET['buClase'];
 	if($buClase == ''){
-	$error_busqueda = 'FALTA_CLASE';	
+	$error_busqueda = 'FALTA_CLASE';
 	}
 }
 else{
@@ -64,15 +64,21 @@ echo $error_busqueda;
 			<img class="icono" src="imagenes/icono-busqueda-laboral.png"/>
 		</div>
 		<div class="col-busqueda-solapas">
-			<div class="solapa3">
-			<h2>Empresas</h2>
-			</div>
-			<div class="solapa2">
-			<h2>Profesionales</h2>
-			</div>
-			<div class="solapa1">
-			<h2>Laborales</h2>
-			</div>
+			<a href="busqueda.php?buCriterio=<?php echo $esta_busqueda->criterio ?>&buDe=Empresas&buClase=buSimple&buscar=Buscar">
+				<div class="solapa3">
+				<h2>Empresas</h2>
+				</div>
+			</a>
+			<a href="busqueda.php?buCriterio=<?php echo $esta_busqueda->criterio ?>&buDe=Profesionales&buClase=buSimple&buscar=Buscar">
+				<div class="solapa2">
+				<h2>Profesionales</h2>
+				</div>
+			</a>
+			<a href="busqueda.php?buCriterio=<?php echo $esta_busqueda->criterio ?>&buDe=Ofertas+Laborales&buClase=buSimple&buscar=Buscar">
+				<div class="solapa1">
+				<h2>Laborales</h2>
+				</div>
+			</a>
 		</div>
 		<div class="col-busqueda-form">
 		<p>col-busqueda-form</p>

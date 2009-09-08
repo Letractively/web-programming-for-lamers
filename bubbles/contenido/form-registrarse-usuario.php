@@ -22,7 +22,7 @@
 				<th>E-mail:</th><td><input class="tabla-registrar-text" type="text" name="fiEmail" id="name" /></td>
 			</tr>
 			<tr>
-				<td colspan="2"><input type="submit" class="boton1" value="Registrate" name="usuario" <?php echo $desabilitar_login;?> /></td>
+				<td class="td-boton1" colspan="2"><input type="submit" class="boton1" value="Registrate" name="usuario" <?php echo $desabilitar_login;?> /></td>
 			</tr>
 			</table>
 		</form> 

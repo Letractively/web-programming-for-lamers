@@ -2,7 +2,7 @@
 	<form method="get" action="busqueda.php" >
 		<input type="text" name="buCriterio" class="b-texto" />
 		<select class="b-select" name="buDe" >
-		<?php listar_options($OPCIONES_BUSQUEDA) ?>
+		<?php listar_options($OPCIONES_BUSQUEDA,'Ofertas Laborales') ?>
 		</select>
 	</div>
 	<div class="borde-boton1">

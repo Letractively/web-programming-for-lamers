@@ -5,6 +5,9 @@ height: 22px;
 background-image: url(imagenes/boton1.png);
 border: 0;
 text-align: center;
+font-weight: bold;
+color: #FFFFFF;
+cursor: pointer;
 }
 
 .solapa-lateral{
@@ -249,7 +252,7 @@ width: 359px;
 .contenido-laborales .titulo-mi-oferta, .contenido-laborales .descripcion-mi-oferta{
 float: left;
 overflow: hidden;
-width: 441px;
+width: 442px;
 }
 .contenido-portfolio .cabecera-portfolio, .contenido-portfolio .imagenes-portfolio,
 .contenido-portfolio .recorrer-portfolio, .contenido-mensajes .lista-mensajes,
@@ -375,11 +378,17 @@ background-color: #0089D1;
 .descripcion-oferta-col{
 height: 55px;
 background-color: #ffffff;
-border-bottom:1px solid #aaaaaa;
+}
+.descripcion-oferta-col .parrafo3{
+margin-left: 10px;
 }
 .pie-oferta-col{
 height: 20px;
 background-color: #ffffff;
+}
+.pie-oferta-col a{
+text-decoration: none;
+cursor: pointer;
 }
 .contenido-portfolio .un-portfolio-mio,
 .contenido-portfolio .un-portfolio-mio .imagen-portfolio,
@@ -819,12 +828,11 @@ width: 220px;
 height: 50px;
 }
 .clasificados-col{
-border: 1px solid #000000;
 background-color: #ffffff;
 float: left;
 overflow: hidden;
 width: 210px;
-height: 590px;
+height: 603px;
 }
 .clasificados-col .cabecera, .clasificados-col .superior,
 .clasificados-col .contenido, .clasificados-col .inferior{
@@ -841,7 +849,7 @@ background-repeat: no-repeat;
 height: 0px;
 }
 .clasificados-col .contenido{
-height: 510px;
+height: 522px;
 }
 .clasificados-col .inferior{
 height: 9px;
@@ -858,17 +866,15 @@ height: 50px;
 /**/
 /*CLASES PARA HOME ----->*/
 .col-centroizquierda .col-contenido-home{
-border: 1px solid #000000;
 float: left;
 overflow: hidden;
 width: 759px;
 height:  202px;
 background-image: url(imagenes/contenido-home-superior.jpg);
 background-repeat: no-repeat;
+margin-top: 15px;
 }
 .col-centroizquierda .col-registrarse{
-border: 1px solid #000000;
-background-color: #dddddd;
 float: left;
 overflow: hidden;
 width: 287px;
@@ -879,9 +885,9 @@ color: #ffffff;
 text-align: center;
 float: none;
 padding-top: 5px;
+text-decoration: none;
 }
 .form-registrarse-usuarios, .form-registrarse-empresas{
-border: 1px solid #000000;
 float: left;
 overflow: hidden;
 height: 356px;
@@ -950,7 +956,6 @@ border-left: 1px solid #46a1d6;
 border-right: 1px solid #46a1d6;
 }
 .usuarios-destacados-col, .empresas-destacadas-col{
-border: 1px solid #000000;
 background-color: #ffffff;
 float: left;
 overflow: hidden;
@@ -985,12 +990,14 @@ background-image: url(imagenes/inferior-usuarios-destacados.png);
 background-repeat: no-repeat;
 }
 .usuarios-destacados-col .contenido{
-height: 297px;
+height: 292px;
 border-left: 1px solid #95D9E9;
 border-right: 1px solid #95D9E9;
-width: 208px;
+width: 203px;
 background-image: url(imagenes/degrade-usuarios-destacados-col.png);
 background-repeat: repeat-x;
+padding-left:5px;
+padding-top:5px;
 }
 .empresas-destacadas-col .cabecera{
 height: 16px;
@@ -1243,7 +1250,7 @@ display: inline;
 text-align: center;
 }
 .borde-comentario-chico .foto-comentario img{
-
+border: 2px solid #42A0D2;
 }
 .borde-comentario-chico .titulo-comentario, .borde-comentario-chico .descripcion-comentario,
 .borde-comentario-chico .pie-comentario, .usuarios-destacados-col .descripcion-usuario,
