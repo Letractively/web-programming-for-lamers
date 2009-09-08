@@ -9,10 +9,10 @@
 		<?php echo $usuario_destacado->us_alias[$i]; ?>
 	</p>
 	<div style="clear: both;"></div>
-	<p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-		<?php echo myquery::cambiaTaNormal($usuario_destacado->us_nombres[$i]); ?>
+	<!--<p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
+		<?php //echo myquery::cambiaTaNormal($usuario_destacado->us_nombres[$i]); ?>
 	</p>
-	<div style="clear: both;"></div>
+	<div style="clear: both;"></div>-->
 	<p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
 		<?php echo $usuario_destacado->us_profesion_1[$i]; ?>
 	</p>

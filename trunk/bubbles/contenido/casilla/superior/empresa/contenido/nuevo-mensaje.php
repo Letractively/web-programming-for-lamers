@@ -132,8 +132,12 @@ if (isset($_POST['emMensajeEnviado'])){
 				<img src="imagenes/icono-bandeja-entrada.png"/>
 			</td>
 			<td>
+			<a class="parrafo4" href="e-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=nuevo_mensaje&contenido_superior=casilla_entrada">
 				<p class="parrafo4">Buzón de Entrada</p>
+			</a>
 			</td>
+
+			
 			<td>
 				<img src="imagenes/icono-mensajes-enviados.png"/>
 			</td>

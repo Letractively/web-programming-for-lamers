@@ -14,8 +14,8 @@ height: 170px;
 width: 280px;
 table-layout: fixed;
 }
-.tabla-registrar td, .tabla-registrar th, .tabla-registrar tr , .tabla-registrar .boton1{
-text-align: center;
+.tabla-registrar td, .tabla-registrar th, .tabla-registrar tr {
+text-align: right;
 margin: 0px;
 padding-top: 0px;
 padding-left: 0px;
@@ -27,21 +27,20 @@ margin: 0;
 /*color: #ffffff;*/
 height: 20px;
 }
-.tabla-registrar .boton1{
-/*width: 70px;*/
-text-align: center;
-color #ffffff;
+.tabla-registrar th{
+width: 80px;
+color: #ffffff;
 }
-/*.tabla-login td, .tabla-login th, .tabla-login tr{
+.tabla-registrar td{
+/*width: 190px;*/
+}
+.tabla-registrar .td-boton1{
 text-align: center;
-padding: 2px;
-border: 0;
-margin: 0;
-}*/
-
+}
 .tabla-registrar-text{
-width:130px;
+width:160px;
 height:16px;
+margin-right: 10px;
 }
 
 /*FORMULARIOS DE REGISTRO EN PAGINAS DE REGISTRO*/
@@ -278,7 +277,7 @@ margin-top: 0px;
 float: left;
 overflow: hidden;
 width: 541px;
-height: 116px;
+height: 125px;
 background-color: #ffffff;
 border-left: 2px solid #0081c5;
 border-right: 2px solid #0081c5;
@@ -429,6 +428,13 @@ input#fuDeseaLaborales, input#fuAceptoTerminos , input#fuDeseaProfesionales, img
 input#feDeseaLaborales, input#feAceptoTerminos , input#feDeseaProfesionales, img#feGeneraImg{
 padding: 0px;
 margin-left: 15px;
+}
+img#fuGeneraImg, img#feGeneraImg{
+margin-top: 5px;
+margin-right: 5px;
+}
+input#fuSeguridad, input#feSeguridad{
+margin-left: 5px;
 }
 /******DINAMISMO CON VALIDACION*******/
 #registrarForm label.error {

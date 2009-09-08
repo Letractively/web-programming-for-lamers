@@ -4,7 +4,7 @@
 	</div>
 	<div class="descripcion-oferta-col">
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Descripción de la actividad:</p>
-		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;"><?php echo myquery::cambiaTaNormal($oferta_laboral->av_detalle[$i]); ?></p>
+		<p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><?php echo myquery::cambiaTaNormal($oferta_laboral->av_detalle[$i]); ?></p>
 	<div style="clear: both">
 	</div>
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Inversión máxima:</p>
@@ -21,6 +21,13 @@
 	</div>
 	</div>
 	<div class="pie-oferta-col">
+		<p class="parrafo8" style="color: #ff0000; float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
+		<?php
+		if($oferta_laboral->av_status[$i] != 'NO_ASIGNADO'){
+			echo 'TRABAJO YA ASIGNADO';
+		}
+		?>
+		</p>
 	<a href="e-aviso.php?mostrar_aviso_id=<?php echo $oferta_laboral->av_id_aviso[$i] ?>">
 		<p class="parrafo8" style="color: #999999; float: right; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;">Ver mas</p>
 	</a>
