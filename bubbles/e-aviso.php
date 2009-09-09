@@ -1,8 +1,6 @@
 <?php include('header.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
-<?php include('includes/clases/empresa.class.php'); ?>
 <?php include('includes/clases/postulacion.class.php'); ?>
-<?php include('includes/clases/usuario.class.php'); ?>
 
 <?php
 $aviso_visitado = new aviso();

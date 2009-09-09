@@ -13,6 +13,7 @@
 			<td><select name="oeNivel" class="oeNivel"><?php listar_options($OPCIONES_NIVEL_PROFESION)?></select><p>Ayudarme a determinar</p></td>
 		</tr>
 	</table>
+	<div class="separador1"></div>
 	<table class="table2">
 		<tr>
 			<td><p class="parrafo6">Modalidad de trabajo</p><p>Necesito ayuda</p></td>
@@ -21,11 +22,15 @@
 			<td><input type="text" name="oePago" class="oePago" /></td>
 		</tr>
 	</table>
+	<div class="separador1"></div>
 	<table class="table3">
 		<tr>
 			<td><p class="parrafo6">Breve descripción</p><p class="parrafo6">del trabajo solicitado</p><p>Que deberia ir aqui?</p></td>
 			<td><textarea name="oeDetalle" class="oeDetalle" ></textarea></td>
 		</tr>
+	</table>
+	<div class="separador1"></div>
+	<table class="table3">
 		<tr>
 			<td><p class="parrafo6">Capacidad y perfil del</p><p class="parrafo6">profesional requerido</p><p>Ayudarme a elegir</p></td>
 			<td><textarea name="oeCapacidad" class="oeCapacidad" ></textarea></td>
@@ -33,17 +38,26 @@
 	</table>
 	</div>
 	<div class="enviar-oferta">
+	<div class="separador1"></div>
+	<div class="fondo1">
 	<table class="table4">
 		<tr>
 			<td><p class="parrafo6">Plazo de entrega</p><p>Leer especificaciones</p></td>
 			<td>	
 				<select name="oeFechaEntrega" class="oeFechaEntrega"><?php listar_options($OPCIONES_PLAZO_ENTREGA)?></select>
 			</td>
+		</tr>
+	</table>
+	</div>
+	<div class="fondo2">
+	<table class="table4">
+		<tr>
 			<td colspan=2><input type="hidden" name="oePublicar" value="oePublicar"/>
-				<input type="submit" class="oePublicar" name="Publicar" value="Publicar"/>
+					<input type="submit" class="oePublicar" name="Publicar" value="Publicar"/>
 			</td>
 		</tr>
 	</table>
+	</div>
 	</div>
 	</form>
 </div>

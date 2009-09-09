@@ -1,8 +1,6 @@
 <?php include('header.php'); ?>
 <?php include('includes/clases/busqueda.class.php'); ?>
-<?php include('includes/clases/empresa.class.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
-<?php include('includes/clases/usuario.class.php'); ?>
 
 <?php
 $error_busqueda = '';

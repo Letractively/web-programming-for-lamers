@@ -263,7 +263,7 @@ width: 359px;
 }
 .contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio,
 .contenido-editar-perfil .salvar-perfil, .contenido-laborales .cabecera-oferta,
-.contenido-laborales .enviar-oferta{
+.contenido-laborales .enviar-oferta, .enviar-oferta .fondo1, .enviar-oferta .fondo2{
 height: 30px;
 }
 .contenido-laborales .cabecera-oferta{
@@ -280,6 +280,10 @@ height: 259px;
 .contenido-laborales .form-oferta .table1{
 height: 50px;
 width: 440px;
+}
+.contenido-laborales .form-oferta input, .contenido-laborales .form-oferta textarea,
+.contenido-laborales .form-oferta select, .contenido-laborales .form-oferta p{
+float: right;
 }
 .contenido-laborales .form-oferta .table1 .oeProfesionRequerida{
 width: 150px;
@@ -298,7 +302,7 @@ width: 100px;
 width: 70px;
 }
 .contenido-laborales .form-oferta .table3{
-height: 150px;
+height: 75px;
 width: 440px;
 }
 .contenido-laborales .form-oferta .table3 .oeDetalle{
@@ -309,13 +313,29 @@ width: 300px;
 height: 50px;
 width: 300px;
 }
-.contenido-laborales .enviar-oferta{
-background-image: url(imagenes/degrade1-subir-oferta.png);
-background-repeat: repeat-x;
+.contenido-laborales .separador1{
+border-top:1px solid #999999;
+height:0;
+width:440px;
+}
+.contenido-laborales .enviar-oferta p, .contenido-laborales .enviar-oferta select{
+float: right;
+}
+.enviar-oferta .fondo1{
+float:left;
+overflow: hidden;
+width: 221px;
+}
+.enviar-oferta .fondo2{
+float:left;
+overflow: hidden;
+width: 221px;
+background-image:url(imagenes/degrade1-subir-oferta.png);
+background-repeat:repeat-x;
 }
 .contenido-laborales .enviar-oferta .table4{
 height: 30px;
-width: 440px;
+width: 220px;
 margin-top:-5px;
 }
 .contenido-laborales .enviar-oferta .table4 td{
@@ -327,11 +347,13 @@ width: 70px;
 .contenido-laborales .enviar-oferta .table4 .oePublicar{
 width: 70px;
 margin-left: 0px;
+margin-top: 5px;
 background: transparent;
 width: 200px;
 color: #ffffff;
 font-size: 18px;
 border: 0px;
+cursor: pointer;
 }
 .contenido-laborales .ver-mis-ofertas{
 overflow-y: scroll;
@@ -822,7 +844,7 @@ border: 1px solid #000000;
 background-color: #dddddd;
 float: left;
 overflow: hidden;
-width: 220px;
+width: 210px;
 }
 .col-profesional-derecha .superior-col{
 height: 50px;

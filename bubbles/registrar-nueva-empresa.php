@@ -1,5 +1,4 @@
 <?php include('header.php'); ?>
-<?php include('includes/clases/empresa.class.php');?>
 
 <div class="col-izquierda">
 	<?php include('contenido/form-login-usuario.php'); ?>
