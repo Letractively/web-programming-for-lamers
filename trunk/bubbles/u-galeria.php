@@ -1,6 +1,4 @@
 <?php include('header.php'); ?>
-<?php include('includes/clases/usuario.class.php'); ?>
-<?php include('includes/clases/empresa.class.php'); ?>
 <?php include('includes/clases/u_experiencia.class.php'); ?>
 <?php include('includes/clases/comentario.class.php'); ?>
 <?php include('includes/clases/mensaje.class.php'); ?>

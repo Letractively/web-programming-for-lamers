@@ -50,7 +50,7 @@ echo $oferta_laboral->ultimo_error;
 	}
 	?>	
 	</div>
-	<div class="enviar-oferta">
+	<div class="cabecera-oferta">
 		<a href="e-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=laborales&botonera_superior=subir_oferta&contenido_superior=subir_oferta">
 			<p class="parrafo7" style="margin-top: 7px; margin-left: 300px;">Publicar oferta laboral</p>
 		</a>

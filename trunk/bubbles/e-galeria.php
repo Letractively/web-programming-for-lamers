@@ -1,6 +1,4 @@
 <?php include('header.php'); ?>
-<?php include('includes/clases/empresa.class.php'); ?>
-<?php include('includes/clases/usuario.class.php'); ?>
 <?php include('includes/clases/comentario.class.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
 <?php include('includes/clases/mensaje.class.php'); ?>
@@ -27,7 +25,7 @@ if(isset($_SESSION['id_empresa'])){
 if(isset($_SESSION['id_usuario'])){
 	$visitante_es = 'usuario_visitante';
 }
-echo 'VISITANTE_ES: ' . $visitante_es;
+echo '<pre>VISITANTE_ES: ' . $visitante_es . '</pre>';
 ?>
 
 <?php include('contenido/col-empresa.php'); ?>

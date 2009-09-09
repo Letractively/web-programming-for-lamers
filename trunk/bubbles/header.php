@@ -107,6 +107,7 @@ else{
 </head>
 <body>
 <div class="header">
+	<a href="<?php echo URL_BASE; ?>">
 	<div class="img">
 	<pre>
 	<?php
@@ -136,13 +137,9 @@ else{
 		echo "Ud no esta en tramite de registro";
 	?>
 	</pre>
-	
-<?php
-//echo "<pre>";
-//print_r($_SERVER);
-//echo "</pre>";
-?>
+
 	</div>
+	</a>
 	
 		<div class="menu">
 			<div class="div-1">
@@ -150,6 +147,13 @@ else{
 			</div>
 			<div class="buscador">
 					<p><?php include('contenido/form-buscador.php')?></p>
+			</div>
+			<div class="div-1">
+				<?php 
+				if(isset($_SESSION['logeado'])){
+					include('link-mi-perfil.php');
+				}
+				?>
 			</div>
 			<div class="div-2">
 						<p><strong><?php if(isset($_SESSION['logeado'])){
