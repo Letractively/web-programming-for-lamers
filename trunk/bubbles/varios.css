@@ -129,8 +129,6 @@ background-repeat: no-repeat;
 /**/
 .col-profesional-centro .casilla-superior, .col-profesional-centro .casilla-inferior,
 .col-empresa-centro .casilla-superior, .col-empresa-centro .casilla-inferior{
-border: 1px solid #000000;
-background-color: #dddddd;
 float: left;
 overflow: hidden;
 width: 548px;
