@@ -30,7 +30,7 @@ if(isset($_SESSION['id_usuario'])){
 if(isset($_SESSION['id_empresa'])){
 	$visitante_es = 'empresa_visitante';
 }
-echo 'VISITANTE_ES: ' . $visitante_es;
+echo '<pre>VISITANTE_ES: ' . $visitante_es . '</pre>';
 ?>
 
 
