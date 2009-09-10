@@ -1,10 +1,7 @@
-<?php //include('comentario.class.php'); ?>
-<?php //include('e_aviso.class.php'); ?>
-
 <?php
 // Clase padre "empresa".
 
-class empresa {
+class empresa{
 	var $sql;			//OBJETO de Conexión a la DB.
 	var $comentario;	//OBJETO de la clase comentario que guarda relacion con esta empresa.
 	var $aviso;			////OBJETO de la clase aviso que guarda relacion con esta empresa.

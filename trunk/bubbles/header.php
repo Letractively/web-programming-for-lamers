@@ -1,6 +1,8 @@
 <?php
-session_start();
+ob_implicit_flush(0);
 ob_start();
+session_start();
+
 
 // INCUDES:
 include("includes/includes.php");
