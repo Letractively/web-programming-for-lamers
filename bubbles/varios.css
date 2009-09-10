@@ -147,7 +147,8 @@ overflow: hidden;
 height: 321px;
 }
 .casilla-superior .borde-solapas{
-width: 94px;
+width: 93px;
+border-right: 1px solid #6db3e4;
 }
 .casilla-superior .borde-solapas .solapa{
 float: left;
@@ -186,9 +187,15 @@ height: 319px;
 .casilla-superior .borde-botones-mensajes{
 width: 80px;
 height: 319px;
-background-color: #ffffff;
-border-left: 1px solid #6db3e4;
-border-right: 1px solid #6db3e4;
+background-color: #edf8fe;
+border-top: 1px solid #6db3e4;
+border-bottom: 1px solid #6db3e4;
+}
+.col-empresa-centro .casilla-superior .borde-botones-mensajes{
+width: 80px;
+height: 319px;
+background-image: url(imagenes/degrade-casilla-superior-empresa.png);
+background-repeat: repeat-x;
 border-top: 1px solid #6db3e4;
 border-bottom: 1px solid #6db3e4;
 }
@@ -385,7 +392,7 @@ border-bottom:1px solid #aaaaaa;
 height: 20px;
 background-color: #ffffff;
 }
-.titulo-oferta-col, .descripcion-oferta-col, .pie-oferta-col{
+.titulo-oferta-col, .descripcion-oferta-col, .relleno-oferta-col, .pie-oferta-col{
 width: 208px;
 overflow: hidden;
 border-left: 1px solid #42A0D2;
@@ -401,6 +408,9 @@ background-color: #ffffff;
 }
 .descripcion-oferta-col .parrafo3{
 margin-left: 10px;
+}
+.relleno-oferta-col{
+height: 48px;
 }
 .pie-oferta-col{
 height: 20px;
@@ -440,10 +450,14 @@ text-align: center;
 height: 20px;
 }
 .contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio,
-.contenido-editar-perfil .salvar-perfil{
-background-color: #ffffff;
+.contenido-editar-perfil .salvar-perfil,
+.col-empresa-centro .contenido-mensajes .cabecera-escribir{
+background-color: #edf8fe;
 float: left;
 overflow: hidden;
+}
+.col-empresa-centro .contenido-mensajes .cabecera-escribir{
+background-color: #ffffff;
 }
 .contenido-editar-perfil .salvar-perfil{
 background-color: #edf8fe;
@@ -518,6 +532,7 @@ height: 50px;
 border-top: 1px solid #d2d2d2;
 border-bottom: 1px solid #d2d2d2;
 border-right: 1px solid #d2d2d2;
+border-left: 1px solid #d2d2d2;
 }
 .contenido-mensajes .datos-escribir table{
 border-collapse:collapse;
@@ -557,12 +572,17 @@ height: 199px;
 width: 354px;
 }
 .contenido-mensajes .enviar-escribir, .contenido-portfolio .recorrer-portfolio,
-.contenido-mensajes .recorrer-mensajes, .contenido-mensajes .titulos-mensajes{
+.contenido-mensajes .recorrer-mensajes, .contenido-mensajes .titulos-mensajes,
+.col-empresa-centro .contenido-mensajes .enviar-escribir{
 height: 25px;
 background-image: url(imagenes/degrade-enviar-escribir.png);
 background-repeat: repeat-x;
 border-top: 1px solid #d2d2d2;
 border-right: 1px solid #d2d2d2;
+border-left: 1px solid #6db3e4;
+}
+.col-empresa-centro .contenido-mensajes .enviar-escribir{
+border-left: 1px solid #d2d2d2;
 }
 .contenido-mensajes .enviar-escribir table{
 border-collapse:collapse;
@@ -594,6 +614,7 @@ color: #0089D1;
 height: 262px;
 background-color: #ffffff;
 border-top: 1px solid #d2d2d2;
+border-left: 1px solid #6db3e4;
 }
 .contenido-mensajes .lista-mensajes{
 overflow-y: scroll;
@@ -869,7 +890,7 @@ background-repeat: no-repeat;
 height: 0px;
 }
 .clasificados-col .contenido{
-height: 522px;
+height: 474px;
 }
 .clasificados-col .inferior{
 height: 9px;
@@ -888,7 +909,7 @@ height: 50px;
 .col-centroizquierda .col-contenido-home{
 float: left;
 overflow: hidden;
-width: 759px;
+width: 769px;
 height:  202px;
 background-image: url(imagenes/contenido-home-superior.jpg);
 background-repeat: no-repeat;
@@ -1339,4 +1360,9 @@ float: right;
 }
 .col-centroizquierda .login-usuario{
 margin-top: 28px;
+}
+.publicidad1{
+float:left;
+overflow:hidden;
+margin-top: 10px;
 }

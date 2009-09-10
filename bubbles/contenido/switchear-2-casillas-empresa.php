@@ -51,6 +51,9 @@ switch ($contenido_superior){
     case 'casilla_entrada':
         include('contenido/casilla/superior/empresa/contenido/casilla-entrada.php');
         break;
+    case 'casilla_salida':
+        include('contenido/casilla/superior/empresa/contenido/casilla-salida.php');
+        break;
 	case 'ver_laborales':
         include('contenido/casilla/superior/empresa/contenido/ver-laborales.php');
         break;

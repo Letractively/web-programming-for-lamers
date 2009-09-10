@@ -24,13 +24,17 @@ elseif(isset($_SESSION['id_empresa'])){
 				<img src="imagenes/icono-bandeja-entrada.png"/>
 			</td>
 			<td>
+			<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=mensajes&botonera_superior=nuevo_mensaje&contenido_superior=casilla_entrada">
 				<p class="parrafo4">Buzón de Entrada</p>
+			</a>
 			</td>
 			<td>
 				<img src="imagenes/icono-mensajes-enviados.png"/>
 			</td>
 			<td>
+			<a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=mensajes&botonera_superior=nuevo_mensaje&contenido_superior=casilla_salida">
 				<p class="parrafo4">Elementos Enviados</p>
+			</a>
 			</td>
 		</tr>
 		</table>

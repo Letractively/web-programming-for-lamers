@@ -97,6 +97,35 @@ class mensaje {
 	return -1;
 	}
 
+	function traerMensajesEnviados($id_desde, $desde_entidad){
+		$this->id_desde = $id_desde;
+		if($this->id_desde > -1){
+			// Traer mensajes de la DB;
+			$filas = $this->sql->leer('*','mensajes',"id_desde = '$this->id_desde' AND desde_entidad = '$desde_entidad'");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar el/lo(s) Mensajes(s)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->men_id_mensaje[$i] = $fila['id_mensaje'];
+				$this->men_desde_entidad[$i] = $fila['desde_entidad'];
+				$this->men_para_entidad[$i] = $fila['para_entidad'];
+				$this->men_id_desde[$i] = $fila['id_desde'];
+				$this->men_id_para[$i] = $fila['id_para'];
+				$this->men_detalle[$i] = $fila['detalle'];
+				$this->men_status[$i] = $fila['status'];
+				$this->men_fecha[$i] = $fila['fecha'];
+				$this->men_titulo[$i] = $fila['titulo'];
+				$this->men_id_respuesta_a[$i] = $fila['id_respuesta_a'];
+				$i ++;
+				}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
+	
 	function borrarMensaje($id_mensaje = -1){
 		if($id_mensaje > -1){
 			// Borrar mensaje de la DB;

@@ -20,6 +20,8 @@ echo $oferta_laboral->ultimo_error;
 	}
 	?>
 	</div>
+	<div class="relleno-oferta-col">
+	</div>
 	<div class="inferior">
 	</div>
 </div>

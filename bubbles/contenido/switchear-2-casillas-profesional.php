@@ -56,6 +56,9 @@ switch ($contenido_superior) {
     case 'casilla_entrada':
         include('contenido/casilla/superior/profesional/contenido/casilla-entrada.php');
         break;
+    case 'casilla_salida':
+        include('contenido/casilla/superior/profesional/contenido/casilla-salida.php');
+        break;
 	case 'ver_portfolio':
         include('contenido/casilla/superior/profesional/contenido/ver-portfolio.php');
         break;

@@ -1,8 +1,30 @@
-</div>
-
 <div style="clear: both;"></div>
 
+<div class="col-centroizquierda">
+	<div class="publicidad1">
+		<img src="imagenes/publicidad-inferior.jpg"></img>
+	</div>
+</div>
+
+<div class="col-derecha">
+	<div class="publicidad1">
+		<img src="imagenes/publicidad-inferior2.jpg"></img>
+	</div>
+</div>
+
+</div>
+
 <div class="footer">
+	<p class="izquierda">Bubbles Comunidad 2009</p>
+	<p class="derecha">Términos y Condiciones</p>
+	<p class="derecha">Ayuda</p>
+	<p class="derecha">Trabajos</p>
+	<p class="derecha">Proovedores</p>
+	<p class="derecha">Publicitar</p>
+	<p class="derecha">Sobre Nosotros</p>
+	<p class="derecha">Ingresar</p>
+</div>
+
 	<p>----------------</p>
 	<?php echo "<pre>"; ?>
 	<p><?php echo 'variables de sesion:'; ?></p>
@@ -46,7 +68,6 @@ listar_options($OPCIONES_SEXO);
 ?>
 </select>
 
-</div>
 
 </body>
 </html>
