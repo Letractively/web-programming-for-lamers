@@ -8,9 +8,9 @@ if(isset($_SESSION['id_usuario'])){
 	echo 'Esta casilla NO le pertenece a Ud!';
 }
 elseif(isset($_SESSION['id_empresa'])){
-	$para_entidad = 'EMPRESA';
-	$id_para = $visitado->id_empresa;
-	$mensajes_propietario->traerMensajes($id_para, $para_entidad);
+	$desde_entidad = 'EMPRESA';
+	$id_desde = $visitado->id_empresa;
+	$mensajes_propietario->traerMensajesEnviados($id_desde, $desde_entidad);
 }
 ////////////////////////////////////////////////////////////////////////////
 ?>
@@ -44,7 +44,7 @@ elseif(isset($_SESSION['id_empresa'])){
 		<table>
 			<tr>
 				<td class="usuario">
-					<p class="parrafo4"><strong> De </strong></p>
+					<p class="parrafo4"><strong> Para </strong></p>
 				</td>
 				<td class="asunto">
 					<p class="parrafo4"><strong> Asunto </strong></p>
