@@ -10,7 +10,7 @@ include("includes/includes.php");
 //SEGURIDAD--->
 //Primero rescatamos la página donde nos encontramos, para poder redireccionarnos luego del logueo o deslogueo,
 //las páginas listadas aqui NO UPDATEan la URI rescatada:
-if((!strstr($_SERVER['REQUEST_URI'],"logeo-form.php")) 
+if((!strstr($_SERVER['REQUEST_URI'],"logeo-form.php"))
 	&& (!strstr($_SERVER['REQUEST_URI'],"logeo.php"))
 	&& (!strstr($_SERVER['REQUEST_URI'],"logout.php"))
 	&& (!strstr($_SERVER['REQUEST_URI'],"error-login.php"))

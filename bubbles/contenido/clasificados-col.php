@@ -14,7 +14,7 @@ echo $oferta_laboral->ultimo_error;
 	<div class="contenido">
 	<?php
 	$i = 0;
-	while ($i < $oferta_laboral->ult_filas_afectadas) {
+	while ($i < $oferta_laboral->ult_filas_afectadas){
 		include('contenido/casilla/derecha/general/un-aviso-clasificado.php');
 		$i++;
 	}

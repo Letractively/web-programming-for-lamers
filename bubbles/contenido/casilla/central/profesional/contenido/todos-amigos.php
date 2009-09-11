@@ -26,11 +26,11 @@ $esta_amistad->traerAmistades($visitado->id_usuario);
 echo $esta_amistad->ultimo_error;
 ?>
 
-	<div class="col-busqueda-centro">
-		<div class="col-busqueda-cabecera">
-			<img class="icono" src="imagenes/icono-busqueda-laboral.png"/>
+	<div class="col-comentarios-centro">
+		<div class="col-comentarios-cabecera">
+			<img class="icono" src="imagenes/icono-todos-amigos.png"/>
 		</div>
-		<div class="col-busqueda-solapas">
+		<!--<div class="col-busqueda-solapas">
 			<div class="solapa3">
 			<h2>Empresas</h2>
 			</div>
@@ -43,8 +43,8 @@ echo $esta_amistad->ultimo_error;
 		</div>
 		<div class="col-busqueda-form">
 		<p>col-busqueda-form</p>
-		</div>
-		<div class="col-busqueda-contenido">
+		</div>-->
+		<div class="col-comentarios-contenido">
 			<?php 
 			if($error_insertando_amistad == 'AMISTAD_EXISTENTE'){
 				echo '<p class="parrafo8" style="color: #ff0000;">El profesional que esta tratando de ingresar ya se encuentra en su lista de amigos!<p>';
@@ -58,7 +58,7 @@ echo $esta_amistad->ultimo_error;
 			}
 			?>
 		</div>
-		<div class="col-busqueda-pie">
+		<div class="col-comentarios-pie">
 		</div>		
 		
 	</div>
