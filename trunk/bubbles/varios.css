@@ -1139,18 +1139,25 @@ width: 547px;
 .col-busqueda-izquierda, .col-busqueda-centro,
 .col-busqueda-derecha, .col-busqueda-cabecera,
 .col-busqueda-contenido, .col-busqueda-pie,
-.col-busqueda-solapas, .col-busqueda-form{
+.col-busqueda-solapas, .col-busqueda-form,
+.col-comentarios-izquierda, .col-comentarios-centro,
+.col-comentarios-derecha, .col-comentarios-cabecera,
+.col-comentarios-contenido, .col-comentarios-pie,
+.col-comentarios-solapas, .col-comentarios-form{
 float: left;
 overflow: hidden;
 border: 1px solid #000000;
 }
-.col-busqueda-centro{
+.col-busqueda-centro, .col-comentarios-centro{
 width: 547px;
 margin-top: 7px;
 }
 .col-busqueda-centro .col-busqueda-cabecera,
 .col-busqueda-centro .col-busqueda-pie,
-.col-busqueda-centro .col-busqueda-form{
+.col-busqueda-centro .col-busqueda-form,
+.col-comentarios-centro .col-comentarios-cabecera,
+.col-comentarios-centro .col-comentarios-pie,
+.col-comentarios-centro .col-comentarios-form{
 width: 545px;
 }
 .col-busqueda-centro .col-busqueda-cabecera{
@@ -1160,9 +1167,21 @@ height: 45px;
 border-bottom: 1px solid #6CB4E4;
 background-position: left bottom;
 }
+.col-comentarios-centro .col-comentarios-cabecera{
+background-image: url(imagenes/cabecera-todos-comentarios.png);
+background-repeat: no-repeat;
+height: 45px;
+border-bottom: 1px solid #6CB4E4;
+background-position: left bottom;
+}
 .col-busqueda-centro .col-busqueda-cabecera .icono{
 position: absolute;
 margin-left: 20px;
+}
+.col-comentarios-centro .col-comentarios-cabecera .icono{
+position: absolute;
+margin-left: 20px;
+margin-top: -8px;
 }
 .col-busqueda-centro .col-busqueda-solapas{
 border-right: 1px solid #6CB4E4;
@@ -1207,8 +1226,23 @@ border-right: 1px solid #42A0D2;
 overflow-x: hidden;
 overflow-y: scroll;
 }
+.col-comentarios-centro .col-comentarios-contenido{
+height: 545px;
+width: 544px;
+border-left: 1px solid #42A0D2;
+border-right: 1px solid #42A0D2;
+overflow-x: hidden;
+overflow-y: scroll;
+background-color: #F7EEDD;
+}
 .col-busqueda-centro .col-busqueda-pie{
 background-image: url(imagenes/pie-buscar.png);
+background-repeat: no-repeat;
+height: 19px;
+border-top: 1px solid #6CB4E4;
+}
+.col-comentarios-centro .col-comentarios-pie{
+background-image: url(imagenes/pie-todos-comentarios.png);
 background-repeat: no-repeat;
 height: 19px;
 border-top: 1px solid #6CB4E4;

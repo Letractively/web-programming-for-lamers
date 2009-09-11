@@ -26,11 +26,11 @@ $este_comentario->traerComentarios($visitado->id_usuario, 'PROFESIONAL');
 echo $este_comentario->ultimo_error;
 ?>
 
-	<div class="col-busqueda-centro">
-		<div class="col-busqueda-cabecera">
-			<img class="icono" src="imagenes/icono-busqueda-laboral.png"/>
+	<div class="col-comentarios-centro">
+		<div class="col-comentarios-cabecera">
+			<img class="icono" src="imagenes/icono-todos-comentarios.png"/>
 		</div>
-		<div class="col-busqueda-solapas">
+		<!--<div class="col-comentarios-solapas">
 			<div class="solapa3">
 			<h2>Empresas</h2>
 			</div>
@@ -40,11 +40,11 @@ echo $este_comentario->ultimo_error;
 			<div class="solapa1">
 			<h2>Laborales</h2>
 			</div>
-		</div>
-		<div class="col-busqueda-form">
+		</div>-->
+		<!--<div class="col-comentarios-form">
 		<p>col-busqueda-form</p>
-		</div>
-		<div class="col-busqueda-contenido">
+		</div>-->
+		<div class="col-comentarios-contenido">
 			<div class="borde-comentario">
 				<div class="dejar-comentario">
 					<form id="myform" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
@@ -65,7 +65,7 @@ echo $este_comentario->ultimo_error;
 			}
 			 ?>
 		</div>
-		<div class="col-busqueda-pie">
+		<div class="col-comentarios-pie">
 		</div>		
 		
 	</div>

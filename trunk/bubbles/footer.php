@@ -25,7 +25,6 @@
 	<p class="derecha">Ingresar</p>
 </div>
 
-	<p>----------------</p>
 	<?php echo "<pre>"; ?>
 	<p><?php echo 'variables de sesion:'; ?></p>
 	<p><?php print_r($_SESSION); ?></p>
@@ -34,8 +33,6 @@
 	<p><?php echo 'POSTs:'; ?></p>
 	<p><?php print_r($_POST); ?></p>
 	<?php echo "</pre>"; ?>
-	<h2>footer incluido</h2>
-	<p>----------------</p>
 
 <?php
 echo "<pre>";
