@@ -101,7 +101,7 @@ if(isset($_POST["paso1"])){
 												$_SESSION['fuDeseaProfesionales'],
 												'NO_CONFIRMADO');
 												
-	echo 'El resultado del ingreso del usuario es: ' . $resultadoQuery;
+	//echo 'El resultado del ingreso del usuario es: ' . $resultadoQuery;
 	if($resultadoQuery > 0){
 		$nuevoReg = new usuario($resultadoQuery);
 		include('contenido/registrar-verificar-usuario.php');	// Verificacion a Mail -->
@@ -118,18 +118,21 @@ if((isset($_GET['reg'])) && (isset($_GET['id']))){
 	// Confirmo que exista ese usuario:
 	if($confirmaReg->ultimo_error !=''){
 		echo $confirmaReg->ultimo_error;
+		echo '</div>';						// Cierro la columna  del medio!
 		include('footer.php');
 		exit;
 	}
 	// si el 'reg' pasado por GET no condice con el id, avisar al usuario la incoherencia.
 	if($confirmaReg->contrasenia != $_GET['reg']){
 		echo 'Su código de confirmacion es inválido';
+		echo '</div>';
 		include('footer.php');
 		exit;
 	}
 	//si status != NO_CONFIRMADO, avisar al usuario que ya esta confirmado y se loguee.
 	if($confirmaReg->status != 'NO_CONFIRMADO'){
-		echo 'Su usuario ya está confirmado, por favor logeese';
+		include('contenido/registrar-ya-confirmado.php');		//echo 'Su usuario ya está confirmado, por favor logeese';
+		echo '</div>';
 		include('footer.php');
 		exit;
 	}
