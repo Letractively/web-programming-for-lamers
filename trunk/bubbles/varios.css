@@ -1400,3 +1400,7 @@ float:left;
 overflow:hidden;
 margin-top: 10px;
 }
+.registro-incorrecto, .registro-verificado{
+height: 359px;
+background-image: url(imagenes/registro-incorrecto.png);
+}
