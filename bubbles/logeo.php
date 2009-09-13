@@ -18,11 +18,14 @@ if(isset($_POST['usuario'])){
 		$_SESSION['id_usuario'] = $id_usuario;
 		//echo 'Ud se logueo como usuario <br />';
 		header('Location:' . $uri);
+		exit;
 	}
-	else {
+	else{
 		header("Location: error-login.php?entidad=profesional&error=ingresos_incorrectos");
+		exit;
 	}
 }
+
 if(isset($_POST['empresa'])){
 	if(($id_empresa = ckeckLogeo( EMPRESAS, $_POST['fAlias'], $_POST['fContrasenia'])) > -1 ) {
 		session_start();
@@ -37,9 +40,11 @@ if(isset($_POST['empresa'])){
 		$_SESSION['id_empresa'] = $id_empresa;
 		//echo 'Ud se logueo como empresa <br />';
 		header('Location:' . $uri);
-	} 
-	else {
+		exit;
+	}
+	else{
 		header("Location: error-login.php?entidad=empresa&error=ingresos_incorrectos");
+		exit;
 	}
 }
 ?>
