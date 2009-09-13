@@ -34,13 +34,13 @@ if(isset($_GET['buCriterio']) && $error_busqueda == ''){
 	}
 	switch ($buDe) {
 	case 'Ofertas Laborales':
-		$esta_busqueda->buscarAvisos();
+		$esta_busqueda->buscarAvisosFulltext();
         break;
 	case 'Profesionales':
-		$esta_busqueda->buscarProfesionales();
+		$esta_busqueda->buscarProfesionalesFulltext();
         break;
 	case 'Empresas':
-		$esta_busqueda->buscarEmpresas();
+		$esta_busqueda->buscarEmpresasFulltext();
         break;
 	default:
 		break;
