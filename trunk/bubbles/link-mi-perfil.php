@@ -5,5 +5,4 @@ if(isset($_SESSION['id_usuario'])){
 	$link_a_perfil = 'empresa/' . empresa::id2aliasUsuario($_SESSION['id_empresa']);
 }
 ?>
-<p><strong><a href="<?php echo URL_BASE
-								. $link_a_perfil; ?>"<strong>A MI PERFIL</strong></p>
+<p><strong><a href="<?php echo URL_BASE . $link_a_perfil; ?>">A MI PERFIL</a></strong></p>
