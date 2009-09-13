@@ -1,5 +1,6 @@
 <?php
-// Configuración de DB...
+// Configuración de DB
+define( 'HOST_SQL', 'localhost');
 define( 'USUARIO_SQL', 'bubbles');
 define( 'PASS_SQL', '45511385');
 define('SQL_DB', 'bubbles');
