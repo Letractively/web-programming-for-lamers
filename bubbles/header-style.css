@@ -6,6 +6,7 @@ margin: auto;
 width:1024px;
 height:160px;
 overflow: hidden;
+cursor: pointer;
 }
 .header .menu{
 width:1024px;
@@ -47,8 +48,14 @@ text-align: center;
 .header .menu .div-1{
 width:100px;
 }
+.header .menu .div-1 a{
+color: #ff0000;
+}
 .header .menu .div-2{
-width:50px;
+width: 50px;
+}
+.header .menu .div-2 a{
+color: #0089D1;
 }
 .header .menu .buscador{
 width:720px;
