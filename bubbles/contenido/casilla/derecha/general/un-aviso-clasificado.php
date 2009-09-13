@@ -4,7 +4,7 @@
 	</div>
 	<div class="descripcion-oferta-col">
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Descripción de la actividad:</p>
-		<p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><?php echo myquery::cambiaTaNormal($oferta_laboral->av_detalle[$i]); ?></p>
+		<p class="parrafo3" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px; margin-right: 10px;"><?php echo myquery::cambiaTaNormal($oferta_laboral->av_detalle[$i]); ?></p>
 	<div style="clear: both">
 	</div>
 	<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">Inversión máxima:</p>
