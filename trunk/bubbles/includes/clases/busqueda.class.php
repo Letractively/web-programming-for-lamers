@@ -100,6 +100,65 @@ class busqueda {
 	return -1;
 	}
 
+	function buscarAvisosFulltext(){
+		if($this->criterio != NULL){
+			// Traer avisos de la DB;
+			$filas = $this->sql->leer('*','avisos',"MATCH (profesion_requerida ,detalle, capacidad) AGAINST ('%$this->criterio%')
+													ORDER BY id_aviso DESC");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar el/lo(s) Aviso(s)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->bu_id_aviso[$i] = $fila['id_aviso'];
+				$i ++;
+			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
+
+	function buscarProfesionalesFulltext(){
+		if($this->criterio != NULL){
+			// Traer usuarios de la DB;
+			$filas = $this->sql->leer('*','usuarios',"MATCH (alias, nombres, apellidos, profesion_1, profesion_2, profesion_3) AGAINST ('%$this->criterio%')
+													ORDER BY id_usuario DESC");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar el/lo(s) Profesional(es)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->bu_id_usuario[$i] = $fila['id_usuario'];
+				$i ++;
+			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
+
+	function buscarEmpresasFulltext(){
+		if($this->criterio != NULL){
+			// Traer empresas de la DB;
+			$filas = $this->sql->leer('*','empresas',"MATCH (razon_social, alias_usuario) AGAINST ('%$this->criterio%')
+													ORDER BY id_empresa DESC");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar la(s) Empresa(s)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->bu_id_empresa[$i] = $fila['id_empresa'];
+				$i ++;
+			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+		}
+	return -1;
+	}
 	
 }
 ?>

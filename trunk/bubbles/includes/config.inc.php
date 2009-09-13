@@ -4,6 +4,7 @@ define( 'USUARIO_SQL', 'bubbles');
 define( 'PASS_SQL', '45511385');
 define('SQL_DB', 'bubbles');
 define('SQL_NAMES', 'utf8'); //Setea el IDIOMA POR DEFECTO entre el server y el cliente, por mas que este TODO en UTF8 hay que especificar la conexión
+define('SQL_COLLATION', 'utf8_general_ci');	//Cotejamiento de la conexión, se setea como información para que el server sepa COMO indexar los resultados
 
 // Configuración de directorios y archivos...
 define('HOST','http://127.0.0.1/');
