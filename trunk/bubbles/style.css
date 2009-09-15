@@ -24,6 +24,7 @@ color: #0089D1;
 .al-medio{
 text-align: center;
 padding: 3px;
+float: none;
 }
 .parrafo3, .parrafo11, .parrafo5, .parrafo7{
 font-size: 12px;

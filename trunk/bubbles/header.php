@@ -62,6 +62,7 @@ if(isset($_SESSION['hora'])){
 	// Le damos un tiempo al CLIENTE para que CONSERVE su posible SESSION en el sitio sin actividad:
 	$_SESSION['hora']=time();
 }
+
 // Si el cliente requiere una pagina "registrar*.php" habro una sesion de registro...
 $desabilitar_login = ''; //Habilitamos los input de logeo por default! ((PROXIMAMENTE OBSOLETO))
 if((strstr($_SERVER['REQUEST_URI'],"registrar"))){
@@ -82,9 +83,8 @@ if((strstr($_SERVER['REQUEST_URI'],"registrar"))){
 			return 0;
 		}
 	}
-// Le damos un tiempo mas a la entidad para que se quede en el sitio sin actividad:
-$_SESSION['hora']=time();
-
+	// Le damos un tiempo mas a la entidad para que se quede en el sitio sin actividad:
+	$_SESSION['hora']=time();
 }// ... si no requiere esas paginas, destruyo la sesion de registro:
 else{
 	if(isset($_SESSION['registro'])){

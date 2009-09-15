@@ -1404,3 +1404,11 @@ margin-top: 10px;
 height: 359px;
 background-image: url(imagenes/registro-incorrecto.png);
 }
+.contenido-cartel{
+float: left;
+overflow: hidden;
+margin-top: 200px;
+margin-left: 10px;
+margin-right: 10px;
+width: 520px;
+}
