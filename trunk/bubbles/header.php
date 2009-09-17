@@ -77,7 +77,7 @@ if((strstr($_SERVER['REQUEST_URI'],"registrar"))){
 		if (($_SESSION['hora']+1000) < time()){
 			session_unset();
 			session_destroy();
-			if(!isset($_GET['entidad_visita'])){		//SI la pagina actual permite VISITANTES, destruye la sesion anterior pero no va al index
+			if(!isset($_GET['entidad_visitada'])){		//SI la pagina actual permite VISITANTES, destruye la sesion anterior pero no va al index
 				header("Location: index.php?error=2"); //Error2: 'timeout' de 20 minutos superado
 			}
 			return 0;

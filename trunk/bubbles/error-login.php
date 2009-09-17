@@ -14,17 +14,19 @@ $uri_rescatada = '';
 //Asignacion de las llegadas de GET a las variables correspondientes...
 if(isset($_GET['error'])){
 	$error = $_GET['error'];
-}
-else{
+}else{
 	$error = 'desconocido';
 }
+
 if(isset($_GET['uri_rescatada'])){
 	$uri_rescatada = urldecode($_GET['uri_rescatada']);
 	$_SESSION['uri_rescatada'] = $uri_rescatada;
-}
-else{
+}else{
 	$uri_rescatada = DIR_BUBBLES;
+	$_SESSION['uri_rescatada'] = $uri_rescatada;
 }
+
+echo $_SESSION['uri_rescatada'];
 
 //"SWITCHEO" de las variables guardadas de GET, para cargar sus páginas correspondientes...
 if($error == 'ingresos_incorrectos'){
@@ -40,6 +42,9 @@ if($error == 'no_administrador'){
 	include('contenido/debe-loguearse.php');
 }
 if($error == 'no_identificado'){
+	include('contenido/debe-loguearse.php');
+}
+if($error == 'primer_logueo'){
 	include('contenido/debe-loguearse.php');
 }
 if($error == 'desconocido'){

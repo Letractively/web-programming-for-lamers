@@ -3,7 +3,7 @@
 
 <!--<p>El mail enviado debe redireccionar a:</p>
 <p>Bienvenido a Buubles! clickee en el siguiente vinculo para confirmar su postulacion:</p>-->
-<!--<a href="<?php //echo URL_BASE; ?>/registrar-nueva-empresa.php?id=<?php //echo $nuevoReg->id_empresa ?>&amp;reg=<?php //echo $nuevoReg->contrasenia_usuario; ?>">Verificar mi Membresia...</a>-->
+<a href="<?php echo URL_BASE; ?>/registrar-nueva-empresa.php?id=<?php echo $nuevoReg->id_empresa ?>&amp;reg=<?php echo $nuevoReg->contrasenia_usuario; ?>">Verificar mi Membresia...</a>
 
 <?php
 //Preparo y envio el mail de verificación...
@@ -15,6 +15,7 @@ $codigohtml .= '<a href="' . URL_BASE . '/registrar-nueva-empresa.php?id=' . $nu
 $codigohtml .= 'Te recordamos los datos de tu cuenta para que puedas loguearte:<br />';
 $codigohtml .= '- tu usuario es: ' . $nuevoReg->alias_usuario . '<br />';
 $codigohtml .= '- tu password es: ' . $_SESSION['feContraseniaUsuario'] . '<br />';
+$codigohtml .= '- tu sitio personal es: ' . SITIOS_EMPRESA . $nuevoReg->alias_usuario . '/<br />';
 $codigohtml .= '</body></html>';
 $email = $nuevoReg->email_usuario;
 $asunto = $nuevoReg->alias_usuario . ', bienvenido a BUBBLES. Confirme su membresia';

@@ -227,13 +227,20 @@ function postear_aviso($empresa){
 ////////////////////////////////////////////////////
 function destruir_sesion_logeado(){
 	//session_start();
-	$uri = $_SESSION['uri_rescatada'];
+	if(isset($_SESSION['uri_rescatada']) && $_SESSION['uri_rescatada'] != ''){
+		$uri = $_SESSION['uri_rescatada'];
+	}else{
+		$uri = URL_BASE;
+	}
 	while(isset($_SESSION['logeado'])){
 		$_SESSION = array();
 		session_unset();
 		session_destroy();
+
+		session_start();						//SIEMPRE MANTENGO la URI RESCATADA e inicio una nueva sesion!
+		$_SESSION['uri_rescatada'] = $uri;
 	}
-header('Location: ' . $uri);
+	header('Location: ' . $uri);
 }
 
 ////////////////////////////////////////////////////
@@ -248,8 +255,11 @@ function destruir_sesion_registro(){
 		$_SESSION = array();
 		session_unset();
 		session_destroy();
+		
+		session_start();						//SIEMPRE MANTENGO la URI RESCATADA e inicio una nueva sesion!
+		$_SESSION['uri_rescatada'] = $uri;
 	}
-header('Location: ' . $uri);
+	//header('Location: ' . $uri);		//La redirección recursiva no me deja salir al formulario de logueo
 }
 
 ////////////////////////////////////////////////////
