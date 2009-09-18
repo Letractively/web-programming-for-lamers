@@ -16,15 +16,15 @@ $visitado->CargarDatosPerfil();
 		<p class="parrafo3">Nivel: <?php echo $visitado->nivel_profesion;?></p>
 		<div class="linea-2">
 		</div>
-		<p><a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=editar_perfil&contenido_superior=editar_perfil">
+		<p><a class="parrafo4" href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=editar_perfil&contenido_superior=editar_perfil">
 			Editar Perfil
 			</a>
 		</p>
-		<p><a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=editar_mi_foto&contenido_superior=editar_mi_foto">
+		<p><a class="parrafo4" href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=editar_mi_foto&contenido_superior=editar_mi_foto">
 			Editar Foto
 			</a>
 		</p>
-		<p><a href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=sin_botonera&contenido_superior=mis_postulaciones">
+		<p><a class="parrafo4" href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=sin_botonera&contenido_superior=mis_postulaciones">
 			Ver Mis Postulaciones
 			</a>
 		</p>

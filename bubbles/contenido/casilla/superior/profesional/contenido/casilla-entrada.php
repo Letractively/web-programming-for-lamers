@@ -39,8 +39,8 @@ elseif(isset($_SESSION['id_empresa'])){
 		</tr>
 		</table>
 	</div>
-	<div class="titulos-mensajes">
-	</div>
+<!--<div class="titulos-mensajes">
+	</div>-->
 	<div class="lista-mensajes">
 		<table>
 			<tr>

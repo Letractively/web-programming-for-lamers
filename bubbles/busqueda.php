@@ -79,7 +79,6 @@ echo $error_busqueda;
 			</a>
 		</div>
 		<div class="col-busqueda-form">
-		<p>col-busqueda-form</p>
 		</div>
 		<div class="col-busqueda-contenido">
 			<?php 
