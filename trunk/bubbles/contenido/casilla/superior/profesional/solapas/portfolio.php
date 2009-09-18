@@ -38,7 +38,7 @@ $leyenda_solapa_mensaje = 'Dejar msj.';
 		<div class="solapa">
 		
 		</div>
-		<div class="solapa">
+		<div class="solapa solapa2">
 		
 		</div>
 	</div>

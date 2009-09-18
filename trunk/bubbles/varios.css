@@ -157,6 +157,9 @@ height: 80px;
 background-image: url(imagenes/solapa-lateral.png);
 background-repeat: no-repeat;
 }
+.casilla-superior .borde-solapas .solapa2{
+height: 81px;
+}
 .casilla-superior .borde-solapas .solapa:hover{
 background-image: url(imagenes/solapa-lateral-presionada.png);
 }
@@ -249,7 +252,7 @@ overflow: hidden;
 .contenido-mensajes .enviar-escribir{
 float: left;
 overflow: hidden;
-width: 359px;
+width: 358px;
 }
 .contenido-editar-perfil .salvar-perfil,.contenido-editar-perfil .form-editar-perfil,
 .contenido-laborales .cabecera-oferta, .contenido-laborales .form-oferta,
@@ -264,7 +267,7 @@ width: 442px;
 .contenido-mensajes .recorrer-mensajes{
 float: left;
 overflow: hidden;
-width: 359px;
+width: 358px;
 }
 .contenido-mensajes .cabecera-escribir, .contenido-portfolio .cabecera-portfolio,
 .contenido-editar-perfil .salvar-perfil, .contenido-laborales .cabecera-oferta,
@@ -455,6 +458,7 @@ height: 20px;
 background-color: #edf8fe;
 float: left;
 overflow: hidden;
+border-right: 1px solid #D2D2D2;
 }
 .col-empresa-centro .contenido-mensajes .cabecera-escribir{
 background-color: #ffffff;
@@ -1146,7 +1150,6 @@ width: 547px;
 .col-comentarios-solapas, .col-comentarios-form{
 float: left;
 overflow: hidden;
-border: 1px solid #000000;
 }
 .col-busqueda-centro, .col-comentarios-centro{
 width: 547px;
@@ -1158,7 +1161,7 @@ margin-top: 7px;
 .col-comentarios-centro .col-comentarios-cabecera,
 .col-comentarios-centro .col-comentarios-pie,
 .col-comentarios-centro .col-comentarios-form{
-width: 545px;
+width: 544px;
 }
 .col-busqueda-centro .col-busqueda-cabecera{
 background-image: url(imagenes/cabecera-buscar.png);
@@ -1186,7 +1189,7 @@ margin-top: -8px;
 .col-busqueda-centro .col-busqueda-solapas{
 border-right: 1px solid #6CB4E4;
 border-left: 1px solid #6CB4E4;
-width:544px;
+width:542px;
 }
 .col-busqueda-centro .col-busqueda-solapas .solapa1,
 .col-busqueda-centro .col-busqueda-solapas .solapa2,
@@ -1220,17 +1223,17 @@ color: #000000;
 }
 .col-busqueda-centro .col-busqueda-contenido{
 height: 545px;
-width: 544px;
-border-left: 1px solid #42A0D2;
-border-right: 1px solid #42A0D2;
+width: 542px;
+border-left: 1px solid #6CB4E4;
+border-right: 1px solid #6CB4E4;
 overflow-x: hidden;
 overflow-y: scroll;
 }
 .col-comentarios-centro .col-comentarios-contenido{
 height: 545px;
-width: 544px;
-border-left: 1px solid #42A0D2;
-border-right: 1px solid #42A0D2;
+width: 542px;
+border-left: 1px solid #6CB4E4;
+border-right: 1px solid #6CB4E4;
 overflow-x: hidden;
 overflow-y: scroll;
 background-color: #F7EEDD;
