@@ -41,18 +41,35 @@ if(isset($_GET['id_usuario_contratar'])){
 	echo $aviso_visitado->ultimo_error;
 	$postulado_aceptado = new usuario($_GET['id_usuario_contratar']);
 	echo $postulado_aceptado->ultimo_error;
+	
 	//Preparo y envio el mail de aceptación al profesional...
-	$codigohtml = "<html><head><title>Ha sido aceptada tu postulación en el siguiente trabajo:</title></head><body><a href=\"" . URL_BASE . "e-aviso.php?mostrar_aviso_id=" . $aviso_visitado->id_aviso . "\">Ver detalles del trabajo</a></body>";
+	$codigohtml = 'Ha sido aceptada tu postulaci&oacute;n en el siguiente trabajo:<br />';
+	$codigohtml .= "<html><head><title></title></head><body><a href=\"" . URL_BASE . "e-aviso.php?mostrar_aviso_id=" . $aviso_visitado->id_aviso . "\">Ver detalles del trabajo</a><br />";
+	$codigohtml .= 'DATOS DE LA EMPRESA CONTRATANTE:<br />';
+	$codigohtml .= 'Nombre de la empresa: ' . $empresa_propietaria->razon_social . '<br />';
+	$codigohtml .= 'Direcci&oacute;n de la empresa: ' . $empresa_propietaria->calle . ' ' . $empresa_propietaria->altura . ' ' . $empresa_propietaria->piso . ' ' . $empresa_propietaria->oficina . ' -- ' . $empresa_propietaria->ciudad . ' -- ' . $empresa_propietaria->pais . '<br />';
+	$codigohtml .= 'Alias del contacto: ' . $empresa_propietaria->alias_usuario .'<br />';
+	$codigohtml .= 'Espacio de la empresa: ' . SITIOS_EMPRESA . $empresa_propietaria->alias_usuario . '<br />';
+	$codigohtml .= 'Tel&eacute;fono del contacto: ' . $empresa_propietaria->tel_usuario . '<br />';
+	$codigohtml .= 'E-mail del contacto: ' . $empresa_propietaria->email_usuario . '<br />';	
+	$codigohtml .= '</html></body>';
 	$email = $postulado_aceptado->email;
 	$asunto = 'Postulacion Aceptada!';
 	$cabeceras = "From: bubblescomunidad@bubblescomunidad.com\r\nContent-type: text/html\r\n";
 	mail($email,$asunto,$codigohtml,$cabeceras);
+	
 	//Preparo y envio el mail de aceptación a la Empresa...
-	$codigohtml = "<html><head><title>Has aceptado postulación en el siguiente trabajo:</title></head><body><a href=\"" . URL_BASE . "e-aviso.php?mostrar_aviso_id=" . $aviso_visitado->id_aviso . "\">Ver detalles del trabajo</a></body>";
+	$codigohtml = 'Has aceptado una postulaci&oacute;n al siguiente trabajo:<br />';
+	$codigohtml .= "<html><head><title>Has aceptado una postulación al siguiente trabajo:</title></head><body><a href=\"" . URL_BASE . "e-aviso.php?mostrar_aviso_id=" . $aviso_visitado->id_aviso . "\">Ver detalles del trabajo</a><br />";
+	$codigohtml .= 'DATOS DEL PROFESIONAL CONTRATADO:<br />';
+	$codigohtml .= 'Nombre del profesional: ' . $postulado_aceptado->nombres . ' ' . $postulado_aceptado->apellidos . '<br />';
+	$codigohtml .= 'E-mail del profesional: ' . $postulado_aceptado->email . '<br />';
+	$codigohtml .= '</html></body>';
 	$email = $empresa_propietaria->email_usuario;
-	$asunto = 'Trabajo Asignado!';
+	$asunto = 'Felicitaciones!: Trabajo Asignado';
 	$cabeceras = "From: bubblescomunidad@bubblescomunidad.com\r\nContent-type: text/html\r\n";
 	mail($email,$asunto,$codigohtml,$cabeceras);
+	
 	echo ' ' . $postulado_aceptado->email;
 	echo ' ' . $empresa_propietaria->email_usuario;
 }
@@ -102,10 +119,10 @@ echo $aviso_visitado->status;
 				<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
 				Ciudad: <?php echo $empresa_propietaria->ciudad;?>
 				</p>
-				<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
-				Dirección: <?php echo $empresa_propietaria->calle;?> <?php echo $empresa_propietaria->altura;?>
-				 <?php echo $empresa_propietaria->piso;?> <?php echo $empresa_propietaria->oficina;?>
-				</p>
+				<!--<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
+				Dirección: <?php //echo $empresa_propietaria->calle;?> <?php //echo $empresa_propietaria->altura;?>
+				 <?php //echo $empresa_propietaria->piso;?> <?php //echo $empresa_propietaria->oficina;?>
+				</p>-->
 			</div>
 		</div>
 		<div class="contenido-oferta-completa">
