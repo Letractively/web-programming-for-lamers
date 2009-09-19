@@ -435,7 +435,7 @@ width: 100px;
 height:80px;
 margin-left:15px;
 margin-top:5px;
-width:60px;
+width:64px;
 }
 .contenido-portfolio .un-portfolio-mio{
 height: 120px;
@@ -774,12 +774,12 @@ color: #ffffff;
 .contenido-amigos .foto-comentario,
 .inferior-amigos .foto-comentario{
 float:left;
-height:60px;
+height:62px;
 margin-bottom:0;
 margin-left:0;
 margin-top:0;
 overflow:hidden;
-width:60px;
+width:64px;
 }
 .casilla-inferior .superior-comentarios a{
 float: left;
@@ -1327,7 +1327,9 @@ margin-bottom: 0px;
 display: inline;
 text-align: center;
 }
-.borde-comentario-chico .foto-comentario img{
+.borde-comentario-chico .foto-comentario img,
+.contenido-amigos .foto-comentario img,
+.borde-comentario .foto-comentario img{
 border: 2px solid #42A0D2;
 }
 .borde-comentario-chico .titulo-comentario, .borde-comentario-chico .descripcion-comentario,
