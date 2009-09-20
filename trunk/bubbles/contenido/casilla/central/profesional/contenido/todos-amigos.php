@@ -17,6 +17,18 @@ if(isset($_GET ['id_amigo_agregar'])){
 		$esta_amistad->id_amigo = $_GET ['id_amigo_agregar'];
 		$esta_amistad->guardarAmistad();
 		echo $esta_amistad->ultimo_error;
+	
+		// Levanto los datos básicos de la amistad agregada para saber a quien envio el mail:
+		$esta_amistad_datos = new usuario($esta_amistad->id_amigo);
+
+		// Avisar a "$esta_amistad" de que lo ha elegido como amigo la entidad "$_SESSION['id_usuario']", o bien "$visitado->id_usuario"....
+		$codigohtml = $visitado->alias . ' te ha agregado como amigo:<br />';
+		$codigohtml .= "<html><head><title></title></head><body><a href=\"" . SITIOS_PROFESIONAL . $visitado->alias . "\">Haz click aqui para ver su portfolio</a><br />";
+		$codigohtml .= '</html></body>';
+		$email = $esta_amistad_datos->email;
+		$asunto = 'Tienes una nueva amistad!';
+		$cabeceras = "From: bubblescomunidad@bubblescomunidad.com\r\nContent-type: text/html\r\n";
+		mail($email,$asunto,$codigohtml,$cabeceras);
 	}
 }elseif(isset($_GET ['id_amigo_eliminar'])){
 	$esta_amistad->borrarAmistad($_GET ['id_amigo_eliminar']);
