@@ -26,7 +26,7 @@ if(isset($_POST['nuevo_comentario'])){
 		$este_comentario->guardarComentario();
 		echo $este_comentario->ultimo_error;
 		
-		// Avisar a "$esta_amistad" de que le ha dejado un comentario la entidad "$_SESSION['id_usuario']", o bien "$visitado->id_usuario"....
+		// Avisar a "$este_visitado" de que le ha dejado un comentario otra entidad....
 		$codigohtml = $este_comentador_alias . ' te ha dejado un comentario:<br />';
 		$codigohtml .= "<html><head><title></title></head><body><a href=\"" . URL_BASE . "u-galeria.php?entidad_visitada=" . $visitado->alias . "&casilla_central=todos_comentarios&contenido_central=todos_comentarios\">Haz click aqui para ver el comentario</a><br />";
 		$codigohtml .= '</html></body>';
