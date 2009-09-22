@@ -8,6 +8,7 @@ text-align: center;
 font-weight: bold;
 color: #FFFFFF;
 cursor: pointer;
+padding-bottom: 2px;
 }
 
 .solapa-lateral{
@@ -398,8 +399,8 @@ background-color: #ffffff;
 .titulo-oferta-col, .descripcion-oferta-col, .relleno-oferta-col, .pie-oferta-col{
 width: 208px;
 overflow: hidden;
-border-left: 1px solid #42A0D2;
-border-right: 1px solid #42A0D2;
+border-left: 1px solid #95D9E9;
+border-right: 1px solid #95D9E9;
 }
 .titulo-oferta-col{
 height: 20px;
@@ -559,7 +560,7 @@ width: 140px;
 }
 .contenido-mensajes .datos-escribir .umAsunto,
 .contenido-mensajes .datos-escribir .emAsunto{
-width: 280px;
+width: 283px;
 }
 .contenido-mensajes .mce-escribir{
 height: 25px;
@@ -1187,8 +1188,8 @@ margin-left: 20px;
 margin-top: -8px;
 }
 .col-busqueda-centro .col-busqueda-solapas{
-border-right: 1px solid #6CB4E4;
-border-left: 1px solid #6CB4E4;
+border-right: 1px solid #95D9E9;
+border-left: 1px solid #95D9E9;
 width:542px;
 }
 .col-busqueda-centro .col-busqueda-solapas .solapa1,
@@ -1224,8 +1225,8 @@ color: #000000;
 .col-busqueda-centro .col-busqueda-contenido{
 height: 545px;
 width: 542px;
-border-left: 1px solid #6CB4E4;
-border-right: 1px solid #6CB4E4;
+border-left: 1px solid #95D9E9;
+border-right: 1px solid #95D9E9;
 overflow-x: hidden;
 overflow-y: scroll;
 }

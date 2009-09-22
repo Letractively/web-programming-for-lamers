@@ -12,11 +12,11 @@ background-repeat: no-repeat;
 }
 .form-login-usuario{
 margin-top: 60px;
-border-left: 2px solid #42a0d2;
-border-right: 2px solid #42a0d2;
+border-left: 1px solid #42a0d2;
+border-right: 1px solid #42a0d2;
 float: left;
 overflow: hidden;
-width: 193px;
+width: 195px;
 height: 110px;
 background-color: #4bbeea;
 }
@@ -32,11 +32,11 @@ background-repeat: no-repeat;
 }
 .form-login-empresa{
 margin-top: 60px;
-border-left: 2px solid #42a0d2;
-border-right: 2px solid #42a0d2;
+border-left: 1px solid #42a0d2;
+border-right: 1px solid #42a0d2;
 float: left;
 overflow: hidden;
-width: 192px;
+width: 194px;
 height: 111px;
 background-color: #c4c6c3;
 }
