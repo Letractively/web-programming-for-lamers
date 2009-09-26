@@ -322,4 +322,17 @@ function rebotar($error = ''){
 	header('Location: ' . URL_BASE . 'error-login.php?error=' . $error . '&uri_rescatada=' . urlencode($uri));
 	exit;
 }
+
+////////////////////////////////////////////////////
+// Cotejacion de caracteres válidos en formularios:
+//Devuelve (0) si los caracteres son válidos o (1) si no,
+// o si la cadena esta vacia.
+////////////////////////////////////////////////////
+function es_cadena_permitida( $cadena = ''){
+	if (ereg( CARACTERES_VALIDOS, $cadena)){
+		return true;
+	}else{
+		return false;
+	}
+}
 ?>

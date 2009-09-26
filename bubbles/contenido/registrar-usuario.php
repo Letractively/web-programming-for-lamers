@@ -107,6 +107,30 @@ $(document).ready(function(){
 		$("#fuVerificarContrasenia").valid();
 	});
 	
+	$("#fuAlias").blur(function() {
+	if($("#fuAlias").val() != ''){
+		var RegExPattern = /^[a-zA-Z0-9\-\S]{2,16}$/;
+		var errorMessage = 'El Alias no admite caracteres especiales como & o <>, ni espacios en blanco.';
+		if (($("#fuAlias").val().match(RegExPattern))) {
+		} else {
+			alert(errorMessage);
+		}
+	}
+	});
+	
+	$("#fuContrasenia").blur(function() {
+	if($("#fuContrasenia").val() != ''){
+		var RegExPattern = /^[a-zA-Z0-9\-\S]{2,16}$/;
+		var errorMessage = 'La Contraseña no admite caracteres especiales como & o <>, ni espacios en blanco.';
+		if (($("#fuContrasenia").val().match(RegExPattern))) {
+		} else {
+			alert(errorMessage);
+		}
+	}
+	});
+
+
+	
 //	//code to hide topic selection, disable for demo
 //	var newsletter = $("#newsletter");
 //	// newsletter topics are optional, hide at first

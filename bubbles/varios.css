@@ -538,6 +538,7 @@ border-top: 1px solid #d2d2d2;
 border-bottom: 1px solid #d2d2d2;
 border-right: 1px solid #d2d2d2;
 border-left: 1px solid #d2d2d2;
+width: 357px;
 }
 .contenido-mensajes .datos-escribir table{
 border-collapse:collapse;
@@ -588,6 +589,7 @@ border-left: 1px solid #6db3e4;
 }
 .col-empresa-centro .contenido-mensajes .enviar-escribir{
 border-left: 1px solid #d2d2d2;
+width: 357px;
 }
 .contenido-mensajes .enviar-escribir table{
 border-collapse:collapse;

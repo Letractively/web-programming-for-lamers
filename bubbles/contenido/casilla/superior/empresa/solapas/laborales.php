@@ -8,6 +8,8 @@ $leyenda_solapa_mensaje = 'Dejar msj.';
 ?>
 
 	<div class="borde-solapas">
+		<div class="linea-3">
+		</div>
 		<a href="e-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=laborales&botonera_superior=subir_oferta&contenido_superior=subir_oferta">
 		<div class="solapa-empresa">
 				<img src="imagenes/icono-laborales-empresa.png" style="position: absolute; margin-top: 20px; margin-left: 5px; border: 0;" />
