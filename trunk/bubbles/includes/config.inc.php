@@ -48,7 +48,10 @@ $OPCIONES_NIVEL_PROFESION = array('Trainee', 'Ssr', 'Sr');
 $OPCIONES_SEXO = array('Masculino', 'Femenino');
 $OPCIONES_MODALIDAD_TRABAJO = array('A convenir', 'Horario estricto', 'Free-Lance');
 $OPCIONES_PLAZO_ENTREGA = array('A convenir', '1 mes', '3 meses', '6 meses', '1 año');
-$OPCIONES_BUSQUEDA = array('Ofertas Laborales', 'Profesionales', 'Empresas')
+$OPCIONES_BUSQUEDA = array('Ofertas Laborales', 'Profesionales', 'Empresas');
+
+// Caracteres permitidos escritos en EXPRESIONES REGULARES... (NO IMPLEMENTADO)
+define('CARACTERES_VALIDOS', "^[a-zA-Z0-9\-_]{3,20}$");
 
 // Constantes predefinidas...
 // define('PARA_USUARIO', 1);

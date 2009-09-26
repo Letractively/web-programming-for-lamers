@@ -109,6 +109,28 @@ $(document).ready(function(){
 		onkeyup: false		//EVITA QUE LOS DATOS SE COTEJEN AL SOLTAR CADA LETRA!!! IMPRESCINDIBLE, evita trafico AJAX!
 	});
 	
+	$("#feAliasUsuario").blur(function() {
+	if($("#feAliasUsuario").val() != ''){
+		var RegExPattern = /^[a-zA-Z0-9\-\S]{2,16}$/;
+		var errorMessage = 'El Alias no admite caracteres especiales como & o <>, ni espacios en blanco.';
+		if (($("#feAliasUsuario").val().match(RegExPattern))) {
+		} else {
+			alert(errorMessage);
+		}
+	}
+	});
+	
+	$("#feContraseniaUsuario").blur(function() {
+	if($("#feContraseniaUsuario").val() != ''){
+		var RegExPattern = /^[a-zA-Z0-9\-\S]{2,16}$/;
+		var errorMessage = 'La Contraseña no admite caracteres especiales como & o <>, ni espacios en blanco.';
+		if (($("#feContraseniaUsuario").val().match(RegExPattern))) {
+		} else {
+			alert(errorMessage);
+		}
+	}
+	});	
+
 	// propose username by combining first- and lastname
 //	$("#feAliasUsuario").focus(function() {
 //		var firstname = $("#feNombres").val();

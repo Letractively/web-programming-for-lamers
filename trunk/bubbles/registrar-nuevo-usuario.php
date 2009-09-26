@@ -13,7 +13,7 @@
 
 ////////////////////////////////////////PASO 0
 if(!(isset($_GET['reg'])) && !(isset($_POST["paso1"])) && !(isset($_POST["paso2"])) && !(isset($_POST["paso3"])) && !(isset($_POST["paso4"]))){
-//DEL INDEX llegaran los primeros datos para el form. Los siguientes pasos cotejaran, pues, los "values" iniciales correspondientes:
+	//DEL INDEX llegaran los primeros datos para el form. Los siguientes pasos cotejaran, pues, los "values" iniciales correspondientes:
 	//Setear las variables conocidas a '', pues el HTML las requerirá de todas formas:
 	$fiAlias = '';
 	$fiContrasenia = '';
@@ -40,7 +40,10 @@ if(isset($_POST["paso1"])){
 	//$tmp = unserialize($_POST["tmp"]);
 	// El form fue procesado por js
 	// De todas formas cotejamos tres variable esceciales de registro...
-	if($_POST['fuSeguridad'] != $_SESSION['captcha_guardado']){
+	if(($_POST['fuSeguridad'] != $_SESSION['captcha_guardado'])
+		||(!es_cadena_permitida( $_POST['fuAlias']))
+		||(!es_cadena_permitida( $_POST['fuContrasenia'] ))
+		){
 		echo 'Sus datos estan incorrectos!; realice otra vez su trámite de registro!';
 		include('footer.php');
 		exit;

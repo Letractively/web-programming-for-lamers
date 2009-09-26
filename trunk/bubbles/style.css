@@ -91,6 +91,18 @@ margin-bottom: 0px;
 margin-left: 0px;
 margin-right: 0px;
 }
+.linea-3{
+float: right;
+height: 1px;
+width: 93px;
+border-width: 0;
+color: #ffffff;
+background-color: #ffffff;
+margin: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
 /*estilos de debugueo*/
 .invitados{
 float: left;
