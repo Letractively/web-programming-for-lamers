@@ -43,7 +43,9 @@ define('TIEMPO_SESION', 1000);
 // Configuración de opciones listadas...
 $OPCIONES_PROFESIONES = array('Dis. web', 'Dis. grafico', 'Dis. multimedial', 'Dis. de indumentaria', 'Dis. de interiores',
 							'Dir. de arte', 'Ilustrador', 'Retocador', 'Animador 3d', 'Animador 2d', 'Editor de videos',
-							'Dibujante', 'Redactor', 'Organiz. de eventos');
+							'Dibujante', 'Redactor', 'Organiz. de eventos', 'Arquitecto', 'Dibujante', 'Ejec. de Ctas. y RRPP.',
+							'Planner', 'Medio', 'Ejec. Cuentas', 'Dir. de Cuentas', 'Fotógrafo', 'Prod. Gráfico', 'Maquetador',
+							'Programador Gral.', 'Programador Web');
 $OPCIONES_NIVEL_PROFESION = array('Trainee', 'Ssr', 'Sr');
 $OPCIONES_SEXO = array('Masculino', 'Femenino');
 $OPCIONES_MODALIDAD_TRABAJO = array('A convenir', 'Horario estricto', 'Free-Lance');
