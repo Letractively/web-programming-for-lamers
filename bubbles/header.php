@@ -142,6 +142,10 @@ else{
 
 	</div>
 	</a>
+	<div class="titulos">
+		<p class="parrafo10 izquierda">Bienvenido a Bubbles Comunidad</p>
+		<p class="parrafo10 derecha"><a class="parrafo10" href="<?php echo URL_BASE ?>">Home</a></p>
+	</div>
 	
 		<div class="menu">
 			<div class="div-1">
