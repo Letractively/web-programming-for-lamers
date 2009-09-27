@@ -2,11 +2,32 @@
 width: 40px;
 height: 40px;
 background-image: url(imagenes/img_header.jpg);
+background-repeat: no-repeat;
 margin: auto;
 width:1024px;
-height:160px;
+height:128px;
 overflow: hidden;
 cursor: pointer;
+}
+.header .titulos{
+width:1024px;
+height: 25px;
+background-color: #0089D1;
+overflow: hidden;
+}
+.header .titulos a{
+cursor:pointer;
+text-decoration:none;
+}
+.header .titulos .izquierda{
+float: left;
+margin-left: 20px;
+margin-top: 4px;
+}
+.header .titulos .derecha{
+float: right;
+margin-right: 20px;
+margin-top: 4px;
 }
 .header .menu{
 width:1024px;
