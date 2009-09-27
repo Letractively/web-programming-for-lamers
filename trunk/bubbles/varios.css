@@ -777,7 +777,7 @@ color: #ffffff;
 .contenido-amigos .foto-comentario,
 .inferior-amigos .foto-comentario{
 float:left;
-height:62px;
+height:64px;
 margin-bottom:0;
 margin-left:0;
 margin-top:0;
@@ -866,11 +866,10 @@ height: 86px;
 .col-empresa-derecha .superior-col,
 .col-empresa-derecha .publicidad-col, .col-empresa-derecha .inferior-col
 {
-border: 1px solid #000000;
-background-color: #dddddd;
 float: left;
 overflow: hidden;
 width: 210px;
+margin-top:10px;
 }
 .col-profesional-derecha .superior-col{
 height: 50px;
@@ -906,10 +905,10 @@ background-repeat: no-repeat;
 }
 
 .publicidad-col{
-height: 200px;
+height: auto;
 }
 .col-profesional-derecha .inferior-col{
-height: 50px;
+height: 0px;
 }
 /**/
 /*CLASES PARA HOME ----->*/
