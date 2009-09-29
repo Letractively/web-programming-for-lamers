@@ -413,8 +413,11 @@ background-color: #ffffff;
 .descripcion-oferta-col .parrafo3{
 margin-left: 10px;
 }
+.col-profesional-derecha .relleno-oferta-col{
+height: 55px;
+}
 .relleno-oferta-col{
-height: 48px;
+height: 40px;
 }
 .pie-oferta-col{
 height: 20px;
@@ -879,7 +882,10 @@ background-color: #ffffff;
 float: left;
 overflow: hidden;
 width: 210px;
-height: 603px;
+height: 611px;
+}
+.col-profesional-derecha .clasificados-col{
+height: 428px;
 }
 .clasificados-col .cabecera, .clasificados-col .superior,
 .clasificados-col .contenido, .clasificados-col .inferior{
@@ -898,8 +904,11 @@ height: 0px;
 .clasificados-col .contenido{
 height: 474px;
 }
+.col-profesional-derecha .clasificados-col .contenido{
+height: 284px;
+}
 .clasificados-col .inferior{
-height: 9px;
+height: 17px;
 background-image: url(imagenes/inferior-clasificados.png);
 background-repeat: no-repeat;
 }
@@ -926,6 +935,7 @@ float: left;
 overflow: hidden;
 width: 287px;
 margin-top: 28px;
+margin-right: 11px;
 }
 .col-registrarse h2{
 color: #ffffff;
@@ -1002,16 +1012,20 @@ background-color: #c4c5c9;
 border-left: 1px solid #46a1d6;
 border-right: 1px solid #46a1d6;
 }
+.col-centroizquierda .usuarios-destacados-col, .empresas-destacadas-col{
+width: 210px;
+}
 .usuarios-destacados-col, .empresas-destacadas-col{
 background-color: #ffffff;
 float: left;
 overflow: hidden;
 width: 210px;
-height: 372px;
+height: 382px;
 }
 .col-centroizquierda .usuarios-destacados-col,
 .col-centroizquierda .empresas-destacadas-col{
 margin-top:13px;
+margin-left: 10px;
 }
 .usuarios-destacados-col .cabecera, .usuarios-destacados-col .superior,
 .usuarios-destacados-col .contenido, .usuarios-destacados-col .inferior,
@@ -1026,20 +1040,29 @@ height: 16px;
 background-image: url(imagenes/cabecera-usuarios-destacados.png);
 background-repeat: no-repeat;
 }
+.col-centroizquierda .usuarios-destacados-col .cabecera, .col-centroizquierda .usuarios-destacados-col .superior,
+.col-centroizquierda .usuarios-destacados-col .contenido, .col-centroizquierda .usuarios-destacados-col .inferior,
+.col-centroizquierda .empresas-destacadas-col .cabecera, .col-centroizquierda .empresas-destacadas-col .superior,
+.col-centroizquierda .empresas-destacadas-col .contenido, .col-centroizquierda .empresas-destacadas-col .inferior{
+width:210px;
+}
+.col-centroizquierda .usuarios-destacados-col .contenido, .col-centroizquierda .empresas-destacadas-col .contenido{
+width: 203px;
+}
 .usuarios-destacados-col .superior{
 height: 52px;
 background-image: url(imagenes/superior-usuarios-destacados.png);
 background-repeat: no-repeat;
 }
 .usuarios-destacados-col .inferior{
-height: 7px;
+height: 17px;
 background-image: url(imagenes/inferior-usuarios-destacados.png);
 background-repeat: no-repeat;
 }
 .usuarios-destacados-col .contenido{
-height: 292px;
-border-left: 1px solid #95D9E9;
-border-right: 1px solid #95D9E9;
+height: 282px;
+border-left: 1px solid #46A1D6;
+border-right: 1px solid #46A1D6;
 width: 203px;
 background-image: url(imagenes/degrade-usuarios-destacados-col.png);
 background-repeat: repeat-x;
@@ -1057,15 +1080,15 @@ background-image: url(imagenes/superior-empresas-destacadas-col.png);
 background-repeat: no-repeat;
 }
 .empresas-destacadas-col .contenido{
-height: 297px;
-border-left: 1px solid #95D9E9;
-border-right: 1px solid #95D9E9;
+height: 287px;
+border-left: 1px solid #46A1D6;
+border-right: 1px solid #46A1D6;
 background-image: url(imagenes/degrade-empresas-destacadas-col.png);
 background-repeat: repeat-x;
 width: 208px;
 }
 .empresas-destacadas-col .inferior{
-height: 7px;
+height: 17px;
 background-image: url(imagenes/inferior-empresas-destacadas-col.png);
 background-repeat: no-repeat;
 }
@@ -1153,7 +1176,7 @@ overflow: hidden;
 }
 .col-busqueda-centro, .col-comentarios-centro{
 width: 547px;
-margin-top: 7px;
+margin-top: 10px;
 }
 .col-busqueda-centro .col-busqueda-cabecera,
 .col-busqueda-centro .col-busqueda-pie,
@@ -1395,7 +1418,8 @@ overflow:hidden;
 width:543px;
 }
 .col-centroizquierda .login-usuario, .col-centroizquierda .login-empresa{
-float: right;
+float: left;
+margin-left: 23px;
 }
 .col-centroizquierda .login-usuario{
 margin-top: 28px;
