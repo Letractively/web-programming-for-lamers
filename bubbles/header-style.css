@@ -41,6 +41,7 @@ margin-top: 20px;
 .header .menu h2{
 margin-top: 20px;
 color: #42a0d2;
+margin-left: 15px;
 }
 .header .menu .buscador p{
 margin-top: 15px;
@@ -79,5 +80,5 @@ width: 50px;
 color: #0089D1;
 }
 .header .menu .buscador{
-width:720px;
+width:715px;
 }
