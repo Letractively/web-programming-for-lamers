@@ -70,7 +70,7 @@ background-image: url(imagenes/superior-col-profesional.png);
 background-image: url(imagenes/superior-col-empresa.png);
 }
 .col-profesional .profesional-col, .col-empresa .empresa-col{
-height: 354px;
+height: 365px;
 width: 210px;
 }
 .col-profesional .profesional-col{
@@ -100,7 +100,7 @@ width: 210px;
 margin: 10px;
 }
 .col-profesional .medio-col, .col-empresa .medio-col{
-height: 264px;
+height: 252px;
 width: 210px;
 }
 .col-profesional .medio-col{

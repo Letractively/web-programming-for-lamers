@@ -24,6 +24,10 @@ $visitado->CargarDatosPerfil();
 			Editar Foto
 			</a>
 		</p>
+		<p><a class="parrafo4" href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=editar_mi_cv&contenido_superior=editar_mi_cv">
+			Editar CV
+			</a>
+		</p>
 		<p><a class="parrafo4" href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=sin_botonera&contenido_superior=mis_postulaciones">
 			Ver Mis Postulaciones
 			</a>

@@ -37,6 +37,9 @@ define('PESO_MAXIMO_PORTFOLIO', 500000);
 define('DIMENSION_PORTFOLIO_GRANDE','900');
 define('DIMENSION_PORTFOLIO_CHICO','98');
 
+define('DIR_CV_PROFESIONALES', 'contenido/profesionales/cv/');
+define('PESO_MAXIMO_CV', 500000);
+
 // Tiempo de Sesion por usuario en segundos...
 define('TIEMPO_SESION', 1000);
 
