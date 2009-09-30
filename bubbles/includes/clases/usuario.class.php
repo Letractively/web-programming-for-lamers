@@ -12,6 +12,7 @@ class usuario {
 	var $email;
 	var $nacimiento;
 	var $ruta_foto;
+	var $ruta_cv;
 	var $pregunta_secreta;
 	var $respuesta_secreta;
 	var $nombres;
@@ -36,6 +37,7 @@ class usuario {
 	var $us_nacimiento = array();
 	var $us_miembro_desde = array();
 	var $us_ruta_foto = array();
+	var $us_ruta_cv = array();
 	var $us_sexo = array();
 	var $us_pais_residencia = array();
 	var $us_empresa = array();
@@ -57,6 +59,7 @@ class usuario {
 			$this->email = NULL;
 			$this->nacimiento = NULL;
 			$this->ruta_foto = NULL;
+			$this->ruta_cv = NULL;
 			$this->pregunta_secreta = NULL;
 			$this->respuesta_secreta = NULL;
 			$this->nombres = NULL;
@@ -104,6 +107,7 @@ class usuario {
 				$this->status = $fila['status'];
 				$this->miembro_desde = $fila['miembro_desde'];
 				$this->ruta_foto = $fila['ruta_foto'];
+				$this->ruta_cv = $fila['ruta_cv'];
 				$this->profesion_1 = $fila['profesion_1'];
 				$this->nivel_profesion = $fila['nivel_profesion'];
 				$this->pais_residencia = $fila['pais_residencia'];
@@ -436,7 +440,7 @@ class usuario {
 			//Leer de la DB
 			$filas = $this->sql->cambiar("ruta_foto = '$ruta_foto'", 'usuarios', "id_usuario = '$this->id_usuario'");
 				if($this->sql->ultimo_error != ''){
-					$this->ultimo_error = 'Error al caargar la FOto de este Profesional de la DB!: ' . $this->sql->ultimo_error;
+					$this->ultimo_error = 'Error al caargar la Foto de este Profesional de la DB!: ' . $this->sql->ultimo_error;
 					return -1;
 				}
 			$this->ruta_foto = $ruta_foto;
@@ -445,6 +449,20 @@ class usuario {
 	return -1;
 	}
 
+	function cargarRutaCV($ruta_cv = ''){
+		if($this->idUsuario() > -1 && $ruta_cv != ''){
+			//Leer de la DB
+			$filas = $this->sql->cambiar("ruta_cv = '$ruta_cv'", 'usuarios', "id_usuario = '$this->id_usuario'");
+				if($this->sql->ultimo_error != ''){
+					$this->ultimo_error = 'Error al cargar el CV de este Profesional de la DB!: ' . $this->sql->ultimo_error;
+					return -1;
+				}
+			$this->ruta_cv = $ruta_cv;
+			return 0;
+		}
+	return -1;
+	}
+	
 	function traerRutaFoto($id_usuario = -1){
 		if($id_usuario > -1){
 			//Leer de la DB
