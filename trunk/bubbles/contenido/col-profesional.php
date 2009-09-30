@@ -25,7 +25,9 @@ $visitado->CargarDatosPerfil();
 			</a>
 		</p>
 		<p><a class="parrafo4" href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=editar_mi_cv&contenido_superior=editar_mi_cv">
-			Editar CV
+			Editar CV -- 
+			<a class="parrafo4" href="<?php echo DIR_CV_PROFESIONALES . $visitado->ruta_cv; ?>">
+			Descargar CV
 			</a>
 		</p>
 		<p><a class="parrafo4" href="u-galeria.php?entidad_visitada=<?php echo $_GET['entidad_visitada'] ?>&solapa_superior=ninguna_activa&botonera_superior=sin_botonera&contenido_superior=mis_postulaciones">
