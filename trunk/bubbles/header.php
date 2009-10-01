@@ -111,35 +111,37 @@ else{
 <div class="header">
 	<a href="<?php echo URL_BASE; ?>">
 	<div class="img">
+	<!--DEBUGS COMENTADOS-->
+	<!--
 	<pre>
 	<?php
 	if(isset($_SESSION['logeado'])){
 		if(isset($_SESSION['id_usuario'])){
-			echo "El id de la entidad logueada es " . $_SESSION['id_usuario'] . '<br />';
+//			echo "El id de la entidad logueada es " . $_SESSION['id_usuario'] . '<br />';
 		}
 		if(isset($_SESSION['id_empresa'])){
-			echo "El id de la entidad logueada es " . $_SESSION['id_empresa'] . ' -- ';
+//			echo "El id de la entidad logueada es " . $_SESSION['id_empresa'] . ' -- ';
 		}
-		echo "Su tiempo de Logueo se renovo a " . $_SESSION['hora'] . " -- ";
-		echo "El tipo de entidad logueada es : ";
+//		echo "Su tiempo de Logueo se renovo a " . $_SESSION['hora'] . " -- ";
+//		echo "El tipo de entidad logueada es : ";
 		if(isset($_SESSION['usuario'])){
-			echo 'USUARIO' . '<br />';
+//			echo 'USUARIO' . '<br />';
 		}
 		if(isset($_SESSION['empresa'])){
-			echo 'EMPRESA' . '<br />';
+//			echo 'EMPRESA' . '<br />';
 		}
 	}
 	else{
-		echo "Entidad Visitante NO Logueada.";
+//		echo "Entidad Visitante NO Logueada.";
 	}
 	if(isset($_SESSION['registro'])){
-		echo "Ud es una entidad en tramite de registro";
+//		echo "Ud es una entidad en tramite de registro";
 	}
 	else
-		echo "Ud no esta en tramite de registro";
+//		echo "Ud no esta en tramite de registro";
 	?>
 	</pre>
-
+-->
 	</div>
 	</a>
 	<div class="titulos">
