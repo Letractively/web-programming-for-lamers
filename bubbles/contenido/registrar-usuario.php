@@ -1,5 +1,8 @@
+<script type="text/javascript" src="jquery-fancybox/js/jquery.fancybox-1.2.1.js"></script>
+<link rel="stylesheet" href="jquery-fancybox/fancybox.css" type="text/css" media="screen">
 <script type="text/javascript">
 $(document).ready(function(){
+	//$("a.terminos").fancybox();	//No andan en IE
 	$("#registrarForm").validate({
 		errorLabelContainer: $(".borde-reg-usuario .contenedor-advertencias"),	//DIV Contenedor de errores de REGISTRO}
 		wrapper: 'p',										//TAG separador entre ERROR y ERROR. Aqui se utiliza como lista y retorno de carro.
@@ -88,7 +91,7 @@ $(document).ready(function(){
 			fuProfesion1: ' ',
 			fuNivelProfesion: ' ',
 			fuAceptoTerminos: '* Debe Aceptar nuestros TERMINOS y CONDICIONES',
-			fuNacimiento: '* Su Fecha de Nac. tiene un formato incorrecto (un ejemplo correcto seria: 24/11/2001)',
+			fuNacimiento: '* Su Fecha de Nac. tiene un formato incorrecto (un ejemplo correcto seria: 24/11/2001)'
 		},
 		onkeyup: false		//EVITA QUE LOS DATOS SE COTEJEN AL SOLTAR CADA LETRA!!! IMPRESCINDIBLE, evita trafico AJAX!
 	});
@@ -238,7 +241,7 @@ $(document).ready(function(){
 				<p><input type="checkbox" name="fuDeseaNews" id="fuDeseaNews" value="Si" />Deseo suscribirme a la lista de correo de Newsletters y eventos</p>
 				<p><input type="checkbox" name="fuDeseaLaborales" id="fuDeseaLaborales" value="Si" />Deseo suscribirme a la lista de correo de Ofertas laborales</p>
 				<p><input type="checkbox" name="fuDeseaProfesionales" id="fuDeseaProfesionales" value="Si" />Deseo suscribirme a la lista de Capacitaciones y cursos para profesionales</p>
-				<p><input type="checkbox" name="fuAceptoTerminos" id="fuAceptoTerminos" value="Si" />Acepto los Terminos y Condiciones de Bubbles</p>
+				<p><input type="checkbox" name="fuAceptoTerminos" id="fuAceptoTerminos" value="Si" />Acepto los <a class="terminos" href="<?php echo URL_BASE ?>terminos.html">Terminos y Condiciones</a> de Bubbles</p>
 				<p><img src="includes/genera_img.php" id="fuGeneraImg" />Ingrese el texto de la imagen:<input type="text" name="fuSeguridad" id="fuSeguridad" /></p>
 				<input type="hidden" name="fuStatus" value="" id="fuStatus" />
 				<input type="hidden" name="paso1" value="paso1" />

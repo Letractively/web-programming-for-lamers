@@ -1,5 +1,8 @@
+<script type="text/javascript" src="jquery-fancybox/js/jquery.fancybox-1.2.1.js"></script>
+<link rel="stylesheet" href="jquery-fancybox/fancybox.css" type="text/css" media="screen">
 <script type="text/javascript">
 $(document).ready(function(){
+	//$("a.terminos").fancybox();	//No andan en IE
 	$("#registrarForm").validate({
 		errorLabelContainer: $(".registrar-empresa .contenedor-advertencias"),	//DIV Contenedor de errores de REGISTRO}
 		wrapper: 'p',										//TAG separador entre ERROR y ERROR. Aqui se utiliza como lista y retorno de carro.
