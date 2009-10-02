@@ -109,6 +109,10 @@ background-repeat: repeat-x;
 border-left: 1px solid #6cb4e4;
 border-right: 1px solid #6cb4e4;
 }
+.col-profesional .medio-col img{
+margin-top: 66px;
+margin-left: 11px;
+}
 .col-empresa .medio-col{
 background-image: url(imagenes/degrade2-col-empresa.png);
 background-repeat: repeat-x;

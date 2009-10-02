@@ -8,7 +8,8 @@
 body {
 	font-size: 12px;
 	font-family: "Trebuchet MS", Arial, Helvetica;
-	background-color: #ffffff;
+	background-image: url(imagenes/degrade-body.jpg);
+	background-repeat: repeat-x;
 	text-align: left;
 	margin: 0px;
 	min-width: 500px;
@@ -130,9 +131,10 @@ overflow: hidden;
 }
 .contenido{
 margin: auto;
-width:1024px;
+width: 1024px;
 height: auto;
 overflow: hidden;
+background-color: #ffffff;
 }
 .col-izquierda, .col-profesional, .col-empresa{
 float: left;

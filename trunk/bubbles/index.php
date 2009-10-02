@@ -1,9 +1,17 @@
 <?php include('header.php'); ?>
 <?php include('includes/clases/e_aviso.class.php'); ?>
 
+<!--<div id="flashcontent">
+  This text is replaced by the Flash movie.
+</div>-->
+
 <div class="col-centroizquierda">
-	<div class="col-contenido-home">
+	<div class="col-contenido-home"  id="flashcontent">
 	</div>
+	<script type="text/javascript">
+		var so = new SWFObject("banner_2.swf", "mymovie", "770", "203", "8");
+		so.write("flashcontent");
+	</script>
 	<div class="col-registrarse">
 		<?php 
 		if(isset($_GET['solapa_reg'])){

@@ -38,7 +38,7 @@ $visitado->CargarDatosPerfil();
 		</div>
 	</div>
 	<div class="medio-col">
-	<p>agregar ULTIMO MOMENTO</p>
+		<img src="imagenes/relleno-ultimo-momento.jpg" />
 	</div>
 	<div class="inferior-col">
 	</div>
