@@ -43,6 +43,10 @@ define('PESO_MAXIMO_CV', 500000);
 // Tiempo de Sesion por usuario en segundos...
 define('TIEMPO_SESION', 1000);
 
+//FILTROS de expresiones regulares: (POR ahora no se permiten niguno de los caracteres antecedidos por '[^' ni espacios en blanco
+define('EXPREG_USUARIOS', '^[^ñáéíóú*~ ][a-zA-Z0-9\-\S][^ñáéíóú*~ ]{2,16}$');
+define('EXPREG_PASS', '^[^ñáéíóú*~ ][a-zA-Z0-9\-\S][^ñáéíóú*~ ]{2,16}$');
+
 // Configuración de opciones listadas...
 $OPCIONES_PROFESIONES = array('Dis. web', 'Dis. grafico', 'Dis. multimedial', 'Dis. de indumentaria', 'Dis. de interiores',
 							'Dir. de arte', 'Ilustrador', 'Retocador', 'Animador 3d', 'Animador 2d', 'Editor de videos',

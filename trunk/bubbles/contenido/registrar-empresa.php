@@ -114,7 +114,7 @@ $(document).ready(function(){
 	
 	$("#feAliasUsuario").blur(function() {
 	if($("#feAliasUsuario").val() != ''){
-		var RegExPattern = /^[a-zA-Z0-9\-\S]{2,16}$/;
+		var RegExPattern = /<?php echo EXPREG_USUARIOS ?>/;
 		var errorMessage = 'El Alias no admite caracteres especiales como & o <>, ni espacios en blanco.';
 		if (($("#feAliasUsuario").val().match(RegExPattern))) {
 		} else {
@@ -125,7 +125,7 @@ $(document).ready(function(){
 	
 	$("#feContraseniaUsuario").blur(function() {
 	if($("#feContraseniaUsuario").val() != ''){
-		var RegExPattern = /^[a-zA-Z0-9\-\S]{2,16}$/;
+		var RegExPattern = /<?php echo EXPREG_PASS ?>/;
 		var errorMessage = 'La Contraseña no admite caracteres especiales como & o <>, ni espacios en blanco.';
 		if (($("#feContraseniaUsuario").val().match(RegExPattern))) {
 		} else {
