@@ -397,10 +397,14 @@ class empresa{
 		return 0;
 	}	
 
+	////////////////////////////////////////////////////////////////////////////////////
+	// A continuacion se tren los Profesionales destacados:
+	// - Criterio del ultimo al primer usuario registrado.
+	////////////////////////////////////////////////////////////////////////////////////
 	function traerColEmpresasDestacadas($comienzo, $cantidad){
 		if(($comienzo >= 0) && ($cantidad>=0)){
 			// Traer empresas de la DB;
-			$filas = $this->sql->leer('*','empresas',"1 ORDER BY id_empresa ASC LIMIT $comienzo, $cantidad");
+			$filas = $this->sql->leer('*','empresas',"1 ORDER BY id_empresa DESC LIMIT $comienzo, $cantidad");
 			if($this->sql->ultimo_error != ''){
 				$this->ultimo_error = 'Error al SELECTionar la(s) Empresas(s)!: ' . $this->sql->ultimo_error;
 				return -1;

@@ -527,10 +527,14 @@ class usuario {
 	return -1;
 	}
 	
+	////////////////////////////////////////////////////////////////////////////////////
+	// A continuacion se tren los Profesionales destacados:
+	// - Criterio del ultimo al primer usuario registrado.
+	////////////////////////////////////////////////////////////////////////////////////
 	function traerColUsuariosDestacados($comienzo, $cantidad){
 		if(($comienzo >= 0) && ($cantidad>=0)){
 			// Traer usuarios de la DB;
-			$filas = $this->sql->leer('*','usuarios',"1 ORDER BY id_usuario ASC LIMIT $comienzo, $cantidad");
+			$filas = $this->sql->leer('*','usuarios',"1 ORDER BY id_usuario DESC LIMIT $comienzo, $cantidad");
 			if($this->sql->ultimo_error != ''){
 				$this->ultimo_error = 'Error al SELECTionar lo(s) Usuarios(s)!: ' . $this->sql->ultimo_error;
 				return -1;
