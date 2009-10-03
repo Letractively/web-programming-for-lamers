@@ -8,7 +8,7 @@
 
 <div class="col-derecha">
 	<div class="publicidad1">
-		<img src="imagenes/publicidad-inferior2.jpg"></img>
+		<img src="imagenes/publicidad-inferior2.gif"></img>
 	</div>
 </div>
 
