@@ -113,7 +113,7 @@ $(document).ready(function(){
 	$("#fuAlias").blur(function() {
 	if($("#fuAlias").val() != ''){
 		var RegExPattern = /<?php echo EXPREG_USUARIOS ?>/;
-		var errorMessage = 'El Alias no admite caracteres especiales como & o <>, ni espacios en blanco.';
+		var errorMessage = 'El Alias solo admite caracteres alfanuméricos (sin ñ) y los siguientes guiones:  - y _';
 		if (($("#fuAlias").val().match(RegExPattern))) {
 		} else {
 			alert(errorMessage);
@@ -124,7 +124,7 @@ $(document).ready(function(){
 	$("#fuContrasenia").blur(function() {
 	if($("#fuContrasenia").val() != ''){
 		var RegExPattern = /^<?php echo EXPREG_PASS ?>$/;
-		var errorMessage = 'La Contraseña no admite caracteres especiales como & o <>, ni espacios en blanco.';
+		var errorMessage = 'La Contraseña solo admite caracteres alfanuméricos (sin ñ) y los siguientes guiones:  - y _ ';
 		if (($("#fuContrasenia").val().match(RegExPattern))) {
 		} else {
 			alert(errorMessage);
