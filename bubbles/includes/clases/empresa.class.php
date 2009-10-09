@@ -398,7 +398,7 @@ class empresa{
 	}	
 
 	////////////////////////////////////////////////////////////////////////////////////
-	// A continuacion se tren los Profesionales destacados:
+	// A continuacion se tren los Empresas Destacadas:
 	// - Criterio del ultimo al primer usuario registrado.
 	////////////////////////////////////////////////////////////////////////////////////
 	function traerColEmpresasDestacadas($comienzo, $cantidad){

@@ -21,6 +21,7 @@ echo $oferta_laboral->ultimo_error;
 	?>
 	</div>
 	<div class="relleno-oferta-col">
+		<p style="color: rgb(153, 153, 153); float: right; margin-right: 10px; margin-top: 20px; margin-bottom: 0px;" class="parrafo8"><a style="color: rgb(153, 153, 153)" class="vinculobubbles parrafo8" href="busqueda.php?buCriterio=&buDe=Ofertas+Laborales&buClase=buSimple&buscar=Buscar"> Ver todas las ofertas laborales...</a></p>
 	</div>
 	<div class="inferior">
 	</div>
