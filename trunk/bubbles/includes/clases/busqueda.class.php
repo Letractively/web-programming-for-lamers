@@ -159,6 +159,26 @@ class busqueda {
 		}
 	return -1;
 	}
+
+	//////////////////////////////////////////////////////////////
+	//Trae LOS 50 ULTIMOS AVISOS insertados en la DB
+	//////////////////////////////////////////////////////////////
+	function buscarTodosAvisos(){
+			// Traer TODOS LOS avisos de la DB;
+			$filas = $this->sql->leer('*','avisos',"1 ORDER BY id_aviso DESC LIMIT 0, 50");
+			if($this->sql->ultimo_error != ''){
+				$this->ultimo_error = 'Error al SELECTionar el/lo(s) Aviso(s)!: ' . $this->sql->ultimo_error;
+				return -1;
+			}
+			$i=0;
+			foreach ($filas as $fila) {
+				$this->bu_id_aviso[$i] = $fila['id_aviso'];
+				$i ++;
+			}
+			$this->ult_filas_afectadas = $this->sql->ult_filas_afectadas;
+			return 0;
+	//return -1;
+	}
 	
 }
 ?>

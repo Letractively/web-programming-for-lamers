@@ -431,6 +431,10 @@ background-color: #ffffff;
 text-decoration: none;
 cursor: pointer;
 }
+.vinculobubbles{
+text-decoration: none;
+cursor: pointer;
+}
 .contenido-portfolio .un-portfolio-mio,
 .contenido-portfolio .un-portfolio-mio .imagen-portfolio,
 .contenido-portfolio .un-portfolio-mio .pie-portfolio,

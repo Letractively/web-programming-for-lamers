@@ -29,26 +29,32 @@ else{
 }
 if(isset($_GET['buCriterio']) && $error_busqueda == ''){
 	$esta_busqueda->criterio = $_GET['buCriterio'];
-		if($esta_busqueda->criterio == ''){
-	$error_busqueda = 'FALTA_CRITERIO';	
-	}
-	switch ($buDe) {
-	case 'Ofertas Laborales':
-		$esta_busqueda->buscarAvisosFulltext();
-        break;
-	case 'Profesionales':
-		$esta_busqueda->buscarProfesionalesFulltext();
-        break;
-	case 'Empresas':
-		$esta_busqueda->buscarEmpresasFulltext();
-        break;
-	default:
-		break;
-	}
+	if($esta_busqueda->criterio == ''){
+		$error_busqueda = 'FALTA_CRITERIO';
+		}
+		switch ($buDe) {
+		case 'Ofertas Laborales':
+			if($error_busqueda == 'FALTA_CRITERIO'){
+				$esta_busqueda->buscarTodosAvisos();
+				$error_busqueda = '';	//Quito la FALTA DE CRITERIO como error, pues a pedido del cliente ya no lo es.
+			}
+			else{
+				$esta_busqueda->buscarAvisosFulltext();
+			}
+			break;
+		case 'Profesionales':
+			$esta_busqueda->buscarProfesionalesFulltext();
+			break;
+		case 'Empresas':
+			$esta_busqueda->buscarEmpresasFulltext();
+			break;
+		default:
+			break;
+		}
 	echo $esta_busqueda->ultimo_error;
-}else{
+	}else{
 
-}
+	}
 echo $error_busqueda;
 ?>
 
