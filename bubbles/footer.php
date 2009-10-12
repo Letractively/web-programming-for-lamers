@@ -8,7 +8,9 @@
 
 <div class="col-derecha">
 	<div class="publicidad1">
-		<img src="imagenes/publicidad-inferior2.gif"></img>
+		<a href="http://www.ggimpresor.com.ar/" target="_blank">
+			<img src="imagenes/publicidad-inferior2.gif"></img>
+		</a>
 	</div>
 </div>
 

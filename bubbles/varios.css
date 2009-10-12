@@ -1360,7 +1360,8 @@ text-align: center;
 }
 .borde-comentario-chico .foto-comentario img,
 .contenido-amigos .foto-comentario img,
-.borde-comentario .foto-comentario img{
+.borde-comentario .foto-comentario img,
+.borde-empresa-oferta-completa .foto-oferta-laboral img{
 border: 2px solid #42A0D2;
 }
 .borde-comentario-chico .titulo-comentario, .borde-comentario-chico .descripcion-comentario,
@@ -1436,6 +1437,9 @@ margin-top: 28px;
 float:left;
 overflow:hidden;
 margin-top: 10px;
+}
+.publicidad1 a img{
+border:none;
 }
 .registro-incorrecto, .registro-verificado{
 height: 359px;

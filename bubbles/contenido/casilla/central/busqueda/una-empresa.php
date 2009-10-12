@@ -13,7 +13,9 @@ echo $esta_empresa->ultimo_error;
 	</div>
 	<div class="borde-empresa-oferta-completa">
 		<div class="foto-oferta-laboral">
-		<img src="<?php echo DIR_FOTOS_EMPRESAS_CHICAS . $esta_empresa->ruta_foto; ?>">
+			<a href="empresa/<?php echo $esta_empresa->alias_usuario; ?>">
+				<img src="<?php echo DIR_FOTOS_EMPRESAS_CHICAS . $esta_empresa->ruta_foto; ?>">
+			</a>
 		</div>
 		<div class="descripcion-empresa">
 		<p class="parrafo3" style="float: left; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;">Pais: <?php echo myquery::cambiaTaNormal($esta_empresa->pais); ?></p>

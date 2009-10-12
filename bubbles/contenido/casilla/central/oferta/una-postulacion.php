@@ -5,7 +5,9 @@ echo $postulado->ultimo_error;
 
 <div class="borde-comentario">
 	<div class="foto-comentario">
-		<img src="<?php echo DIR_FOTOS_PROFESIONALES_CHICAS . $postulado->ruta_foto; ?>" />
+		<a href="profesional/<?php echo $postulado->alias ?>">
+			<img src="<?php echo DIR_FOTOS_PROFESIONALES_CHICAS . $postulado->ruta_foto; ?>" />
+		</a>
 	</div>
 	<div class="titulo-comentario">
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">

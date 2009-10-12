@@ -102,7 +102,9 @@ echo $aviso_visitado->status;
 				?>
 			</p>
 			<div class="foto-oferta-laboral">
-				<img src="<?php echo DIR_FOTOS_EMPRESAS_CHICAS . $empresa_propietaria->ruta_foto; ?>" />
+				<a href="empresa/<?php echo $empresa_propietaria->alias_usuario; ?>">
+					<img src="<?php echo DIR_FOTOS_EMPRESAS_CHICAS . $empresa_propietaria->ruta_foto; ?>" />
+				</a>
 			</div>
 			<div class="descripcion-empresa">
 				<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
