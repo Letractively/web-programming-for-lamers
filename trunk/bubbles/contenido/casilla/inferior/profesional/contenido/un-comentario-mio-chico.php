@@ -1,12 +1,14 @@
 <?php
 if($este_comentario->com_desde_entidad[$i] == 'EMPRESA'){
-$comentador = new empresa();
+$comentador = new empresa($este_comentario->com_id_desde[$i]);
 $dir_foto_comentador = DIR_FOTOS_EMPRESAS_CHICAS;
+$sitio_comentador = SITIOS_EMPRESA . $comentador->alias_usuario;
 $alias_comentador = empresa::id2aliasUsuario($este_comentario->com_id_desde[$i]);
 }
 elseif($este_comentario->com_desde_entidad[$i] == 'PROFESIONAL'){
-$comentador = new usuario();
+$comentador = new usuario($este_comentario->com_id_desde[$i]);
 $dir_foto_comentador = DIR_FOTOS_PROFESIONALES_CHICAS;
+$sitio_comentador = SITIOS_PROFESIONAL . $comentador->alias;
 $alias_comentador = usuario::id2alias($este_comentario->com_id_desde[$i]);
 }
 $comentador->traerRutaFoto($este_comentario->com_id_desde[$i]);
@@ -15,7 +17,9 @@ echo $comentador->ultimo_error;
 
 <div class="borde-comentario-chico">
 	<div class="foto-comentario">
-		<img src="<?php echo $dir_foto_comentador . $comentador->ruta_foto; ?>" />
+		<a href="<?php echo $sitio_comentador; ?>">
+			<img src="<?php echo $dir_foto_comentador . $comentador->ruta_foto; ?>" />
+		</a>
 	</div>
 	<div class="titulo-comentario">
 		<p class="parrafo8" style="float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">
