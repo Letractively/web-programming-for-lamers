@@ -1,7 +1,9 @@
 <div class="col-profesional-derecha" >
 	<?php include('contenido/clasificados-col.php') ?>
 	<div class="publicidad-col">
-		<img src="imagenes/publicidad1.jpg" />
+		<a href="mailto:info@bubblescomunidad.com">
+			<img src="imagenes/publicidad1.jpg" />
+		</a>
 	</div>
 	<div class="inferior-col">
 	</div>
