@@ -43,10 +43,22 @@ if(isset($_GET['buCriterio']) && $error_busqueda == ''){
 			}
 			break;
 		case 'Profesionales':
-			$esta_busqueda->buscarProfesionalesFulltext();
+			if($error_busqueda == 'FALTA_CRITERIO'){
+				$esta_busqueda->buscarTodosProfesionales();
+				$error_busqueda = '';	//Quito la FALTA DE CRITERIO como error, pues a pedido del cliente ya no lo es.
+			}
+			else{
+				$esta_busqueda->buscarProfesionalesFulltext();
+			}
 			break;
 		case 'Empresas':
-			$esta_busqueda->buscarEmpresasFulltext();
+			if($error_busqueda == 'FALTA_CRITERIO'){
+				$esta_busqueda->buscarTodasEmpresas();
+				$error_busqueda = '';	//Quito la FALTA DE CRITERIO como error, pues a pedido del cliente ya no lo es.
+			}
+			else{
+				$esta_busqueda->buscarEmpresasFulltext();
+			}
 			break;
 		default:
 			break;
