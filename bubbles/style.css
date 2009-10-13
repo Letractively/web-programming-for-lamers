@@ -160,6 +160,9 @@ overflow: hidden;
 width: 212px;
 margin-left: 10px;
 }
+.col-derecha a img{
+border:none;
+}
 .col-centroizquierda .col-derecha{
 margin-left: 15px;
 width: 220px;

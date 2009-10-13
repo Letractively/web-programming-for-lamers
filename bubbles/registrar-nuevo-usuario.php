@@ -177,7 +177,9 @@ if((isset($_GET['reg'])) && (isset($_GET['id']))){
 </div>
 
 <div class="col-derecha" >
-	<img src="imagenes/relleno1.jpg" />
+	<a href="mailto:info@bubblescomunidad.com">
+		<img src="imagenes/relleno1.jpg" />
+	</a>
 </div>
 
 <?php include('footer.php'); ?>

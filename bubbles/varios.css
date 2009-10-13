@@ -882,6 +882,9 @@ overflow: hidden;
 width: 210px;
 margin-top:10px;
 }
+.col-profesional-derecha .publicidad-col a img, .col-empresa-derecha .superior-col a img{
+border: none;
+}
 .col-profesional-derecha .superior-col{
 height: 50px;
 }

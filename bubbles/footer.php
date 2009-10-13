@@ -2,7 +2,9 @@
 
 <div class="col-centroizquierda">
 	<div class="publicidad1">
-		<img src="imagenes/publicidad-inferior.jpg"></img>
+		<a href="mailto:info@bubblescomunidad.com">
+			<img src="imagenes/publicidad-inferior.jpg"></img>
+		</a>
 	</div>
 </div>
 
