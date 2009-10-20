@@ -78,6 +78,7 @@ echo $error_busqueda;
 	<div class="col-busqueda-centro">
 		<div class="col-busqueda-cabecera">
 			<img class="icono" src="imagenes/icono-busqueda-laboral.png"/>
+			<p class="parrafo10 izquierda" style="margin-top: 25px; margin-left: 100px;">Su busqueda obtuvo: <?php echo $esta_busqueda->ult_filas_afectadas; ?> resultados</p>
 		</div>
 		<div class="col-busqueda-solapas">
 			<a href="busqueda.php?buCriterio=<?php echo $esta_busqueda->criterio ?>&buDe=Empresas&buClase=buSimple&buscar=Buscar">
