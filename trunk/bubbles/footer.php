@@ -1,11 +1,13 @@
 <div style="clear: both;"></div>
 
 <div class="col-centroizquierda">
-	<div class="publicidad1">
-		<a href="mailto:info@bubblescomunidad.com">
-			<img src="imagenes/publicidad-inferior.jpg"></img>
-		</a>
+	<div class="publicidad1"  id="flashcontent2">
+		<!--<a href="mailto:info@bubblescomunidad.com"></a>-->
 	</div>
+	<script type="text/javascript">
+		var sa = new SWFObject("sacatelaropabanner.swf", "mymovie", "770", "86", "8");
+		sa.write("flashcontent2");
+	</script>
 </div>
 
 <div class="col-derecha">
