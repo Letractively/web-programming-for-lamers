@@ -48,7 +48,7 @@ if(isset($_SESSION['id_empresa'])){
 	</div>
 	<div class="pie-oferta-busqueda">
 	<?php
-	$alias_visitante = usuario::id2alias($_SESSION['id_usuario']);
+		$alias_visitante = usuario::id2alias($_SESSION['id_usuario']);
 	?>
 	<a href="u-galeria.php?entidad_visitada=<?php echo $alias_visitante; ?>&casilla_central=todos_amigos&contenido_central=todos_amigos&id_amigo_agregar=<?php echo $este_usuario->id_usuario; ?>">
 		<p class="parrafo8" style="color: #ff0000; float: left; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;">AGREGAR COMO AMIGO</p>
