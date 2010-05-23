@@ -1,6 +1,6 @@
         <div id="footer">
-        	<h3>Cape Coral - 555.5555 . contact@capecoral.com</h3>
-            <p>Neuquén - Patagonia Argentina.</p>
+        	<p>Contáctenos a: <a href="mailto:info@sevsaservicios.com">info@sevsaservicios.com</p></a>
+			<p>Cinco Saltos - Neuquén - Patagonia Argentina.</p>
         </div>
     </div>
 </body>
