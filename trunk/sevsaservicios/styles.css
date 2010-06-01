@@ -7,12 +7,6 @@ body {
 	font-size:12px;
 	background-color:#cccccc;
 }
-h1, h2, h3, h4, p, ul{
-color: #ffffff;
-}
-img {
-border-width:0px;
-}
 #wrap {
 	width:970px;
 	margin:0 auto 0;
