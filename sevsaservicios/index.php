@@ -11,9 +11,24 @@
 <body>
 
 <div id="wrap">
-
+	
 	<div id="main-container">
+
 		<img id="logo-intro" src="images/logo_sevsa.png">
+		</img>
+	
+		<div class="foto_intro_1">
+		</div>
+
+		<div class="foto_intro_2">
+		</div>
+
+		<div class="foto_intro_3">
+		</div>
+
+		<div class="foto_intro_4">
+		</div>
+
 	</div>
 	
 </div>
