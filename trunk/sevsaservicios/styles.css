@@ -9,6 +9,7 @@ body {
 }
 #wrap {
 	width:970px;
+	height: 700px;
 	margin:0 auto 0;
 	border: 1px solid white;
 	overflow: hidden;
@@ -17,7 +18,7 @@ body {
 	background-color:#aaaaaa;
 }
 #main-container {
-	top: 50%;
+	float: left;
 	width:970px;
 	height: 600px;
 	margin: 0;
@@ -26,12 +27,43 @@ body {
 	overflow: hidden;
 	position: relative;
 	z-index: 0;
-	margin-bottom: 0px;
-	background-color:#000000;
 	margin-bottom: 50px;
+	background-color:#000000;
+	overflow: hidden;
 }
 #main-container #logo-intro{
-	margin-top: 220px;
-	margin-left: 250px;
-	position: relative;
+	margin-top: 230px;
+	margin-left: 260px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+}
+#main-container .foto_intro_1, #main-container .foto_intro_2,
+#main-container .foto_intro_3, #main-container .foto_intro_4{
+	width:	300px;
+	height: 225px;
+	background-color: #ffffff;
+	position: absolute;
+	float: left;
+	z-index: 0;
+}
+#main-container .foto_intro_1{
+background-image:url(images/thumb_1.jpg);
+margin-top: 70px;
+margin-left: 130px;
+}
+#main-container .foto_intro_2{
+background-image:url(images/thumb_2.jpg);
+margin-top: 70px;
+margin-left: 520px;
+}
+#main-container .foto_intro_3{
+background-image:url(images/thumb_3.jpg);
+margin-top: 320px;
+margin-left: 130px;
+}
+#main-container .foto_intro_4{
+background-image:url(images/thumb_4.jpg);
+margin-top: 320px;
+margin-left: 520px;
 }
