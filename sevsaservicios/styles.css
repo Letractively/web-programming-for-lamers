@@ -39,31 +39,58 @@ body {
 	float: left;
 }
 #main-container .foto_intro_1, #main-container .foto_intro_2,
-#main-container .foto_intro_3, #main-container .foto_intro_4{
+#main-container .foto_intro_3, #main-container .foto_intro_4,
+#main-container .foto_intro_1_2, #main-container .foto_intro_2_2,
+#main-container .foto_intro_3_2, #main-container .foto_intro_4_2
+{
 	width:	300px;
 	height: 225px;
-	background-color: #ffffff;
 	position: absolute;
 	float: left;
-	z-index: 0;
+}
+
+/* Imágenes primeras de INTRO con z-index: 1; */
+#main-container .imgs_intro_1{
+	position:absolute;
+	z-index: 1;
+	opacity: 1.0;
 }
 #main-container .foto_intro_1{
-background-image:url(images/thumb_1.jpg);
-margin-top: 70px;
-margin-left: 130px;
+	margin-top: 70px;
+	margin-left: 130px;
 }
 #main-container .foto_intro_2{
-background-image:url(images/thumb_2.jpg);
-margin-top: 70px;
-margin-left: 520px;
+	margin-top: 70px;
+	margin-left: 520px;
 }
 #main-container .foto_intro_3{
-background-image:url(images/thumb_3.jpg);
-margin-top: 320px;
-margin-left: 130px;
+	margin-top: 320px;
+	margin-left: 130px;
 }
 #main-container .foto_intro_4{
-background-image:url(images/thumb_4.jpg);
-margin-top: 320px;
-margin-left: 520px;
+	margin-top: 320px;
+	margin-left: 520px;
+}
+
+/* Imágenes segundas de INTRO con z-index: 0; */
+#main-container .imgs_intro_2{
+	position:absolute;
+	z-index: 0;
+	opacity: 1.0;
+}
+#main-container .foto_intro_1_2{
+	margin-top: 70px;
+	margin-left: 130px;
+}
+#main-container .foto_intro_2_2{
+	margin-top: 70px;
+	margin-left: 520px;
+}
+#main-container .foto_intro_3_2{
+	margin-top: 320px;
+	margin-left: 130px;
+}
+#main-container .foto_intro_4_2{
+	margin-top: 320px;
+	margin-left: 520px;
 }
