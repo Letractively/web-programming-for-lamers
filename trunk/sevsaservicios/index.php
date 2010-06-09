@@ -41,6 +41,8 @@
 			<img src="images/thumb_4.jpg" class="imgs_intro_1" />
 			<img src="images/thumb_4_2.jpg" class="imgs_intro_2" />
 		</div>
+		
+		<a href="gral_content.php"><img src="images/flecha_ingresar.png" class="flecha_intro" /></a>
 
 	</div>
 	
