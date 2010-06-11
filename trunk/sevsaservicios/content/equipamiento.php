@@ -1,0 +1,1 @@
+<h1 class="titulo_cont">EQUIPAMIENTO</h1>
