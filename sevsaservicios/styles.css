@@ -10,8 +10,16 @@ body {
 h1{
 	float: right;
 	margin-top: 2px;
+	margin-bottom: 2px;
 	margin-right: 25px;
 	font-size: 22px;
+}
+p{
+	float: right;
+	margin-top: 2px;
+	font-size: 12px;
+	text-align: justify;
+	margin-bottom: 2px;
 }
 #wrap {
 	width:970px;
@@ -50,7 +58,7 @@ h1{
 #main-container .foto_intro_3_2, #main-container .foto_intro_4_2,
 #main-container .inter-content, #main-container .logo_sevsa_2,
 #main-container .bar_content_sup, #main-container .img_menu_left,
-#main-container .div_menu_left{
+#main-container .div_menu_left, #content_upper, #content_lower{
 	width:	300px;
 	height: 225px;
 	position: absolute;
@@ -120,8 +128,8 @@ h1{
 }
 
 #main-container .logo_sevsa_2{
-	margin-top: 15px;
-	margin-left: 680px;
+	margin-top: 6px;
+	margin-left: 685px;
 	width:	235px;
 	height: 88px;
 }
@@ -143,21 +151,89 @@ h1{
 	margin-left: -300px; /* posición inicial fuera de cuadro antes del "sliding" */
 	opacity: 0.0;
 }
+.div_menu_left a{
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
 .menu_left_1{
-	margin-top: 140px;
+	margin-top: 150px;
 }
 .menu_left_2{
-	margin-top: 200px;
+	margin-top: 210px;
 }
 .menu_left_3{
-	margin-top: 260px;
+	margin-top: 270px;
 }
 .menu_left_4{
-	margin-top: 320px;
+	margin-top: 330px;
 }
 .menu_left_5{
-	margin-top: 380px;
+	margin-top: 390px;
 }
 .menu_left_6{
-	margin-top: 440px;
+	margin-top: 450px;
+}
+
+.inter-content .ajax_content_div{
+	position: relative;
+	float: right;
+	width:	600px;
+	height: 360px;
+	background-color: #cccccc;
+	z-index: 0;
+	margin: 40px 40px 0 0;
+}
+.inter-content .titulo_cont{
+	float: left;
+}
+
+#content_upper{
+	width: 600px;
+	height: 30px;
+	position: relative;
+}
+#content_lower{
+	margin-top: 10px;
+	width: 600px;
+	height: 310px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+/* welcome */
+.ajax_content_div .welcome_thumb_1,
+.ajax_content_div .welcome_thumb_2,
+.ajax_content_div .welcome_thumb_3{
+background-repeat: no-repeat;
+height: 122px;
+width: 155px;
+margin-top: 10px;
+position: absolute;
+opacity: 0.0;
+}
+.ajax_content_div .welcome_thumb_1{
+background-image: url(images/welcome_thumb_1.png);
+margin-left: 49px;
+}
+.ajax_content_div .welcome_thumb_2{
+background-image: url(images/welcome_thumb_2.png);
+margin-left: 204px;
+width: 180px;
+}
+.ajax_content_div .welcome_thumb_3{
+background-image: url(images/welcome_thumb_3.png);
+margin-left: 386px;
+width: 165px;
+}
+.welcome_text{
+position: absolute;
+width: 600px;
+height: 200px;
+margin-top: 170px;
+}
+
+.welcome_text h2{
+	font-family:"Arial";
+	text-align: center;
 }

@@ -26,26 +26,29 @@
 		
 		<!-- comienzo del menu lateral -->
 		<div class="div_menu_left menu_left_1">
-			<h1>EMPRESA</h1>
+			<a href="#" class="a_empresa"><h1>EMPRESA</h1></a>
 		</div>
 		<div class="div_menu_left menu_left_2">
-			<h1>EQUIPAMIENTO</h1>
+			<a href="#" class="a_equipamiento"><h1>EQUIPAMIENTO</h1></a>
 		</div>
 		<div class="div_menu_left menu_left_3">
-			<h1>SERVICIOS</h1>
+			<a href="#" class="a_servicios"><h1>SERVICIOS</h1></a>
 		</div>
 		<div class="div_menu_left menu_left_4">
-			<h1>OBRAS</h1>
+			<a href="#" class="a_obras"><h1>OBRAS</h1></a>
 		</div>
 		<div class="div_menu_left menu_left_5">
-			<h1>CLIENTES</h1>
+			<a href="#" class="a_clientes"><h1>CLIENTES</h1></a>
 		</div>
 		<div class="div_menu_left menu_left_6">
-			<h1>CONTACTO</h1>
+			<a href="#" class="a_contacto"><h1>CONTACTO</h1></a>
 		</div>
+		
 		<!-- fin del menu lateral -->
 		
 		<div class="inter-content">
+			<div class="ajax_content_div">
+			</div>
 		</div>
 	
 	</div>
