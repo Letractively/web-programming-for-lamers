@@ -13,9 +13,12 @@
 	<script type="text/javascript" src="js/img_content_sliding.js" ></script>
 	<!-- css del Jquery UI -->
 	<link type="text/css" href="js/jquery/ui/themes/base/ui.all.css" rel="stylesheet" />
-	<!-- scripts del Jquery UI -->
+	<!-- scripts del BANDONEON Jquery UI -->
 	<script type="text/javascript" src="js/jquery/ui/ui/ui.core.js"></script>
 	<script type="text/javascript" src="js/jquery/ui/ui/ui.accordion.js"></script>
+	<!-- scripts del PULSATE Jquery UI -->
+	<script type="text/javascript" src="js/jquery/ui/ui/effects.core.js"></script>
+	<script type="text/javascript" src="js/jquery/ui/ui/effects.pulsate.js"></script>
 	<!-- css de los demos del Jquery UI -->
 	<link type="text/css" href="js/jquery/ui/demos/demos.css" rel="stylesheet" />
 
