@@ -16,7 +16,7 @@
 			<li><a href="mailto:mvzuniga@sevsaservicios.com">mvzuniga@sevsaservicios.com</a></li>
 		</ul>
 	</div>
-	<h3><a href="#">Gerencia Operativa & Electromonaje</a></h3>
+	<h3><a href="#">Gerencia Operativa & Electromontaje</a></h3>
 	<div>
 		<ul>
 			<li><img class="foto_perfil" src="images/foto_perfil_default.png" />Jorge W. Olave</li>
@@ -26,7 +26,7 @@
 	<h3><a href="#">Coordinación Generál</a></h3>
 	<div>
 		<ul>
-			<li><img class="foto_perfil" src="images/foto_perfil_default.png" />Daniel A. Mendez</li>
+			<li><img class="foto_perfil" src="images/foto_perfil_mendez.png" />Daniel A. Mendez</li>
 			<li><a href="mailto:damendez@sevsaservicios.com">damendez@sevsaservicios.com</a></li>
 		</ul>
 	</div>
