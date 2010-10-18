@@ -167,6 +167,16 @@
 							include("contenido/contacto.php");
 						if($_GET['itemid'] == "41")
 							include("contenido/boletines.php");
+						if($_GET['itemid'] == "42")
+							include("contenido/de_interes.php");
+						if($_GET['itemid'] == "43")
+							include("contenido/recomendaciones.php");
+						if($_GET['itemid'] == "44")
+							include("contenido/enlaces.php");
+						if($_GET['itemid'] == "52")
+							include("contenido/bonos.php");
+						if($_GET['itemid'] == "53")
+							include("contenido/descuentos.php");
 
 							
 					?>
