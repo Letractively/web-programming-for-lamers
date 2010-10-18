@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<slideshow>
+	<preferences
+		showAlbumsButton = "false"
+		showThumbnailsButton = "false"
+		showControls = "false"
+		showImageInfo = "never"
+		imageTransitionTime = "1"
+		imagePause = "6"
+		kenBurnsTime = "10"
+		kenBurnsVariationPercent = "20"
+	/>
+	<album thumbnail="album/albumThumbnail.jpg" title="Example album" description="Example description" imagePath="album/images" thumbnailPath="album/thumbnails">
+		<img src="slide_00.jpg" title="Foto 0" description="Example description 0" kenBurnsMode="randomZoomOut"/>		
+		<img src="slide_01.jpg" title="Foto 1" description="Example description 1" kenBurnsMode="randomZoomIn"/>
+		<img src="slide_02.jpg" title="Foto 2" description="Example description 2" kenBurnsMode="randomZoomOut" />
+		<img src="slide_03.jpg" title="Foto 3" description="Example description 3" kenBurnsMode="randomPan" />
+		<img src="slide_04.jpg" title="Foto 4" description="Example description 4" kenBurnsMode="randomZoomIn" />
+		<img src="slide_05.jpg" title="Foto 5" description="Example description 5" kenBurnsMode="randomZoomOut" />
+		<img src="slide_06.jpg" title="Foto 6" description="Example description 6" kenBurnsMode="randomPan" />
+		<img src="slide_07.jpg" title="Foto 7" description="Example description 7" kenBurnsMode="randomZoomOut" />
+		<img src="slide_08.jpg" title="Foto 8" description="Example description 8" kenBurnsMode="randomPan" />
+		<img src="slide_09.jpg" title="Foto 9" description="Example description 9" kenBurnsMode="randomZoomIn" />
+		<img src="slide_10.jpg" title="Foto 10" description="Example description 10" kenBurnsMode="randomPan" />
+		<img src="slide_11.jpg" title="Foto 11" description="Example description 11" kenBurnsMode="randomZoomOut" />
+		<img src="slide_12.jpg" title="Foto 12" description="Example description 12" kenBurnsMode="randomPan" />
+		<img src="slide_13.jpg" title="Foto 13" description="Example description 13" kenBurnsMode="randomZoomOut" />
+		<img src="slide_14.jpg" title="Foto 14" description="Example description 14" kenBurnsMode="randomZoomIn" />
+		<img src="slide_15.jpg" title="Foto 15" description="Example description 15" kenBurnsMode="randomZoomIn" />
+		<img src="slide_xx.jpg" title="Foto 16" description="Example description 16" kenBurnsMode="randomPan" />
+	</album>
+</slideshow>
