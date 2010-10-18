@@ -1,0 +1,1075 @@
+/* ---------------------------------------------------------------------------------------*/
+/* Reseteo */
+/* ---------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+center, u, b, i
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline
+}
+
+body
+{
+	line-height: 1
+}
+
+:focus
+{
+	outline: 0;
+}
+
+table
+{
+	border-spacing: 0;
+	border: 0;
+	border-collapse: collapse;
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: "";
+}
+
+blockquote, q
+{
+	quotes: "" "";
+}
+
+input, textarea
+{
+	margin: 0;
+	padding: 0;
+}
+
+hr
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #000;
+	background-color: #000;
+	height: 1px;
+}
+
+a img
+{
+	border: 0;
+}
+
+a
+{
+	outline:none;
+}
+/* ---------------------------------------------------------------------------------------*/
+/* Elementos generales de HTML */
+/* ---------------------------------------------------------------------------------------*/
+body
+{
+	background-color: #e5e5e5;
+	font: 12px/15px 'Trebuchet MS', Tahoma, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color:#676767;
+}
+
+input
+{
+	font-family: 'Trebuchet MS', Verdana;
+	height: 20px;
+	text-align: left;
+	font-size:10pt;
+}
+
+textarea
+{
+	font-family: 'Trebuchet MS', Verdana;
+	font-size:10pt;
+}
+
+a
+{
+	text-decoration: none;
+	color: #6699cc;
+	cursor: pointer;
+}
+
+a:visited
+{
+	color: #6699cc;
+}
+
+a:hover
+{
+	color: #ff9999;
+}
+
+a:active
+{
+	color: #b66e36;
+}
+hr
+{
+	background-color: #d9dad5;
+	border: none;
+	clear: left;
+	clear: both;
+	height: 2px;
+	line-height: 0;
+	position
+	margin: 2px 2px;
+	padding: 0;
+}
+
+form
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+p
+{
+	line-height: 1.4em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align:justify;
+}
+
+ol, ul
+{
+	padding-left:25px;
+}
+
+li
+{
+	line-height: 1.2em;
+}
+h1, h2, h3, h4, h5, h6
+{
+	margin: 2px 0 2px 0;
+	color: #bc8f8f;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+	margin-top: 1.0em;
+	margin-bottom: 1.12em;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+h2
+{
+	margin-top: 1.0em;
+	margin-bottom: 1.12em;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h3
+{
+	margin-top: 1mm;
+	margin-bottom: 1mm;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+h4
+{
+	margin-top: 1.0em;
+	margin-bottom: 1.12em;
+	font-size: 15px;
+	font-weight: bold;
+}
+h5
+{
+	margin-top: 1.0em;
+	margin-bottom: 1.12em;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+h6
+{
+	margin-top: 1.0em;
+	margin-bottom: 1.12em;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+/* ---------------------------------------------------------- */
+/* Ordenacion de la pagina maestra                            */
+/* ---------------------------------------------------------- */
+#pagina
+{
+	width: 990px;
+	margin: 15px auto 20px;
+	padding: 0;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+}
+
+#paganex
+{
+	width: 900px;
+	margin: 15px auto 20px;
+	padding: 0;
+	background: #FFF url(http://www.asesorvital.es/images/fon_sidg.jpg) no-repeat top right;
+	border: 1px solid #aaa;
+}
+
+#cabecera
+{
+	background: #FFF url(http://www.asesorvital.es/images/back_cabe.gif) repeat-x top left;
+	overflow: hidden;
+	zoom: 1;
+	width: 980px;
+	position: relative;
+	padding: 5px 5px 0;
+	margin:0;
+}
+
+#cabecera .wrap
+{
+	float: left;
+	width: 750px;
+	height: 95px;
+	display: inline;
+}
+
+#logo
+{
+	text-indent: -9999px;
+	width: 250px;
+	height: 100px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	background: url(http://www.asesorvital.es/images/new_logo.png) repeat-x top left;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.asesorvital.es/images/new_logo.png');
+	background-repeat: no-repeat;
+}
+
+#moti
+{
+	text-indent: -9999px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height:90px;
+	background-repeat: no-repeat;
+	display:block;
+	float:left;
+}
+
+#cuerpo
+{
+	position:relative;
+	margin: 0 auto;
+	padding:0px;
+	width: 980px;
+	height: 500px;
+	display: block;
+	overflow: hidden;
+	clear: both;
+	background-color: #f4f4f4;
+}
+
+#colizq
+{
+	position:relative;
+	display:inline;
+	overflow: hidden;
+	width:160px;
+	float:left;
+	height: 500px;
+}
+
+#colder
+{
+	position:relative;
+	display:inline;
+	overflow: hidden;
+	width:815px;
+	float:right;
+	height: 500px;
+}
+
+#titpag
+{
+	position:relative;
+	display:block;
+	top: 0px;
+	margin: 4px 6px 0px 0px;
+	color: #8badc7;
+	text-align:right;
+	font-size: 18px;
+	height: 22px;
+	vertical-align:middle;
+}
+
+#conten
+{
+	position:relative;
+	overflow: hidden;
+	display:block;
+	border-top:1px solid #bbb;
+	margin:5px 5px 5px 5px;
+	font-family:  Lucida Sans, Tahoma;
+	font-size: 10pt;
+	text-align: justify;
+	vertical-align: top;
+}
+
+#sefora
+{
+	position:relative;
+	overflow: hidden;
+	padding:20px 25px 15px 25px;
+	font-family:  Lucida Sans, Tahoma;
+	font-size: 11.6pt;
+	text-align: justify;
+	vertical-align: top;
+}
+
+#piepag
+{
+	position:relative;
+	width: 980px;
+	padding: 0px 0px 10px;
+	margin: 5px 5px 5px 5px;
+	display: block;
+	overflow: hidden;
+	background-color: #eee;
+	clear: both;
+	height:36px;
+}
+
+#publi
+{
+	height:100px;
+	width: 150px;
+	padding-left:5px;
+	margin:4px 0px 0px 8px;
+	overflow: hidden;
+	position:relative;
+	display:block;
+	vertical-align:baseline;
+}
+#markas
+{
+	height:55px;
+	width: 150px;
+	margin:4px 0px 0px 8px;
+	overflow: hidden;
+	position:relative;
+	display:block;
+	vertical-align:baseline;
+}
+
+#anexo
+{
+	position:relative;
+	margin: 0 auto;
+	padding:0px;
+	width: 840px;
+	display: block;
+	clear: both;
+	margin:0px 0px 0px 30px;
+
+}
+
+#bhanda
+{
+
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	display:block;
+	margin-left:8px;
+	margin-top:12px;
+	padding:0;
+	width:787px;
+	height: 44px;
+}
+
+#rotator
+{
+	overflow: hidden;
+	position: relative;
+	float:left;
+	margin-left:8px;
+	margin-top:5px;
+	padding:0;
+	width: 604px;
+	height: 40px;
+}
+
+
+#enlazes
+{
+	overflow: hidden;
+	position: relative; 
+	float:left;
+	text-align:right;
+	margin-top:10px;
+	margin-right:8px;
+	padding:2px 0px 0px 0px;	
+	width: 180px;
+	height: 40px;
+}
+
+#SOmonoSlideshow img
+{ 
+	visibility:hidden;
+	border:1px solid #aaa;
+	cursor: pointer;
+}
+
+#certqweb
+{
+	position: relative;
+	overflow: hidden;
+	float:right;
+	margin-top:8px;
+	margin-right:12px;
+}
+
+#messval
+{
+	color: red;
+	text-align:center;
+	font-family:Verdana;
+	font-size:13pt;
+}
+/* ---------------------------------------------------------- */
+/* Menu pie de pagina                                         */
+/* ---------------------------------------------------------- */
+.urbangreymenu
+{
+	width: 155px; /*width of menu*/
+	overflow: hidden;
+	padding-left:5px;
+	height:335px;
+}
+
+.urbangreymenu .headerbar
+{
+	font: bold 13px Trebuchet MS, Tahoma;
+	color: #bbb;
+	/*	background: #cacaca; */
+	margin-bottom: 0; /*bottom spacing between header and rest of content*/
+	text-transform: uppercase;
+	padding: 5px 0px 5px 12px; /* 12px is left indentation of header text*/
+	border: 1px solid #bbb;
+}
+
+.urbangreymenu .headerbar a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.urbangreymenu .headerbar:hover
+{
+	text-decoration: none;
+	color: #8badc7;
+}
+.urbangreymenu ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0; /*bottom spacing between each UL and rest of content*/
+}
+
+.urbangreymenu ul li
+{
+	border-top: 1px solid #fff; /*bottom spacing between menu items*/
+}
+
+.urbangreymenu ul li a
+{
+	font: normal 13px Tahoma, Arial;
+	color: #acacac;
+	background: #e0e0e0;
+	display: block;
+	min-height: 24px;
+	padding: 5px 0px 0px 18px;
+	text-decoration: none;
+}
+
+.urbangreymenu ul li a:visited
+{
+	color: #eda7b1;
+}
+
+.urbangreymenu ul li a:hover
+{
+	color: #fff;
+	background: #8badc7;
+}
+
+/* ---------------------------------------------------------- */
+/* Menu pie de pagina                                         */
+/* ---------------------------------------------------------- */
+#navsec
+{
+	position: relative;
+	overflow: hidden;
+	float:left;
+	margin:0;
+}
+
+#navsec ul
+{
+	float: left;
+	margin-left:3px;
+	padding: 0;
+}
+
+#navsec li
+{
+	display: inline;
+	float: left;
+	margin-top:16px;
+	font-family:Trebuchet MS, Tahoma;
+	font-weight: bold;
+	font-size:12px;
+}
+
+#navsec a 
+{
+	padding: 0px 10px;
+	margin: 0;
+	color: #bbb;
+	border-left: 1px solid #cacaca;
+}
+
+
+
+#navsec li.item_01
+{
+	padding: 0px 10px 7px;
+	color: #acacac;
+	border: 0;
+}
+
+#navsec a:hover
+{
+	color: #8badc7;
+	text-decoration: none;
+}
+
+#navsec li.activo a {
+	background: #333 url(bg_menu_gris.html) repeat-x top left;
+	color: #fff;
+}
+
+/* ---------------------------------------------------------- */
+/* Elementos                                                  */
+/* ---------------------------------------------------------- */
+.boldi
+{
+	font-weight: bold;	
+}
+
+.ital
+{
+	font-style: italic;
+}
+
+.under
+{
+	text-decoration: underline;
+}
+
+.adorned
+{
+	background: #E7D3DB;
+	width: 100%;
+	text-align: center;
+	padding: 10px 2px;	/* padding greater than corner height|width */
+	border-radius: 10px;	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;    	
+	box-shadow: 3px 3px 10px #4B566D;	
+	-webkit-box-shadow: 3px 3px 10px #4B566D;
+	-moz-box-shadow: 3px 3px 10px #4B566D;	
+}
+
+.adorned p
+{
+	padding-left:15px;
+	padding-right:15px;
+	font-size:15px;/* 
+	font-weight:bold;*/
+	text-align:justify;
+}
+
+.tstim
+{
+	text-align:justify;
+	padding:7px 7px 7px 7px;
+	background:#fefefe;
+	font-size: 90%;
+	margin-top:1px;
+}
+.subti
+{
+	font-size: 90%;
+	color: #226c85;
+}
+
+.reflxl
+{
+	width: 100%;
+	padding-left: 5px;
+	text-align: left;
+	background:#f4f4f4 url(http://www.asesorvital.es/images/degra1.png) no-repeat top left;
+}
+
+.reflxr
+{
+	width:100%;
+	padding-right: 5px;
+	text-align:right;
+	background:#f4f4f4 url(http://www.asesorvital.es/images/degra2.png) no-repeat top right;
+}
+
+.banda
+{
+	width:49%;
+	text-align:center;
+	height:30px;
+	background-color: #ddd;
+	border:1px solid #fff;	
+}
+
+.banda:hover
+{
+	border:1px solid #aaa;	
+}
+
+.promo
+{
+	padding:5px 5px 5px 5px;
+	text-align:center;
+	background-color: #ddd;
+	color: #990000;
+	border:1px solid #fff;
+}
+
+.cuptan
+{
+	border-top: #bc8f8f 1px solid;
+	text-align: justify;
+}
+
+.titul
+{
+	font-size: 110%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.resal
+{
+	font-weight: bold;
+	font-size:12.5px;
+}
+
+.defini
+{
+	font-size: 12px;
+	color:#718E8E;
+}
+
+.cont_log
+{
+	width:100px;
+	height:85px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.cont_txt
+{
+	width:60%;
+	text-align:left;
+	padding-left:30px;
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align:middle;
+}
+.dsico
+{
+	width:49%;
+	vertical-align:top;
+}
+
+.dstxt
+{
+
+	font-size: 80%;
+}
+
+.lislink
+{
+	list-style-image:url(http://www.asesorvital.es/images/star0.gif);
+}
+.lislink li
+{
+	line-height: 1.4em;
+}
+
+.cuento
+{
+	font-style: italic;
+}
+
+.cuento:first-letter
+{
+	font-size: 175%;
+	font-style: normal;
+	font-family: Times New Roman;
+	float: left;
+	margin-right: 3px;
+}
+
+.test
+{
+	width: 90%;
+	height: 22px;
+	text-align: right;
+	color: #000000;
+	font-size: 12px;
+	background-color: #e0e0e0;
+	padding-right: 5px;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+
+.resp
+{
+	height: 22px;
+	text-align: center;
+	color: #000000;
+	font-size: 12px;
+	background-color: #e0e0e0;
+	padding-right: 5px;
+	padding-left: 5px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.resul
+{
+	position: absolute;
+	width: 446px;
+	top: 140px;
+	left: 137px;
+	background-color: #eee;
+	padding-left: 15px;
+	padding-right: 15px;
+	border:2px solid #bbb;
+	color: #464646;
+	font-size: 10pt;
+}
+
+.pref
+{
+	width: 25%;
+	text-align: right;
+	font-size: 90%;
+	vertical-align:middle;
+}
+
+.resf
+{
+	width: 75%;
+	font-size: 90%;
+	text-align:left;
+	vertical-align:middle;
+}
+
+.bot01
+{
+	width: 80px;
+	height:26px;
+	color: #67525c;
+	font-family:  Trebuchet MS;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	margin-right:40px;
+}
+
+.bonotab
+{
+	width:92%;
+	margin:0 auto;
+	padding: 20px 20px 0px 20px;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.bonocab
+{
+	text-align:center;
+	width: 286px;
+}
+
+.bonotit
+{
+	text-align:center;
+	width: 286px;
+	font-size:140%;
+	margin-bottom:20px;
+	font-family: Candara, Verdana, Tahoma;
+}
+
+.bonotxt
+{
+	width: 286px;
+	height:80px;
+	padding: 15px 10px 10px 10px;
+	margin-top:10px;
+	font-size: 140%;
+	background: url(http://www.asesorvital.es/images/fondobono.gif) no-repeat top left;
+}
+
+
+.bononum
+{
+	position:relative;
+	display:inline;
+	float:left;
+	color:#226c85;
+	font-weight:bold;
+	text-align: left;
+}
+
+.bonopri
+{
+	position:relative;
+	display:inline;
+	float:right;
+	padding-right:10px;
+	color:#226c85;
+	text-align:right;
+	color:#b9005c;
+	font-style:italic;
+}
+
+.bonobot
+{
+	width:84%;
+	color:#A75F7A;
+	margin:15px auto;
+	text-align:center;
+	font-weight:bold;	
+	font-size:12px;
+	border:3px double #fff;
+}
+
+.bonobot:hover
+{
+	color:#000;
+	border:3px solid #fff;
+	cursor:pointer;
+}
+
+.bonomsg
+{
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:10px;
+	line-height:1.7em;
+	text-align:justify;
+	font-size: 11pt;
+	margin-top:1px;
+}
+
+.ctrotator
+{	
+	width:604px;
+	margin:0;
+	padding:4px 0px 0px 0px;
+}
+.ctrotator-item
+{
+	font-family: Trebuchet MS, Tahoma, Arial;
+	list-style:none;
+	text-align: left;
+	background:#f4f4f4 url(http://www.asesorvital.es/images/degra1.png) no-repeat top left;
+	padding:3px 5px 5px 5px;
+	height:36px;
+	font-weight:bold;
+}
+
+.pingu
+{
+    font-size: 11px;
+    color: #a9a9a9;
+    vertical-align:top;
+}
+
+.lisbon
+{
+	 list-style-image:url(http://www.asesorvital.es/images/bolo1.gif);
+}
+
+.lisbon li
+{
+	 line-height:1.6em;
+}
+
+.franja
+{
+	width: 33.33%;
+	background:#fefefe;
+	padding-left: 5px;
+	color: #464646;
+	font-size: 10pt;
+	line-height:19px;
+}
+
+.listazo
+{
+	font-size:80%;
+	padding:0px 5px 5px 5px;	
+	width: 49%;
+	border:2px solid #bbb;
+}
+
+.pettar
+{
+	background-color: #ddd;
+	border-collapse: collapse;
+}
+
+.pettar th
+{
+	line-height: 22px;
+	background-color: #666666;
+	padding:5px 5px 5px 5px;
+	color:#fff;
+	text-align: center;
+}
+
+.pettar td
+{
+	padding:5px 5px 5px 5px;	
+	vertical-align:middle;
+	text-align:center;
+	border-right:1px solid #fff;
+	height:40px;
+	background-color: #ddd;
+}
+
+.pettar ul
+{
+	padding-left:0px;
+	list-style:none;
+}
+
+.merok
+{
+ 	color:#000;
+ 	font-size: 13pt;
+ 	font-weight: bold;
+ 	color: #6699cc;
+}
+
+.pettcon
+{
+	color:#A75F7A;
+	text-align:center;
+	font-weight:bold;	
+	font-size:13px;
+	background: url(http://www.asesorvital.es/images/contratar.gif) no-repeat center;
+	cursor:hand;
+
+}
+
+.parli
+{
+	font-size:15px;
+	font-weight:bold;
+	text-align:left;
+	margin-left:15px;
+	list-style-image:url(images/bolo1.html);
+}
+
+.parli li
+{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+.tarif
+{
+ 	font-size: 11pt;
+	font-weight:bold;
+	color:#ff8080;
+	text-shadow: 1px 1px 1px #4B566D;	
+	-webkit-text-shadow: 1px 1px 1px #4B566D;
+	-moz-text-shadow: 1px 1px 1px #4B566D;
+}
+
+.titunid
+{
+    margin-left:5px;	
+	color:#A75F7A;
+    text-align: left;
+	font-style: italic;
+    font-size: 18px;	
+	text-shadow: 0px 2px 3px #666;
+}
+
+.descox
+{
+	font-size:15px;
+	margin-left:30px;
+}
+
+.descox label
+{
+	font-weight:bold;
+	color:#6699cc;
+}
+
+.descox ol
+{
+	margin-top:10px;
+}
+
+.descox li
+{
+	line-height:25px;
+}
+
+
+.descoz
+{
+	font-size:14px;
+}
