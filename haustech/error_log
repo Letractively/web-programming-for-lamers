@@ -1,0 +1,4 @@
+[06-May-2010 02:38:06] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home6/sumacero/public_html/haustech/index.php on line 126
+[06-May-2010 02:38:06] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home6/sumacero/public_html/haustech/index.php on line 128
+[06-May-2010 02:38:06] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home6/sumacero/public_html/haustech/index.php on line 179
+[06-May-2010 02:38:06] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home6/sumacero/public_html/haustech/index.php on line 181

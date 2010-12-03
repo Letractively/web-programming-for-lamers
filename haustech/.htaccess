@@ -1,0 +1,7 @@
+
+RewriteEngine on
+rewritebase /
+RewriteCond %{HTTP_HOST} ^haustech.com.ar$
+RewriteRule ^/?$ http://sumacero.com/haustech/index.php [R=301,L]
+RewriteRule ^haustech.com.ar$ http://sumacero.com/haustech/index.php [R=301,L]
+
