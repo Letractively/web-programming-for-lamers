@@ -26,7 +26,7 @@
 	overflow:hidden;
 }
 
-#slides{
+#gallery #slides{
 	/* This is the slide area */
 	height:336px;
 	
@@ -35,7 +35,7 @@
 	overflow:hidden;
 }
 
-.slide{
+#gallery .slide{
 	float:left;
 }
 
@@ -45,12 +45,12 @@
 	width: 783px;
 }
 
-ul{
+#gallery ul{
 	margin:0px;
 	padding:0px;
 }
 
-li{
+#gallery li{
 	/* Every thumbnail is a li element */
 	width:60px;
 	display:inline-block;
@@ -59,48 +59,50 @@ li{
 	overflow:hidden;
 }
 
-li.inact:hover{
+#gallery li.inact:hover{
 	/* The inactive state, highlighted on mouse over */
 	background:url(img/pic_bg.png) repeat;
 }
 
-li.act,li.act:hover{
+#gallery li.act,#gallery li.act:hover{
 	/* The active state of the thumb */
 	background:url(img/active_bg.png) no-repeat;
 }
 
-li.act a{
+#gallery li.act a{
 	cursor:default;
 }
 
-.fbar{
+#gallery .fbar{
 	/* The left-most vertical bar, next to the first thumbnail */
 	width:2px;
 	background:url(img/divider.png) no-repeat right;
 }
 
-li a{
+#gallery li a{
 	display:block;
 	background:url(img/divider.png) no-repeat right;
 	height:35px;
 	padding-top:10px;
+	text-align: center;
 }
 
-a img{
+#gallery a img{
 	border:none;
+	text-align: center;
 }
 
 
 /* The styles below are only necessary for the demo page */
 
-h1{
+#gallery h1{
 	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
 	font-size:36px;
 	font-weight:normal;
 	margin-bottom:15px;
 }
 
-h2{
+#gallery h2{
 	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
 	font-size:12px;
 	font-weight:normal;

@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 	/* Change the cotnainer div's width to the exact width of all the slides combined */
 
-	$('#menu ul li a').click(function(e,keepScroll){
+	$('#gallery #menu ul li a').click(function(e,keepScroll){
 
 			/* On a thumbnail click */
 			$('li.menuItem').removeClass('act').addClass('inact');
@@ -44,7 +44,7 @@ $(document).ready(function(){
 			if(!keepScroll) clearInterval(itvl);
 	});
 	
-	$('#menu ul li.menuItem:first').addClass('act').siblings().addClass('inact');
+	$('#gallery #menu ul li.menuItem:first').addClass('act').siblings().addClass('inact');
 	/* On page load, mark the first thumbnail as active */
 	
 	
@@ -60,7 +60,7 @@ $(document).ready(function(){
 	{
 		if(current==-1) return false;
 		
-		$('#menu ul li a').eq(current%$('#menu ul li a').length).trigger('click',[true]);	// [true] will be passed as the keepScroll parameter of the click function on line 28
+		$('#gallery #menu ul li a').eq(current%$('#gallery #menu ul li a').length).trigger('click',[true]);	// [true] will be passed as the keepScroll parameter of the click function on line 28
 		current++;
 	}
 

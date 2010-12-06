@@ -10,7 +10,7 @@
                     <li><a <?php if ($current==2) { echo $class; } ?> href="que_hacemos.php">QUE HACEMOS?</a></li>
                     <li><a <?php if ($current==3) { echo $class; } ?> href="iluminacion.php">SOLUCIONES</a></li>
                     <li><a <?php if ($current==4) { echo $class; } ?> href="nosotros.php">NOSOTROS</a></li>
-                    <li><a <?php if ($current==5) { echo $class; } ?> href="contacto.php">CONTACTO</a></li>
+                    <li><a <?php if ($current==5) { echo $class; } ?> href="contacto.php">CONTACTO</a></li>                    <li><a <?php if ($current==6) { echo $class; } ?> href="galeria.php">GALERIA</a></li>
                 </ul>
             </div>
             <div id="header_logo">
