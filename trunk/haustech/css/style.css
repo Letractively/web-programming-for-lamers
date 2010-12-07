@@ -196,12 +196,12 @@ div.box1 a, div.box2 a { text-align:left; }
 	width:940px; height:185px;
 	margin:0;
 }
-#soluciones_header h1, #quehacemos_header h1, #nosotros_header h1, #contacto_header h1 {
+#soluciones_header h1, #quehacemos_header h1, #nosotros_header h1, #contacto_header h1, #galeria_header h1 {
 	font-size:32px; font-weight:bold;
 	color:#252525;
 	text-align:center;
 }
-#soluciones_header h2, #quehacemos_header h2, #nosotros_header h2, #contacto_header h2 {
+#soluciones_header h2, #quehacemos_header h2, #nosotros_header h2, #contacto_header h2, #galeria_header h2 {
 	margin-top:10px;
 }
 #soluciones_menu, #quehacemos_menu {
@@ -359,7 +359,7 @@ div.descripcion2 h2 {
 	color:#4d4d4d; text-align:left; margin:0; padding:0;
 
 }
-#nosotros_header, #contacto_header {
+#nosotros_header, #contacto_header,  #galeria_header{
 	width:940px; height:auto;
 	margin:30px 0 0 0;
 }
