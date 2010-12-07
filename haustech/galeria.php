@@ -12,7 +12,7 @@
 ?>
         
         <div id="principal">
-        	<div id="contenido">
+        	<div id="contenido">							<div id="galeria_header">						<h1>Algunas breves palabras.</h1>						<h2>Desde los origines de Haustech hasta el futuro de las casas inteligentes.</h2>				</div>
             	<div class="bloque_1">				<!-- Nueva galeria MAC-SLIDES-->					<div id="gallery">											<div id="slides">							    <div class="slide"><img src="img/sample_slides/macbook.png" width="920" height="400" alt="side" /></div>								<div class="slide"><img src="img/sample_slides/iphone.png" width="920" height="400" alt="side" /></div>								<div class="slide"><img src="img/sample_slides/imac.png" width="920" height="400" alt="side" /></div>								<div class="slide"><a href="http://tutorialzine.com/2009/10/beautiful-apple-gallery-slideshow/" target="_blank"><img src="img/sample_slides/info.png" width="920" height="400" alt="side" /></a></div>						</div>												<div id="menu">						    <ul>								<li class="fbar">&nbsp;</li>								<li class="menuItem"><a href=""><img src="img/sample_slides/thumb_macbook.png" alt="thumbnail" /></a></li>								<li class="menuItem"><a href=""><img src="img/sample_slides/thumb_iphone.png" alt="thumbnail" /></a></li>								<li class="menuItem"><a href=""><img src="img/sample_slides/thumb_imac.png" alt="thumbnail" /></a></li>								<li class="menuItem"><a href=""><img src="img/sample_slides/thumb_about.png" alt="thumbnail" /></a></li>							</ul>						</div>											</div>				<!-- Fin de nueva Galeria -->								<!--Vieja Galeria -->
                 	<!--<div id="img_container">
                     	<ul id="slideshow">
@@ -32,8 +32,7 @@
                     	<h1>Control desde su I-phone y su I-Pad</h1>
                         <p>El sistema de automatizaci&oacute;n del hogar Control4 le permite administrar f&aacute;cilmente su sistema de seguridad, luces, entretenimiento en el hogar y termostato desde su I-Phone y desde… su I-Pad! </p>
                         <p>Con la simple descarga de un aplicativo, su dispositivo m&oacute;vil inal&aacute;mbrico le permite comandar los sistemas electr&oacute;nicos de su hogar y mantenerse informado de lo que sucede desde donde se encuentre.</p>
-                        <p>Cont&aacute;ctenos para adquirir una licencia de Control4 Mobile Navigator para permitir el acceso seguro a su sistema de Control4 por la red Wi-Fi dom&eacute;stica y tener acceso a las c&aacute;maras de v&iacute;deo IP y sistemas de seguridad de Internet, proporcionando mayor seguridad dom&eacute;stica; o para aprovechar las ventajas de ahorro de energ&iacute;a con termostatos programables y otros ajustes ecol&oacute;gicos.</p>
-                        <a href="#"><img src="img/img_box1.jpg" alt="No mas interruptores, ver video" /></a>
+                        <p>Cont&aacute;ctenos para adquirir una licencia de Control4 Mobile Navigator para permitir el acceso seguro a su sistema de Control4 por la red Wi-Fi dom&eacute;stica y tener acceso a las c&aacute;maras de v&iacute;deo IP y sistemas de seguridad de Internet, proporcionando mayor seguridad dom&eacute;stica; o para aprovechar las ventajas de ahorro de energ&iacute;a con termostatos programables y otros ajustes ecol&oacute;gicos.</p>
                     </div>
                     <div class="box2">
                     	<h1>Innovaci&oacute;n en tecnolog&iacute;a para el hogar</h1>
