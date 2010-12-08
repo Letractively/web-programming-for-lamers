@@ -40,7 +40,7 @@
                   </div>
                   <div class="descripcion1">
                    	  <h1>Haustech le ofrece la posibilidad de instalar un sistema de monitoreo completo, para tener control y seguridad de todo lo que sucede en su hogar.</h1>
-                      <p>Integramos un sistema de monitoreo y grabaci&oacute;n de c&aacute;maras de vigilancia IP, que le permiten acceder desde su misma casa, o de manera remota para poder visualizarlas. Integramos sensores de movimiento que le permiten ver la ocupaci&oacute;n de ambientes. Integramos sensores de detecci&oacute;n de apertura de puertas y ventanas. Esta informaci&oacute;n puede ser vista desde el sistema de automatizaci&oacute;n, o ser enviada por e-mail a su cuenta de correo personal, de forma que se pueda enterar al instante.</p>                    
+                      <p>Integramos un <a href="http://www.youtube.com/watch?v=9TO3uS7sDkM" class="subimg_link"> sistema de monitoreo</a> y grabaci&oacute;n de c&aacute;maras de vigilancia IP, que le permiten acceder desde su misma casa, o de manera remota para poder visualizarlas. Integramos sensores de movimiento que le permiten ver la ocupaci&oacute;n de ambientes. Integramos sensores de detecci&oacute;n de apertura de puertas y ventanas. Esta informaci&oacute;n puede ser vista desde el sistema de automatizaci&oacute;n, o ser enviada por e-mail a su cuenta de correo personal, de forma que se pueda enterar al instante.</p>                    
                   </div>
                   <div class="descripcion2">
                   <h2>Aseg&uacute;rese de que la gente mayor este bien:</h2>    
