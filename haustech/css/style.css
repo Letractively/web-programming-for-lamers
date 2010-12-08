@@ -56,7 +56,7 @@ a:hover { text-decoration:none; color:#F7BB6A; }a:active{ outline: none; }
 	width:940px; height:120px;
 	margin:auto; padding:0 0 0 5px;
 }
-#menu {
+#menu_header {
 	width:940px; height:50px;
 	margin:auto;
 }

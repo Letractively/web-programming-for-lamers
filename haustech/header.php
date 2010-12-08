@@ -4,7 +4,7 @@
         <div id="header_up"></div>
         
         <div id="header">
-        	<div id="menu">
+        	<div id="menu_header">
             	<ul id="menu_ul">
                 	<li><a <?php if ($current==1) { echo $class; } ?> href="index.php">HOME</a></li>
                     <li><a <?php if ($current==2) { echo $class; } ?> href="que_hacemos.php">QUE HACEMOS?</a></li>										<li><a <?php if ($current==6) { echo $class; } ?> href="galeria.php">GALERIA</a></li>
