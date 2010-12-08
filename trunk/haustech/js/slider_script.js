@@ -25,15 +25,16 @@ $(document).ready(function(){
 
 	/* Change the cotnainer div's width to the exact width of all the slides combined */
 
-	$('#gallery #menu ul li a').click(function(e,keepScroll){
+	$('#menu ul li a').click(function(e,keepScroll){
 
 			/* On a thumbnail click */
+
 			$('li.menuItem').removeClass('act').addClass('inact');
 			$(this).parent().addClass('act');
 			
 			var pos = $(this).parent().prevAll('.menuItem').length;
 			
-			$('#slides').stop().animate({marginLeft:-positions[pos]+'px'},1000);
+			$('#slides').stop().animate({marginLeft:-positions[pos]+'px'},450);
 			/* Start the sliding animation */
 			
 			e.preventDefault();
@@ -44,7 +45,7 @@ $(document).ready(function(){
 			if(!keepScroll) clearInterval(itvl);
 	});
 	
-	$('#gallery #menu ul li.menuItem:first').addClass('act').siblings().addClass('inact');
+	$('#menu ul li.menuItem:first').addClass('act').siblings().addClass('inact');
 	/* On page load, mark the first thumbnail as active */
 	
 	
@@ -60,7 +61,7 @@ $(document).ready(function(){
 	{
 		if(current==-1) return false;
 		
-		$('#gallery #menu ul li a').eq(current%$('#gallery #menu ul li a').length).trigger('click',[true]);	// [true] will be passed as the keepScroll parameter of the click function on line 28
+		$('#menu ul li a').eq(current%$('#menu ul li a').length).trigger('click',[true]);	// [true] will be passed as the keepScroll parameter of the click function on line 28
 		current++;
 	}
 

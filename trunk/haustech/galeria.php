@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Haustech casas inteligentes</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"><link href="css/slider_gallery.css" rel="stylesheet" type="text/css">
-<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script><script src="js/slider_script.js" type="text/javascript"></script></head>
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script><script src="js/slider_script.js" type="text/javascript"></script><!--[if lte IE 7]><style type="text/css">#gallery ul li{	display:inline;	/*float:left;*/}</style><![endif]--></head>
 <body>
 <?php	
 	$current = 6;
