@@ -18,7 +18,7 @@
 	
 	border:1px solid white;
 	
-	background:url(img/panel.jpg) repeat-x bottom center #ffffff;
+	background:url(../img/panel.jpg) repeat-x bottom center #ffffff;
 	
 	/* The width of the gallery */
 	width:783px;
@@ -28,7 +28,7 @@
 
 #gallery #slides{
 	/* This is the slide area */
-	height:336px;
+	height:341px;
 	
 	/* jQuery changes the width later on to the sum of the widths of all the slides. */
 	width:920px;
@@ -61,12 +61,12 @@
 
 #gallery li.inact:hover{
 	/* The inactive state, highlighted on mouse over */
-	background:url(img/pic_bg.png) repeat;
+	background:url(../img/pic_bg.png) repeat;
 }
 
 #gallery li.act,#gallery li.act:hover{
 	/* The active state of the thumb */
-	background:url(img/active_bg.png) no-repeat;
+	background:url(../img/active_bg.png) no-repeat;
 }
 
 #gallery li.act a{
@@ -76,12 +76,12 @@
 #gallery .fbar{
 	/* The left-most vertical bar, next to the first thumbnail */
 	width:2px;
-	background:url(img/divider.png) no-repeat right;
+	background:url(../img/divider.png) no-repeat right;
 }
 
 #gallery li a{
 	display:block;
-	background:url(img/divider.png) no-repeat right;
+	background:url(../img/divider.png) no-repeat right;
 	height:35px;
 	padding-top:10px;
 	text-align: center;
