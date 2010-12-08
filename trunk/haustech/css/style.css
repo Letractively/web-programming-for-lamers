@@ -40,7 +40,7 @@ a {
 	color:#e27526; text-align:left; margin:0; padding:0; text-decoration:none;
 }
 a.float { float:left; }
-a:hover { text-decoration:none; color:#F7BB6A; }
+a:hover { text-decoration:none; color:#F7BB6A; }a:active{ outline: none; }
 #header_up {
 	margin:0; padding:0;
 	width:100%; height:4px;
@@ -187,9 +187,9 @@ div.box1 a, div.box2 a { text-align:left; }
 #footer_ctnt {
 	width:800px; height:60px;
 	margin:auto;
-}
+}#footer_ctnt img.control4logo{	padding:28px 570px 0 35px;}
 #footer_ctnt img {
-	padding:28px 0 0 750px;
+	padding:28px 0 0 45px;
 }
 /* SOLUCIONES */
 #soluciones_header {
