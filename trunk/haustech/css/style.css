@@ -21,7 +21,7 @@ h3 {
 p {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; font-weight:normal;
 	color:#404040; text-align:left; margin:15px 0 0 0; padding:0;
-}
+}p a{	font-size: 14px;}
 span {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal;
 	color:#727272; text-align:left; margin:15px 0 0 0; padding:0;
