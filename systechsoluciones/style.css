@@ -2,12 +2,16 @@
 body { margin:0; padding:0; width:100%; background:#fff url(images/main_bg.gif) top center no-repeat;}
 html { padding:0; margin:0;}
 
+/* por default*/
+a img{
+	border: none;
+}
+
 /* main */
 .main {width:100%; padding:0; margin:0 auto; }
 
 /********** header **********/
 .header { }
-
 .block_header {margin:0 auto; width:914px; padding:0;}
 .top_text { width:914px; margin:0; padding:0; height:51px; background:url(images/simple_header_text_bg.gif) top no-repeat;}
 .top_text p { font: normal 11px Arial, Helvetica, sans-serif; color:#676c6d; padding:15px 0 0 30px; margin:0; width:300px; float:left;}
