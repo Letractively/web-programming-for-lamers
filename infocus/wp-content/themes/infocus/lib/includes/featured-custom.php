@@ -61,7 +61,7 @@ $number = $custom_slider_count; $numbers = range(1,$number);
 				<h2><?php echo stripslashes($$custome_title); ?></h2>
 				<p><?php echo stripslashes($$custome_desc); ?></p>
 				<?php if($$custome_url && !$$disable_btn) { ?>
-				<a href="<?php echo $$custome_url; ?>" class="button">Read More</a>
+				<a href="<?php echo $$custome_url; ?>" class="button">Leer Mas</a>
 				<?php } ?>
 			</div>
 			
@@ -141,7 +141,7 @@ $number = $custom_slider_count; $numbers = range(1,$number);
 			while (have_posts()) : the_post();
 			$more = 0;
 			?>
-				<?php the_content("<span>Read More</span>",false);
+				<?php the_content("<span>Leer Mas</span>",false);
 
 			endwhile; 
 			endif;

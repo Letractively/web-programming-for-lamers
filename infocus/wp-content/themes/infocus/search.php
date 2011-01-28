@@ -165,7 +165,7 @@ if ($teaser_text == 'disable' || $header_teaser == 'disable') {
 			<?php the_excerpt(); ?>
 		</div>	
 
-		<a class="button_link" href="<?php the_permalink(); ?>"><span>Read More</span></a>
+		<a class="button_link" href="<?php the_permalink(); ?>"><span>Leer Mas</span></a>
 
 	</div><!-- blog_module -->
 </div><!-- post -->
