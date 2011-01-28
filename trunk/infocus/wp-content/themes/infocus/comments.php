@@ -100,7 +100,7 @@ if ('open' == $post->comment_status) : ?>
 			
 	<p><textarea class="textarea" name="comment" id="comment" cols="70" rows="10" tabindex="4"></textarea></p>
 
-	<p><input type="submit" class="button" value="Submit Comment" /><?php comment_id_fields(); ?></p>
+	<p><input type="submit" class="button" value="Dejar Comentario" /><?php comment_id_fields(); ?></p>
 		    
 	<?php do_action('comment_form', $post->ID); ?>
 	
