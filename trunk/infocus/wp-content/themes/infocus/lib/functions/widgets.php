@@ -300,7 +300,7 @@ function webtreats_contact_form_widget($args) {
 	$loader_style = $args['name'] == "Sidebar" ? 'loadingImgWidgetSb' : 'loadingImgWidgetFt';
 	
 	echo $args['before_widget'];
-	echo $args['before_title'] .'Email Us'. $args['after_title'];
+	echo $args['before_title'] .'Contactenos'. $args['after_title'];
 	
 //If the form is submitted
 if(isset($_POST['submittedWidget'])) {
@@ -320,7 +320,7 @@ if(isset($_POST['submittedWidget'])) {
 		<?php } ?>
 		<a name="_contact"></a> 
 		<form action="<?php the_permalink(); ?>#_contact" id="contactFormWidget" method="post">
-			<p><input type="text" name="contactNameWidget" id="contactNameWidget" value="<?php if(isset($_POST['contactNameWidget'])) echo $_POST['contactNameWidget'];?>" class="requiredField textfield<?php if($nameError != '') {echo ' inputError';} ?>" size="22" tabindex="5" /><label class="textfield_label" for="contactNameWidget">Name *</label></p>
+			<p><input type="text" name="contactNameWidget" id="contactNameWidget" value="<?php if(isset($_POST['contactNameWidget'])) echo $_POST['contactNameWidget'];?>" class="requiredField textfield<?php if($nameError != '') {echo ' inputError';} ?>" size="22" tabindex="5" /><label class="textfield_label" for="contactNameWidget">Nombre *</label></p>
 
 			<p><input type="text" name="emailWidget" id="emailWidget" value="<?php if(isset($_POST['emailWidget']))  echo $_POST['emailWidget'];?>" class="requiredField email textfield<?php if($emailError != '') {echo ' inputError';} ?>" size="22" tabindex="6" /><label class="textfield_label" for="emailWidget">Email *</label></p>
 
