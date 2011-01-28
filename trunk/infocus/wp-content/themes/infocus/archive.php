@@ -201,7 +201,7 @@ query_posts($query_string . '&cat='.$exclude_blog_cats); ?>
 				<?php the_excerpt(); ?>
 			</div>	
 
-			<a class="button_link" href="<?php the_permalink(); ?>"><span>Read More</span></a>
+			<a class="button_link" href="<?php the_permalink(); ?>"><span>Leer Mas</span></a>
 
 		</div><!-- blog_module -->
 		<?php wp_link_pages('before=<div id="page-links">Pages: &after=</div>'); ?>	

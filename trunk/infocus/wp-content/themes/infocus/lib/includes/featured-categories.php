@@ -33,7 +33,7 @@
 			<div class="slider_content" style="display:none;left:0;position:absolute;top:0;z-index:10;">
 				<h2><?php echo the_title(); ?></h2>
 				<p><?php echo webtreats_excerpt(250, ' ... '); ?></p>
-				<a href="<?php echo get_permalink(); ?>" class="button">Read More</a>
+				<a href="<?php echo get_permalink(); ?>" class="button">Leer Mas</a>
 			</div>
 			<?php } ?>
 
@@ -112,7 +112,7 @@
 			while (have_posts()) : the_post();
 			$more = 0;
 			?>
-				<?php the_content("<span>Read More</span>",false);
+				<?php the_content("<span>Leer Mas</span>",false);
 
 			endwhile; 
 			endif;

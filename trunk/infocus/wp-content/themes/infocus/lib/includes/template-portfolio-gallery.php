@@ -233,7 +233,7 @@ if ($teaser_text == 'disable' || $header_teaser == 'disable') {
 			<?php } ?>
 				
 			<?php if(!$read_more_disable) { ?>
-			<span><a class="button_link" href="<?php the_permalink(); ?>"><span>Read More</span></a></span>
+			<span><a class="button_link" href="<?php the_permalink(); ?>"><span>Leer Mas</span></a></span>
 			<?php } ?>
 		
 			<?php if($portfolio_link) { ?>
