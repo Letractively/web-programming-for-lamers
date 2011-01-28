@@ -300,7 +300,7 @@ function webtreats_contact_form_widget($args) {
 	$loader_style = $args['name'] == "Sidebar" ? 'loadingImgWidgetSb' : 'loadingImgWidgetFt';
 	
 	echo $args['before_widget'];
-	echo $args['before_title'] .'Contactenos'. $args['after_title'];
+	echo $args['before_title'] .'Contacto:'. $args['after_title'];
 	
 //If the form is submitted
 if(isset($_POST['submittedWidget'])) {
@@ -330,7 +330,7 @@ if(isset($_POST['submittedWidget'])) {
 
 			<p class="<?php echo $loader_style; ?>"></p>
 			
-			<p><input name="submittedWidget" id="submittedWidget" class="button<?php if($args['name'] != "Sidebar"){echo ' in_footer';} ?>" tabindex="8" value="Submit" type="submit" /></p>
+			<p><input name="submittedWidget" id="submittedWidget" class="button<?php if($args['name'] != "Sidebar"){echo ' in_footer';} ?>" tabindex="8" value="Enviar" type="submit" /></p>
 			<p class="screenReader"><input id="submitUrlWidget" type="hidden" name="submitUrlWidget" value="<?php echo get_template_directory_uri() . '/lib/includes/submit-widget.php'; ?>" /></p>
 			<p class="screenReader"><input id="emailAddressWidget" type="hidden" name="emailAddressWidget" value="<?php echo $email_adress_reciever; ?>" /></p>
 
