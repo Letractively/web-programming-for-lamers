@@ -111,7 +111,7 @@ function webtreats_contact_form($email) {
 			$out .= ' inputError';
 		}
 		$out .= '"';
-		$out .= ' size="22" tabindex="1" /><label class="textfield_label" for="contactName">Name *</label></p>';
+		$out .= ' size="22" tabindex="1" /><label class="textfield_label" for="contactName">Nombre *</label></p>';
 		
 		$out .= '<p><input type="text" name="email" id="email" value="';
 		
@@ -151,7 +151,7 @@ function webtreats_contact_form($email) {
 		$out .= '" /></p>';
 		
 		$out .= '<p class="loadingImg"></p>';
-		$out .= '<p><input name="submittedContact" id="submittedContact" class="button"  tabindex="4" value="Submit" type="submit" /></p>';
+		$out .= '<p><input name="submittedContact" id="submittedContact" class="button"  tabindex="4" value="Enviar" type="submit" /></p>';
 		$out .= '<p class="screenReader"><input id="submitUrl" type="hidden" name="submitUrl" value="' .get_template_directory_uri(). '/lib/includes/submit.php" /></p>';
 		$out .= '<p class="screenReader"><input id="emailAddress" type="hidden" name="emailAddress" value="' .$email_adress_reciever. '" /></p>';
 	
