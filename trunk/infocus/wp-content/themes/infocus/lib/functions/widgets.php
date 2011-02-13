@@ -310,13 +310,13 @@ if(isset($_POST['submittedWidget'])) {
 
 <?php if(isset($emailSent) && $emailSent == true) { ?>
 	<a name="_contact"></a> 
-		<p class="thanks"><strong>Thanks!</strong> Your email was successfully sent.</p>
+		<p class="thanks"><strong>Gracias!</strong> Tu email fue enviado exitosamente.</p>
 
 <?php } else { ?>
 	
 		<?php if(isset($captchaError)) { ?>
 			<a name="_contact"></a>
-			<p class="error">There was an error submitting the form.<p>
+			<p class="error">Ocurrio un error enviando un formulario.<p>
 		<?php } ?>
 		<a name="_contact"></a> 
 		<form action="<?php the_permalink(); ?>#_contact" id="contactFormWidget" method="post">
@@ -326,7 +326,7 @@ if(isset($_POST['submittedWidget'])) {
 
 			<p><textarea name="commentsWidget" id="commentsTextWidget" rows="20" cols="30" tabindex="7" class="requiredField textarea<?php if($commentError != '') {echo ' inputError';} ?>"><?php if(isset($_POST['commentsWidget'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['commentsWidget']); } else { echo $_POST['commentsWidget']; } } ?></textarea></p>
 
-			<p class="screenReader"><label for="checkingWidget" class="screenReader">If you want to submit this form, do not enter anything in this field</label><input type="text" name="checkingWidget" id="checkingWidget" class="screenReader" value="<?php if(isset($_POST['checking']))  echo $_POST['checking'];?>" /></p>
+			<p class="screenReader"><label for="checkingWidget" class="screenReader">Si quieres enviar este formulario, no completes este campo</label><input type="text" name="checkingWidget" id="checkingWidget" class="screenReader" value="<?php if(isset($_POST['checking']))  echo $_POST['checking'];?>" /></p>
 
 			<p class="<?php echo $loader_style; ?>"></p>
 			
