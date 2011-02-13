@@ -88,13 +88,13 @@ function webtreats_contact_form($email) {
 	if(isset($emailSent) && $emailSent == true) {
 		
 		$out .= '<a name="contact_"></a>';
-		$out .= '<p class="thanks"><strong>Thanks!</strong> Your email was successfully sent.</p>';
+		$out .= '<p class="thanks"><strong>Gracias!</strong> Su email fue enviado satisfactoriamente.</p>';
 		
 	} else {
 		
 		if(isset($captchaError)) {
 			$out .= '<a name="contact_"></a>';
-			$out .= '<p class="error">There was an error submitting the form.<p>';
+			$out .= '<p class="error">Ocurrio un error enviando el formulario.<p>';
 		}
 		
 		$out .= '<a name="contact_"></a>';
@@ -143,7 +143,7 @@ function webtreats_contact_form($email) {
 			}
 		$out .= '</textarea></p>';
 		
-		$out .= '<p class="screenReader"><label for="checking" class="screenReader">If you want to submit this form, do not enter anything in this field</label><input type="text" name="checking" id="checking" class="screenReader" value="';
+		$out .= '<p class="screenReader"><label for="checking" class="screenReader">Si quieres enviar este formulario, no introduzcas nada en este campo</label><input type="text" name="checking" id="checking" class="screenReader" value="';
 		
 		 if(isset($_POST['checking'])) {
 			echo $_POST['checking'];
