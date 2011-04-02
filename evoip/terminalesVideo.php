@@ -43,7 +43,7 @@
                 
                 <div id="box_right">
                 
-                	<img src="img/phone_Video.png" />
+                	<img src="img/phone_video.png" />
                     
                     <ul>
                     	<li></li>
