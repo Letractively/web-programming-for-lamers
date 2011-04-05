@@ -15,26 +15,25 @@ span.title { /* este es el titulo de cada pagina que no tenia sentido que sea H1
 	color:#ececec;
 	margin:24px 0 0 30px;
 }
-h1 {
+h1{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:24px;
 	font-weight:bold;
 	color:#18354e;
 	padding:0; margin:0;
-}
-h2 {
+}h1.medium{	font-family:Arial, Helvetica, sans-serif;	font-size:20px;	font-weight:bold;	color:#18354e;	padding:0;		margin: 0;}#box_right h1.medium{	margin:6px 0 0 0;}h2 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
 	font-weight:bold;
 	color:#ececec;
 }
 p { 
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Georgia, Arial, Helvetica;
 	font-size:12px;
 	font-weight:normal;
 	text-aling:left;
 	color:#362c23;
-}
+}#box_right p{		font-size:11px;}
 a {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
@@ -226,7 +225,7 @@ div#bloque_general_cntn div#box_productos div#box_right {
 	
 }
 div#bloque_general_cntn div#box_productos div#box_right img {
-	margin:20px 0 0 0;
+	margin:20px 0 0 42px;
 	padding:0 0 20px 0;
 }
 div#bloque_general_cntn div#box_productos div#box_right ul {	list-style:url(../img/tic.png) outside;
