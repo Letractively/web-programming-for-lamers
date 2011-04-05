@@ -47,7 +47,7 @@
                 
                 <div id="box_right">
                 
-                	<img src="img/phone_IP.png" />
+                	<img src="img/phone_IP.png" style="margin-left: 0px;"/>
                     
                     <ul>
                     	<li>10 teclas interactivas programables (hasta 8 líneas)</li>

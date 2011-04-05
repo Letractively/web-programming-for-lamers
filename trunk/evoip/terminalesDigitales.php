@@ -47,7 +47,7 @@
                 
                 <div id="box_right">
                 
-                	<img src="img/phone.png" />
+                	<img src="img/phone.png" style="margin-left: 0px;"/>
                     
                     <ul>
                     	<li>Teclas Programables</li>
