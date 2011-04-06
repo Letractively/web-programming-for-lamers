@@ -25,8 +25,8 @@
                 <span class="title">Productos</span>
                 
                 <ul id="link_list">
-                	<li><a href="#" class="active">Telefon&iacute;a</a></li>
-                    <li><a href="#">Datos</a></li>
+                	<li><a href="productosVoz.php" class="active">Voz</a></li>
+                    <li><a href="productosImagen.php">Imagen</a></li>
                 </ul>
         	
             </div>

@@ -32,13 +32,13 @@
                 </div>
                 
                 <div class="box_index_grey" id="center_left">
-                    <a href="#">Voz</a>	
-                    <a href="#"><img src="img/box_index_grey_voz.png" style="margin:58px 0 0 0;" /></a>
+                    <a href="productosVoz.php">Voz</a>	
+                    <a href="productosVoz.php"><img src="img/box_index_grey_voz.png" style="margin:58px 0 0 0;" /></a>
                 </div>
                 
                 <div class="box_index_grey" id="center_right">
-                    <a href="#">Imagen</a>
-                    <a href="#"><img src="img/box_index_grey_imagen.png" style="margin:37px 0 0 0;" /></a>
+                    <a href="productosImagen.php">Imagen</a>
+                    <a href="productosImagen.php"><img src="img/box_index_grey_imagen.png" style="margin:37px 0 0 0;" /></a>
                 </div>
                 
                 <div class="box_index_grey">
