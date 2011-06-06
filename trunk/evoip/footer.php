@@ -22,13 +22,13 @@
             
             <div class="footer_box">
             	<h2>Links r&aacute;pidos</h2>
-                <a href="#">Productos OfficeServ</a>
+                <a href="productos.php?producto=Voz&marca=Samsung&solucion=OfficeServ">Productos OfficeServ</a>
                 <br />
                 <br />
-                <a href="#">Terminales</a>
+                <a href="productos.php?producto=Voz&marca=Samsung&solucion=Terminales">Terminales</a>
                 <br />
                 <br />
-                <a href="#">Software de Telefonía</a>
+                <a href="productos.php?producto=Voz&marca=Samsung&solucion=Aplicativos">Software de Telefonía</a>
                 <br />
                 <br />
                 <a href="#">Servidores Asterisk</a>
