@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+  <title>Estados Unidos 1742 - 5355 3574</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+  </script>
+</head>
+
+
+<body>
+
+<div class="main">
+  
+<div class="header">
+    
+<div class="block_header">
+    
+<div class="top_text">
+    
+<p><a href="#">Email</a> | <a href="#">Client Login</a></p>
+
+    
+<div class="search2">
+          
+<form id="form2" name="form2" method="post" action="">
+            <label><a href="http://www.google.com" target="_blank">Google</a> 
+            <input name="q" class="keywords" id="textfield3" maxlength="50" value="buscar..." type="text" />
+            <input name="b" src="images/search.gif" class="button" type="image" />
+            </label>
+          </form>
+
+        </div>
+
+    </div>
+
+    
+<div class="clr"></div>
+
+      
+<div class="logo">
+        
+<div align="right"><a href="index.html"><img src="images/logofinal.png" height="152" width="155" /></a></div>
+
+      </div>
+
+      
+      <div class="simple_text">Estamos muy cerca.. mas de lo que parece. </div>
+
+      
+<div class="clr"></div>
+
+      
+<div class="menu">
+        
+<ul>
+
+          <li><a href="inicio.html"><span>Inicio</span></a></li>
+
+          <li><a href="clientes.html"><span>Clientes</span></a></li>
+
+          <li><a href="services.html"><span>Servicios</span></a></li>
+
+          <li><a href="portfolio.html"><span>Herramientas</span></a></li>
+
+          <li><a href="contact.html" class="active"><span>Contacto</span></a></li>
+
+        
+</ul>
+
+      </div>
+
+      
+<div class="clr"></div>
+
+    </div>
+
+  </div>
+
+  
+<div class="header_text2">
+    
+<h2>Contacto</h2>
+
+<div class="clr"></div>
+
+          </div>
+
+  
+<div class="body">
+    
+<div class="body_resize">
+      
+<div class="right_small">
+        
+<h4>Solo con un Clic</h4>
+
+        
+<p>Estamos en Facebook <a href="#"></a></p>
+
+        
+<p align="center"><a target="_blank" href="http://es-la.facebook.com/people/SyStech-Soluciones/100001406391239"><img style="border: 0px solid ; width: 50px; height: 54px;" src="images/facebook.png" alt="" name="facebook" id="facebook" /></a></p>
+
+
+<h4>Con&oacute;zcanos personalmente</h4>
+<p>Estados Unidos 1742 <br />
+
+          Capital Federal, Bs.As., Arg.</p>
+
+        
+<p>(011) 5355-3574 <br />
+
+          (011) 5345 5767 <br />
+          <a href="info@systechsoluciones.com.ar">info@systechsoluciones.com.ar 
+          </a></p>
+
+        
+<p>&nbsp;</p>
+
+        
+<h4>Horarios </h4>
+
+        
+<p>Nuestros horarios son de lunes a viernes de 10 a 18 hs, </p>
+
+        
+        <p class="grey"><strong><a href="info@systechsoluciones.com.ar">www.systechsoluciones.com.ar</a></strong></p>
+
+      </div>
+
+      
+<div class="left_big">
+        
+<p><strong>Cerca de todo. </strong></p>
+
+        
+<p>Estamos a una cuadra de Av. Independencia y Av. Entre Rios , 
+          a dos cuadras de la estacion&nbsp;San Juan. Lineas de 
+          colectivos que&nbsp;pasan por aqui: 6,12,37,96,50, 150, 84, 150, 151, 168.-</p>
+
+        
+<p>&nbsp;</p>
+
+        
+<form action="contact.php" method="post" id="contactform">
+            
+          
+          <ol>
+            <li> 
+              <label for="name">Nombre *</label>
+              <input id="name" name="name" class="text" />
+            </li>
+            <li> 
+              <label for="email">email <span class="red">*</span></label>
+            </li>
+            <li> 
+              <input id="email" name="email" class="text" />
+            </li>
+            <li> 
+              <label for="company"> empresa*</label>
+              <input id="company" name="company" class="text" />
+            </li>
+            <li> 
+              <label for="subject">Asunto*</label>
+              <input id="subject" name="subject" class="text" />
+            </li>
+            <li> 
+              <label for="message">Mensaje<span class="red">*</span></label>
+              <textarea id="message" name="message" rows="6" cols="50"></textarea>
+            </li>
+            <li class="buttons"> 
+              <input name="imageField" id="imageField" src="images/send.gif" type="image" />
+            </li>
+          </ol>
+
+        </form>
+
+      </div>
+
+      
+<div class="clr"></div>
+
+    </div>
+
+    
+<div class="clr"></div>
+
+  </div>
+
+  
+<div class="footer">
+    
+<div class="footer_resize">
+      
+<p class="leftt"><br />
+
+        <a href="#">Inicio</a> | <a href="#">servicios</a> | <a href="#">clientes</a>| 
+        <a href="#">quienes somost</a>| <a href="#">contacto</a>| </p>
+
+      
+<p class="rightt"><br />
+
+        Copyright &copy; Systech Soluciones.com.ar&nbsp; Todos los derechos reservados.</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
