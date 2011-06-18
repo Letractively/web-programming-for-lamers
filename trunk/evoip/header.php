@@ -3,7 +3,7 @@
         <div id="header_cntn">
         	
             <div id="header_img">
-            	<a href="#"><img src="img/header.gif" /></a>
+            	<a href="#"><img src="img/header.gif" style="padding-left: 20px;"/></a>
             </div>
         	
             <div id="header_menu">
