@@ -4,7 +4,7 @@
        
     	<div id="footer_cntn">
        
-			<div class="footer_box">
+			<div class="footer_box" style="padding-left: 30px;">
             	<h2>Acerca de la empresa</h2>
                 <p>Lorem ipsum dolor sic amet consectetur adepesecit in sic ad hoc sensu. Maris ad hominis in hoc lupus perspicantia.</p>
                 <p>Cras rhoncus, metus vitae venenatis rutrum, felis dolor volutpat lorem, vitae pellentesque purus dolor quis felis. Sed vel massa ut leo elementum varius. Curabitur nulla risus, malesuada in dictum ut, fermentum non enim.</p>
