@@ -24,14 +24,14 @@
         		
                 <span class="title">Productos</span>
                 
-                <ul id="link_list">										<li><a href="productosDatos.php">Datos</a></li>					
-                	<li><a href="productosVoz.php">Voz</a></li>                    <li><a href="productosImagen.php" class="active">Imagen</a></li>
+                <ul id="link_list">										<li><a href="productosDatos.php" class="active">Datos</a></li>					
+                	<li><a href="productosVoz.php">Voz</a></li>                    <li><a href="productosImagen.php">Imagen</a></li>
                 </ul>
         	
             </div>
             
             <div id="box_productos">
-                <div id="box_left">								<h1>Recorra nuestro catálogo</h1>									<div id="lista_producto">												<div id="img_cont" style="height: 150px;"><img src="img/productos_imagen.png"/></div>												<ul>							<li><a href="videoVigilanciaIP.php">Videovigilancia IP</a></li>							<li><a href="videoConferencia.php">Videoconferencia</a></li>						</ul>										</div>
+                <div id="box_left">								<h1>Recorra nuestro catálogo</h1>									<div id="lista_producto">												<div id="img_cont" style="height: 150px;"><img src="img/productos_datos.png"/></div>												<ul>							<li><a href="redesAlambricas.php">Redes Alámbricas</a></li>							<li><a href="redesInalambricas.php">Redes Inalámbricas</a></li>						</ul>										</div>
 				</div>
                 <div id="box_right">					<h1 class="medium">Contacto Rápido</h1>                					<p>Evoip Soluciones<br/>Pico 4738, Buenos Aires, Argentina</p>										<p><img src="img/tel.gif" style="margin: 0; padding: 0"/> (+54 11) 4541-7200<br/><img src="img/email.gif" style="margin: 0; padding: 0"/> info@evoipsoluciones.com.ar</p>
                 </div>

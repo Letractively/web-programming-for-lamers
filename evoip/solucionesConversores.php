@@ -22,10 +22,10 @@
         	
             <div id="gradient_light">
         		
-                <span class="title">Servicios</span>
+                <span class="title">Soluciones</span>
                 
                 <ul id="link_list">
-                	<li><a href="serviciosDatos.php">Datos</a></li>                    <li><a href="serviciosSoluciones.php" class="active">Soluciones</a></li>
+
                 </ul>
         	
             </div>

@@ -1,7 +1,7 @@
 <?
 	
 	//Link activo en header
-	$active = "servicios";
+	$active = "productos";
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -20,7 +20,7 @@
     	
         <div id="bloque_general_cntn">
         	
-            <div id="gradient_light">        		                <span class="title">Servicios</span>                                <ul id="link_list">                	<li><a href="serviciosDatos.php" class="active">Datos</a></li>                    <li><a href="serviciosSoluciones.php">Soluciones</a></li>                </ul>
+            <div id="gradient_light">        		                <span class="title">Servicios</span>                                <ul id="link_list">					<li><a href="productosDatos.php" class="active">Datos</a></li>					<li><a href="productosVoz.php">Voz</a></li>                    <li><a href="productosImagen.php">Imagen</a></li>                </ul>
         	
             </div>
             
