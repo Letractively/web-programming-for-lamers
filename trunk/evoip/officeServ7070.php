@@ -24,7 +24,7 @@
         		
                 <span class="title">Productos</span>
                 
-                <ul id="link_list">
+                <ul id="link_list">					<li><a href="productosDatos.php">Datos</a></li>								
                 	<li><a href="productosVoz.php" class="active">Voz</a></li>                    <li><a href="productosImagen.php">Imagen</a></li>
                 </ul>
         	
