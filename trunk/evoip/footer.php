@@ -10,10 +10,10 @@
                 <p>Cras rhoncus, metus vitae venenatis rutrum, felis dolor volutpat lorem, vitae pellentesque purus dolor quis felis. Sed vel massa ut leo elementum varius. Curabitur nulla risus, malesuada in dictum ut, fermentum non enim.</p>
             </div>
             
-            <div class="footer_box" id="footer_box_left">
+<!--            <div class="footer_box" id="footer_box_left">
             	<h2>Politica de privacidad</h2>
                 <p>Augue ut nulla suscipit fringilla. Phasellus condimentum metus quis nisi blandit ac molestie turpis tincidunt. Curabitur viverra egestas nibh vel tempus. Mauris adipiscing volutpat posuere. Curabitur sed libero a enim consectetur ultricies ut sed augue. re ornare. Nullam id ipsum quis lacus.</p>
-            </div>
+            </div>-->
             
             <div class="footer_box" id="footer_box_right">
             	<h2>Sugerencias?</h2>
