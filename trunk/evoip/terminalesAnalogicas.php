@@ -8,7 +8,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Evoip - Soluciones Tecnológicas</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -36,7 +36,7 @@
                 	
                     <h1>Terminales analógicas</h1>
                     
-                    <p>Los teléfonos analógicos...</p>
+                    <p>Los dipositivos terminales SMT-P permiten su utilización tanto en centrales telefónicas públicas como en privadas.</p>										<p>al cerrar el equipo se activa la "protección de larga distancia" bloqueando todas las llamadas que se inicen discando la tecla "0".</p>
                     
                 </div>
                 

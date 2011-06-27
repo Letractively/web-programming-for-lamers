@@ -8,7 +8,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Evoip - Soluciones Tecnológicas</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -36,7 +36,7 @@
                 	
                     <h1>Video-Teléfono</h1>
                     
-                    <p><a href="#">Descargar Brochure</a></p>
+                    <p>OfficeServ ofrece la cazpacidad de transmitir Voz, Datos, Internet, Voz sobre IP, y ahora también Video</p>										<p>Por ser una plataforma nativa IP, la familia 7000 tiene la posibilidad de transmitir una gran variedad de señales que permiten mejorar la capacidad de comunicaciones de su empresa y con el mínimo costo asociado que representa el uso de este tipo de tecnología.</p>
                     
                 </div>
                 
@@ -45,10 +45,7 @@
                 	<img src="img/phone_video.png" />
                     
                     <ul>
-                    	<li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    	<li>Teclas Programables</li>                        <li>Teclas Interactivas</li>                        <li>Altoparlante Bidireccional</li>                        <li>Panel Selector de Extensiones</li>
                     </ul>
                 
                 </div>

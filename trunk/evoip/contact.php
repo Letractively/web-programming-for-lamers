@@ -25,7 +25,7 @@ else{
 	}
 	if($_POST['area'] == 'ventas')
 	{
-		$your_email = "vinicius@evoipsoluciones.com.ar, ellis@evoipsoluciones.com.ar"; // vinicius@evoipsoluciones.com.ar, ellis@evoipsoluciones.com.ar
+		$your_email = "farinav@evoipsoluciones.com.ar, carussoe@evoipsoluciones.com.ar"; // vinicius@evoipsoluciones.com.ar, ellis@evoipsoluciones.com.ar
 	}
 	if($_POST['area'] == 'soporte')
 	{
