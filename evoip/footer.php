@@ -6,8 +6,7 @@
        
 			<div class="footer_box" style="padding-left: 30px;">
             	<h2>Acerca de la empresa</h2>
-                <p>Lorem ipsum dolor sic amet consectetur adepesecit in sic ad hoc sensu. Maris ad hominis in hoc lupus perspicantia.</p>
-                <p>Cras rhoncus, metus vitae venenatis rutrum, felis dolor volutpat lorem, vitae pellentesque purus dolor quis felis. Sed vel massa ut leo elementum varius. Curabitur nulla risus, malesuada in dictum ut, fermentum non enim.</p>
+                <p>Somos una empresa lider en el mercado de la consultoria y soluciones en telecomunicaciones. Ofrecemos proyectos integrales con la garantia de mayor eficiencia y productividad a traves de un equipo de ingenieros especialistas.</p>
             </div>
             
 <!--            <div class="footer_box" id="footer_box_left">
@@ -17,7 +16,7 @@
             
             <div class="footer_box" id="footer_box_right">
             	<h2>Sugerencias?</h2>
-                <p>Lorem ipsum dolor sic amet consectetur <a href="#">adepesecit</a> in sic ad hoc sensu. Maris ad hominis in hoc lupus perspicantia.</p>
+                <p>Su opinión nos permite mejorar continuamente nuestro servicio. Si hay comentarios o inquietudes que desee acercanos, puede <a href="contacto.php">ponerse en contacto</a> con nuestro equipo y responderemos a la brevedad.</p>
             </div>
             
             <div class="footer_box">
