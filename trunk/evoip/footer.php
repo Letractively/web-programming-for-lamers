@@ -21,13 +21,13 @@
             
             <div class="footer_box">
             	<h2>Links r&aacute;pidos</h2>
-                <a href="productosVoz.php">Productos OfficeServ</a>
+                <a href="productosVoz.php#officeserv">Productos OfficeServ</a>
                 <br />
                 <br />
-                <a href="productosVoz.php">Terminales</a>
+                <a href="productosVoz.php#terminales">Terminales</a>
                 <br />
                 <br />
-                <a href="productosVoz.php">Software de Telefonía</a>
+                <a href="productosVoz.php#aplicativos">Software de Telefonía</a>
                 <br />
                 <br />
                 <a href="#">Servidores Asterisk</a>
