@@ -34,10 +34,10 @@
                 
                 <div id="box_left">
                 	
-                    <h1>OS SoftPhone</h1>
+                    <h1>OS SoftPhone<a href="docs/OS_Softphone.pdf"><img src="img/descargar_pdf.gif"></a></h1>
                     
 					<p>Transforme su computador en un teléfono IP de alto desempeño.</p>
-										<p>El OfficeServ SoftPhone de Samsung es una aplicación de telefonía IP que le permite a los usuarios de los sistemas OfficeServ 500, OfficeServ 100 y la familia <a href="#">OfficeServ 7000</a> utilizar sus redes de datos para realizar sus comunicaciones telefónicas. es ideal para trabajadores remotos y para aquellos que requieren una movilidad total.</p>					
+										<p>El OfficeServ SoftPhone de Samsung es una aplicación de telefonía IP que le permite a los usuarios de los sistemas OfficeServ 500, OfficeServ 100 y la familia <a href="IP_OfficeServ_7000.pdf">OfficeServ 7000</a> utilizar sus redes de datos para realizar sus comunicaciones telefónicas. es ideal para trabajadores remotos y para aquellos que requieren una movilidad total.</p>					
 					<p>OfficeServ SoftPhone es una aplicación de software basada en Windows que permite a los usuarios acceder a sus sistemas de comunicaciones desde cualquier parte del mundo, simplemente conectándose a internet.</p>
                     
                 </div>

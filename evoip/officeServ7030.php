@@ -34,7 +34,7 @@
                 
                 <div id="box_left">
                 	
-                    <h1>OfficeServ 7030</h1>
+                    <h1>OfficeServ 7030<a href="docs/OfficeServ7030_Castellano_2.pdf"><img src="img/descargar_pdf.gif"></a></h1>
                     
                     <p>La agilidad y el tiempo de respuesta de los pequeños negocios son una gran ventaja competitiva. Pero la tecnología y el apoyo profesional para colaborar de forma eficiente, tienen muchas veces precios que exceden lo razonable o no son viables para las compañias más pequeñas. A partir de ahora, incluso las empresas de menor tamaño podrán permitirse los mismos sofisticados sistemas de comunicación, que normalmente sólo podían disfrutar las grandes compañias.</p>
 

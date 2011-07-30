@@ -34,7 +34,7 @@
                 
                 <div id="box_left">
                 	
-                    <h1>OS Call</h1>
+                    <h1>OS Call<a href="docs/OS_Call.pdf"><img src="img/descargar_pdf.gif"></a></h1>
                     
                     <p>OfficeServ Link es la base de la plataforma de integración de computación y telefonía (CTI) de los servidores de comunicaciones Samsung, permitiéndole expandir sus horizontes en cuanto a las posibilidades que ofrece para el manejo y administración de sus llamadas telefónicas</p>
 
