@@ -37,7 +37,7 @@
                     <h1>Terminales analógicas</h1>
                     
                     <p>Los dipositivos terminales SMT-P permiten su utilización tanto en centrales telefónicas públicas como en privadas.</p>										<p>al cerrar el equipo se activa la "protección de larga distancia" bloqueando todas las llamadas que se inicen discando la tecla "0".</p>
-                    
+                    <p id="pdf"><a href="docs/IP_Terminales_OS_7000.pdf">Descargar documentación de Terminales<img src="img/descargar_pdf.gif"></a></p>
                 </div>
                 
                 <div id="box_right">

@@ -28,9 +28,9 @@
                 <br />
                 <br />
                 <a href="productosVoz.php#aplicativos">Software de Telefonía</a>
+<!--                <br />
                 <br />
-                <br />
-                <a href="#">Servidores Asterisk</a>
+                <a href="#">Servidores Asterisk</a>-->
             </div>    
     
        

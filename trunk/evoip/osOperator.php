@@ -38,7 +38,7 @@
                     
                     <p>OfficeServ Operator permite a los usuarios encontrar y redireccionar llamadas a cualquier extensión de forma rápida y eficiente, con un solo click. Una fácil e intuitiva forma de uso con: Estado de la Extensión, Marcado por Nombre, Marcado Rápido e Identificación de Llamada Entrante. Esta aplicación se integra en los sistemas OfficeServ.</p>
 
-					<p>OfficeServ puede estar totalmente integrada con la infraestructura de voz y datos, por lo que maximiza el uso de la información. Con la simplicidad de hacer click sobre un ícono, arrastrándolo y soltándolo, es lo único necesario para manejar la aplicación. Asimismo permite utilizar las teclas de función del computador.</p>
+					<p>OfficeServ puede estar totalmente integrada con la infraestructura de voz y datos, por lo que maximiza el uso de la información. Con la simplicidad de hacer click sobre un ícono, arrastrándolo y soltándolo, es lo único necesario para manejar la aplicación. Asimismo permite utilizar las teclas de función del computador.</p>					<p id="pdf"><a href="docs/OS_ACD Solution.pdf">Descargar documentación de Aplicativos<img src="img/descargar_pdf.gif"></a></p>
                     
                 </div>
                 

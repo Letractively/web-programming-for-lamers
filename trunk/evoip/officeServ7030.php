@@ -34,12 +34,12 @@
                 
                 <div id="box_left">
                 	
-                    <h1>OfficeServ 7030<a href="docs/OfficeServ7030_Castellano_2.pdf"><img src="img/descargar_pdf.gif"></a></h1>
+                    <h1>OfficeServ 7030</h1>
                     
                     <p>La agilidad y el tiempo de respuesta de los pequeños negocios son una gran ventaja competitiva. Pero la tecnología y el apoyo profesional para colaborar de forma eficiente, tienen muchas veces precios que exceden lo razonable o no son viables para las compañias más pequeñas. A partir de ahora, incluso las empresas de menor tamaño podrán permitirse los mismos sofisticados sistemas de comunicación, que normalmente sólo podían disfrutar las grandes compañias.</p>
 
 					<p>Alta tecnología desarrollada para proporcionar a las pequeñas empresas productividad y flexibilidad con un presupuesto limitado. Como parte de la familia de soluciones IP de última generación OfficeServ 7000, la OfficeServ 7030 Servidor de Comunicaciones Convergentes tiene exactamente el mismo nivel, mismas funcionalidades y utiliza los mismos terminales, pero está especialmente diseñada para pequeñas empresas que necesitan un sistema sofisticado de comunicaciones, que sea simple de operar y fácil de implementar.</p>
-                    					<p>El diseño 'todo en uno' de la OffideServ 7030 ha sido desarrollado para proporcionar una plataforma IP, facil de usar, asequible y segura que unifica voz, datos y comunicaciones inalámbricas. con avanzadas funciones como Auto-Atención o Correo de Voz, también permite el trabajo en equipo y proporciona un considerable ahorro  en costes.</p>
+                    					<p>El diseño 'todo en uno' de la OffideServ 7030 ha sido desarrollado para proporcionar una plataforma IP, facil de usar, asequible y segura que unifica voz, datos y comunicaciones inalámbricas. con avanzadas funciones como Auto-Atención o Correo de Voz, también permite el trabajo en equipo y proporciona un considerable ahorro  en costes.</p>										<p id="pdf"><a href="docs/OfficeServ7030_Castellano_2.pdf">Descargar documentación de este producto<img src="img/descargar_pdf.gif"></a></p>										<p id="pdf"><a href="docs/IP_OfficeServ_7000.pdf">Descargar documentación de productos OfficeServ<img src="img/descargar_pdf.gif"></a></p>
                 </div>
                 
                 <div id="box_right">

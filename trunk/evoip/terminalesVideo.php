@@ -37,7 +37,7 @@
                     <h1>Video-Teléfono</h1>
                     
                     <p>OfficeServ ofrece la cazpacidad de transmitir Voz, Datos, Internet, Voz sobre IP, y ahora también Video</p>										<p>Por ser una plataforma nativa IP, la familia 7000 tiene la posibilidad de transmitir una gran variedad de señales que permiten mejorar la capacidad de comunicaciones de su empresa y con el mínimo costo asociado que representa el uso de este tipo de tecnología.</p>
-                    
+                    <p id="pdf"><a href="docs/IP_Terminales_OS_7000.pdf">Descargar documentación de Terminales<img src="img/descargar_pdf.gif"></a></p>
                 </div>
                 
                 <div id="box_right">
