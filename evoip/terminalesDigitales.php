@@ -41,7 +41,7 @@
 					<p>Todos cuentan con un display LCD de 2 líneas y 24 caracteres para desplegar información asociada a las llamadas y al estado del teléfono. Así mismo tienen altoparlantes y micrófono para permitirle habar sin necesidad de utilizar sus manos. Los teléfonos digitales de la serie 5000 cuentan con teclas programables para adecuar el teléfono a sus necesidades así como con teclas interactivas que van cambiando su funcionamiento dependiendo del tipo y estado de la llamada que esté cursando.</p>
 
 					<p>Dependiendo del modelo elegido podrá contar con un navegador digital para facilitar el uso de los directorios y facilidades de su sistema de comunicaciones.</p>
-                    
+                    <p id="pdf"><a href="docs/IP_Terminales_OS_7000.pdf">Descargar documentación de Terminales<img src="img/descargar_pdf.gif"></a></p>
                 </div>
                 
                 <div id="box_right">

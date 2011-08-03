@@ -41,7 +41,7 @@
 					<p>Los paquetes de voz se transmiten con mayor prioridad que los de datos, por lo que no afecta la saturación que pueda existir en la red, el servicio de voz está siempre garantizado. Los mismos terminales telefónicos y puntos de acceso pueden ser utilizados en todas las centrales IP de Samsung. Si el cliente necesita ampliar su sistema, no tendrá necesidad de sustituirlos.</p>
 
 					<p>Este avanzado sistema de comunicaciones es compatible con toda la Serie 7000 de Samsung. Dependiendo del sistema usado, puede soprotar hasta 240 terminales inalámbricos.</p>
-                    
+                    <p id="pdf"><a href="docs/IP_Terminales_OS_7000.pdf">Descargar documentación de Terminales<img src="img/descargar_pdf.gif"></a></p>
                 </div>
                 
                 <div id="box_right">

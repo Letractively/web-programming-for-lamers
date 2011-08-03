@@ -41,7 +41,7 @@
 					<p>OfficeServ DataView comprende tres componentes:</p>
 										<p>- Data Collector: Recolecta y analiza los eventos del sistema telefónico.<br/>- Data Manager: Calcula y almacena estadísticas de los datos recolectados.<br/>- Scheduler: Provee la administración para la programación de los reportes.</p>					
 					<p>La aplicación OfficeServ DataView permite contar con información clara y precisa para incrementar la productividád y reducir los costos.<br/>El almacemamiento de datos se realiza en Microsoft Access o formato SQL Server. Cuenta con alarmas automáticas de saturación y respaldo de datos con capacidad de reportería.</p>
-                    					<p>Produce hasta 45 reportes estadísticos (Troncales, Extensiones, Correo de Voz(VM), Operadora automática(AA)); Así como grupos UCD y grupos de operadoras. Cuenta con 14 monitores en línea (Troncales, Extensiones, UCD, VM/AA).</p>					
+                    					<p>Produce hasta 45 reportes estadísticos (Troncales, Extensiones, Correo de Voz(VM), Operadora automática(AA)); Así como grupos UCD y grupos de operadoras. Cuenta con 14 monitores en línea (Troncales, Extensiones, UCD, VM/AA).</p>										<p id="pdf"><a href="docs/OS_ACD Solution.pdf">Descargar documentación de Aplicativos<img src="img/descargar_pdf.gif"></a></p>					
                 </div>
                 
                 <div id="box_right">

@@ -39,7 +39,7 @@
                     <p>UMS plataforma permita la integración de la mensajería de la empresa a travez de un sistema único.</p>
 
 					<p>Integrado en los sistemas de correo de voz, permite soluciones avanzadas para la gestión integrada de todos los mensajes corporativos. El usuario dispone de una plataforma completa para la gestión de correo de voz, fax y e-mail que convergen en un punto de acceso único y personalizable según las necesidades.</p>
-										<p>En detalle, el usuario puede recibir directamente en su PC vía correo electrónico (directamente desde el cliente de correo), e-mail con mensaje de voz (que se adjunta en WAW) o mensaje de fax (Archivo en TIF) a la izquierda en buzón de voz. El usuario de correo de vóz es capaz de almacenar y gestionar sus comunicaciones de una manera muy simple y más conveniente.</p>					
+										<p>En detalle, el usuario puede recibir directamente en su PC vía correo electrónico (directamente desde el cliente de correo), e-mail con mensaje de voz (que se adjunta en WAW) o mensaje de fax (Archivo en TIF) a la izquierda en buzón de voz. El usuario de correo de vóz es capaz de almacenar y gestionar sus comunicaciones de una manera muy simple y más conveniente.</p>										<p id="pdf"><a href="docs/OS_ACD Solution.pdf">Descargar documentación de Aplicativos<img src="img/descargar_pdf.gif"></a></p>
 
                 </div>
                 
