@@ -17,24 +17,58 @@
 				Lorem ipsum dolor sic amet consectetur adepescit loris et astra in revello ner terra presentiam. At vero eos et accusamus et iusto  ducimus.
             </h3>
             
-            <?php for ($i=1; $i<=3; $i++) { ?>
-            
             <div class="item_div">
                 <div class="item_img">
-                    <img src="img/circle1.jpg" />
+                    <img src="img/icono_economia.png" />
                 </div>
                 <div class="item_content">
-                    <h3 class="arial">Comisiones de Economía</h3>
+                    <h3 class="arial">Comisión de Economía</h3>
                     <p class="arial" style="margin-top:5px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
                     beatae vitae dicta sunt explicabo.</p>
                 </div>
                 <div style="clear:both;"></div>
-            </div>                      
+            </div>
+
+            <div class="item_div">
+                <div class="item_img">
+                    <img src="img/icono_plus.png" />
+                </div>
+                <div class="item_content">
+                    <h3 class="arial">Comisión de Salud</h3>
+                    <p class="arial" style="margin-top:5px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+                    beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+            <div class="item_div">
+                <div class="item_img">
+                    <img src="img/icono_educacion.png" />
+                </div>
+                <div class="item_content">
+                    <h3 class="arial">Comisión de Educación</h3>
+                    <p class="arial" style="margin-top:5px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+                    beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div style="clear:both;"></div>
+            </div>			
+
+            <div class="item_div">
+                <div class="item_img">
+                    <img src="img/icono_ambiente.png" />
+                </div>
+                <div class="item_content">
+                    <h3 class="arial">Comisión de Medio Ambiente</h3>
+                    <p class="arial" style="margin-top:5px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+                    beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
 			
-			<?php } ?>
-        
-                
         </div>        
 	</div>        
     

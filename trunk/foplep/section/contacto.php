@@ -9,7 +9,7 @@
     
     <div id="column1">
     	<div class="underline">
-	    	<h1 class="arial">Conozca las comisiones</h1>
+	    	<h1 class="arial">Contacto</h1>
         </div>
         
         <div style="margin:18px 0 0 0;">
@@ -24,8 +24,9 @@ Si desea ponerse el contacto con el Foro, utilice el siguiente formulario.
             <input type="text" class="form" maxlength="255" />
             <p class="arial">Mensaje</p>
             <textarea class="form"></textarea>
-    
-            
+			<div style="margin:40px 0 0 0; height:100px;">
+				<input type="image" src="img/button/send.jpg" />
+			</div>
         </div>        
 	</div>        
     
@@ -50,8 +51,5 @@ Si desea ponerse el contacto con el Foro, utilice el siguiente formulario.
     
     <div style="clear:both;"></div>
     
-    <div style="margin:40px 0 0 0; height:100px;">
-	    <input type="image" src="img/button/send.jpg" />
-    </div>
     
      
