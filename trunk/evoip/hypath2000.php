@@ -39,7 +39,7 @@
                     <p>Para la movilidad de voz y datos, existen opciones para desplegar tecnología WLAN.</p>
 
 					<p>HiPath 2000 permite realizar una red corporativa como red integrada para voz y datos. Las infraestructuras existentes pueden actualizarse para el soporte de comunicaciones IP en tiempo real, como la voz, con lo que incluso en pequeñas redes LAN, pueden aprovecharse las ventajas de la Telefonía IP</p>															<p>El nuevo sistema permite flexibilidad y movilidad en las comunicaciones de oficina. Por medio de software integrado para cifrado, puede disponerse de una Red Privada Virtual (VPN), con lo que los teletrabajadores y usuarios en "oficinas satélite" pueden conectarse de forma segura a la red de la compañía. Así el personal que trabaja en modo remoto a travéz de DSL, puede también utilizar el teléfono como si se encontrara en la oficina.</p>															<p>En este sentido HiPath 2000 soporta los puntosde acceso de Siemens, por medio de los cuales se puede tener transmisión de voz sobre la WLAN. también integra función de Voice-Mail, con la que se puede disponer de hasta 24 buzones para mensajes. Para la comunicación telefónica, Siemens dispone de una variedad de teléfonos IP, teléfonos software y terminales WLAN.</p>
-                    
+                    <p id="pdf"><a href="docs/Hipath_3000.pdf">Descargar documentación de este producto<img src="img/descargar_pdf.gif"></a></p>                   
                 </div>
                 
                 <div id="box_right">

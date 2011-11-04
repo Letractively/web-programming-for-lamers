@@ -39,7 +39,7 @@
                     <p>Disfrute de una telefonía de alto rendimiento que ofrece HiPath 1100, diseñado para pequeñas a medianas empresas que tienen hasta 140 usuarios.</p>
 
 					<p>¿Administra un estudio jurídico, un consultorio médico, un taller o una empresa de producción? ¿Quizás tiene una gran cantidad de clientes que sólo conoce por teléfono, está siempre de guardia para sus pacientes o está en contacto telefónico con sus proovedores?. Si este es el caso, necesita un sistema telefónico sólido que esté preparado para el futuro y pueda adaptarse a la perfección al tamaño de su empresa.</p>										<p>La solución que le ofrecemos es HyPath 1100, que es nuestra solución de telefonía de alto rendimiento para empresas con hasta 140 empleados. Compuesto de tres sistemas que admiten desde 16 hasta 140 usuarios con seis a 32 lineas, HiPath 1100 incluye una variedad de funciones integradas, como correo de voz, conferencias y amplias herramientas de administración.</p>
-                    
+                     <p id="pdf"><a href="docs/Hipath_3000.pdf">Descargar documentación de este producto<img src="img/descargar_pdf.gif"></a></p> 
                 </div>
                 
                 <div id="box_right">
