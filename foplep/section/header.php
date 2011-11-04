@@ -38,9 +38,7 @@
 	    <script type='text/javascript' src='js/ceebox/js/jquery.ceebox.js'></script>           
                 
 		<script src="js/script.js" type="text/javascript"></script> 
-        
-        
-           
+                   
         <!--[if lte IE 6]>
         <script type="text/javascript" src="js/supersleight.js"></script>
         <![endif]-->        
@@ -83,7 +81,80 @@
         
 			<div class="sky">  
             	<?php if ($section=='home') { ?>
-	    	        	<img src="img/sky.jpg">
+				
+				<script type="text/javascript">
+
+				/*** 
+				Simple jQuery Slideshow Script
+				Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+				***/
+
+				function slideSwitch() {
+					var $active = $('#slideshow IMG.active');
+
+					if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+					// use this to pull the images in the order they appear in the markup
+					var $next =  $active.next().length ? $active.next()
+						: $('#slideshow IMG:first');
+
+					// uncomment the 3 lines below to pull the images in random order
+    
+					// var $sibs  = $active.siblings();
+					// var rndNum = Math.floor(Math.random() * $sibs.length );
+					// var $next  = $( $sibs[ rndNum ] );
+
+
+					$active.addClass('last-active');
+
+					$next.css({opacity: 0.0})
+						.addClass('active')
+						.animate({opacity: 1.0}, 1000, function() {
+							$active.removeClass('active last-active');
+					});
+				}
+
+				$(function() {
+					setInterval( "slideSwitch()", 5000 );
+				});
+
+				</script>
+
+				<style type="text/css">
+
+				/*** set the width and height to match your images **/
+
+				#slideshow {
+				position:relative;
+				height:298px;
+				}
+
+				#slideshow IMG {
+				position:absolute;
+				top:0;
+				left:0;
+				z-index:8;
+				opacity:0.0;
+				}
+
+				#slideshow IMG.active {
+				z-index:10;
+				opacity:1.0;
+				}
+
+				#slideshow IMG.last-active {
+				z-index:9;
+				}
+
+				</style>
+				
+	    	        	<!--<img src="img/sky.jpg">-->
+						<div id="slideshow">
+							<img src="img/LBa_2.jpg" alt="Slideshow Image 1" class="active" />
+							<img src="img/LCaba_2.jpg" alt="Slideshow Image 2" />
+							<img src="img/Lchub_2.jpg" alt="Slideshow Image 3" />
+							<img src="img/LStaFe_2.jpg" alt="Slideshow Image 4" />
+						</div>
                 <?php } else { ?>
 		            	<img src="img/skysmall.jpg">                           
                 <?php } ?>
