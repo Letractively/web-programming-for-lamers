@@ -5,8 +5,68 @@
     </div>      
     
 -->
-    
-    
+
+<!-- FORM VALIDATION -->
+        <link rel="stylesheet" href="Validation_Engine/css/validationEngine.jquery.css" type="text/css"/>
+        <link rel="stylesheet" href="Validation_Engine/css/template.css" type="text/css"/>
+        <script src="Validation_Engine/js/jquery-1.6.min.js" type="text/javascript">
+        </script>
+        <script src="Validation_Engine/js/languages/jquery.validationEngine-es.js" type="text/javascript" charset="utf-8">
+        </script>
+        <script src="Validation_Engine/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8">
+        </script>
+        <script>
+            jQuery(document).ready( function() {
+                // binds form submission and fields to the validation engine
+                jQuery("#contactoForm").validationEngine();
+				$('#contactoForm').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			nombre: $('#nombre').val(),
+			email: $('#email').val(),
+			mensaje: $('#mensaje').val()
+		},
+			function(data){
+				$('#contactoForm #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactoForm').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Hemos recibido su mensaje') $('#contactoForm').slideUp();
+			}
+		); 
+		return false;
+	});
+            });
+        </script>
+<!-- -->
+
+<!-- FORM SUBMITT -->
+<script type="text/javascript">
+/*
+jQuery(document).ready(function(){
+	$('#contactoForm').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#nombre').val(),
+			email: $('#email').val(),
+			company: $('#telefono').val(),
+			subject: $('#area').val(),
+			message: $('#mensaje').val()
+		},
+			function(data){
+				$('#contactoForm #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactoForm').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactoForm').slideUp();
+			}
+		); 
+		return false;
+	});
+});*/
+</script>
+<!-- --> 
+
     <div id="column1">
     	<div class="underline">
 	    	<h1 class="arial">Contacto</h1>
@@ -14,18 +74,21 @@
         
         <div style="margin:18px 0 0 0;">
             <h3 class="arial">
-Nuestro equipo se encuentra a su disposición.
-Si desea ponerse el contacto con el Foro, utilice el siguiente formulario.
+				Nuestro equipo se encuentra a su disposición.
+				Si desea ponerse el contacto con el Foro, utilice el siguiente formulario.
             </h3>
-
+		<form name="contactoForm" id="contactoForm" action="SENDMAIL_TEMPORAL.php" method="post"  enctype="multipart/form-data">
+		<fieldset style="margin: 0; padding: 0; border: 0;">
 			<p class="arial">Nombre</p>
-			<input type="text" class="form" maxlength="255" />
+			<input type="text" name="emailNombre" id="nombre" class="validate[required] form" maxlength="255" />
             <p class="arial">Dirección de mail</p>
-            <input type="text" class="form" maxlength="255" />
+            <input type="text" name="emailEmail" id="email" class="validate[required,custom[email]] form" maxlength="255" />
             <p class="arial">Mensaje</p>
-            <textarea class="form"></textarea>
+            <textarea name="emailMensaje" id="mensaje" class="validate[required] form"></textarea>
 			<div style="margin:40px 0 0 0; height:100px;">
-				<input type="image" src="img/button/send.jpg" />
+				<input class="form" type="image" value="" name="enviar" src="img/button/send.jpg" />
+		</fieldset>
+		</form>
 			</div>
         </div>        
 	</div>        
