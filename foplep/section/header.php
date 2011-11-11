@@ -19,6 +19,8 @@
 		<link rel="stylesheet" href="jquery.jscrollpane.css" type="text/css" media="all">
 		<link rel="stylesheet" href="js/ceebox/css/ceebox.css" type="text/css" media="screen" />             
 
+		<!-- Simplemodal Contact Form CSS files -->
+		<link type='text/css' href='css/contact.css' rel='stylesheet' media='screen' />
 
         <script src="js/jquery.js" type="text/javascript"></script>
         
@@ -37,8 +39,12 @@
 		<script type='text/javascript' src='js/ceebox/js/jquery.swfobject.js' ></script>        
 	    <script type='text/javascript' src='js/ceebox/js/jquery.ceebox.js'></script>           
                 
-		<script src="js/script.js" type="text/javascript"></script> 
-                   
+		<script src="js/script.js" type="text/javascript"></script>
+		
+		<!-- Simplemodal Contact Form JS files -->
+		<script type='text/javascript' src='js/jquery.simplemodal.js'></script>
+		<script type='text/javascript' src='js/contact.js'></script>
+        
         <!--[if lte IE 6]>
         <script type="text/javascript" src="js/supersleight.js"></script>
         <![endif]-->        

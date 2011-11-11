@@ -1,7 +1,11 @@
 
 
     <div id="rightbar">
-        <img style="margin:46px 0 0 10px;" src="img/mailbutton.jpg" />
+		<!-- Implementación Simplemodal Contact Form -->
+		<div id='contact-form'>
+			<input type='image' src="img/mailbutton.jpg" class='contact demo' style="margin: 46px 0pt 0pt 10px;"/>
+		</div>
+		<!-- -->
     </div>      
     
     
