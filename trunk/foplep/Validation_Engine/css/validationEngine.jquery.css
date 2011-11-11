@@ -21,7 +21,7 @@
 
 .formError .formErrorContent {
 	width: 100%;
-	background: #EB7424;
+	background: #219AE7;
 	position:relative;
 	z-index:5001;
 	color: #fff;
@@ -70,7 +70,7 @@
 	-webkit-box-shadow: 0 2px 3px #444;
 	font-size: 0px;
 	height: 1px;
-	background: #EB7424;
+	background: #219AE7;
 	margin: 0 auto;
 	line-height: 0;
 	font-size: 0;
