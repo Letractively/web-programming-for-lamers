@@ -12,8 +12,8 @@
     <div style="width:340px; float:left; margin:30px 0 0 0;">
     	<h2>BIENVENIDOS AL</h2>
     	<h1>
-        	FORO DE <span style="color:#2096f4;">PRESIDENTES</span> <br />
-	        DE <span style="color:#42bbfc;">LEGISLATURAS PROVINCIALES</span>
+        	FORO DE <span style="color:#2096f4;">PRESIDENTES</span> DE<br />
+	        <span style="color:#42bbfc;">LEGISLATURAS PROVINCIALES</span>
         </h1>
         
         <p>
