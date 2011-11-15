@@ -119,16 +119,21 @@ function smcf_send($name, $email, $subject, $message, $cc) {
 	}
 
 	// Add additional info to the message
-	if ($extra["ip"]) {
-		$message .= "\n\nIP: " . $_SERVER["REMOTE_ADDR"];
-	}
-	if ($extra["user_agent"]) {
-		$message .= "\n\nUSER AGENT: " . $_SERVER["HTTP_USER_AGENT"];
-	}
+//	if ($extra["ip"]) {
+//		$message .= "\n\nIP: " . $_SERVER["REMOTE_ADDR"];
+//	}
+//	if ($extra["user_agent"]) {
+//		$message .= "\n\nUSER AGENT: " . $_SERVER["HTTP_USER_AGENT"];
+//	}
 
 	// Set and wordwrap message body
-	$body = "From: $name\n\n";
-	$body .= "Message: $message";
+//	$body = "From: $name\n\n";
+//	$body .= "Message: $message";
+
+	$body = "De: $email\n\n";
+	$body .= "$email desea ser subscripto a la lista de mails de FOPLEP y recibir las &uacute;ltimas novedades.";
+
+
 	$body = wordwrap($body, 70);
 
 	// Build header
