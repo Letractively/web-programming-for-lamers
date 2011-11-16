@@ -15,8 +15,8 @@
  */
 
 // User settings
-$to = "david.ercoli@sumacero.com";
-$subject = "SimpleModal Contact Form";
+$to = "naticarfi@gmail.com";
+$subject = "Suscripcion a la Mailing-List de FOPLEP...";
 
 // Include extra form fields and/or submitter data?
 // false = do not include
@@ -131,7 +131,7 @@ function smcf_send($name, $email, $subject, $message, $cc) {
 //	$body .= "Message: $message";
 
 	$body = "De: $email\n\n";
-	$body .= "$email desea ser subscripto a la lista de mails de FOPLEP y recibir las &uacute;ltimas novedades.";
+	$body .= "$email desea ser suscripto a la lista de mails de FOPLEP y recibir todas las novedades.";
 
 
 	$body = wordwrap($body, 70);
