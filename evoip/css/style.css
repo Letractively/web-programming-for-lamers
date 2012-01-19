@@ -78,7 +78,7 @@ div#header_menu ul li, div#menu_datos ul li {
 	float:left;
 	margin:0; padding:0;
 }
-div#header_menu ul li a {
+div#header_menu ul li a, div#footer_bottom h2 {
     color: #ececec;
     display: block;
     font-family: Arial,Helvetica,sans-serif;
@@ -184,12 +184,12 @@ div#footer {
 
 div#footer_cntn {
 	width:930px;
-	height:240px;
+	height:200px;
 	border-bottom:#103556 solid 1px;
 	margin:auto;
 	padding:0 0 30px 0;
 	text-align:left;
-}
+}div#footer_bottom {	width:930px;	height:40px;	margin:auto;	padding:0 0 30px 0;	text-align: center;		margin-top: 10px;}
 div#footer_cntn div.footer_box {
 	width:190px;
 	float:left;
@@ -288,11 +288,11 @@ div#bloque_general_cntn div#box_contacto form fieldset label.large {
 }
 div#bloque_general_cntn div#box_contacto form input#boton {
 	background:url(../img/boton_contacto.gif) no-repeat top left;
-	margin:30px 0 0 0;
+	margin:80px 0 0 0;
 	width:64px;
 	height:25px;
 	border:none;
-}
+}div#bloque_general_cntn div#box_contacto div#box_right{	margin:0;	padding: 0;	border: none;	position: absolute;	left: 768px;	top: 658px;}
 input#nombre, input#email, input#telefono {
 	width:255px;
 	height:24px;
