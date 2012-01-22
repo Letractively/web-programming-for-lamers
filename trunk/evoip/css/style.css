@@ -288,11 +288,11 @@ div#bloque_general_cntn div#box_contacto form fieldset label.large {
 }
 div#bloque_general_cntn div#box_contacto form input#boton {
 	background:url(../img/boton_contacto.gif) no-repeat top left;
-	margin:80px 0 0 0;
+	margin:42px 0 0 0;
 	width:64px;
 	height:25px;
-	border:none;
-}div#bloque_general_cntn div#box_contacto div#box_right{	margin:0;	padding: 0;	border: none;	position: absolute;	left: 768px;	top: 658px;}
+	border:none;	float: left;
+}div#bloque_general_cntn div#box_contacto div#box_right{	margin:0;	margin-left: 572px;	padding: 0;	border: none;	position: static;}
 input#nombre, input#email, input#telefono {
 	width:255px;
 	height:24px;
