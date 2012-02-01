@@ -20,7 +20,7 @@
         <meta name="Robots" content="All">
         
 
-        <link rel=stylesheet href="css/style.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="css/slider.css" type="text/css" media="all">        
 		<!-- <link rel="stylesheet" href="css/galleriffic.css" type="text/css" media="all"> -->
 		<!-- <link rel="stylesheet" href="jquery.jscrollpane.css" type="text/css" media="all">                -->

@@ -14,6 +14,9 @@ if ($section == "contacto" || $section == "contacto/") {
 } else if ($section == "home" || $section == "home/") {
 	$section = "home";
 	
+} else if ($section == "nosotros" || $section == "nosotros/") {
+	$section = "nosotros";
+	
 } else if ($section == "servicios" || $section == "servicios/") {
 	$section = "servicios";
 	
