@@ -91,6 +91,12 @@ small {
 	margin:50px 0 0 0;
 }
 
+#headimg {
+	clear:both; 
+	height:238px; 
+	margin:40px 0 0 0;
+}
+
 #topParagraph {
 	height:80px;
 	margin:20px 0 0 0;
@@ -103,58 +109,50 @@ small {
 }
 
 
+
+.block1 p, .block2 p, .block3 p {
+	font-size:11px;
+}
+
 .block1 {
 	float:left;
 	width:243px;
 	margin:0 0 0 27px;
+	cursor:pointer;
 }
 
 .block2 {
 	float:left;
 	width:243px; 
 	margin:0 0 0 20px;	
+	cursor:pointer;	
 }
 
 .block3 {
 	float:left;
 	width:243px; 
+	margin:0 0 0 20px;
+	cursor:pointer;	
+}
+
+.block4 {
+	float:left;
+	width:372px; 
 	margin:0 0 0 20px;	
 }
 
-.col1 {
-	float:left;
-	width:372px; 
-	margin:0 0 0 30px;	
+.block4 h2 {
+	font-size:24px;
+	margin:0;
 }
 
-.col2 {
-	float:right;
-	width:372px; 
-	margin:0 40px 0 0;	
+.block4 p {
+	font-size:10px;
 }
 
-div.col1  h2 {
-	font-size:26px;
-	margin-top: 0;
-	margin-bottom: 10px;
-	line-height: 0.8;
-}
-
-div.col1 p {
-	margin-right: 60px;
-	}
-
-div.col2  h2 {
-	font-size:26px;
-	margin-top: 0;
-	margin-bottom: 10px;
-	margin-left: 30px;
-	line-height: 0.8;
-}
-
-div.col2 p {
-	margin-right: 0;
-	margin-left: 30px;
+.block4 p strong {
+	color:#7e7e7e;
+	font-weight:none;
 }
 
 #footer {

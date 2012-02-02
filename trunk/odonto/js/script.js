@@ -59,7 +59,12 @@
 			
 		
 
-		});		
+		});
+		
+		$(".servicio").click( function() {
+		//	$("a.link", this).trigger("click");
+			document.location.href = $("a.link", this).attr("href");
+		});
 
 		
 	
