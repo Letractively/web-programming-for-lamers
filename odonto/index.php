@@ -14,17 +14,20 @@ if ($section == "contacto" || $section == "contacto/") {
 } else if ($section == "home" || $section == "home/") {
 	$section = "home";
 	
-} else if ($section == "nosotros" || $section == "nosotros/") {
-	$section = "nosotros";
-	
 } else if ($section == "servicios" || $section == "servicios/") {
 	$section = "servicios";
 	
-} else if ($section == "catalogo_natacion" || $section == "catalogo_natacion/") {
-	$section = "catalogo_natacion";
-
-} else if ($section == "catalogo_misc" || $section == "catalogo_misc/") {
-	$section = "catalogo_misc";
+	
+} else if ($section == "servicios/ortodoncia" || $section == "servicios/ortodoncia/") {
+	$section = "servicios/ortodoncia";	
+	
+	
+	
+} else if ($section == "nosotros" || $section == "nosotros/") {
+	$section = "nosotros";	
+	
+} else if ($section == "contacto" || $section == "contacto/") {
+	$section = "contacto";	
 	
 } else {
 	$section = "home";

@@ -11,11 +11,11 @@
 		//$db = new DB("ctl", "localhost", "root", "root");
 		//global $db;
 
-	} elseif ($_SERVER['SERVER_NAME']=='127.0.0.1') {
-	
+	} elseif ($_SERVER['SERVER_NAME']=='localhost') {
+		
 		define('ROOT', 'http://127.0.0.1/odonto/');	
 		define('CONTACT_EMAIL', 'pota@localhost');					
-	
+
 	} else {
 		
 		define('ROOT', 'http://www.sumacero.com/odonto/');	
