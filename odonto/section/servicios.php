@@ -43,7 +43,7 @@
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/ortodoncia/"></a>    
+        <a class="link" href="servicios/implantes_dentales/"></a>    
     </div>         
 </div>
 
@@ -57,7 +57,7 @@
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/ortodoncia/"></a>     
+        <a class="link" href="servicios/terapia_preodontologica/"></a>     
     </div>        
 </div>
 
@@ -80,7 +80,7 @@
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/ortodoncia/"></a>
+        <a class="link" href="servicios/blanqueamiento/"></a>
     </div>      
 </div>
 
@@ -94,7 +94,7 @@
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/ortodoncia/"></a>
+        <a class="link" href="servicios/halitosis/"></a>
     </div>          
 </div>
 
@@ -108,7 +108,7 @@
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/ortodoncia/"></a>
+        <a class="link" href="servicios/estetica_labial/"></a>
     </div>          
 </div>         
 
@@ -152,7 +152,7 @@
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/ortodoncia/"></a>        
+        <a class="link" href="servicios/implantes_dentales/"></a>        
     </div>         
 </div>
 
@@ -166,7 +166,7 @@
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/ortodoncia/"></a>        
+        <a class="link" href="servicios/terapia_preodontologica/"></a>        
     </div>        
 </div>
                                 
