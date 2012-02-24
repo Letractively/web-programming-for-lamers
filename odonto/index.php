@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+require('./wordpress/wp-blog-header.php');
 include("CONFIG.php");
 
 
@@ -29,6 +32,9 @@ if ($section == "contacto" || $section == "contacto/") {
 } else if ($section == "contacto" || $section == "contacto/") {
 	$section = "contacto";	
 	
+} else if ($section == "avances" || $section == "avances/") {
+	$section = "avances";
+	
 } else {
 	$section = "home";
 }
@@ -41,7 +47,3 @@ include("section/header.php");
 include("section/".$section.".php");
 
 include("section/footer.php");
-
-
-
-?> 
