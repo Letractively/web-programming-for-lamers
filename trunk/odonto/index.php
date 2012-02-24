@@ -22,9 +22,23 @@ if ($section == "contacto" || $section == "contacto/") {
 	
 	
 } else if ($section == "servicios/ortodoncia" || $section == "servicios/ortodoncia/") {
-	$section = "servicios/ortodoncia";	
+	$section = "servicios/ortodoncia";
 	
+} else if ($section == "servicios/implantes_dentales" || $section == "servicios/implantes_dentales/") {
+	$section = "servicios/implantes_dentales";		
 	
+} else if ($section == "servicios/terapia_preodontologica" || $section == "servicios/terapia_preodontologica/") {
+	$section = "servicios/terapia_preodontologica";		
+
+} else if ($section == "servicios/blanqueamiento" || $section == "servicios/blanqueamiento/") {
+	$section = "servicios/blanqueamiento";
+
+} else if ($section == "servicios/halitosis" || $section == "servicios/halitosis/") {
+	$section = "servicios/halitosis";
+
+} else if ($section == "servicios/estetica_labial" || $section == "servicios/estetica_labial/") {
+	$section = "servicios/estetica_labial";
+
 	
 } else if ($section == "nosotros" || $section == "nosotros/") {
 	$section = "nosotros";	
