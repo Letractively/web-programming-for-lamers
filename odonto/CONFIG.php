@@ -27,5 +27,5 @@
 	
 	}
 	
-	include('include/include.php');
+//	include('include/include.php');
 ?>
