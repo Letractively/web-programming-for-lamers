@@ -5,7 +5,7 @@
 
 <div class="glass" style="background-color:#000;"></div> 
 <div class="glassText">
-	<span id="glassText">Ortodoncia</span>
+	<span id="glassText">Blanqueamiento</span>
 </div> 
 <div id="headimg"> 
     <img src="img/servicios/implantes-dentales.jpg" />
