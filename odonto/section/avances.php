@@ -15,13 +15,11 @@
 <?php
 	$posts = get_posts('numberposts=10&order=ASC&orderby=post_title');
 	foreach ($posts as $post) : start_wp(); ?>
-<div class="block4" style="margin-left: 30px; padding-right: 372px; padding-bottom: 30px;">
-	<?php the_time('F j, Y'); ?>
-	<h2><?php the_title(); ?></h2>
-	<p><?php the_excerpt(); ?></p>
-	<a href="<?php comments_link(); ?>">
-		Comentarios
-	</a>
+<div class="block6">
+	<h2><a href="<?php echo post_permalink(); ?>"><?php the_title(); ?></a></h2>
+	<h3>Publicado el <b><a href="<?php echo post_permalink(); ?>"><?php the_time('j F, Y'); ?></a></b></h3>
+	<p><?php the_content(); ?></p>
+	<h3><a href="<?php comments_link(); ?>">Comentarios</a></h3>
 </div>
 <?php
 	endforeach;

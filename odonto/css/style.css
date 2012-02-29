@@ -148,19 +148,56 @@ small {
 	margin:0 0 0 30px;	
 }
 
-.block4 h2, .block5 h2 {
+.block4 h2, .block5 h2, .block6 h2{
 	font-size:24px;
 	margin:0;
 }
 
-.block4 p, .block5 p {
+.block4 p, .block5 p, .block6 p{
 	font-size:10px;
 }
 
-.block4 p strong, .block5 p strong {
+.block4 p strong, .block5 p strong{
 	color:#7e7e7e;
 	font-weight:none;
 }
+
+.block6 p strong {
+	font-weight: bold;
+	font-size: 10.5px;
+}
+
+.block6 {
+	float:left;
+	margin:0 0 0 30px;	
+	padding-bottom: 10px;
+	padding-top: 20px;
+	width: 768px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.block6 a{
+	color: #00A2E4;
+	text-decoration:none;
+}
+
+.block6 h3 a:hover,
+.block6 h3 a:focus,
+.block6 h3 a:active{
+	color: #10B2F4;
+	text-decoration:underline;
+}
+
+.block6 img{
+    display: inline;
+    float: right;
+    margin: -25px 0 20px 20px;
+	border: none;
+}
+
+.block6 h3{
+	font-size: 12px;
+}
+
 #fs_contacto{
 	margin: 12px 0 0 0;
 	padding: 0;
