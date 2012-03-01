@@ -15,37 +15,55 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Donec viverra odio sit amet lectus hendrerit malesuada dapibus nulla scelerisque. 
-    iquam purus turpis, aliquet id vestibulum vitae, consequat at erat.</p>
+	<p>Los implantes dentales son una concepto novedoso para reemplazar a los dientes que se han perdido, con dientes artificiales que se ven, se sienten y funcionan, en la mayoría de los casos, como los dientes naturales.</p>
 </div>
 
+<div class="block6" style="border-bottom-width: 0px;">
+	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">Procedimiento quirúrgico</h2>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;"><b>La colocación de los implantes se realiza en un acto quirúrgico</b> y el implante estará por debajo o al mismo nivel de la encía, dependiendo de cada caso. Alrededor de 3 o 4  meses después ya se comienzan a preparar las prótesis sujetas por estos implantes.</h3>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">Los implantes son <b>pequeñas estructuras cilíndricas de Titanio</b>, que son colocados mediante una sencilla cirugía en los maxilares donde faltan dientes y que funcionan como substitutos de las raíces dentarias.</h3>
+</div>
 
+<div class="block6">
+	<h2>Preguntas frecuentes</h2>
+</div>	
+	
 <div class="block1">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra odio sit amet lectus 
-    hendrerit malesuada dapibus nulla scelerisque.</p>
-	<p>liquam purus turpis, aliquet id vestibulum vitae, consequat at erat. Quisque ut cursus dolor. 
-    Quisque commodo nisl quis dolor hendrerit id fringilla arcu sagittis.</p>  
+	<h3>1. ¿Es posible que me extraigan un diente y en el mismo momento me coloquen un implante?</h3>
+	<p>Los últimos avances en la tecnología de implantes dentales posibilita que en la misma sesión en la que se extrae un diente se pueden colocar los implantes.</p>
 </div>
 
 <div class="block2">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra odio sit amet lectus 
-    hendrerit malesuada dapibus nulla scelerisque.</p>
-	<p>liquam purus turpis, aliquet id vestibulum vitae, consequat at erat. Quisque ut cursus dolor. 
-    Quisque commodo nisl quis dolor hendrerit id fringilla arcu sagittis.</p>          
+	<h3>2. ¿Quién realiza la colocación de implantes?</h3>
+	<p>Este es un trabajo en equipo, entre un cirujano que coloca el o los implantes y el odontólogo protesista que prepara y adapta las prótesis que van a utilizarse, incluyendo las prótesis provisorias que son utilizadas después de la colocación de los implantes y hasta que se coloque el diente definitivo, es decir aproximadamente entre 3 y 4 meses.</p>
 </div>
 
 <div class="block3">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra odio sit amet lectus 
-    hendrerit malesuada dapibus nulla scelerisque.</p>
-	<p>liquam purus turpis, aliquet id vestibulum vitae, consequat at erat. Quisque ut cursus dolor. 
-    Quisque commodo nisl quis dolor hendrerit id fringilla arcu sagittis.</p>
+	<h3>3. ¿Qué tipo de prótesis se usa?</h3>
+	<p>Pueden usarse dos tipos de prótesis a saber:</p>
+	<p>a. Prótesis única: se usa para suplir un diente faltante, apoyada sobre un implante.</p>
+	<p>b. Prótesis completa: suple a todos los dientes de un maxilar, por lo que el número de implantes variará de acuerdo con el tipo de prótesis que se establezca realizar. La misma puede ser fija  o removible,  dependiendo, entre otras variables, del hueso maxilar existente.</p>
 </div>         
 
+<div style="clear:both; height:10px;"> </div>
 
+<div class="block1">
+	<h3>4. ¿Debo cuidar de alguna manera en particular mi boca, si me coloco implantes?</h3>
+	<p>Los implantes van a funcionar adecuadamente por un prolongado período de tiempo, siempre y cuando se los cuide correctamente. Es decir, se realice  una excelente higiene bucal y se visite periódicamente al odontólogo.</p>
+</div>
 
+<div class="block2">
+	<h3>5. ¿Qué beneficios tiene colocarse implantes?</h3>
+	<p>Al colocarse implantes se  posibilita hablar, sonreír y reír con confianza, así como también se mejora la  masticación. Evitan los problemas y la sensación de inseguridad ocasionados por las prótesis mal afirmadas.</p>
+	<p>Por otro lado se resguardan  las estructuras faciales evitando, de esta manera  la reabsorción que se produce cuando se pierden los dientes. Al distribuir mejor las fuerzas de la masticación entre más dientes permite cuidar los dientes naturales remanentes.</p>
+</div>
 
-<div style="clear:both; height:60px;"> </div>
+<div class="block3">
+	<h3>6. ¿Quiénes se pueden colocar implantes?</h3>
+	<p>Los implantes dentales pueden se colocados a personas de cualquier  edad, una ventaja adicional es que no hacen caries.</p>
+</div>
+
+<div style="clear:both; height:60px; border-top: 1px solid rgb(221, 221, 221);"> </div>
 
 
 
