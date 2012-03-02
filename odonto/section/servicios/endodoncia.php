@@ -5,7 +5,7 @@
 
 <div class="glass" style="background-color:#000;"></div> 
 <div class="glassText">
-	<span id="glassText">Implantes Dentales</span>
+	<span id="glassText">Endodoncia</span>
 </div> 
 <div id="headimg"> 
     <img src="img/servicios/implantes-dentales.jpg" />
@@ -15,30 +15,30 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Los implantes dentales son una concepto novedoso para reemplazar a los dientes que se han perdido, con dientes artificiales que se ven, se sienten y funcionan, en la mayoría de los casos, como los dientes naturales.</p>
+	<p>Cuando la caries llega a la parte más interna del diente produce dolor, es una falacia extraer la pieza y colocar implante.</p>
 </div>
 
 <div class="block6" style="border-bottom-width: 0px;">
 	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">Procedimiento quirúrgico</h2>
-	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;"><b>La colocación de los implantes se realiza en un acto quirúrgico</b> y el implante estará por debajo o al mismo nivel de la encía, dependiendo de cada caso. Alrededor de 3 o 4  meses después ya se comienzan a preparar las prótesis sujetas por estos implantes.</h3>
-	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">Los implantes son <b>pequeñas estructuras cilíndricas de Titanio</b>, que son colocados mediante una sencilla cirugía en los maxilares donde faltan dientes y que funcionan como substitutos de las raíces dentarias.</h3>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">en estos casos se realiza el tratamiento de conducto que consiste en la extirpación del paquete vasculo - nervioso y relleno del conducto con materiales obturados. Seguidamente se realiza su rehabilitación por medio de materiales cerámicos “si persiste diente” por medio de perno y corona. De esta manera se busca conservar las piezas dentarias  por su  funcionalidad natural y los traumas que generan la pérdida de las mismas.</h3>
 </div>
 
+<!--
 <div class="block6">
 	<h2>Preguntas frecuentes</h2>
 </div>	
 	
-<div class="block1text">
+<div class="block1">
 	<h3>1. ¿Es posible que me extraigan un diente y en el mismo momento me coloquen un implante?</h3>
 	<p>Los últimos avances en la tecnología de implantes dentales posibilita que en la misma sesión en la que se extrae un diente se pueden colocar los implantes.</p>
 </div>
 
-<div class="block2text">
+<div class="block2">
 	<h3>2. ¿Quién realiza la colocación de implantes?</h3>
 	<p>Este es un trabajo en equipo, entre un cirujano que coloca el o los implantes y el odontólogo protesista que prepara y adapta las prótesis que van a utilizarse, incluyendo las prótesis provisorias que son utilizadas después de la colocación de los implantes y hasta que se coloque el diente definitivo, es decir aproximadamente entre 3 y 4 meses.</p>
 </div>
 
-<div class="block3text">
+<div class="block3">
 	<h3>3. ¿Qué tipo de prótesis se usa?</h3>
 	<p>Pueden usarse dos tipos de prótesis a saber:</p>
 	<p>a. Prótesis única: se usa para suplir un diente faltante, apoyada sobre un implante.</p>
@@ -62,6 +62,7 @@
 	<h3>6. ¿Quiénes se pueden colocar implantes?</h3>
 	<p>Los implantes dentales pueden se colocados a personas de cualquier  edad, una ventaja adicional es que no hacen caries.</p>
 </div>
+-->
 
 <div style="clear:both; height:60px; border-top: 1px solid rgb(221, 221, 221);"> </div>
 

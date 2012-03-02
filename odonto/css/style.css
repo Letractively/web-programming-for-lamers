@@ -111,35 +111,40 @@ small {
 
 
 
-.block1 p, .block2 p, .block3 p {
-	font-size:11px;
+.block1 p, .block2 p, .block3 p,
+.block1text p, .block2text p, .block3text p {
+	font-size:12px;
 }
 
-.block1 {
+.block1, .block1text {
 	float:left;
 	width:243px;
 	margin:0 0 0 27px;
 	cursor:pointer;
 }
 
-.block2 {
+.block2, .block2text {
 	float:left;
 	width:243px; 
 	margin:0 0 0 20px;	
 	cursor:pointer;	
 }
 
-.block3 {
+.block3, .block3text {
 	float:left;
 	width:243px; 
 	margin:0 0 0 20px;
 	cursor:pointer;	
 }
 
+.block1text, .block2text, .block3text {
+	cursor:default;
+}
+
 .block4 {
 	float:left;
 	width:372px; 
-	margin:0 0 0 20px;	
+	margin:0 0 0 30px;	
 }
 
 .block5 {
@@ -154,7 +159,7 @@ small {
 }
 
 .block4 p, .block5 p, .block6 p{
-	font-size:10px;
+	font-size:12px;
 }
 
 .block4 p strong, .block5 p strong{
@@ -182,7 +187,10 @@ small {
 
 .block6 h3 a:hover,
 .block6 h3 a:focus,
-.block6 h3 a:active{
+.block6 h3 a:active,
+.block1text p a,
+.block2text p a,
+.block3text p a{
 	color: #10B2F4;
 	text-decoration:underline;
 }
