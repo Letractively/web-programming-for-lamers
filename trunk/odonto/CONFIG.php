@@ -16,6 +16,11 @@
 		define('ROOT', 'http://127.0.0.1/odonto/');	
 		define('CONTACT_EMAIL', 'pota@localhost');					
 
+	} elseif ($_SERVER['SERVER_NAME']=='127.0.0.1') {
+		
+		define('ROOT', 'http://127.0.0.1/odonto/');	
+		define('CONTACT_EMAIL', 'pota@localhost');					
+
 	} else {
 		
 		define('ROOT', 'http://www.sumacero.com/odonto/');	

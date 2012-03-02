@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
-require('./wordpress/wp-blog-header.php');
+//require('./wordpress/wp-blog-header.php');
 include("CONFIG.php");
 
 
@@ -38,6 +38,12 @@ if ($section == "contacto" || $section == "contacto/") {
 
 } else if ($section == "servicios/estetica_labial" || $section == "servicios/estetica_labial/") {
 	$section = "servicios/estetica_labial";
+
+} else if ($section == "servicios/endodoncia" || $section == "servicios/endodoncia/") {
+	$section = "servicios/endodoncia";
+
+} else if ($section == "servicios/periodoncia" || $section == "servicios/periodoncia/") {
+	$section = "servicios/periodoncia";
 
 	
 } else if ($section == "nosotros" || $section == "nosotros/") {

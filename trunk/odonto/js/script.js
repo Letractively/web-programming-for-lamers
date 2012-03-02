@@ -21,7 +21,8 @@
 				nextId: 'nextBtn',
 				prevText: '',
 				nextText: '',
-				glassText: ['Servicios', 'Servicios 2']
+				pause: 4000,
+				glassText: ['Servicios', 'Nosotros', 'Ultimos Avances']
 		});
 		
 		

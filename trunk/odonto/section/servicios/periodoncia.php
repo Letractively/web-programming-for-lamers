@@ -5,7 +5,7 @@
 
 <div class="glass" style="background-color:#000;"></div> 
 <div class="glassText">
-	<span id="glassText">Implantes Dentales</span>
+	<span id="glassText">Periodoncia</span>
 </div> 
 <div id="headimg"> 
     <img src="img/servicios/implantes-dentales.jpg" />
@@ -15,53 +15,32 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Los implantes dentales son una concepto novedoso para reemplazar a los dientes que se han perdido, con dientes artificiales que se ven, se sienten y funcionan, en la mayoría de los casos, como los dientes naturales.</p>
+	<p>Tratamiento de limpieza profunda de la parte visible y no visible de los dientes. Tratamiento de la movilidad dentaria. Enseñanza de la adecuada higiene durante todo el tratamiento.</p>
 </div>
 
 <div class="block6" style="border-bottom-width: 0px;">
-	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">Procedimiento quirúrgico</h2>
-	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;"><b>La colocación de los implantes se realiza en un acto quirúrgico</b> y el implante estará por debajo o al mismo nivel de la encía, dependiendo de cada caso. Alrededor de 3 o 4  meses después ya se comienzan a preparar las prótesis sujetas por estos implantes.</h3>
-	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">Los implantes son <b>pequeñas estructuras cilíndricas de Titanio</b>, que son colocados mediante una sencilla cirugía en los maxilares donde faltan dientes y que funcionan como substitutos de las raíces dentarias.</h3>
+	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">Enfermedad periodontal</h2>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">El término enfermedad periodontal describe un grupo en infecciones localizadas que afectan los tejidos que soportan y rodean los dientes.</h3>	
 </div>
 
 <div class="block6">
-	<h2>Preguntas frecuentes</h2>
+	<h2>Claves sobre la periodoncia</h2>
 </div>	
 	
 <div class="block1text">
-	<h3>1. ¿Es posible que me extraigan un diente y en el mismo momento me coloquen un implante?</h3>
-	<p>Los últimos avances en la tecnología de implantes dentales posibilita que en la misma sesión en la que se extrae un diente se pueden colocar los implantes.</p>
+	<h3>Los dos tipos más comunes de enfermedad periodontal son la gingivitis y la periodontitis.</h3>
+	<p>La gingivitis, una condición previa y reversible es una inflamación de los tejidos que rodean los dientes. Los sujetos con gingivitis tienen las encías blandas, edematosas y rojizas que pueden sangrar bajo una presión moderada como es el cepillado de dientes.</p>
 </div>
 
 <div class="block2text">
-	<h3>2. ¿Quién realiza la colocación de implantes?</h3>
-	<p>Este es un trabajo en equipo, entre un cirujano que coloca el o los implantes y el odontólogo protesista que prepara y adapta las prótesis que van a utilizarse, incluyendo las prótesis provisorias que son utilizadas después de la colocación de los implantes y hasta que se coloque el diente definitivo, es decir aproximadamente entre 3 y 4 meses.</p>
+	<h3>La periodontitis es una condición inflamatoria progresiva</h3>
+	<p>Destruye las fibras de los ligamentos periodontales y el hueso alvéolar y puede, eventualmente ocasionar la pérdida de los dientes. Aunque la gingivitis suele preceder a la periodontitis, no todas las gingivitis progresan a periodontitis.</p>
 </div>
 
 <div class="block3text">
-	<h3>3. ¿Qué tipo de prótesis se usa?</h3>
-	<p>Pueden usarse dos tipos de prótesis a saber:</p>
-	<p>a. Prótesis única: se usa para suplir un diente faltante, apoyada sobre un implante.</p>
-	<p>b. Prótesis completa: suple a todos los dientes de un maxilar, por lo que el número de implantes variará de acuerdo con el tipo de prótesis que se establezca realizar. La misma puede ser fija  o removible,  dependiendo, entre otras variables, del hueso maxilar existente.</p>
+	<h3>Higiene oral</h3>
+	<p>Para todas las personas, la clave para prevenir la enfermedad periodontal estriba en una buena higiene oral y un mantenimiento dental regular. Un tercer elemento crucial para los diabéticos es un buen control de la glucemia; la diabetes mal controlada favorece o promueve el desarrollo de la enfermedad periodontal.</p>
 </div>         
-
-<div style="clear:both; height:10px;"> </div>
-
-<div class="block1">
-	<h3>4. ¿Debo cuidar de alguna manera en particular mi boca, si me coloco implantes?</h3>
-	<p>Los implantes van a funcionar adecuadamente por un prolongado período de tiempo, siempre y cuando se los cuide correctamente. Es decir, se realice  una excelente higiene bucal y se visite periódicamente al odontólogo.</p>
-</div>
-
-<div class="block2">
-	<h3>5. ¿Qué beneficios tiene colocarse implantes?</h3>
-	<p>Al colocarse implantes se  posibilita hablar, sonreír y reír con confianza, así como también se mejora la  masticación. Evitan los problemas y la sensación de inseguridad ocasionados por las prótesis mal afirmadas.</p>
-	<p>Por otro lado se resguardan  las estructuras faciales evitando, de esta manera  la reabsorción que se produce cuando se pierden los dientes. Al distribuir mejor las fuerzas de la masticación entre más dientes permite cuidar los dientes naturales remanentes.</p>
-</div>
-
-<div class="block3">
-	<h3>6. ¿Quiénes se pueden colocar implantes?</h3>
-	<p>Los implantes dentales pueden se colocados a personas de cualquier  edad, una ventaja adicional es que no hacen caries.</p>
-</div>
 
 <div style="clear:both; height:60px; border-top: 1px solid rgb(221, 221, 221);"> </div>
 

@@ -9,9 +9,7 @@
 </div>
 
 <div id="topParagraph">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Donec viverra odio sit amet lectus hendrerit malesuada dapibus nulla scelerisque. 
-    iquam purus turpis, aliquet id vestibulum vitae, consequat at erat.</p>
+	<p>En Odontologia Working Group, conocemos la importancia de un contacto fluido entre paciente y especialista. Por eso, ponemos a tu disposición varias formas de llegar a nosotros, de la manera más rápida y eficaz, según tus propias conveniencias. Sea por mail o teléfono.</p>
 </div>
 
 
@@ -22,8 +20,8 @@
 
 <div class="block5">
 	<h2>Estamos a su disposici&oacute;n</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra odio sit amet lectus hendrerit malesuada dapibus nulla scelerisque.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Utilice el siguiente formulario para enviarnos un mensaje. Tanto sore consultas odontológicas, como solicitudes de turno y mayor información sobre nuestros implantes dentales y otros servicios.</p>
+	<p>Si lo desea, también puede comunicarse con nosotros por teléfono, llamando al número contiguo.</p>
 	
 	<fieldset id="fs_contacto">
 		<label for="nombre">Nombre<br />
