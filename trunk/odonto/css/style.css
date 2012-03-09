@@ -109,7 +109,9 @@ small {
 	margin:0 30px 0 30px;	
 }
 
-
+.servicio p{
+	height: 16px;
+}
 
 .block1 p, .block2 p, .block3 p,
 .block1text p, .block2text p, .block3text p {

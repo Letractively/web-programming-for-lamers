@@ -45,7 +45,7 @@
 
 
 <div class="block4">
-        <img src="img/nosotros1.jpg"/>
+        <img src="img/nosotros2.jpg"/>
 </div>
 
 <div class="block4">
