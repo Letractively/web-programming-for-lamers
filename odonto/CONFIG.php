@@ -29,8 +29,8 @@
 		//include("include/db.class.php");
 		//$db = new DB("ctl", "localhost", "root", "root");
 		//global $db;
-	
 	}
+	
 	
 //	include('include/include.php');
 ?>

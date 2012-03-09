@@ -7,9 +7,7 @@
 </div>
 
 <div id="topParagraph">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Donec viverra odio sit amet lectus hendrerit malesuada dapibus nulla scelerisque. 
-    iquam purus turpis, aliquet id vestibulum vitae, consequat at erat.</p>
+	<p>Nuestro blog le permite mantenerse al tanto de nuestras más recientes innovaciones, actualización de equipo, y técnicas. Su opinión nos es importante, lo invitamos también a comentar bajo nuestros artículos.</p>
 </div>
 
 <?php

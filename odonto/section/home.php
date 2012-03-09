@@ -13,8 +13,8 @@
 <div id="slider">
 	<ul>				
 		<li> <a href="servicios/"><img style="border-style: none;" src="img/slider/01.jpg" alt="slider" /></a> </li>
-		<li> <a href="nosotros/"><img style="border-style: none;" src="img/slider/02.jpg" alt="slider" /></a> </li>
 		<li> <a href="avances/"><img style="border-style: none;" src="img/slider/03.jpg" alt="slider" /></a> </li>
+		<li> <a href="nosotros/"><img style="border-style: none;" src="img/slider/02.jpg" alt="slider" /></a> </li>
 	</ul>
      
 </div>  
