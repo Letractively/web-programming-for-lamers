@@ -15,7 +15,7 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>En algunos casos donde se pierden las piezas dentales anteriores, el labio pierde el sostén, se forman arrugas; estas son tratadas con diferentes productos para aumentar su volumen luego que se han reemplazado las piezas faltantes. También se realiza en instancias en las que, por el paso del tiempo, el labio pierde el sostén.</p>
+	<p>En algunos casos donde se pierden las piezas dentales anteriores, el labio pierde el sostén, se forman arrugas; estas son tratadas con diferentes productos para aumentar su volumen luego que se han reemplazado las piezas faltantes. También se realiza en instancias en las que, por el paso del tiempo, el labio pierde el soporte muscular.</p>
 </div>
 
 <!--

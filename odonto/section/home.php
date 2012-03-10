@@ -24,16 +24,16 @@
 <div class="block1text">
 	
     <div style="float:left; margin:7px 0 0 16px;">
-	    <img src="img/tooth.jpg" />
+	    <!--<img src="img/tooth.jpg" />-->
     </div>
         
-    <div style="float:left; margin:0 0 10px 15px;">
+    <div style="float:left; margin:0 0 10px -6px;">
 		<h2> Odontología sin Dolor</h2>
     </div>
 
     <div style="clear:both; width:243px; margin:0 0 0 10px;">
         <p>Disponemos de varios tipos de sedación según la necesidad y deseo de cada paciente.</p>
-		<p>Ademas, contamos con un departamento propio de especialistas del área psicológica que acompañan tanto pre como pos – tratamiento a cada persona.</p>
+		<p>Además, contamos con un departamento propio de especialistas del área psicológica que acompañan tanto pre como pos – tratamiento a cada persona.</p>
     </div>
     
 </div>
@@ -41,16 +41,16 @@
 <div class="block2text">
 
     <div style="float:left; margin:5px 0 0 16px;">
-	    <img src="img/microscope.jpg" />
+	    <!--<img src="img/microscope.jpg" />-->
     </div>
         
-    <div style="float:left; margin:0 0 10px 10px;">
+    <div style="float:left; margin:0 0 10px -6px;">
 		<h2> Especialistas</h2>
     </div>
 
     <div style="clear:both; width:243px; margin:0 0 0 10px;">
-        <p>Somos especialistas en implantes dentales y salud bucal, a la vez que cuidamos la estética dental. No se trata de una franquicia, sino de un grupo de profesionales donde sus socios fundadores supervisan todas las intervenciones.</p>
-        <p>Resguardar a nuestros pacientes es una de las prioridades de nuestro equipo.</p>
+        <p>Somos un grupo de especialistas dedicados a la salud bucal, a la vez que cuidamos la estética dental.  Sus socios fundadores supervisan todas las intervenciones.</p>
+		<p>Resguardar a nuestros pacientes es una de las prioridades de nuestro equipo.</p>
 		<p>Odontología Working Group ha realizado más de 3.000 implantes dentales con éxito.</p>
     </div>
 
@@ -67,8 +67,9 @@
     </div>
 
     <div style="clear:both; width:243px; margin:0 0 0 10px;">
-        <p>La primera visita, radiografía inicial, diagnóstico y presupuesto son gratuitos. Contamos con Servicio Online las 24 horas al día y diagnóstico a distancia a través de nuestra web.</p>
-        <p>Empleamos técnicas avanzadas y materiales de última generación a precios accesibles y financiados.</p>
+        <p>La primera visita, radiografía inicial, diagnóstico y presupuesto son gratuitos. Contamos con Servicio Online las 24 horas del día y diagnóstico a distancia a través de nuestra web.</p>
+		<p>Empleamos técnicas avanzadas y materiales de última generación a precios accesibles y financiados.</p>
+
     </div>
 
 </div>

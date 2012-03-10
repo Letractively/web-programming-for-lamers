@@ -15,7 +15,7 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Inicialmente se trata de disminuir todos los factores que localmente pueden provocar el mal aliento, como por ejemplo caries, placa bacteriana (higiene deficiente), focos de infección, etc. En el caso de persistir el problema se aborda el mismo interdisciplinariamente.</p>
+	<p>Inicialmente se trata de disminuir todos los factores que pueden ser locales y/o sistémicos que  provocan el mal aliento, como por ejemplo caries, placa bacteriana (higiene deficiente), focos de infección, etc. En el caso de persistir el problema se aborda el mismo interdisciplinariamente.</p>
 </div>
 
 <!--
