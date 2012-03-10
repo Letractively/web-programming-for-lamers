@@ -13,7 +13,7 @@
 </div>
 
 <div class="block6" style="border-bottom-width: 0px;">
-	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">¿Quienes somos?</h2>
+	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">¿Quiénes somos?</h2>
 	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;"><b>Le damos nuestra más amable bienvenida a OWG.</b></h3>
 	<p>En OWG, encontrará un equipo de profesionales destacados en cada especialidad de la odontología, y preparados para  recibirlos con calidez y máxima profesionalidad.</p>
 	<p>Nuestra profesionalidad y calidad humana nos diferencian.</p>

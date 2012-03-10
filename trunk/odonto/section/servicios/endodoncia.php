@@ -20,7 +20,7 @@
 
 <div class="block6" style="border-bottom-width: 0px;">
 	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">Procedimiento quirúrgico</h2>
-	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">en estos casos se realiza el tratamiento de conducto que consiste en la extirpación del paquete vasculo - nervioso y relleno del conducto con materiales obturados. Seguidamente se realiza su rehabilitación por medio de materiales cerámicos “si persiste diente” por medio de perno y corona. De esta manera se busca conservar las piezas dentarias  por su  funcionalidad natural y los traumas que generan la pérdida de las mismas.</h3>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">En estos casos se realiza el tratamiento de conducto que consiste en la extirpación del paquete vasculo - nervioso y relleno del conducto con materiales medicamentosos que obturan los conductos de las raíces. Seguidamente se realiza su rehabilitación por medio de materiales cerámicos “si persiste diente” o por medio de perno y corona si no queda remanente dentario. De esta manera se busca conservar las piezas dentarias por su funcionalidad natural por el mayor tiempo posible, y  así evitar los traumas que generan la pérdida de los mismos.</h3>
 </div>
 
 <!--

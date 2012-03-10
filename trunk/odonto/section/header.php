@@ -60,7 +60,7 @@
 	<body>
     
     	<div id="top">
-        	<div style="float:left; margin:42px 0 0 46px;">
+        	<div style="float:left; margin:30px 0 0 16px;">
                	<img src="img/logo.png">
             </div>
         	<div id="menu">
