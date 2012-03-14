@@ -45,6 +45,8 @@ if ($section == "contacto" || $section == "contacto/") {
 } else if ($section == "servicios/periodoncia" || $section == "servicios/periodoncia/") {
 	$section = "servicios/periodoncia";
 
+} else if ($section == "servicios/turismo_odontologico" || $section == "servicios/turismo_odontologico/") {
+	$section = "servicios/turismo_odontologico";
 	
 } else if ($section == "nosotros" || $section == "nosotros/") {
 	$section = "nosotros";	

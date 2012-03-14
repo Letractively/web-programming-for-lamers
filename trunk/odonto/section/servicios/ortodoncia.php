@@ -15,7 +15,8 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Aparatos fijos y removibles de acuerdo a la edad y necesidad de cada persona. Colocación de braquets estéticos para la alineación de las piezas dentarias. Tratamientos breves a través de distracción ósea para pacientes con problemas esqueletales (ej. Disgnacias)</p>
+	<p>Aparatos fijos y removibles de acuerdo a la edad y necesidad de cada persona. Colocación de braquets estéticos para la alineación de las piezas dentarias. Tratamientos breves a través de distracción ósea para determinados  pacientes con problemas esqueletales.</p>
+	<p>Tratamiento de  Disgnacias.</p>
 </div>
 
 

@@ -20,8 +20,8 @@
 
 <div class="block6" style="border-bottom-width: 0px;">
 	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">Procedimiento quirúrgico</h2>
-	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;"><b>La colocación de los implantes se realiza en un acto quirúrgico</b> y el implante estará por debajo o al mismo nivel de la encía, dependiendo de cada caso. Alrededor de 3 o 4  meses después ya se comienzan a preparar las prótesis sujetas por estos implantes.</h3>
-	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">Los implantes son <b>pequeñas estructuras cilíndricas de Titanio</b>, que son colocados mediante una sencilla cirugía en los maxilares donde faltan dientes y que funcionan como substitutos de las raíces dentarias.</h3>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;"><b>La colocación de los implantes se realiza en un acto quirúrgico</b> y el implante estará por debajo o al mismo nivel de la encía, dependiendo de cada caso. Alrededor de 3 ó 4 meses después ya se comienzan a preparar las prótesis sujetadas por estos implantes.</h3>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">Los implantes son <b>pequeñas estructuras cilíndricas de Titanio o Zirconio</b>, que son colocados mediante una sencilla cirugía en los maxilares donde faltan dientes y que funcionan como substitutos de las raíces dentarias.</h3>
 </div>
 
 <div class="block6">
@@ -54,8 +54,8 @@
 
 <div class="block2">
 	<h3>5. ¿Qué beneficios tiene colocarse implantes?</h3>
-	<p>Al colocarse implantes se  posibilita hablar, sonreír y reír con confianza, así como también se mejora la  masticación. Evitan los problemas y la sensación de inseguridad ocasionados por las prótesis mal afirmadas.</p>
-	<p>Por otro lado se resguardan  las estructuras faciales evitando, de esta manera  la reabsorción que se produce cuando se pierden los dientes. Al distribuir mejor las fuerzas de la masticación entre más dientes permite cuidar los dientes naturales remanentes.</p>
+	<p>Al colocarse implantes se posibilita hablar, sonreír y reír con confianza, así como también se mejora la masticación y por ende la digestión. Evitan los problemas y la sensación de inseguridad ocasionados por las prótesis mal afirmadas.</p>
+	<p>Por otro lado se resguardan las estructuras faciales evitando, de esta manera la reabsorción que se produce cuando se pierden los dientes. Al distribuir mejor las fuerzas de la masticación entre más dientes permite cuidar los dientes naturales remanentes.</p>
 </div>
 
 <div class="block3">
