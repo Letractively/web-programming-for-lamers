@@ -39,7 +39,8 @@
 
 <div class="block3text">
 	<h3>Higiene oral</h3>
-	<p>Para todas las personas, la clave para prevenir la enfermedad periodontal estriba en una buena higiene oral y un mantenimiento dental regular. Un tercer elemento crucial para los diabéticos es un buen control de la glucemia; la diabetes mal controlada favorece o promueve el desarrollo de la enfermedad periodontal.</p>
+	<p>Para todas las personas, la clave para prevenir la enfermedad periodontal estriba en una buena higiene oral y un mantenimiento dental regular.</p>
+	<p>En caso de enfermedades sistémicas tales como diabetes, problemas cardíacos, enfermedades renales, etc. es muy importante extremar las medidas de higiene tanto por paciente como así también visitas periódicas a su odontólogo.</p>
 </div>         
 
 <div style="clear:both; height:60px; border-top: 1px solid rgb(221, 221, 221);"> </div>

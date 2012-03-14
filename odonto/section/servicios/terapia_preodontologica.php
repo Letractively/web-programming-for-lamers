@@ -37,7 +37,7 @@
 <div class="block3text">
 	<p>Nos destacamos por ser especialistas en  Implantes Dentales y nuevos dientes fijos en un día, la excelencia en estética dental (carillas de porcelana y las prótesis estéticas).</p>
 	<p>Con nuestros especialistas encontrarás el tratamiento más adecuado para tu salud bucal.</p>
-	<p>Reserva tu primera visita en el apartado de <a href="contacto/">pedir hora</a> o <a href="contacto/">hace tu consulta online</a> las 24 hs.</p>
+	<p><b>Reserva tu primera visita en el apartado de <a href="contacto/">pedir hora</a> o <a href="contacto/">hace tu consulta online</a> las 24 hs.</b></p>
 
 </div>         
 
