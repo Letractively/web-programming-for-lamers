@@ -15,7 +15,7 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Inicialmente se trata de disminuir todos los factores que pueden ser locales y/o sistémicos que  provocan el mal aliento, como por ejemplo caries, placa bacteriana (higiene deficiente), focos de infección, etc. En el caso de persistir el problema se aborda el mismo interdisciplinariamente.</p>
+	<p><b>Inicialmente se trata de disminuir todos los factores que pueden ser locales y/o sistémicos que  provocan el mal aliento, como por ejemplo caries, placa bacteriana (higiene deficiente), focos de infección, etc. En el caso de persistir el problema se aborda el mismo interdisciplinariamente.</b></p>
 </div>
 
 <!--
@@ -186,20 +186,19 @@
     </div>         
 </div>
 
-<!--
 <div class="block3">
 	<div class="servicio">
         <img src="img/block/terapia.jpg"/> <br />
-        <h3 style="margin:6px 0 0 0;">Terapia Preodontológica</h3>
+        <h3 style="margin:6px 0 0 0;">Turismo Odontológico</h3>
         <p style="margin:0 0 0 0;">Lorem ipsum dolor sit amet</p>
         
         <div class="servicioText">
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/terapia_preodontologica/"></a>        
+        <a class="link" href="servicios/turismo_odontologico/"></a>        
     </div>        
 </div>
--->
 
-<div style="clear:both; height:30px;"> </div>                             
+
+<div style="clear:both; height:30px;"> </div>                        

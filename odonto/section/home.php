@@ -63,13 +63,15 @@
     </div>
         
     <div style="float:left; margin:0 0 10px 10px;">
-		<h2> Consultas sin cargo</h2>
+		<h2> Primera Consulta</h2>
     </div>
 
     <div style="clear:both; width:243px; margin:0 0 0 10px;">
-        <p>La primera visita, radiografía inicial, diagnóstico y presupuesto son gratuitos. Contamos con Servicio Online las 24 horas del día y diagnóstico a distancia a través de nuestra web.</p>
+        <p>En la primera visita realizamos el diagnóstico, que incluye radiografías iniciales y odontograma .Luego elaboramos un plan de tratamiento de acuerdo a sus necesidades; así como también le brindamos una  breve charla sobre prevención.</p>
+		<p>La misma está a cargo del director.</p>
+		<p>Contamos con Servicio Online las 24 horas del día y diagnóstico a distancia a través de nuestra web.</p>
 		<p>Empleamos técnicas avanzadas y materiales de última generación a precios accesibles y financiados.</p>
-
+		
     </div>
 
 </div>
@@ -213,20 +215,19 @@
     </div>         
 </div>
 
-<!--
 <div class="block3">
 	<div class="servicio">
         <img src="img/block/terapia.jpg"/> <br />
-        <h3 style="margin:6px 0 0 0;">Terapia Preodontológica</h3>
+        <h3 style="margin:6px 0 0 0;">Turismo Odontológico</h3>
         <p style="margin:0 0 0 0;">Lorem ipsum dolor sit amet</p>
         
         <div class="servicioText">
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/terapia_preodontologica/"></a>        
+        <a class="link" href="servicios/turismo_odontologico/"></a>        
     </div>        
 </div>
--->
 
-<div style="clear:both; height:30px;"> </div>                             
+
+<div style="clear:both; height:30px;"> </div>     

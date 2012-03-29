@@ -15,7 +15,7 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Nuestro grupo facilita el alojamiento y el transporte mientras se encuentren en Argentina, mediante una buena asesoría y convenios con agencias de turismo especializadas.</p>
+	<p><b>Nuestro grupo facilita el alojamiento y el transporte mientras se encuentren en Argentina, mediante una buena asesoría y convenios con agencias de turismo especializadas.</b></p>
 </div>
 
 <!--<div class="block6" style="border-bottom-width: 0px;">
@@ -214,20 +214,19 @@
     </div>         
 </div>
 
-<!--
 <div class="block3">
 	<div class="servicio">
         <img src="img/block/terapia.jpg"/> <br />
-        <h3 style="margin:6px 0 0 0;">Terapia Preodontológica</h3>
+        <h3 style="margin:6px 0 0 0;">Turismo Odontológico</h3>
         <p style="margin:0 0 0 0;">Lorem ipsum dolor sit amet</p>
         
         <div class="servicioText">
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/terapia_preodontologica/"></a>        
+        <a class="link" href="servicios/turismo_odontologico/"></a>        
     </div>        
 </div>
--->
 
-<div style="clear:both; height:30px;"> </div>                             
+
+<div style="clear:both; height:30px;"> </div>                          
