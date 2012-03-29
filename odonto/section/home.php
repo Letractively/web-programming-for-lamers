@@ -67,7 +67,7 @@
     </div>
 
     <div style="clear:both; width:243px; margin:0 0 0 10px;">
-        <p>En la primera visita realizamos el diagnóstico, que incluye radiografías iniciales y odontograma .Luego elaboramos un plan de tratamiento de acuerdo a sus necesidades; así como también le brindamos una  breve charla sobre prevención.</p>
+        <p>En la <b>primera visita</b> realizamos el diagnóstico, que incluye radiografías iniciales y odontograma .Luego elaboramos un plan de tratamiento de acuerdo a sus necesidades; así como también le brindamos una  breve charla sobre prevención.</p>
 		<p>La misma está a cargo del director.</p>
 		<p>Contamos con Servicio Online las 24 horas del día y diagnóstico a distancia a través de nuestra web.</p>
 		<p>Empleamos técnicas avanzadas y materiales de última generación a precios accesibles y financiados.</p>
