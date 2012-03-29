@@ -15,8 +15,8 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Aparatos fijos y removibles de acuerdo a la edad y necesidad de cada persona. Colocación de braquets estéticos para la alineación de las piezas dentarias. Tratamientos breves a través de distracción ósea para determinados  pacientes con problemas esqueletales.</p>
-	<p>Tratamiento de  Disgnacias.</p>
+	<p><b>Aparatos fijos y removibles de acuerdo a la edad y necesidad de cada persona. Colocación de braquets estéticos para la alineación de las piezas dentarias. Tratamientos breves a través de distracción ósea para determinados  pacientes con problemas esqueletales.</b></p>
+	<p><b>Tratamiento de  Disgnacias.</b></p>
 </div>
 
 
@@ -188,20 +188,19 @@
     </div>         
 </div>
 
-<!--
 <div class="block3">
 	<div class="servicio">
         <img src="img/block/terapia.jpg"/> <br />
-        <h3 style="margin:6px 0 0 0;">Terapia Preodontológica</h3>
+        <h3 style="margin:6px 0 0 0;">Turismo Odontológico</h3>
         <p style="margin:0 0 0 0;">Lorem ipsum dolor sit amet</p>
         
         <div class="servicioText">
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/terapia_preodontologica/"></a>        
+        <a class="link" href="servicios/turismo_odontologico/"></a>        
     </div>        
 </div>
--->
 
-<div style="clear:both; height:30px;"> </div>                             
+
+<div style="clear:both; height:30px;"> </div>                        

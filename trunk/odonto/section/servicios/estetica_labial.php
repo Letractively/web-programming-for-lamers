@@ -15,7 +15,7 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>En algunos casos donde se pierden las piezas dentales anteriores, el labio pierde el sostén, se forman arrugas; estas son tratadas con diferentes productos para aumentar su volumen luego que se han reemplazado las piezas faltantes. También se realiza en instancias en las que, por el paso del tiempo, el labio pierde el soporte muscular.</p>
+	<p><b>En algunos casos donde se pierden las piezas dentales anteriores, el labio pierde el sostén, se forman arrugas; estas son tratadas con diferentes productos para aumentar su volumen luego que se han reemplazado las piezas faltantes. También se realiza en instancias en las que, por el paso del tiempo, el labio pierde el soporte muscular.</b></p>
 </div>
 
 <!--
@@ -186,20 +186,19 @@
     </div>         
 </div>
 
-<!--
 <div class="block3">
 	<div class="servicio">
         <img src="img/block/terapia.jpg"/> <br />
-        <h3 style="margin:6px 0 0 0;">Terapia Preodontológica</h3>
+        <h3 style="margin:6px 0 0 0;">Turismo Odontológico</h3>
         <p style="margin:0 0 0 0;">Lorem ipsum dolor sit amet</p>
         
         <div class="servicioText">
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/terapia_preodontologica/"></a>        
+        <a class="link" href="servicios/turismo_odontologico/"></a>        
     </div>        
 </div>
--->
 
-<div style="clear:both; height:30px;"> </div>                             
+
+<div style="clear:both; height:30px;"> </div>                        

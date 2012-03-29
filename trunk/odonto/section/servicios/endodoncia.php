@@ -15,7 +15,7 @@
 
 
 <div id="topParagraph" style="height:50px;">
-	<p>Cuando la caries llega a la parte más interna del diente produce dolor, es una falacia extraer la pieza y colocar implante.</p>
+	<p><b>Cuando la caries llega a la parte más interna del diente produce dolor, es una falacia extraer la pieza y colocar implante.</b></p>
 </div>
 
 <div class="block6" style="border-bottom-width: 0px;">
@@ -207,20 +207,19 @@
     </div>         
 </div>
 
-<!--
 <div class="block3">
 	<div class="servicio">
         <img src="img/block/terapia.jpg"/> <br />
-        <h3 style="margin:6px 0 0 0;">Terapia Preodontológica</h3>
+        <h3 style="margin:6px 0 0 0;">Turismo Odontológico</h3>
         <p style="margin:0 0 0 0;">Lorem ipsum dolor sit amet</p>
         
         <div class="servicioText">
             <p>Lorem ipsum dolor sic amet. Consectetur adespescit</p>
         </div>
         
-        <a class="link" href="servicios/terapia_preodontologica/"></a>        
+        <a class="link" href="servicios/turismo_odontologico/"></a>        
     </div>        
 </div>
--->
 
-<div style="clear:both; height:30px;"> </div>                             
+
+<div style="clear:both; height:30px;"> </div>                        
