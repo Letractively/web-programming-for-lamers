@@ -8,7 +8,7 @@
 	<span id="glassText">Turismo Odontológico</span>
 </div> 
 <div id="headimg"> 
-    <img src="img/servicios/implantes-dentales.jpg" />
+    <img src="img/servicios/TurismoOdontologico.jpg" />
 </div>
 
 <div style="clear:both"></div>
