@@ -1,1 +1,220 @@
 [01-Feb-2012 18:15:49] PHP Parse error:  syntax error, unexpected $end in /home6/sumacero/public_html/odonto/include/image.class.php on line 134
+[24-Feb-2012 06:07:36] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/avances.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 44
+[24-Feb-2012 06:07:40] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/avances.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 44
+[24-Feb-2012 06:07:42] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/avances.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 44
+[24-Feb-2012 06:07:42] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/avances.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 44
+[24-Feb-2012 06:08:02] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/avances.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 44
+[24-Feb-2012 06:29:06] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 29
+[24-Feb-2012 06:29:06] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 29
+[24-Feb-2012 06:29:14] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 29
+[24-Feb-2012 06:29:14] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 29
+[24-Feb-2012 06:29:14] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 29
+[24-Feb-2012 06:31:36] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 25
+[24-Feb-2012 06:31:36] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 25
+[24-Feb-2012 06:31:44] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 25
+[24-Feb-2012 06:31:44] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 25
+[24-Feb-2012 06:31:45] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 25
+[24-Feb-2012 13:33:26] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 7680 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 91
+[24-Feb-2012 13:33:26] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 7680 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 91
+[24-Feb-2012 13:33:26] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 7680 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 91
+[24-Feb-2012 13:36:32] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 7680 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 91
+[24-Feb-2012 13:36:33] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 7680 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 91
+[24-Feb-2012 06:38:09] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:38:09] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[24-Feb-2012 06:38:09] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 25
+[24-Feb-2012 06:38:10] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:38:10] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[24-Feb-2012 06:38:10] PHP Parse error:  syntax error, unexpected T_ELSE in /home6/sumacero/public_html/odonto/section/avances.php on line 25
+[24-Feb-2012 06:38:10] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:38:10] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[24-Feb-2012 06:38:10] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:38:10] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[24-Feb-2012 06:38:10] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:38:10] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[24-Feb-2012 13:42:06] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:42:18] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:42:22] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:42:27] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:42:53] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:43:03] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:44:24] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:44:24] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:44:31] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:45:13] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:45:13] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:45:20] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:45:20] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:45:20] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:45:21] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:45:21] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:45:21] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:46:16] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:46:16] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:46:16] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 13:47:56] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'dbelement.class.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/include/include.php on line 10
+[24-Feb-2012 13:47:56] PHP Fatal error:  Class 'dbelement' not found in /home6/sumacero/public_html/odonto/include/user.class.php on line 4
+[24-Feb-2012 13:47:56] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'dbelement.class.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/include/include.php on line 10
+[24-Feb-2012 13:47:56] PHP Fatal error:  Class 'dbelement' not found in /home6/sumacero/public_html/odonto/include/user.class.php on line 4
+[24-Feb-2012 06:52:17] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:18] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:27] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:28] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:29] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:29] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:29] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:30] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:30] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:30] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:31] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:31] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:31] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:32] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:32] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:32] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:33] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:33] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:34] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:35] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:35] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:35] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:52:36] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:53:26] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:53:26] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:53:27] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:53:27] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:53:28] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:29] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:30] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:30] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:30] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:35] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:36] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:36] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:37] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:37] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:38] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:38] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:38] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:39] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:39] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:40] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:40] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:54:41] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:56:10] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:56:10] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:56:11] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:56:11] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 06:56:12] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:03:28] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:03:28] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:03:29] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:03:29] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:03:30] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:05:52] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:05:53] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:05:53] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:05:54] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:05:54] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:09:11] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:09:11] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:09:12] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:09:12] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:09:13] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:09:14] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:18] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 14:10:19] PHP Fatal error:  Call to undefined function  have_postss() in /home6/sumacero/public_html/odonto/section/avances.php on line 19
+[24-Feb-2012 07:10:19] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 14:10:19] PHP Fatal error:  Call to undefined function  have_postss() in /home6/sumacero/public_html/odonto/section/avances.php on line 19
+[24-Feb-2012 07:10:20] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:20] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:20] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:21] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:21] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:21] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:21] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:22] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:22] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:22] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:10:23] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:15:15] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:15:16] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:15:16] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:15:17] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:15:17] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:15:17] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:16:07] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:16:08] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:16:08] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:16:08] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:16:11] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:16:13] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:16:14] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:20:19] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:20:21] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:20:23] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:20:23] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:20:24] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:24:59] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:25:00] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:25:01] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:25:01] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 07:25:01] PHP Notice:  A session had already been started - ignoring session_start() in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 2
+[24-Feb-2012 14:27:21] PHP Fatal error:  Allowed memory size of 20971520 bytes exhausted (tried to allocate 30720 bytes) in /home6/sumacero/public_html/odonto/include/dbelement.class.php on line 119
+[24-Feb-2012 15:42:36] PHP Parse error:  syntax error, unexpected '=' in /home6/sumacero/public_html/odonto/section/avances.php on line 28
+[24-Feb-2012 15:42:36] PHP Parse error:  syntax error, unexpected '=' in /home6/sumacero/public_html/odonto/section/avances.php on line 28
+[24-Feb-2012 15:44:25] PHP Parse error:  syntax error, unexpected '=' in /home6/sumacero/public_html/odonto/section/avances.php on line 28
+[24-Feb-2012 15:44:25] PHP Parse error:  syntax error, unexpected '=' in /home6/sumacero/public_html/odonto/section/avances.php on line 28
+[02-Mar-2012 08:04:09] PHP Notice:  Undefined index:  s in /home6/sumacero/public_html/odonto/index.php on line 8
+[02-Mar-2012 08:04:09] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:35] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:38] PHP Notice:  Undefined index:  s in /home6/sumacero/public_html/odonto/index.php on line 8
+[02-Mar-2012 08:04:38] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:39] PHP Notice:  Undefined index:  s in /home6/sumacero/public_html/odonto/index.php on line 8
+[02-Mar-2012 08:04:39] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:39] PHP Notice:  Undefined index:  s in /home6/sumacero/public_html/odonto/index.php on line 8
+[02-Mar-2012 08:04:39] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:39] PHP Notice:  Undefined index:  s in /home6/sumacero/public_html/odonto/index.php on line 8
+[02-Mar-2012 08:04:39] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:39] PHP Notice:  Undefined index:  s in /home6/sumacero/public_html/odonto/index.php on line 8
+[02-Mar-2012 08:04:39] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:47] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:50] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:50] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:50] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:50] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:50] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:57] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:58] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:58] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:58] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:58] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:58] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:59] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:59] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:59] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:59] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:04:59] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:01] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:02] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:03] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:03] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:03] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:03] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:03] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:04] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:07] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:07] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:08] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:08] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:08] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:08] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:08] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:16] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:16] PHP Fatal error:  Call to undefined function  get_posts() in /home6/sumacero/public_html/odonto/section/avances.php on line 16
+[02-Mar-2012 08:05:16] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:16] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[02-Mar-2012 08:05:16] PHP Notice:  Undefined index:  id in /home6/sumacero/public_html/odonto/index.php on line 9
+[14-Mar-2012 14:36:14] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/servicios/turismo_odontologico.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 69
+[14-Mar-2012 14:36:26] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/servicios/turismo_odontologico.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 69
+[14-Mar-2012 14:36:26] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/servicios/turismo_odontologico.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 69
+[14-Mar-2012 14:36:26] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'section/servicios/turismo_odontologico.php' for inclusion (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home6/sumacero/public_html/odonto/index.php on line 69

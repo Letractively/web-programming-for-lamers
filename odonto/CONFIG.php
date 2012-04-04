@@ -23,6 +23,9 @@
 
 	} else {
 		
+		//define('ROOT', 'http://www.odontologiawg.com/');	
+		//define('CONTACT_EMAIL', 'elpota92@hotmail.com');		
+		
 		define('ROOT', 'http://www.sumacero.com/odonto/');	
 		define('CONTACT_EMAIL', 'elpota92@hotmail.com');		
 		
@@ -30,7 +33,6 @@
 		//$db = new DB("ctl", "localhost", "root", "root");
 		//global $db;
 	}
-	
-	
+
 //	include('include/include.php');
 ?>

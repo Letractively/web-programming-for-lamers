@@ -13,8 +13,8 @@
 	include("login.class.php");	
 	include("page.class.php");	
 	include("image.class.php");	
-	include("mail.php");		
-
+	include("mail.php");
+	
 
 		
 	
