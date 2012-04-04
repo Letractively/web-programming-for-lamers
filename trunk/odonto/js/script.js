@@ -31,9 +31,15 @@
 		$(".servicio").mousemove( function() {
 										   
 			var target = $('.servicioText', this);
+			var targetImg = $('.servicioImg', this);
 			
 			if (target.css('display') == 'none') {
 
+				targetImg.attr("src",function() {
+					var name=$(this).attr("name");
+					return "img/block/" + name +"Color.png";
+				});
+				
 				target.fadeTo(0, 0.61);
 				target.animate({ 					
 					'margin-top' : '-112',
@@ -49,7 +55,13 @@
 		$(".servicio").mouseleave( function() {
 			
 			var target = $('.servicioText', this);
-
+			var targetImg = $('.servicioImg', this);
+			
+			targetImg.attr("src",function() {
+					var name=$(this).attr("name");
+					return "img/block/" + name +"BN.png";
+				});
+				
 			target.fadeTo(250, 0.0, function() {
 				target.css('margin-top', '-40px');
 				target.css('height', '0px');
@@ -68,17 +80,17 @@
 		document.location.href = $("base").attr("href") + $("a.link", this).attr("href");
 		});
 
-		
-	
-				
 	});
 
-
-
-
-
-
-
-
-
-
+(function($) {
+  var cache = [];
+  // Arguments are image paths relative to the current page.
+  $.preLoadImages = function() {
+    var args_len = arguments.length;
+    for (var i = args_len; i--;) {
+      var cacheImage = document.createElement('img');
+      cacheImage.src = arguments[i];
+      cache.push(cacheImage);
+    }
+  }
+})(jQuery)

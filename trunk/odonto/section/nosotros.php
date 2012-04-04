@@ -44,11 +44,11 @@
 
 
 
-<div class="block4">
+<div class="block4" style="width: 98px;">
         <img src="img/nosotros2.jpg"/>
 </div>
 
-<div class="block4">
+<div class="block4" style="width: 640px;">
 	<h2>Nuestro Equipo</h2>
 	<p>OWG está conformado por odontólogos especializados que brindan tratamientos de la más alta calidad a precios accesibles.</p>
 

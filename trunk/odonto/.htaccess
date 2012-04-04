@@ -1,11 +1,9 @@
-# For security reasons, Option followsymlinks cannot be overridden.
-#Options +FollowSymlinks
-Options +SymLinksIfOwnerMatch
-
-
 
 RewriteEngine on
 
+# For security reasons, Option followsymlinks cannot be overridden.
+# Options +FollowSymlinks
+Options +SymLinksIfOwnerMatch
 
 ## Begin - Rewrite rules to block out some common exploits.
 # If you experience problems on your site block out the operations listed below
@@ -21,8 +19,6 @@ RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
 RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
 # Return 403 Forbidden header and show the content of the root homepage
 RewriteRule .* index.php [F]
-
-
 
 rewriteBase /odonto/
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -1,7 +1,7 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
-//require('./wordpress/wp-blog-header.php');
+//error_reporting(E_ALL);
+//ini_set("display_errors", 1);
+require('./wordpress/wp-blog-header.php');
 include("CONFIG.php");
 
 
@@ -44,7 +44,7 @@ if ($section == "contacto" || $section == "contacto/") {
 
 } else if ($section == "servicios/periodoncia" || $section == "servicios/periodoncia/") {
 	$section = "servicios/periodoncia";
-
+	
 } else if ($section == "servicios/turismo_odontologico" || $section == "servicios/turismo_odontologico/") {
 	$section = "servicios/turismo_odontologico";
 	
