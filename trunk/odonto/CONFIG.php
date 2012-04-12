@@ -26,6 +26,7 @@
 		//define('ROOT', 'http://www.odontologiawg.com/');	
 		//define('CONTACT_EMAIL', 'elpota92@hotmail.com');		
 		
+		define('WWWROOT', 'http://www.odontologiawg.com/');
 		define('ROOT', 'http://www.sumacero.com/odonto/');	
 		define('CONTACT_EMAIL', 'elpota92@hotmail.com');		
 		
