@@ -1,7 +1,7 @@
 <?php
-//error_reporting(E_ALL);
-//ini_set("display_errors", 1);
-require('./wordpress/wp-blog-header.php');
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+//require('./wordpress/wp-blog-header.php');
 include("CONFIG.php");
 
 
