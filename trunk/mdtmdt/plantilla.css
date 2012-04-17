@@ -1,0 +1,51 @@
+/* CSS Document */
+  @font-face {
+    font-family: Bliss-Regular;
+    font-style:  normal;
+    font-weight: normal;
+    src: url(BLISSRE0.eot);
+  }
+.link1 {
+	font-family: Bliss-Regular, Arial;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+.link2 {
+	font-family: Bliss-Regular, Arial;
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none;
+}
+
+.linkover1 {
+	font-family: Bliss-Regular, Arial;
+	font-size: 10px;
+	color: #990000;
+	text-decoration: underline;
+}
+
+.linkover2 {
+	font-family: Bliss-Regular, Arial;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+.espacio {
+	padding-left: 5px;
+}
+.linea1 {
+	padding-bottom: 10px;
+	border: 1px none #CCCCCC;
+}
+.contenido {
+	font-family: Bliss-Regular, Arial;
+	font-size: 10px;
+	color: #000000;
+}
+.titulofinal {
+	font-family: Bliss-Regular, Arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+}

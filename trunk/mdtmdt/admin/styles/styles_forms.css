@@ -1,0 +1,46 @@
+.form1	  {	
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	width: 350px;
+}
+
+.area1	  {	
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	width: 350px;
+	height: 80px;
+}
+
+.area2	  {	
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	width: 350px;
+	height: 150px;
+}
+
+.input	  {	
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+}
+
+.sel1	  {	
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	width: 350px;
+	height: 150px;
+}
