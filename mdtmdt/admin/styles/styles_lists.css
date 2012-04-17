@@ -1,0 +1,39 @@
+/* ESTILOS PARA LOS LISTADOS */
+
+.txt {	
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+	color: #525050;
+	line-height: 13px;
+	text-decoration: none; 
+}
+
+.txtLink {	
+	color: #000000;
+	text-decoration: none; 
+}
+
+.txtLink:hover {	
+	text-decoration: underline; 
+}
+
+.sub {	
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+	color: #015A90;
+	line-height: 15px;
+	text-decoration: none; 
+}
+
+.sep {
+	background-image: url("../img/ptos.gif");
+	width: 100%;
+	height: 3px;
+}
+
+.actionButton {	
+	font-size: 11px;
+	color: #F07B00;
+	background: #FFFFFF;
+	border: 1px solid #D5D5D5;
+}

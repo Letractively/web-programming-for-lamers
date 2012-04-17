@@ -1,0 +1,87 @@
+
+.flecha{
+     font-family: webdings;
+     color: #FFFFFF;
+}
+.table1{
+     background-color: #ffffff;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 10px;
+     font-weight: normal; color: #000000;
+     border: 1px solid;
+     border-color: #AEC7E3 #003366 #003366 #AEC7E3;
+	 width: 100%;
+}
+.tabla1_fila_par_columna_par, .tabla1_fila_par_columna_impar, .tabla1_fila_impar_columna_par, .tabla1_fila_impar_columna_impar{
+     background-color: #eeeeee;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 10px;
+     font-weight: normal; color: #000000;
+     border: 1px solid;
+     border-color: #AEC7E3 #003366 #003366 #AEC7E3;
+}
+.table1_row1_col1 
+{
+/* ITEMS DE LA TABLA */
+     background-color: #eeeeee;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 10px;
+     font-weight: normal; color: #000000;
+     border-bottom: 1px solid;
+     border-color: #AEC7E3 #003366 #003366 #AEC7E3;
+}
+.table1_row1_col2 
+{
+/* ITEMS DE LA TABLA */
+     background-color: #dddddd;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 10px;
+     font-weight: normal; color: #000000;
+     border-bottom: 1px solid;
+     border-color: #AEC7E3 #003366 #003366 #AEC7E3;
+}
+.table1_table{
+	background-color: #ff0000;
+    border: none;
+}
+.tabla1_vacia{
+	 background-color: #dddddd;
+     border: none;
+}
+.tabla1_titulo_par, .tabla1_titulo_impar{
+     background-color: #eeeeee;
+     font-family: verdana,Arial,Helvetica,sans-serif;
+     font-size: 14px;
+     color: #ffffff;
+	 border: 1px solid;
+     border-color: #AEC7E3 #003366 #003366 #AEC7E3;
+}
+.tabla1_resaltado{
+     background-color: #dddddd;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 10px; font-weight: normal;
+     color: #000000; border: 1px solid;
+	 border: 1px solid;
+     border-color: #AEC7E3 #003366 #003366 #AEC7E3;
+}
+.relieve{
+     background-color: #dddddd;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 10px; font-weight: normal;
+     color: #000000; border: 1px solid;
+	 border: 1px solid;
+     border-color: #AEC7E3 #003366 #003366 #AEC7E3;
+}
+.table1_table{
+	/* CABECERA DE TABLA */
+     background-color: #dddddd;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 10px; font-weight: normal;
+     color: #000000; border: 1px solid;
+	 border: 1px solid;
+     border-color: #AEC7E3 #003366 #003366 #AEC7E3;
+     height: 25px;
+}
+.sombra_titulo{
+     height: 5px;
+}

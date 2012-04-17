@@ -1,0 +1,34 @@
+/* ESTILOS PARA EL CALENDARIO */
+
+body {
+	background-color: #C0C0C0;
+	color: #525050;
+	margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+	font-family: Tahoma, Verdana, Arial;
+}
+
+.days {
+	font-size: 11px;
+}
+
+#dayList {
+	font-size: 11px;
+}
+
+.actionButton {	
+	font-size: 11px;
+	color: #F07B00;
+	background: #FFFFFF;
+	border: 1px solid #D5D5D5;
+}
+
+.input	  {	
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+	color: #929292;
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+}

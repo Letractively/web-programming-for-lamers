@@ -1,0 +1,65 @@
+/* CSS Document */
+
+table{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-align:center;
+}
+a, a:visited, a:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#3333CC;
+}
+.titulo_seccion{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	background-color: #eeeeee;
+	color: #0000BB;
+}
+.cuerpo_seccion{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-align:center;
+}
+.control{
+	font-size:9px;
+	border: 1px solid #000000;
+}
+.boton{
+	font-size:11px;
+	border: 1px solid #ffffff;
+	background-color:#bbbbbb;
+	color:#FFFFFF;
+	cursor: hand;
+	font-weight:bold;
+}
+.recuadro{
+	border: 1px solid #000000;
+}
+.texto_normal{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	text-align:left;
+}
+.solapa_sel{
+	font-weight:normal;
+	text-align:center;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-right: 2px solid #666666;
+	cursor:normal;
+}
+.solapa{
+	font-weight:normal;
+	text-align:center;
+	border-left: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #000000;
+	background-color:#CCCCCC;
+	cursor:hand;
+}

@@ -1,0 +1,33 @@
+/* ESTILOS PARA EL CUERPO */
+
+body {
+	background-image: url("../imgs/bgbody.gif");
+	background-color: #FFFFFF;
+	color: #525050;
+	margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+	font-family: Tahoma, Verdana, Arial;
+}
+
+.marco_menu {
+	width: 146px;
+}
+
+.marco_listado {
+	width: 100%;
+	padding: 5px;
+}
+
+.marco_blanco {
+	background-color: #FFFFFF;
+	padding: 10px;
+	width: 100%;
+}
+
+.footer {
+	background-color: #F07B00;
+	width: 780px;
+	height: 19px;
+}

@@ -1,0 +1,491 @@
+[23-May-2005 15:47:57] PHP Fatal error:  Call to undefined function:  mime_content_type() in /home/mdtmdtc/public_html/test.php on line 3
+[21-Jun-2005 15:16:52] PHP Warning:  main(/var/www/powerlib/0.8.1/dbi.inc.php): failed to open stream: No such file or directory in /home/mdtmdtc/public_html/vcf.php on line 12
+[21-Jun-2005 15:16:52] PHP Warning:  main(): Failed opening '/var/www/powerlib/0.8.1/dbi.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mdtmdtc/public_html/vcf.php on line 12
+[21-Jun-2005 15:16:52] PHP Fatal error:  Undefined class name 'dbi' in /home/mdtmdtc/public_html/vcf.php on line 14
+[12-Jul-2005 12:42:52] PHP Warning:  main(../inc/conf.inc.php): failed to open stream: No such file or directory in /home/mdtmdtc/public_html/verImagen.php on line 3
+[12-Jul-2005 12:42:52] PHP Warning:  main(): Failed opening '../inc/conf.inc.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mdtmdtc/public_html/verImagen.php on line 3
+[12-Jul-2005 12:42:52] PHP Fatal error:  Cannot instantiate non-existent class:  dbi in /home/mdtmdtc/public_html/verImagen.php on line 8
+[12-Sep-2005 16:08:08] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[04-Oct-2005 10:29:24] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[04-Oct-2005 10:32:20] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[04-Oct-2005 10:32:26] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[16-Oct-2005 18:58:45] PHP Fatal error:  Call to undefined function:  numrows() in /home/mdtmdtc/powerlib/0.8.1/dbi.inc.php on line 768
+[29-Nov-2005 11:30:37] PHP Fatal error:  Call to undefined function:  numrows() in /home/mdtmdtc/powerlib/0.8.1/dbi.inc.php on line 768
+[29-Nov-2005 11:30:45] PHP Fatal error:  Call to undefined function:  numrows() in /home/mdtmdtc/powerlib/0.8.1/dbi.inc.php on line 768
+[12-Mar-2006 20:07:08] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[12-Mar-2006 20:55:57] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[17-Mar-2006 05:51:41] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[17-Mar-2006 22:28:57] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[18-Mar-2006 13:05:26] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[19-Mar-2006 04:23:51] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[20-Mar-2006 10:05:52] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[23-Mar-2006 08:37:38] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[27-Mar-2006 23:16:15] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[02-Sep-2006 00:01:07] PHP Warning:  Invalid argument supplied for foreach() in /home/mdtmdtc/public_html/formulario_empleo.php on line 167
+[11-Sep-2006 13:02:57] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[11-Sep-2006 13:02:57] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[11-Sep-2006 13:38:52] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[11-Sep-2006 13:38:52] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknow[27-Jan-2009 12:12:49] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:49] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:50] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:50] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:50] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:50] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:50] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:50] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:50] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:50] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:50] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:50] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:51] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:51] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:51] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:51] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:51] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:51] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:51] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:51] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:53] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:53] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:53] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:53] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:53] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:53] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:53] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:53] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:54] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:57] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:12:59] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:59] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:12:59] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:12:59] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:00] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:00] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:00] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:00] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:01] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:01] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:01] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:01] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:01] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:01] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:01] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:01] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:04] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:04] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:04] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:04] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:04] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:04] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:04] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:04] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:05] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:05] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:05] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:05] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:06] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:06] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:06] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:06] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:08] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:08] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:08] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:08] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:10] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:10] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:10] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:10] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:12] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:12] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:12] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:12] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:15] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:15] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:15] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:15] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:18] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:18] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:18] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:18] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:19] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:19] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:19] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:19] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:20] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:20] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:20] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:20] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:22] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:22] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:22] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:22] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:22] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:22] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:22] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:22] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:22] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:22] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:23] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:24] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:24] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:24] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:24] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:24] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:24] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:24] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:24] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:24] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:24] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:29] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:30] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:30] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:30] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:33] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:33] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:33] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:33] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:40] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:40] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:40] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:40] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:40] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:40] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:40] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:40] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:40] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:40] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:40] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:40] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:41] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:41] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:41] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:41] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:41] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:41] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:41] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:41] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Jan-2009 12:13:41] PHP Warning:  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:41] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mdtmdtc/public_html/inc/conf.inc.php:81) in /home/mdtmdtc/public_html/inc/conf.inc.php on line 81
+[27-Jan-2009 12:13:41] PHP Warning:  Unknown(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in Unknown on line 0
+[27-Jan-2009 12:13:41] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[11-Mar-2009 16:46:20] PHP Parse error:  parse error, unexpected T_STRING, expecting T_OLD_FUNCTION or T_FUNCTION or T_VAR or '}' in /home/mdtmdtc/public_html/test.php on line 52
+[11-Mar-2009 16:46:21] PHP Parse error:  parse error, unexpected T_STRING, expecting T_OLD_FUNCTION or T_FUNCTION or T_VAR or '}' in /home/mdtmdtc/public_html/test.php on line 52
+[07-Apr-2009 22:30:52] PHP Warning:  Invalid argument supplied for foreach() in /home2/mdtmdtc/public_html/formulario_empleo.php on line 167
+[12-May-2009 05:32:38] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 05:32:38] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[12-May-2009 09:39:35] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 09:39:35] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[12-May-2009 09:39:46] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 09:39:46] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[12-May-2009 09:39:46] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 09:39:46] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[12-May-2009 10:38:53] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 10:38:53] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[12-May-2009 10:46:33] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 10:46:33] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[12-May-2009 10:48:56] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 10:48:56] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[12-May-2009 10:59:11] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 10:59:12] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 10:59:12] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[12-May-2009 10:59:12] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[12-May-2009 10:59:12] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-May-2009 01:04:38] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-May-2009 01:04:38] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-May-2009 10:24:08] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-May-2009 10:24:08] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-May-2009 10:24:36] PHP Warning:  Invalid argument supplied for foreach() in /home2/mdtmdtc/public_html/formulario_empleo.php on line 167
+[20-May-2009 19:04:51] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-May-2009 19:04:51] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-May-2009 19:14:23] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-May-2009 19:14:23] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-May-2009 19:15:46] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-May-2009 19:15:46] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-May-2009 20:36:53] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-May-2009 20:36:53] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-May-2009 21:54:44] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-May-2009 21:54:45] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-May-2009 04:18:38] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-May-2009 04:18:38] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-May-2009 04:37:55] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-May-2009 04:37:55] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-May-2009 08:59:27] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-May-2009 08:59:27] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-May-2009 10:24:16] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-May-2009 10:24:16] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-May-2009 11:33:52] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-May-2009 11:33:52] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-May-2009 17:20:29] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-May-2009 17:20:29] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-May-2009 05:41:28] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-May-2009 05:41:28] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-May-2009 10:39:10] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-May-2009 10:39:10] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-May-2009 11:13:21] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-May-2009 11:13:21] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-May-2009 11:14:04] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-May-2009 11:14:04] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-May-2009 11:26:39] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-May-2009 11:26:39] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-May-2009 11:42:02] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-May-2009 11:42:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-May-2009 11:43:31] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-May-2009 11:43:31] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-May-2009 11:43:37] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-May-2009 11:43:37] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-May-2009 22:43:56] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[28-May-2009 22:43:56] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-May-2009 23:44:07] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[28-May-2009 23:44:07] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[29-May-2009 04:14:14] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[29-May-2009 04:14:14] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[29-May-2009 04:15:07] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[29-May-2009 04:15:07] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[29-May-2009 06:47:55] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[29-May-2009 06:47:55] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[29-May-2009 14:12:23] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[29-May-2009 14:12:23] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[29-May-2009 20:36:00] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[29-May-2009 20:36:00] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[29-May-2009 20:37:27] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[29-May-2009 20:37:27] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 01:02:33] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 01:02:33] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 09:22:21] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 09:22:21] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 11:47:46] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 11:47:46] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 13:38:11] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 13:38:11] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 13:39:01] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 13:39:01] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 13:39:22] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 13:39:22] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 13:40:55] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 13:40:55] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 13:41:35] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 13:41:35] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 14:53:03] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 14:53:03] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 14:53:51] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 14:53:51] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 15:36:18] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 15:36:18] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 17:32:32] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 17:32:32] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 20:45:40] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 20:45:40] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 22:50:14] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 22:50:14] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 22:53:36] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 22:53:36] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 22:53:50] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 22:53:50] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-Jun-2009 22:53:59] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[19-Jun-2009 22:53:59] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Jun-2009 02:51:22] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-Jun-2009 02:51:22] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Jun-2009 02:52:29] PHP Warning:  Invalid argument supplied for foreach() in /home2/mdtmdtc/public_html/formulario_empleo.php on line 167
+[20-Jun-2009 07:26:00] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-Jun-2009 07:26:00] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Jun-2009 08:11:17] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-Jun-2009 08:11:17] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Jun-2009 18:09:33] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-Jun-2009 18:09:33] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[20-Jun-2009 22:47:25] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[20-Jun-2009 22:47:25] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-Jun-2009 05:45:06] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-Jun-2009 05:45:06] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-Jun-2009 12:28:04] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-Jun-2009 12:28:04] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[21-Jun-2009 14:30:54] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[21-Jun-2009 14:30:54] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 04:29:40] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 04:29:40] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 06:03:55] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 06:03:55] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 10:25:14] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 10:25:14] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 10:26:00] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 10:26:00] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 11:34:24] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 11:34:24] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 12:15:43] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 12:15:43] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 12:23:03] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 12:23:03] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 13:42:30] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 13:42:30] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 14:04:39] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 14:04:39] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 15:05:54] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 15:05:54] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 15:06:20] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 15:06:20] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 16:43:14] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 16:43:14] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 16:43:32] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 16:43:32] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 17:30:22] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 17:30:22] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 17:30:50] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 17:30:50] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 17:31:40] PHP Warning:  Invalid argument supplied for foreach() in /home2/mdtmdtc/public_html/formulario_empleo.php on line 167
+[22-Jun-2009 17:32:24] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 17:32:24] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 17:32:28] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 17:32:28] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 18:03:38] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 18:03:38] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 18:03:41] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 18:03:41] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 18:29:46] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 18:29:46] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 21:48:02] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 21:48:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[22-Jun-2009 22:43:02] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[22-Jun-2009 22:43:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[23-Jun-2009 10:11:44] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[23-Jun-2009 10:11:44] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[23-Jun-2009 13:44:34] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[23-Jun-2009 13:44:34] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[23-Jun-2009 14:15:56] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[23-Jun-2009 14:15:56] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[23-Jun-2009 16:17:23] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[23-Jun-2009 16:17:23] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 04:29:40] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 04:29:40] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 04:41:02] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 04:41:02] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 08:41:45] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 08:41:45] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 12:16:25] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 12:16:25] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 15:44:56] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 15:44:56] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 15:45:05] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 15:45:05] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 15:55:22] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 15:55:22] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 15:57:08] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 15:57:08] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 15:57:14] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 15:57:14] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 15:57:44] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 15:57:44] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 15:59:56] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 15:59:56] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 16:00:01] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 16:00:01] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[24-Jun-2009 16:01:47] PHP Warning:  Unknown(): write failed: No space left on device (28) in Unknown on line 0
+[24-Jun-2009 16:01:47] PHP Warning:  Unknown(): Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[13-Jul-2009 10:09:14] PHP Fatal error:  Call to undefined function:  query() in /home2/mdtmdtc/powerlib/0.8.1/dbi.inc.php on line 107

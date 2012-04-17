@@ -1,0 +1,4 @@
+UserAgent: *
+Allow: 
+
+Sitemap: http://www.mdtmdt.com/find-ziprasidone-prescriptions-online/sitemap.xml.gz
