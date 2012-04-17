@@ -18,7 +18,7 @@
 			</div>
 			<div class="der">
 			<h3 style="float: right">Diseñador y Desarrollo web:</h3>
-			<p style="float: right"><img src="img/sumacero.png" /></p>
+			<p style="float: right"><a href="http://www.sumacero.com/"><img src="img/sumacero.png" style="border: medium none;"/></a></p>
 			<p></p>
 			</div>
         </div>
