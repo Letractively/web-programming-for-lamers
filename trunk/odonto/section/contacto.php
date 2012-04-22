@@ -51,6 +51,11 @@
 	<p style="font-size: 11px;">Av. Corrientes 1955 2 D<br />
 		4953-2183<br />
 		contacto@owg.com.ar</p>
+	<p style="font-size: 11px;">
+		<img src="img/visa.png">
+		<img style="margin-left: 8px; margin-right: 8px;" src="img/mastercard.png">
+		<img src="img/american.png">
+	</p>
 </div>
 
 
