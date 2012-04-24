@@ -2,6 +2,40 @@
 	if (!$included) die();
 ?>
 
+<!-- FORM VALIDATION -->
+        <link rel="stylesheet" href="Validation_Engine/css/validationEngine.jquery.css" type="text/css"/>
+        <link rel="stylesheet" href="Validation_Engine/css/template.css" type="text/css"/>
+        <script src="Validation_Engine/js/jquery-1.6.min.js" type="text/javascript">
+        </script>
+        <script src="Validation_Engine/js/languages/jquery.validationEngine-es.js" type="text/javascript" charset="utf-8">
+        </script>
+        <script src="Validation_Engine/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8">
+        </script>
+        <script>
+            jQuery(document).ready( function() {
+                // binds form submission and fields to the validation engine
+                jQuery("#contactoForm").validationEngine();
+				$('#contactoForm').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			nombre: $('#nombre').val(),
+			email: $('#email').val(),
+			telefono: $('#telefono').val(),
+			area: $('#area').val(),
+			mensaje: $('#mensaje').val()
+		},
+			function(data){
+				$('#contactoForm #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactoForm').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Hemos recibido su mensaje') $('#contactoForm').slideUp();
+			}
+		); 
+		return false;
+	});
+            });
+</script>
 
 
 <div id="headtitle"> 
@@ -23,25 +57,27 @@
 	<p>Utilice el siguiente formulario para enviarnos un mensaje. Tanto sobre consultas odontológicas, como solicitudes de turno y mayor información sobre nuestros implantes dentales y otros servicios.</p>
 	<p>Si lo desea, también puede comunicarse con nosotros por teléfono, llamando al número contiguo.</p>
 	
-	<fieldset id="fs_contacto">
-		<label for="nombre">Nombre<br />
-			<input id="nombre" type="text" name="nombre" />
-		</label>
-		<br />
-		<label for="email">Email<br />
-			<input id="email" type="text" name="email" />
-		</label>
-		<br />
-		<label for="telefono">Tel&eacute;fono (Opcional)<br />
-			<input id="telefono" type="text" name="telefono" />
-		</label>
-		<br />
-		<label for="mensaje">Mensaje<br />
-			<textarea id="mensaje" name="mensaje" ></textarea>
-		</label>
-		<br />
-		<button id="enviar" type="submit" class="enviar"></button>
-	</fieldset>
+	<form name="contactoForm" id="contactoForm" action="contact.php" method="post" enctype="multipart/form-data">
+		<fieldset id="fs_contacto">
+			<label for="nombre">Nombre<br />
+				<input value="" type="text" name="emailNombre" id="nombre" class="validate[required]"/>
+			</label>
+			<br />
+			<label for="email">Email<br />
+				<input value="" type="text" name="emailEmail" id="email" class="validate[required,custom[email]]"/>
+			</label>
+			<br />
+			<label for="telefono">Tel&eacute;fono (Opcional)<br />
+				<input style="margin-top: 3px;" value="" type="text" name="emailTelefono" id="telefono"/>
+			</label>
+			<br />
+			<label for="mensaje">Mensaje<br />
+				<textarea name="emailMensaje" id="mensaje" class="validate[required]"></textarea>
+			</label>
+			<br />
+			<button id="boton" type="submit" name="enviar" class="enviar"></button>
+		</fieldset>
+	</form>
 		
 </div>
 
