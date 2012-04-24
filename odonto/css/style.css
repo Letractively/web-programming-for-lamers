@@ -230,6 +230,11 @@ fieldset label {
 	color: #6e6e6e;
 }
 
+p.response{
+	color: #10B2F4;
+}
+
+
 input#nombre, input#email,
 input#telefono{
 	float: left;
