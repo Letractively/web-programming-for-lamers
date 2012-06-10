@@ -1,10 +1,9 @@
 <?php
-
 if(!$_POST) exit;
 
 $email = $_POST['email'];
 
-$_POST['area'] = 'ventas';	//Pongo un AREA por default porque me cansé de programar para ODONTOLOGIAWG.COM.AR
+$_POST['area'] = 'odontologiawg';	//Pongo un AREA por default porque me cansé de programar para ODONTOLOGIAWG.COM.AR
 
 $errors=0;
 //$error[] = preg_match('/\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i', $_POST['email']) ? '' : 'INVALID EMAIL ADDRESS';
@@ -25,9 +24,10 @@ else{
 	{
 		$your_email = "alberdij@evoipsoluciones.com.ar";
 	}
-	if($_POST['area'] == 'ventas')
+	if($_POST['area'] == 'odontologiawg')
 	{
-		$your_email = "info@odontologiawg.com.ar, fedratedesco@live.com.ar";	// dercoli@systechsoluciones.com.ar
+		$your_email = "info@odontologiawg.com.ar; fedratedesco@live.com.ar";	// ; dercoli@systechsoluciones.com.ar
+	}	
 	if($_POST['area'] == 'soporte')
 	{
 		$your_email = "soporte@evoipsoluciones.com.ar";
