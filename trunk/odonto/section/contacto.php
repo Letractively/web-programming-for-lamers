@@ -85,7 +85,7 @@
     <iframe style="border: 1px solid #dddddd; magin: 0; padding: 0;" frameborder="0" width="200" height="230" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.ar/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=CORRIENTES+1955+caba&amp;aq=&amp;sll=-38.341656,-63.28125&amp;sspn=36.286491,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Av+Corrientes+1955,+Balvanera,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
 	<p style="font-size: 11px;"><strong>Odontolog&iacute;a Working Group</strong></p>
 	<p style="font-size: 11px;">Av. Corrientes 1955 2 D<br />
-		4953-2183<br />
+		4953-2183 / 15 3016 8844<br />
 		contacto@owg.com.ar</p>
 	<p style="font-size: 11px;">
 		<img src="img/visa.png">
