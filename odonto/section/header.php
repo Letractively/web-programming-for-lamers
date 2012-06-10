@@ -8,7 +8,7 @@
     
 	    <base href="<?=ROOT?>" />
 
-        <title>Odonto</title>
+        <title>Odontología Especializada</title>
         
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="Title" content="Odonto">
@@ -18,7 +18,8 @@
         <meta name="Keywords" content="Odonto">
         <meta name="Language" content="es">
         <meta name="Robots" content="All">
-        
+		
+        <meta name="google-site-verification" content="CPY-KfK5ifKNKpTVG4MHZBMra78FO8laRsctH1_e-lA" />
 
         <link rel=stylesheet href="css/style.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="css/slider.css" type="text/css" media="all">        

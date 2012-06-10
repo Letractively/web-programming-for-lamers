@@ -12,7 +12,7 @@
 			<div class="izq">
 			<h3>Odontología Working Group</h3>
 			<p>Av. Corrientes 1955 2 D<br />
-			9453-2183<br />
+			4953-2183 / 15 3016 8844<br />
 			contacto@owg.com.ar</p>
 			<p style="margin-top: 18px;"><img src="img/visa.png" /><img src="img/mastercard.png" style="margin-left: 8px; margin-right: 8px;" /><img src="img/american.png" /></p>
 			</div>
