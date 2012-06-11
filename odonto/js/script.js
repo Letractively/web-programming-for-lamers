@@ -22,7 +22,7 @@
 				prevText: '',
 				nextText: '',
 				pause: 4000,
-				glassText: ['Servicios', 'Ultimos Avances', 'Nosotros']
+				glassText: ['Servicios', 'Ultimos Avances', 'Contacto', 'Nosotros']
 		});
 		
 		

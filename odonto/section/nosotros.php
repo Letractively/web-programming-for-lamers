@@ -51,7 +51,7 @@
 <div class="block4" style="width: 640px;">
 	<h2>Nuestro Equipo</h2>
 	
-	<p><b>Gonzalo trigo.</b> Odontólogo, especialista en cirugía bucomaxilo facial, implantólogo, y su equipo de especialistas.</p>
+	<p>Dirigido por el Dr. <b>Gonzalo Trigo.</b> Odontólogo, especialista en cirugía bucomaxilo facial, implantólogo.</p>
 	
 	<p>OWG está conformado por odontólogos especializados que brindan tratamientos de la más alta calidad a precios accesibles.</p>
 
