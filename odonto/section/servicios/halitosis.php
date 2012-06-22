@@ -18,6 +18,13 @@
 	<p><b>Inicialmente se trata de disminuir todos los factores que pueden ser locales y/o sistémicos que  provocan el mal aliento, como por ejemplo caries, placa bacteriana (higiene deficiente), focos de infección, etc. En el caso de persistir el problema se aborda el mismo interdisciplinariamente.</b></p>
 </div>
 
+<div class="block6" style="border-bottom-width: 0px;">
+	<h2 style="border-bottom: 1px solid rgb(221, 221, 221); padding-bottom: 5px;">Ozonoterapia</h2>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">El ozono tiene un efecto germicida de amplio espectro con la capacidad de inhibir y destruir en poco tiempo bacterias, hongos, esporas y  virus.</h3>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">La aplicación de agua ozonizada se utiliza para el  tratamiento de la halitosis, preparaciones cavitarias, exodoncias, y/o colocinde implantes. Debido a sus propiedades desinfectantes, bacteriostáticas, esterilizantes, terapéuticas, etc.</h3>
+	<h3 style="text-align: justify; font-weight: normal; font-size: 14px;">Al realizarse el tratamiento sobre pacientes  disminuye la carga bacteriana evitando el desarrollo de patología inflamatoria o infecciosa.</h3>
+</div>
+
 <!--
 <div class="block1">
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra odio sit amet lectus 
