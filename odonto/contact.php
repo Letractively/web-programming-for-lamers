@@ -26,7 +26,7 @@ else{
 	}
 	if($_POST['area'] == 'odontologiawg')
 	{
-		$your_email = "info@odontologiawg.com.ar; fedratedesco@live.com.ar";	// ; dercoli@systechsoluciones.com.ar
+		$your_email = "info@odontologiawg.com.ar; fedratedesco@live.com.ar; odontologiawg@live.com; gonzalotrigo2002@hotmail.com";	// ; dercoli@systechsoluciones.com.ar
 	}	
 	if($_POST['area'] == 'soporte')
 	{
