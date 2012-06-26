@@ -111,7 +111,7 @@
 
 <div class="block2">
 	<img src="img/block/halitosis.jpg" /> <br />
-	<h3 style="margin:6px 0 0 0;">Halitosis</h3>
+	<h3 style="margin:6px 0 0 0;">Halitosis - Ozonoterapia</h3>
     <p style="margin:0 0 0 0;">Lorem ipsum dolor sit amet</p>
 </div>
 

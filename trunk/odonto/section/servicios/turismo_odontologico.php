@@ -145,7 +145,7 @@
 <div class="block2">
 	<div class="servicio">
         <img class="servicioImg" name="halitosis" src="img/block/halitosisBN.png" /> <br />
-        <h3 style="margin:6px 0 0 0;">Halitosis</h3>
+        <h3 style="margin:6px 0 0 0;">Halitosis - Ozonoterapia</h3>
         <p style="margin:0 0 0 0;">Terapia contra el mal aliento</p>
         
         <div class="servicioText">
