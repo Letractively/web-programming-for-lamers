@@ -83,7 +83,7 @@ float: left;
 text-align: left;
 min-height: 110px;
 padding: 20px;
-width: 180px;
+width: 290px; /* width: 180px; */
 }
 
 .box2{
@@ -95,7 +95,7 @@ float: left;
 text-align: left;
 min-height:110px;
 padding: 20px;
-width: 172px;
+width: 300px; /* width: 172px; */
 }
 
 .box2 a{
