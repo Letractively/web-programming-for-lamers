@@ -1,0 +1,4 @@
+# Herramientas Indispensables: #
+
+## Notepad++ ##
+**http://notepad-plus.sourceforge.net/es/site.htm** : _Es un editor portable y pequeño al estilo wordpad, con las siguientes ventajas: Soporta VARIOS LENGUAJES de programacio. Ojo, SOPORTA no quiere decir que los haga funcionar!! simplemente que va a archivar y reconocer con colores distintos nuestra programacion y los distintos tipos de funciones y de variables para que NOSOTROS veamos mejor que es lo que estamos haciendo, nos sea mas facil programar y encontrar errores. Yo lo uso hace poco y la verdad que es uno de los mejores programas que uno puede encontrar para el desarrollo informatico en cualquier rama. Para bajarlo metanse a la pagina -> decargar -> Descargar los ejecutables de Notepad++ -> (aca van a aparecer en una pagina media dificil de entender) y ahi nomas descargan el primer archivo que diga algo asi como "installer.exe"_
